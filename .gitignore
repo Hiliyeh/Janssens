@@ -1,0 +1,31 @@
+# Dotfiles
+.*
+!.gitignore
+!.github
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Env
+.env
+*.env
+
+# Logs
+*.log
+
+# Temp
+tmp/
+*.tmp

@@ -1,0 +1,11 @@
+# Robots.txt for Janssens Serrurier
+# https://janssensserrurier.be
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://janssensserrurier.be/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1

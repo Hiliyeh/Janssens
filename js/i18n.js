@@ -213,7 +213,7 @@ const i18n = {
 
             // Legal pages - Common
             'legal.back': 'Retour à l\'accueil',
-            'legal.updated': 'Dernière mise à jour : Décembre 2024',
+            'legal.updated': 'Dernière mise à jour',
 
             // Conditions page
             'conditions.title': 'Conditions d\'utilisation',
@@ -519,7 +519,7 @@ const i18n = {
 
             // Legal pages - Common
             'legal.back': 'Terug naar home',
-            'legal.updated': 'Laatst bijgewerkt: December 2024',
+            'legal.updated': 'Laatst bijgewerkt',
 
             // Conditions page
             'conditions.title': 'Gebruiksvoorwaarden',
@@ -825,7 +825,7 @@ const i18n = {
 
             // Legal pages - Common
             'legal.back': 'Back to home',
-            'legal.updated': 'Last updated: December 2024',
+            'legal.updated': 'Last updated',
 
             // Conditions page
             'conditions.title': 'Terms of Use',
@@ -1018,6 +1018,18 @@ const i18n = {
             const key = el.getAttribute('data-i18n-aria');
             el.setAttribute('aria-label', this.t(key));
         });
+
+        // Update dynamic legal date
+        const legalDate = document.getElementById('legalDate');
+        if (legalDate) {
+            const now = new Date();
+            const months = {
+                'fr': ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+                'nl': ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'],
+                'en': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            };
+            legalDate.textContent = months[this.currentLang][now.getMonth()] + ' ' + now.getFullYear();
+        }
     },
 
     setupSwitcher() {

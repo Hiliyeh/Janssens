@@ -29,3 +29,9 @@ build/
 # Temp
 tmp/
 *.tmp
+
+# Documentation
+doc/
+docs/
+*.md
+!README.md

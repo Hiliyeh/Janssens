@@ -1,11 +1,21 @@
-# Robots.txt for Janssens Serrurier
+# Robots.txt - Janssens Serrurier
 # https://janssensserrurier.be
 
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://janssensserrurier.be/sitemap.xml
 
-# Crawl-delay (optional, be nice to servers)
-Crawl-delay: 1
+# Ressources à ne pas indexer
+Disallow: /js/
+Disallow: /*.json$
+Disallow: /build.js
+
+# Autoriser les images pour Google Images
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Autoriser AdsBot
+User-agent: AdsBot-Google
+Allow: /

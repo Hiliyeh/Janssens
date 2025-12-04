@@ -179,8 +179,22 @@
         const locations = window.LOCATIONS;
         const hourlyRate = window.HOURLY_RATES;
 
-        const today = new Date();
-        const dateSeed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        // Day cycle starts at 3 AM instead of midnight
+        // This prevents the counter from resetting to 0 at midnight
+        const DAY_START_HOUR = 3;
+
+        // Calculate the "logical date" seed - if before 3 AM, use yesterday's date
+        const calculateDateSeed = () => {
+            const now = new Date();
+            const currentHour = now.getHours();
+            const logicalDate = new Date(now);
+            if (currentHour < DAY_START_HOUR) {
+                logicalDate.setDate(logicalDate.getDate() - 1);
+            }
+            return logicalDate.getFullYear() * 10000 + (logicalDate.getMonth() + 1) * 100 + logicalDate.getDate();
+        };
+
+        let dateSeed = calculateDateSeed();
 
         const seededRandom = (seed) => {
             const x = Math.sin(seed) * 10000;
@@ -198,15 +212,37 @@
         };
 
         const generateDayInterventions = () => {
-            const now = new Date();
-            const currentHour = now.getHours();
-            const currentMinute = now.getMinutes();
+            const nowTime = new Date();
+            const nowHour = nowTime.getHours();
+            const nowMinute = nowTime.getMinutes();
             const interventions = [];
             let seed = dateSeed;
 
-            for (let hour = 0; hour <= currentHour; hour++) {
+            // Determine the hours to generate interventions for
+            // If before 3 AM: generate from 3h yesterday to current hour (crossing midnight)
+            // If after 3 AM: generate from 3h to current hour
+            let hoursToGenerate = [];
+
+            if (nowHour < DAY_START_HOUR) {
+                // Before 3 AM: include hours 3-23 from "yesterday" and 0 to nowHour from "today"
+                for (let h = DAY_START_HOUR; h < 24; h++) {
+                    hoursToGenerate.push({ hour: h, isYesterday: true });
+                }
+                for (let h = 0; h <= nowHour; h++) {
+                    hoursToGenerate.push({ hour: h, isYesterday: false });
+                }
+            } else {
+                // After 3 AM: just 3h to nowHour
+                for (let h = DAY_START_HOUR; h <= nowHour; h++) {
+                    hoursToGenerate.push({ hour: h, isYesterday: false });
+                }
+            }
+
+            hoursToGenerate.forEach(({ hour, isYesterday }) => {
                 const rate = hourlyRate[hour];
-                const maxMinute = (hour === currentHour) ? currentMinute : 60;
+                // For the current hour, only generate up to current minute
+                const isCurrentHour = !isYesterday && hour === nowHour;
+                const maxMinute = isCurrentHour ? nowMinute : 60;
 
                 const hasIntervention = seededRandom(seed++) < rate;
                 const numInterventions = hasIntervention ? 1 : 0;
@@ -236,6 +272,13 @@
                         attempts < 5
                     );
 
+                    // Calculate the correct date for the timestamp
+                    const interventionDate = new Date(nowTime);
+                    if (isYesterday) {
+                        interventionDate.setDate(interventionDate.getDate() - 1);
+                    }
+                    interventionDate.setHours(hour, minute, 0, 0);
+
                     interventions.push({
                         hour,
                         minute,
@@ -243,10 +286,10 @@
                         icon: intervention.icon,
                         iconClass: intervention.iconClass,
                         location,
-                        timestamp: new Date(today.getFullYear(), today.getMonth(), today.getDate(), hour, minute)
+                        timestamp: interventionDate
                     });
                 }
-            }
+            });
 
             interventions.sort((a, b) => b.timestamp - a.timestamp);
             return interventions;
@@ -381,6 +424,26 @@
                     }, 3000);
                 }
             }, 120000);
+
+            // Mobile fix: regenerate interventions when user returns to page
+            // This handles cases where phone was in sleep mode and day cycle changed
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'visible') {
+                    const newSeed = calculateDateSeed();
+                    if (newSeed !== dateSeed) {
+                        // Day cycle has changed (crossed 3 AM), regenerate everything
+                        dateSeed = newSeed;
+                        dayInterventions = generateDayInterventions();
+                        if (interventionCountEl) {
+                            interventionCountEl.textContent = dayInterventions.length;
+                        }
+                        renderList();
+                    } else {
+                        // Same day cycle, just refresh the display (update time diffs)
+                        renderList();
+                    }
+                }
+            });
         }, 400); // End of initial setTimeout for skeleton
     }
 

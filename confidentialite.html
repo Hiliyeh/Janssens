@@ -7,25 +7,42 @@
     <meta name="description" content="Politique de confidentialité de Janssens Serrurier. Découvrez comment nous protégeons vos données personnelles.">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://janssensserrurier.be/confidentialite.html">
+    <link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/confidentialite.html">
+    <link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/privacy.html">
+    
+    <link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/privacy.html"><link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/confidentialite.html">
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:title" content="Politique de confidentialité | Janssens Serrurier">
     <meta property="og:description" content="Politique de confidentialité de Janssens Serrurier. Protection des données personnelles.">
     <meta property="og:url" content="https://janssensserrurier.be/confidentialite.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://janssensserrurier.be/assets/images/logo.png">
+    <meta property="og:image" content="https://janssensserrurier.be/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Janssens Serrurier">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://janssensserrurier.be/assets/images/og-image.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="alternate icon" type="image/png" href="assets/images/logo.png">
 
-    <!-- Fonts -->
+    <!-- Preconnect & Preload for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+    <!-- Lucide Icons - defer pour ne pas bloquer le rendu -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -33,29 +50,30 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="Janssens Serrurier" class="logo-img">
+            <a href="/" class="logo">
+                <img src="assets/images/logo.png" alt="Janssens Serrurier" class="logo-img" width="120" height="44">
             </a>
             <nav class="nav" id="nav">
                 <div class="nav-logo">
-                    <img src="assets/images/logo.png" alt="Janssens Serrurier">
-                </div>
-                <div class="lang-switcher-mobile lang-switcher">
-                    <button data-lang="fr"><span class="flag"></span>FR</button>
-                    <button data-lang="nl"><span class="flag"></span>NL</button>
-                    <button data-lang="en"><span class="flag"></span>EN</button>
+                    <img src="assets/images/logo.png" alt="Janssens Serrurier" width="120" height="44" loading="lazy">
                 </div>
                 <a href="index.html#services" data-i18n="nav.services">Services</a>
                 <a href="index.html#pourquoi" data-i18n="nav.pourquoi">Pourquoi nous</a>
                 <a href="index.html#zones" data-i18n="nav.zones">Zones</a>
+                <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
                 <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+                <div class="nav-cta">
+                    <a href="tel:+32495205400" class="nav-cta-item">
+                        <span class="nav-cta-btn nav-phone"><i data-lucide="phone"></i></span>
+                        <span class="nav-cta-label" data-i18n="nav.call">Appeler</span>
+                    </a>
+                    <a href="https://wa.me/32495205400" class="nav-cta-item" rel="noopener noreferrer" target="_blank">
+                        <span class="nav-cta-btn nav-whatsapp"><i data-lucide="message-circle"></i></span>
+                        <span class="nav-cta-label" data-i18n="nav.whatsapp">WhatsApp</span>
+                    </a>
+                </div>
             </nav>
             <div class="header-actions">
-                <div class="lang-switcher">
-                    <button data-lang="fr"><span class="flag"></span>FR</button>
-                    <button data-lang="nl"><span class="flag"></span>NL</button>
-                    <button data-lang="en"><span class="flag"></span>EN</button>
-                </div>
                 <a href="tel:+32495205400" class="header-cta">
                     <i data-lucide="phone" class="icon"></i>
                     <span>0495 205 400</span>
@@ -169,7 +187,7 @@
                 <h2 data-i18n="privacy.10.title">10. Réclamation</h2>
                 <p data-i18n="privacy.10.text">Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de l'Autorité de Protection des Données (APD) :</p>
                 <ul>
-                    <li>Site web : <a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">www.autoriteprotectiondonnees.be</a></li>
+                    <li>Site web : <a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener noreferrer">www.autoriteprotectiondonnees.be</a></li>
                     <li>Email : contact@apd-gba.be</li>
                     <li>Adresse : Rue de la Presse 35, 1000 Bruxelles</li>
                 </ul>
@@ -199,7 +217,7 @@
                 </div>
             </div>
             <div class="footer-credit">
-                <span data-i18n="footer.credit">Conçu par</span> <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener">Hiliyeh Bashir</a>
+                <span data-i18n="footer.credit">Conçu par</span> <a href="https://www.linkedin.com/in/hiliyeh-bashir/" target="_blank" rel="noopener noreferrer">Hiliyeh Bashir</a>
             </div>
         </div>
     </footer>

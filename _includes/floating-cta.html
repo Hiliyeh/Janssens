@@ -1,0 +1,15 @@
+{% comment %}
+Floating CTA buttons for phone and WhatsApp
+Usage: {% include floating-cta.html %}
+{% endcomment %}
+
+<div class="floating-cta" id="floatingCta">
+    <a href="tel:{{ biz.phone }}" class="floating-btn floating-phone">
+        <i data-lucide="phone" class="icon"></i>
+        <span class="floating-text">{{ biz.phone_display }}</span>
+    </a>
+    <a href="{{ biz.social.whatsapp }}" class="floating-btn floating-whatsapp" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle" class="icon"></i>
+        <span class="floating-text">WhatsApp</span>
+    </a>
+</div>

@@ -1,0 +1,14 @@
+{% comment %}
+Situations Grid - Reusable grid of situation/step cards
+Usage: {% include situations-grid.html items=items_array %}
+Each item should have: { title: "...", text: "..." }
+{% endcomment %}
+
+<div class="situations-grid">
+    {% for item in include.items %}
+    <div class="situation-card">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.text }}</p>
+    </div>
+    {% endfor %}
+</div>

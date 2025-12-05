@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign guides = site.data.guides %}
+
+<!-- Hero -->
+<section class="service-hero guide-index-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=t.guide_page.breadcrumb_guides %}
+        <h1 class="service-title">{{ t.guide_index.title }}</h1>
+        <p class="service-subtitle">{{ t.guide_index.subtitle }}</p>
+    </div>
+</section>
+
+<!-- Guides List -->
+<section class="service-content">
+    <div class="service-container">
+        <div class="guides-index-grid">
+            {% for guide in guides %}
+            <a href="/{{ lang }}/{{ guides_folder }}/{{ guide[lang].slug }}/" class="guide-index-card">
+                <div class="guide-index-icon"><i data-lucide="{{ guide.icon }}"></i></div>
+                <div class="guide-index-content">
+                    <h2>{{ guide[lang].title }}</h2>
+                    <p>{{ guide[lang].description }}</p>
+                    <span class="guide-index-link">{{ t.guide_index.read_guide }} <i data-lucide="arrow-right"></i></span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+        {% include cta-box.html title=t.guide_page.cta_title text=t.guide_page.cta_text %}
+    </div>
+</section>

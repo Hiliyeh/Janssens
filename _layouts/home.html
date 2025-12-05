@@ -1,0 +1,315 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign services = site.data.services %}
+{% assign guides = site.data.guides %}
+{% assign cities = site.data.cities %}
+{% assign home_faq = site.data.home_faq %}
+{% assign year_label = "ans" %}
+{% if lang == 'nl' %}{% assign year_label = "jaar" %}{% elsif lang == 'en' %}{% assign year_label = "years" %}{% endif %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span>{{ t.hero.title_1 }}</span><br>
+                <span class="title-accent">{{ t.hero.title_2 }}</span>
+            </h1>
+            <p class="hero-text">{{ t.hero.text }}</p>
+            <div class="hero-ctas">
+                <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+                    <i data-lucide="phone-call" class="icon"></i>
+                    <div class="btn-content">
+                        <span class="btn-label">{{ t.hero.cta_call }}</span>
+                        <span class="btn-number">{{ biz.phone_display }}</span>
+                    </div>
+                </a>
+                <a href="{{ biz.social.whatsapp }}" class="btn btn-outline" rel="noopener noreferrer" target="_blank">
+                    <i data-lucide="message-circle" class="icon"></i>
+                    <span>{{ t.hero.cta_whatsapp }}</span>
+                </a>
+            </div>
+            <div class="hero-trust">
+                {% assign trust_items = "trust_1,trust_2,trust_3" | split: "," %}
+                {% for item in trust_items %}
+                <div class="trust-item">
+                    <i data-lucide="check-circle" class="icon-sm"></i>
+                    <span>{{ t.hero[item] }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="hero-urgences">
+                <span class="urgences-label">{{ t.home.emergency_label | default: "Situation urgente ?" }}</span>
+                <div class="urgences-links">
+                    {% for e in site.data.emergencies limit:4 %}
+                    <a href="/{{ lang }}/{{ emergency_folder }}/{{ e[lang].slug }}/" class="urgence-link">
+                        <i data-lucide="{{ e.icon }}"></i>{{ e[lang].name }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-icon"><i data-lucide="clock" class="icon-lg"></i></div>
+                <div class="stat-value">30<span>min</span></div>
+                <div class="stat-label">{{ t.stats.delay }}</div>
+            </div>
+            <div class="stat-card stat-highlight">
+                <div class="stat-icon"><i data-lucide="shield-check" class="icon-lg"></i></div>
+                <div class="stat-value">10<span>+</span></div>
+                <div class="stat-label">{{ t.stats.experience }}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i data-lucide="map-pin" class="icon-lg"></i></div>
+                <div class="stat-value">96<span>+</span></div>
+                <div class="stat-label">{{ t.stats.cities }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-bg"></div>
+</section>
+
+{% include emergency-banner.html %}
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.services.tag }}</span>
+            <h2 class="section-title">{{ t.services.title }}</h2>
+            <p class="section-desc">{{ t.services.desc }}</p>
+        </header>
+        <div class="services-grid">
+            {% for service in services %}
+            <article class="service-card">
+                <img src="/assets/images/logo.png" alt="" class="service-card-logo" aria-hidden="true" loading="lazy" width="80" height="29">
+                <div class="service-icon"><i data-lucide="{{ service.icon }}"></i></div>
+                <h3>{{ service[lang].name }}</h3>
+                <p>{{ service[lang].description }}</p>
+                <ul class="service-tags"><li>{{ service[lang].tag }}</li></ul>
+                <a href="/{{ lang }}/{{ services_folder }}/{{ service[lang].slug }}/" class="service-link">{{ t.services.learn_more }} <i data-lucide="arrow-right"></i></a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Why Section -->
+<section class="pourquoi" id="pourquoi">
+    <div class="section-container">
+        <div class="pourquoi-grid">
+            <div class="pourquoi-content">
+                <span class="section-tag">{{ t.why.tag }}</span>
+                <h2 class="section-title">{{ t.why.title }}</h2>
+                <p class="pourquoi-intro">{{ t.why.intro }}</p>
+                <div class="pillars">
+                    {% assign pillar_icons = "zap,badge-check,receipt" | split: "," %}
+                    {% assign pillar_keys = "speed,expertise,transparency" | split: "," %}
+                    {% for key in pillar_keys %}
+                    <div class="pillar">
+                        <div class="pillar-icon"><i data-lucide="{{ pillar_icons[forloop.index0] }}"></i></div>
+                        <div class="pillar-content">
+                            <h3>{{ t.pillars[key].title }}</h3>
+                            <p>{{ t.pillars[key].text }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="pourquoi-image">
+                <img src="/assets/images/{{ lang }}/{{ page.hero_image | default: 'serrurier-intervention-domicile-bruxelles.jpg' }}" alt="{{ t.home.hero_image_alt | default: 'Serrurier Janssens' }}" loading="lazy" width="600" height="750">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Section -->
+<section class="confiance" id="confiance">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.live.tag }}</span>
+            <h2 class="section-title">{{ t.live.title }}</h2>
+        </header>
+        <div class="confiance-content">
+            <div class="confiance-image">
+                <img src="/assets/images/{{ lang }}/{{ page.map_image | default: 'carte-zones-intervention-serrurier-bruxelles.jpg' }}" alt="{{ t.home.map_image_alt | default: 'Carte zones intervention' }}" loading="lazy" width="1200" height="900">
+            </div>
+            <div class="live-feed">
+                <div class="live-feed-header">
+                    <div class="live-indicator"><span class="live-pulse"></span></div>
+                    <span class="live-count">{{ t.live.today }} <strong id="interventionCount">12</strong></span>
+                </div>
+                <div class="interventions-list" id="interventionsList"></div>
+                <div class="company-badge">
+                    <div class="badge-icon"><i data-lucide="shield-check"></i></div>
+                    <div class="badge-content">
+                        <strong>{{ t.live.badge }}</strong>
+                        <span>{% if lang == 'en' %}VAT{% else %}TVA{% endif %} {{ biz.vat }}</span>
+                    </div>
+                    <div class="badge-experience">
+                        <span class="exp-value">10+</span>
+                        <span class="exp-label">{{ year_label }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Zones Section -->
+<section class="zones" id="zones">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.zones.tag }}</span>
+            <h2 class="section-title">{{ t.zones.title }}</h2>
+            <p class="section-desc">{{ t.zones.desc }}</p>
+        </header>
+        <div class="zone-checker">
+            <div class="checker-input-wrapper">
+                <div class="checker-icon"><i data-lucide="search"></i></div>
+                <input type="text" id="zoneInput" class="checker-input" placeholder="{{ t.zones.placeholder }}" autocomplete="off">
+                <div class="checker-suggestions" id="zoneSuggestions"></div>
+            </div>
+            <div class="checker-result" id="checkerResult">
+                <div class="result-initial">
+                    <div class="result-icon-wrapper"><i data-lucide="map-pin"></i></div>
+                    <p>{{ t.zones.initial }}</p>
+                </div>
+                <div class="result-success" style="display: none;">
+                    <div class="result-icon-wrapper success"><i data-lucide="check-circle"></i></div>
+                    <div class="result-content">
+                        <h3>{{ t.zones.success.title }}</h3>
+                        <p class="result-commune"></p>
+                        <div class="result-details">
+                            <div class="result-detail"><i data-lucide="clock"></i><span>{{ t.zones.success.delay }}</span></div>
+                            <div class="result-detail"><i data-lucide="phone"></i><span>{{ t.zones.success.available }}</span></div>
+                        </div>
+                        <a href="tel:{{ biz.phone }}" class="result-cta"><i data-lucide="phone-call"></i><span>{{ t.zones.success.cta }}</span></a>
+                    </div>
+                </div>
+                <div class="result-notfound" style="display: none;">
+                    <div class="result-icon-wrapper notfound"><i data-lucide="map-pin-off"></i></div>
+                    <div class="result-content">
+                        <h3>{{ t.zones.not_found.title }}</h3>
+                        <p>{{ t.zones.not_found.text }}</p>
+                        <a href="tel:{{ biz.phone }}" class="result-cta secondary"><i data-lucide="phone"></i><span>{{ t.zones.not_found.cta }}</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zones-regions">
+            <h3 class="zones-regions-title">{{ t.zones.regions.title }}</h3>
+            <div class="zones-accordions">
+                {% assign regions = "brussels,walloon_brabant,flemish_brabant" | split: "," %}
+                {% assign region_keys = "brussels,walloon,flemish" | split: "," %}
+                {% assign counts = "19,27,50" | split: "," %}
+                {% for region in regions %}
+                {% assign idx = forloop.index0 %}
+                <details class="zone-accordion">
+                    <summary>
+                        <div class="zone-accordion-header">
+                            <i data-lucide="map-pin" class="icon-sm"></i>
+                            <span class="zone-accordion-title">{{ t.zones.regions[region_keys[idx]] }}</span>
+                        </div>
+                        <span class="zone-accordion-count">{{ counts[idx] }} {{ t.zones.municipalities | default: "communes" }}</span>
+                        <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                    </summary>
+                    <div class="zone-cities">
+                        {% for city in cities[region] %}
+                        <a href="/{{ lang }}/{{ cities_folder }}/{{ city.slug }}/">{{ city.name }}</a>
+                        {% endfor %}
+                    </div>
+                </details>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.faq.tag }}</span>
+            <h2 class="section-title">{{ t.faq.title }}</h2>
+        </header>
+        <div class="faq-list">
+            {% for faq in home_faq %}
+            <details class="faq-item">
+                <summary>
+                    <span>{{ faq[lang].question }}</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>{{ faq[lang].answer | replace: "%phone%", biz.phone_display }}</p>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Guides Section -->
+<section class="guides-section" id="guides">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.guides.tag | default: "Guides pratiques" }}</span>
+            <h2 class="section-title">{{ t.guides.title | default: "Conseils d'experts en serrurerie" }}</h2>
+            <p class="section-desc">{{ t.guides.desc | default: "Retrouvez nos guides pratiques" }}</p>
+        </header>
+        <div class="guides-grid-home">
+            {% for guide in guides %}
+            <a href="/{{ lang }}/{{ guides_folder }}/{{ guide[lang].slug }}/" class="guide-card-home">
+                <div class="guide-card-home-icon"><i data-lucide="{{ guide.icon }}"></i></div>
+                <div class="guide-card-home-content">
+                    <h3>{{ guide[lang].title }}</h3>
+                    <p>{{ guide[lang].excerpt }}</p>
+                </div>
+                <i data-lucide="arrow-right" class="guide-arrow"></i>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="guides-cta-home">
+            <a href="/{{ lang }}/{{ guides_folder }}/" class="btn btn-outline">{{ t.guides.view_all | default: "Voir tous les guides" }} <i data-lucide="arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="section-container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-tag">{{ t.contact.tag }}</span>
+                <h2 class="section-title">{{ t.contact.title }}</h2>
+                <p>{{ t.contact.text }}</p>
+                <div class="contact-methods">
+                    <a href="tel:{{ biz.phone }}" class="contact-card">
+                        <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+                        <div><strong>{{ t.contact.phone }}</strong><span>{{ biz.phone_display }}</span></div>
+                    </a>
+                    <a href="{{ biz.social.whatsapp }}" class="contact-card" rel="noopener noreferrer" target="_blank">
+                        <div class="contact-card-icon"><i data-lucide="message-circle"></i></div>
+                        <div><strong>{{ t.contact.whatsapp }}</strong><span>{{ t.contact.whatsapp_text }}</span></div>
+                    </a>
+                    <a href="mailto:{{ biz.email }}" class="contact-card">
+                        <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+                        <div><strong>{{ t.contact.email }}</strong><span>{{ biz.email }}</span></div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+                        <div><strong>{{ t.contact.address }}</strong><span>{{ biz.address.street }}, {{ biz.address.postal }} {{ biz.address.city }}</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include floating-cta.html %}
+
+{{ content }}

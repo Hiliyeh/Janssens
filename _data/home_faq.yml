@@ -1,0 +1,101 @@
+# Home Page FAQs - Multilingual
+# =============================
+
+- id: standard_vs_security
+  fr:
+    question: "Quelle est la différence entre une serrure standard et haute sécurité ?"
+    answer: "La serrure haute sécurité offre une meilleure protection contre les effractions grâce à des mécanismes renforcés, des cylindres anti-crochetage et anti-perçage. Elle est recommandée pour les portes d'entrée."
+  en:
+    question: "What is the difference between a standard and high-security lock?"
+    answer: "A high-security lock offers better protection against break-ins through reinforced mechanisms, anti-picking and anti-drilling cylinders. It is recommended for front doors."
+  nl:
+    question: "Wat is het verschil tussen een standaard en een hoogbeveiligingsslot?"
+    answer: "Een hoogbeveiligingsslot biedt betere bescherming tegen inbraak door versterkte mechanismen, anti-lock picking en anti-boor cilinders. Het wordt aanbevolen voor voordeuren."
+
+- id: working_hours
+  fr:
+    question: "Quels sont vos horaires d'intervention ?"
+    answer: "Nous sommes disponibles 24h/24 et 7j/7, y compris les jours fériés. Une urgence n'attend pas, et nous non plus."
+  en:
+    question: "What are your intervention hours?"
+    answer: "We are available 24/7, including public holidays. An emergency doesn't wait, and neither do we."
+  nl:
+    question: "Wat zijn uw interventie-uren?"
+    answer: "Wij zijn 24/7 beschikbaar, inclusief feestdagen. Een noodgeval wacht niet, en wij ook niet."
+
+- id: replace_lock
+  fr:
+    question: "Comment savoir si ma serrure doit être remplacée ?"
+    answer: "Si votre serrure est difficile à ouvrir, grince, montre des signes d'usure ou ne sécurise plus correctement votre porte, il est temps de la remplacer. Nous pouvons effectuer un diagnostic gratuit."
+  en:
+    question: "How do I know if my lock needs to be replaced?"
+    answer: "If your lock is difficult to open, squeaks, shows signs of wear, or no longer properly secures your door, it's time to replace it. We can perform a free diagnosis."
+  nl:
+    question: "Hoe weet ik of mijn slot vervangen moet worden?"
+    answer: "Als uw slot moeilijk opent, piept, tekenen van slijtage vertoont of uw deur niet meer goed beveiligt, is het tijd om het te vervangen. Wij kunnen een gratis diagnose uitvoeren."
+
+- id: all_brands
+  fr:
+    question: "Intervenez-vous sur toutes les marques de serrures ?"
+    answer: "Oui, nos techniciens sont formés pour intervenir sur toutes les marques et tous les types de serrures du marché : Vachette, Bricard, Fichet, Yale, Abus, et bien d'autres."
+  en:
+    question: "Do you work on all lock brands?"
+    answer: "Yes, our technicians are trained to work on all brands and types of locks on the market: Vachette, Bricard, Fichet, Yale, Abus, and many more."
+  nl:
+    question: "Werkt u met alle slotenmerken?"
+    answer: "Ja, onze technici zijn opgeleid om te werken met alle merken en types sloten op de markt: Vachette, Bricard, Fichet, Yale, Abus, en vele anderen."
+
+- id: armored_doors
+  fr:
+    question: "Pouvez-vous ouvrir les portes blindées ?"
+    answer: "Oui, nous avons l'expertise et l'équipement nécessaires pour ouvrir, réparer et installer des serrures sur portes blindées, sans les endommager."
+  en:
+    question: "Can you open armored doors?"
+    answer: "Yes, we have the expertise and equipment necessary to open, repair, and install locks on armored doors without damaging them."
+  nl:
+    question: "Kunt u gepantserde deuren openen?"
+    answer: "Ja, wij hebben de expertise en apparatuur om sloten op gepantserde deuren te openen, repareren en installeren zonder ze te beschadigen."
+
+- id: night_cost
+  fr:
+    question: "Combien coûte un serrurier de nuit à Bruxelles ?"
+    answer: "Nos tarifs sont transparents et communiqués avant intervention, même la nuit. Pas de supplément caché. Appelez le %phone% pour un devis immédiat gratuit."
+  en:
+    question: "How much does a night locksmith cost in Brussels?"
+    answer: "Our rates are transparent and communicated before intervention, even at night. No hidden fees. Call %phone% for a free immediate quote."
+  nl:
+    question: "Hoeveel kost een nachtslotenmaker in Brussel?"
+    answer: "Onze tarieven zijn transparant en worden vooraf gecommuniceerd, ook 's nachts. Geen verborgen kosten. Bel %phone% voor een gratis offerte."
+
+- id: locked_out
+  fr:
+    question: "Comment ouvrir une porte claquée sans clé ?"
+    answer: "N'essayez pas d'ouvrir vous-même, vous risquez d'endommager la serrure. Appelez un serrurier professionnel comme Janssens Serrurier qui utilise des techniques non-destructives pour ouvrir votre porte en quelques minutes."
+  en:
+    question: "How to open a locked door without a key?"
+    answer: "Don't try to open it yourself, you risk damaging the lock. Call a professional locksmith like Janssens Serrurier who uses non-destructive techniques to open your door in minutes."
+  nl:
+    question: "Hoe open je een dichtgeslagen deur zonder sleutel?"
+    answer: "Probeer het niet zelf te openen, u riskeert het slot te beschadigen. Bel een professionele slotenmaker zoals Janssens Serrurier die niet-destructieve technieken gebruikt om uw deur binnen enkele minuten te openen."
+
+- id: local_emergency
+  fr:
+    question: "Quel serrurier appeler en urgence à Uccle, Ixelles ou Waterloo ?"
+    answer: "Janssens Serrurier intervient à Uccle, Ixelles, Waterloo et toutes les communes de Bruxelles et du Brabant en moins de 30 minutes. Appelez le %phone%, disponible 24h/24."
+  en:
+    question: "Which locksmith to call for emergencies in Uccle, Ixelles or Waterloo?"
+    answer: "Janssens Serrurier operates in Uccle, Ixelles, Waterloo and all municipalities in Brussels and Brabant in less than 30 minutes. Call %phone%, available 24/7."
+  nl:
+    question: "Welke slotenmaker bellen voor noodgevallen in Ukkel, Elsene of Waterloo?"
+    answer: "Janssens Serrurier is actief in Ukkel, Elsene, Waterloo en alle gemeenten in Brussel en Brabant binnen 30 minuten. Bel %phone%, 24/7 beschikbaar."
+
+- id: burglary
+  fr:
+    question: "Changement de serrure après cambriolage : que faire ?"
+    answer: "Après un cambriolage, appelez d'abord la police puis contactez Janssens Serrurier au %phone%. Nous intervenons en urgence pour sécuriser votre domicile avec une serrure haute sécurité certifiée."
+  en:
+    question: "Lock change after burglary: what to do?"
+    answer: "After a burglary, first call the police then contact Janssens Serrurier at %phone%. We respond urgently to secure your home with a certified high-security lock."
+  nl:
+    question: "Slotvervanging na inbraak: wat te doen?"
+    answer: "Na een inbraak, bel eerst de politie en neem dan contact op met Janssens Serrurier op %phone%. Wij reageren urgent om uw huis te beveiligen met een gecertificeerd hoogbeveiligingsslot."

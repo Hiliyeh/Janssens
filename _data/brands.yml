@@ -1,0 +1,79 @@
+# Brands Data
+# ===========
+
+- id: fichet
+  name: "Fichet"
+  slug: "fichet"
+  logo_text: "FICHET"
+  description:
+    fr: "Expert certifi\u00e9 Fichet. Cylindres haute s\u00e9curit\u00e9, serrures multipoints."
+    en: "Certified Fichet expert. High-security cylinders, multipoint locks."
+    nl: "Gecertificeerde Fichet expert. Hoogbeveiligde cilinders, meerpuntssloten."
+  models:
+    - "Fichet 484"
+    - "Fichet 787"
+    - "Fichet 690"
+    - "Fichet Fortissime"
+    - "Fichet Vertipoint"
+    - "Fichet Spheris"
+
+- id: bricard
+  name: "Bricard"
+  slug: "bricard"
+  logo_text: "BRICARD"
+  description:
+    fr: "Sp\u00e9cialiste Bricard. S\u00e9ries Chifral, Serial, Dual XP."
+    en: "Bricard specialist. Chifral, Serial, Dual XP series."
+    nl: "Bricard specialist. Chifral, Serial, Dual XP series."
+  models:
+    - "Bricard Chifral S2"
+    - "Bricard Serial S"
+    - "Bricard Serial XP"
+    - "Bricard Dual XP"
+    - "Bricard Bloctout"
+    - "Bricard Supers\u00fbret\u00e9"
+    - "Bricard 8161"
+
+- id: vachette
+  name: "Vachette"
+  slug: "vachette"
+  logo_text: "VACHETTE"
+  description:
+    fr: "Expert Vachette. Cylindres Radial NT, serrures A2P."
+    en: "Vachette expert. Radial NT cylinders, A2P locks."
+    nl: "Vachette expert. Radial NT cilinders, A2P sloten."
+  models:
+    - "Vachette Radial NT"
+    - "Vachette Radial NT+"
+    - "Vachette V5"
+    - "Vachette Axi'Home"
+    - "Vachette Assa Abloy"
+
+- id: mul-t-lock
+  name: "Mul-T-Lock"
+  slug: "mul-t-lock"
+  logo_text: "MUL-T-LOCK"
+  description:
+    fr: "Sp\u00e9cialiste Mul-T-Lock. Technologie brevet\u00e9e haute s\u00e9curit\u00e9."
+    en: "Mul-T-Lock specialist. Patented high-security technology."
+    nl: "Mul-T-Lock specialist. Gepatenteerde hoogbeveiligde technologie."
+  models:
+    - "Mul-T-Lock Interactive+"
+    - "Mul-T-Lock MT5+"
+    - "Mul-T-Lock Classic"
+    - "Mul-T-Lock Integrator"
+
+- id: picard
+  name: "Picard"
+  slug: "picard"
+  logo_text: "PICARD"
+  description:
+    fr: "Expert Picard. Serrures Vigie, Presence, Diamant."
+    en: "Picard expert. Vigie, Presence, Diamant locks."
+    nl: "Picard expert. Vigie, Presence, Diamant sloten."
+  models:
+    - "Picard Vigie"
+    - "Picard Presence"
+    - "Picard Diamant"
+    - "Picard Kl\u00e9o"
+    - "Picard VAK"

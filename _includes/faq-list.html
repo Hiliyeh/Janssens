@@ -1,0 +1,19 @@
+{% comment %}
+FAQ List - Reusable FAQ accordion section
+Usage: {% include faq-list.html items=faq_array %}
+Each item should have: { question: "...", answer: "..." }
+{% endcomment %}
+
+<div class="faq-list">
+    {% for item in include.items %}
+    <details class="faq-item">
+        <summary>
+            {% if include.wrap_question %}<span>{% endif %}{{ item.question }}{% if include.wrap_question %}</span>{% endif %}
+            <i data-lucide="plus" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+            {% if include.wrap_answer %}<p>{{ item.answer }}</p>{% else %}{{ item.answer }}{% endif %}
+        </div>
+    </details>
+    {% endfor %}
+</div>

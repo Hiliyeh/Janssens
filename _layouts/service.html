@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign service = nil %}
+{% for s in site.data.services %}
+{% if s.id == page.service_id %}{% assign service = s %}{% endif %}
+{% endfor %}
+{% assign s_data = service[lang] %}
+{% assign advantages = "no_damage,response_time,available_247,free_quote,pay_after" | split: "," %}
+
+<!-- Hero -->
+<section class="service-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=s_data.title middle_text=t.breadcrumb.services middle_link="#services" %}
+        <div class="service-hero-icon"><i data-lucide="{{ service.icon }}"></i></div>
+        <h1 class="service-title">{{ s_data.title }}</h1>
+        <p class="service-subtitle">{{ s_data.description }} {{ t.service_page.hero_suffix }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="help-circle"></i> {{ t.service_page.when_title }}</h2>
+            {% include content-grid.html count=4 prefix="situation" source=t.service_page %}
+        </div>
+
+        {% include cta-box.html title=t.service_page.cta_title text=t.service_page.cta_text %}
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> {{ t.service_page.why_title }}</h2>
+            {% include advantages.html items=advantages source="common" extra_item=t.service_page.non_destructive %}
+        </div>
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="workflow"></i> {{ t.service_page.process_title }}</h2>
+            {% include content-grid.html count=4 prefix="step" source=t.service_page %}
+        </div>
+    </div>
+</section>
+
+{% include faq-section.html source=t.service_page count=3 prefix="faq" %}
+
+{% capture url_prefix %}/{{ lang }}/{{ services_folder }}/{% endcapture %}
+{% include related-links.html title=t.service_page.other_services items=site.data.services current_id=service.id url_prefix=url_prefix lang=lang %}
+
+{{ content }}

@@ -1,0 +1,13 @@
+{% comment %}
+CTA Box - Reusable call-to-action box
+Usage: {% include cta-box.html title="Title" text="Description" %}
+{% endcomment %}
+
+<div class="service-cta-box">
+    {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+    {% if include.text %}<p>{{ include.text }}</p>{% endif %}
+    <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+        <i data-lucide="phone" class="icon"></i>
+        <span>{{ biz.phone_display }}</span>
+    </a>
+</div>

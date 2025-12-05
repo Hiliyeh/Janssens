@@ -1,0 +1,62 @@
+# Guides Data
+# ===========
+
+- id: locked-out-what-to-do
+  icon: door-open
+  fr:
+    title: "Porte claqu\u00e9e : que faire ?"
+    slug: "porte-claquee-que-faire"
+    description: "Les bons r\u00e9flexes quand vous \u00eates bloqu\u00e9 dehors."
+  en:
+    title: "Locked Out: What to Do?"
+    slug: "locked-out-what-to-do"
+    description: "The right reflexes when you're locked out."
+  nl:
+    title: "Buitengesloten: Wat te Doen?"
+    slug: "buitengesloten-wat-te-doen"
+    description: "De juiste reflexen wanneer u buitengesloten bent."
+
+- id: avoid-locksmith-scams
+  icon: shield-alert
+  fr:
+    title: "\u00c9viter les arnaques serrurier"
+    slug: "eviter-arnaques-serrurier"
+    description: "Comment reconna\u00eetre et \u00e9viter les serruriers malhonnêtes."
+  en:
+    title: "Avoid Locksmith Scams"
+    slug: "avoid-locksmith-scams"
+    description: "How to recognize and avoid dishonest locksmiths."
+  nl:
+    title: "Slotenmaker Oplichting Vermijden"
+    slug: "slotenmaker-oplichting-vermijden"
+    description: "Hoe oneerlijke slotenmakers herkennen en vermijden."
+
+- id: choose-security-lock
+  icon: lock
+  fr:
+    title: "Choisir une serrure de s\u00e9curit\u00e9"
+    slug: "choisir-serrure-securite"
+    description: "Guide pour choisir la serrure adapt\u00e9e \u00e0 vos besoins."
+  en:
+    title: "Choosing a Security Lock"
+    slug: "choose-security-lock"
+    description: "Guide to choosing the right lock for your needs."
+  nl:
+    title: "Een Veiligheidsslot Kiezen"
+    slug: "veiligheidsslot-kiezen"
+    description: "Gids om het juiste slot voor uw behoeften te kiezen."
+
+- id: after-burglary
+  icon: shield
+  fr:
+    title: "Cambriolage : que faire ?"
+    slug: "cambriolage-que-faire"
+    description: "Les \u00e9tapes \u00e0 suivre apr\u00e8s un cambriolage."
+  en:
+    title: "After a Burglary: What to Do?"
+    slug: "after-burglary-what-to-do"
+    description: "Steps to follow after a burglary."
+  nl:
+    title: "Na een Inbraak: Wat te Doen?"
+    slug: "na-inbraak-wat-te-doen"
+    description: "Stappen na een inbraak."

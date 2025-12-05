@@ -1,0 +1,76 @@
+{% comment %}
+Page Hero - Reusable hero section for city/service/emergency/brand pages
+Usage: {% include page-hero.html
+    section_class="service-hero"
+    container_class="service-container"
+    title=title
+    subtitle=subtitle
+    icon=icon
+    icon_type="lucide|brand"
+    breadcrumbs=breadcrumbs
+    stats=stats
+%}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+
+<section class="{{ include.section_class | default: 'service-hero' }}">
+    <div class="{{ include.container_class | default: 'service-container' }}">
+        {% if include.breadcrumbs %}
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+            {% for item in include.breadcrumbs %}
+            <span>/</span>
+            {% if item.url %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+            {% else %}
+            <strong>{{ item.label }}</strong>
+            {% endif %}
+            {% endfor %}
+        </nav>
+        {% endif %}
+
+        {% if include.icon %}
+        <div class="service-hero-icon{% if include.icon_type == 'brand' %} brand-logo-hero{% endif %}">
+            {% if include.icon_type == 'brand' %}
+            <span class="brand-logo-text">{{ include.icon }}</span>
+            {% else %}
+            <i data-lucide="{{ include.icon }}"></i>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <h1 class="{{ include.title_class | default: 'service-title' }}">{{ include.title }}</h1>
+
+        {% if include.subtitle %}
+        <p class="{{ include.subtitle_class | default: 'service-subtitle' }}">{{ include.subtitle }}</p>
+        {% endif %}
+
+        <div class="{{ include.cta_class | default: 'service-cta' }}">
+            <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+                <i data-lucide="phone" class="icon"></i>
+                <div class="btn-content">
+                    <span class="btn-label">{{ t.hero.cta_call }}</span>
+                    <span class="btn-number">{{ biz.phone_display }}</span>
+                </div>
+            </a>
+            <a href="https://wa.me/{{ biz.phone | remove: '+' }}" class="btn btn-outline-light" rel="noopener noreferrer" target="_blank">
+                <i data-lucide="message-circle" class="icon"></i>
+                <span>{{ t.hero.cta_whatsapp }}</span>
+            </a>
+        </div>
+
+        {% if include.stats %}
+        <div class="commune-stats">
+            {% for stat in include.stats %}
+            <div class="commune-stat">
+                <i data-lucide="{{ stat.icon }}"></i>
+                <span>{{ stat.text }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>

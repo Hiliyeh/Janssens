@@ -1,0 +1,42 @@
+{% comment %}
+Generic FAQ section component
+Usage: {% include faq-section.html source=t.service_page count=3 prefix="faq" city=page.city_name %}
+{% endcomment %}
+
+<section class="service-faq">
+    <div class="service-container">
+        <h2 class="service-section-title">
+            <i data-lucide="message-circle-question"></i>
+            {{ include.title | default: t.faq.title }}
+        </h2>
+        <div class="faq-list">
+            {% assign faq_count = include.count | default: 3 %}
+            {% assign faq_prefix = include.prefix | default: "faq" %}
+            {% for i in (1..faq_count) %}
+            {% capture q_key %}{{ faq_prefix }}_{{ i }}_q{% endcapture %}
+            {% capture a_key %}{{ faq_prefix }}_{{ i }}_a{% endcapture %}
+            {% if include.source[q_key] %}
+            <details class="faq-item">
+                <summary>
+                    {% if include.city %}
+                        {{ include.source[q_key] | replace: "%city%", include.city }}
+                    {% else %}
+                        {{ include.source[q_key] }}
+                    {% endif %}
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        {% if include.city %}
+                            {{ include.source[a_key] | replace: "%city%", include.city }}
+                        {% else %}
+                            {{ include.source[a_key] }}
+                        {% endif %}
+                    </p>
+                </div>
+            </details>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

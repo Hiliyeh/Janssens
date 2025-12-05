@@ -1,0 +1,83 @@
+# Janssens Serrurier - Jekyll Configuration
+# ==========================================
+
+# Site Settings
+title: "Janssens Serrurier"
+description: "Serrurier professionnel Bruxelles, Brabant wallon & flamand. Intervention 24h/24, 7j/7."
+url: "https://janssensserrurier.be"
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.py"
+  - README.md
+  - doc/
+
+# Collections
+collections:
+  cities_fr:
+    output: true
+    permalink: /fr/cities/:name/
+  cities_en:
+    output: true
+    permalink: /en/cities/:name/
+  cities_nl:
+    output: true
+    permalink: /nl/cities/:name/
+
+# Default values
+defaults:
+  # French pages
+  - scope:
+      path: "fr"
+    values:
+      lang: "fr"
+      lang_name: "Fran\u00e7ais"
+  # English pages
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+      lang_name: "English"
+  # Dutch pages
+  - scope:
+      path: "nl"
+    values:
+      lang: "nl"
+      lang_name: "Nederlands"
+  # City collections
+  - scope:
+      type: "cities_fr"
+    values:
+      layout: "city"
+      lang: "fr"
+  - scope:
+      type: "cities_en"
+    values:
+      layout: "city"
+      lang: "en"
+  - scope:
+      type: "cities_nl"
+    values:
+      layout: "city"
+      lang: "nl"
+
+# Localization
+languages: ["fr", "en", "nl"]
+default_lang: "fr"

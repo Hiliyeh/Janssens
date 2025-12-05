@@ -3683,6 +3683,89 @@ section {
     }
 }
 
+/* Legal page layout (using service layout) */
+.legal-page-hero {
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.legal-page-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.legal-page-icon svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+    stroke: white;
+}
+
+.legal-date {
+    color: var(--color-gray-500);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.legal-section {
+    margin-bottom: 2.5rem;
+}
+
+.legal-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--color-gray-900);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary-light);
+}
+
+.legal-section p {
+    color: var(--color-gray-700);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.legal-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.legal-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-700);
+    line-height: 1.6;
+}
+
+.legal-section li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+.legal-section a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
 /* =====================================================
    PAGES COMMUNES - Local SEO Pages
    ===================================================== */
@@ -6764,6 +6847,27 @@ section {
 /* Guide Page Hero with Icon */
 .guide-page-hero {
     text-align: center;
+}
+
+.guide-page-hero .service-subtitle {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-page-hero .service-cta {
+    justify-content: center;
+}
+
+.guide-page-hero .btn-content {
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .guide-page-hero .service-cta .btn {
+        width: auto;
+        max-width: 100%;
+    }
 }
 
 .guide-page-icon {

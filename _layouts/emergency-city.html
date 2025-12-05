@@ -1,0 +1,152 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign emergency = nil %}
+{% for e in site.data.emergencies %}
+{% if e.id == page.emergency_id %}
+{% assign emergency = e %}
+{% endif %}
+{% endfor %}
+
+<!-- Hero -->
+<section class="urgence-hero">
+    <div class="urgence-container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+            <span>/</span>
+            <a href="/{{ lang }}/{% if lang == 'fr' %}urgence{% elsif lang == 'nl' %}noodgeval{% else %}emergency{% endif %}/{{ emergency[lang].slug }}/">{{ emergency[lang].name }}</a>
+            <span>/</span>
+            <strong>{{ page.city_name }}</strong>
+        </nav>
+
+        <div class="urgence-hero-icon"><i data-lucide="{{ emergency.icon }}"></i></div>
+        <h1 class="urgence-title">{{ emergency[lang].name }}<br><span class="urgence-location">{{ t.emergency_city.in }} {{ page.city_name }}</span></h1>
+
+        <p class="urgence-subtitle">{{ emergency[lang].description }} {{ t.emergency_city.arrival_text | replace: '%city%', page.city_name }}</p>
+
+        <div class="urgence-cta-buttons">
+            <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+                <i data-lucide="phone-call" class="icon"></i>
+                <div class="btn-content">
+                    <span class="btn-label">{{ t.hero.cta_call }}</span>
+                    <span class="btn-number">{{ biz.phone_display }}</span>
+                </div>
+            </a>
+            <a href="https://wa.me/{{ biz.phone | remove: '+' }}" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:white" rel="noopener noreferrer" target="_blank">
+                <i data-lucide="message-circle" class="icon"></i>
+                <span>{{ t.hero.cta_whatsapp }}</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="urgence-content">
+    <div class="urgence-container">
+        <div class="urgence-section">
+            <h2 class="urgence-section-title">
+                <i data-lucide="alert-triangle"></i>
+                {{ t.emergency_city.tips_title | replace: '%emergency%', emergency[lang].name | replace: '%city%', page.city_name }}
+            </h2>
+            <div class="tips-grid">
+                <div class="tip-card"><i data-lucide="check-circle"></i><span>{{ t.emergency_city.tip_1 }}</span></div>
+                <div class="tip-card"><i data-lucide="check-circle"></i><span>{{ t.emergency_city.tip_2 }}</span></div>
+                <div class="tip-card"><i data-lucide="check-circle"></i><span>{{ t.emergency_city.tip_3 }}</span></div>
+                <div class="tip-card"><i data-lucide="check-circle"></i><span>{{ t.emergency_city.tip_4 }}</span></div>
+            </div>
+        </div>
+
+        <div class="urgence-cta-box">
+            <h3>{{ emergency[lang].name }} {{ t.emergency_city.in }} {{ page.city_name }} ?</h3>
+            <p>{{ t.emergency_city.cta_text }}</p>
+            <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+                <i data-lucide="phone" class="icon"></i>
+                <span>{{ biz.phone_display }}</span>
+            </a>
+        </div>
+
+        <div class="urgence-section">
+            <h2 class="urgence-section-title">
+                <i data-lucide="map-pin"></i>
+                {{ t.emergency_city.why_us_title | replace: '%city%', page.city_name }}
+            </h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i data-lucide="clock"></i>
+                    <h4>{{ t.emergency_city.adv_1_title }}</h4>
+                    <p>{{ t.emergency_city.adv_1_text | replace: '%city%', page.city_name }}</p>
+                </div>
+                <div class="advantage-card">
+                    <i data-lucide="euro"></i>
+                    <h4>{{ t.emergency_city.adv_2_title }}</h4>
+                    <p>{{ t.emergency_city.adv_2_text }}</p>
+                </div>
+                <div class="advantage-card">
+                    <i data-lucide="shield-check"></i>
+                    <h4>{{ t.emergency_city.adv_3_title }}</h4>
+                    <p>{{ t.emergency_city.adv_3_text }}</p>
+                </div>
+                <div class="advantage-card">
+                    <i data-lucide="file-check"></i>
+                    <h4>{{ t.emergency_city.adv_4_title }}</h4>
+                    <p>{{ biz.vat }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="urgence-faq">
+    <div class="urgence-container">
+        <h2 class="urgence-section-title">
+            <i data-lucide="message-circle-question"></i>
+            {{ t.faq.title }}
+        </h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>
+                    {{ t.emergency_city.faq_1_q | replace: '%emergency%', emergency[lang].name }}
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>{{ t.emergency_city.faq_1_a }}</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    {{ t.emergency_city.faq_2_q }}
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>{{ t.emergency_city.faq_2_a }}</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Related Links -->
+<section class="related-links">
+    <div class="urgence-container">
+        <h3>{{ t.emergency_city.other_emergencies | replace: '%city%', page.city_name }}</h3>
+        <div class="links-grid">
+            <a href="/{{ lang }}/{% if lang == 'fr' %}cities{% elsif lang == 'nl' %}cities{% else %}cities{% endif %}/{{ page.city_slug }}/" class="related-link">
+                <i data-lucide="map-pin"></i>
+                <span>{{ t.emergency_city.locksmith_in }} {{ page.city_name }}</span>
+            </a>
+            {% for e in site.data.emergencies %}
+            {% if e.id != emergency.id %}
+            <a href="/{{ lang }}/{% if lang == 'fr' %}urgence{% elsif lang == 'nl' %}noodgeval{% else %}emergency{% endif %}/{{ page.city_slug }}/{{ e[lang].slug }}/" class="related-link">
+                <i data-lucide="{{ e.icon }}"></i>
+                <span>{{ e[lang].name }} {{ page.city_name }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{{ content }}

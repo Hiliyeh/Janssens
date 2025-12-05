@@ -1,0 +1,146 @@
+# Services Data
+# =============
+
+- id: door-opening
+  icon: door-open
+  fr:
+    name: "Ouverture de porte"
+    slug: "ouverture-porte"
+    title: "Ouverture de Porte"
+    description: "Porte claquée, clé perdue ou serrure bloquée ? Notre serrurier intervient en 30 minutes."
+    city_desc: "Porte claquée, clé perdue ou cassée, notre serrurier ouvre votre porte sans dégât dans 95% des cas."
+    tag: "Urgence 24/7"
+  en:
+    name: "Door Opening"
+    slug: "door-opening"
+    title: "Door Opening"
+    description: "Locked out, lost key or jammed lock? Our locksmith arrives in 30 minutes."
+    city_desc: "Locked out, lost or broken key, our locksmith opens your door without damage in 95% of cases."
+    tag: "Emergency 24/7"
+  nl:
+    name: "Deuropening"
+    slug: "deuropening"
+    title: "Deuropening"
+    description: "Deur dichtgevallen, sleutel verloren of slot geblokkeerd? Onze slotenmaker is er binnen 30 minuten."
+    city_desc: "Deur dichtgevallen, sleutel verloren of gebroken, onze slotenmaker opent uw deur zonder schade in 95% van de gevallen."
+    tag: "Noodgeval 24/7"
+
+- id: lock-replacement
+  icon: lock
+  fr:
+    name: "Remplacement serrure"
+    slug: "remplacement-serrure"
+    title: "Remplacement de Serrure"
+    description: "Installation et remplacement de serrures de haute sécurité. Toutes marques."
+    city_desc: "Installation de serrures haute sécurité, cylindres européens, serrures multipoints pour les habitants de %city%."
+    tag: "Haute sécurité"
+  en:
+    name: "Lock Replacement"
+    slug: "lock-replacement"
+    title: "Lock Replacement"
+    description: "Installation and replacement of high-security locks. All brands."
+    city_desc: "Installation of high-security locks, European cylinders, multipoint locks for %city% residents."
+    tag: "High security"
+  nl:
+    name: "Slotvervanging"
+    slug: "slotvervanging"
+    title: "Slotvervanging"
+    description: "Installatie en vervanging van hoogbeveiligde sloten. Alle merken."
+    city_desc: "Installatie van hoogbeveiligde sloten, Europese cilinders, meerpuntssloten voor inwoners van %city%."
+    tag: "Hoge veiligheid"
+
+- id: key-duplication
+  icon: key
+  fr:
+    name: "Double de clés"
+    slug: "double-cles"
+    title: "Double de Clés"
+    description: "Reproduction de tous types de clés : standard, sécurisées, badges."
+    city_desc: "Reproduction de clés plates, clés à pompe, clés sécurisées pour les résidents de %city%."
+    tag: "Toutes clés"
+  en:
+    name: "Key Duplication"
+    slug: "key-duplication"
+    title: "Key Duplication"
+    description: "Duplication of all key types: standard, security, badges."
+    city_desc: "Duplication of flat keys, pump keys, security keys for %city% residents."
+    tag: "All keys"
+  nl:
+    name: "Sleutel kopië"
+    slug: "sleutel-kopie"
+    title: "Sleutel Kopië"
+    description: "Reproductie van alle soorten sleutels: standaard, beveiligd, badges."
+    city_desc: "Reproductie van platte sleutels, pompsleutels, beveiligde sleutels voor inwoners van %city%."
+    tag: "Alle sleutels"
+
+- id: door-reinforcement
+  icon: shield
+  fr:
+    name: "Blindage de porte"
+    slug: "blindage-porte"
+    title: "Blindage de Porte"
+    description: "Renforcement de portes existantes. Protection anti-effraction."
+    city_desc: "Renforcez la sécurité de votre domicile à %city% avec nos solutions de blindage."
+    tag: "Sécurité renforcée"
+  en:
+    name: "Door Reinforcement"
+    slug: "door-reinforcement"
+    title: "Door Reinforcement"
+    description: "Reinforcement of existing doors. Anti-burglary protection."
+    city_desc: "Strengthen your home security in %city% with our reinforcement solutions."
+    tag: "Enhanced security"
+  nl:
+    name: "Deurbepantsering"
+    slug: "deurbepantsering"
+    title: "Deurbepantsering"
+    description: "Versterking van bestaande deuren. Anti-inbraakbeveiliging."
+    city_desc: "Versterk de beveiliging van uw woning in %city% met onze versterkingsoplossingen."
+    tag: "Verhoogde beveiliging"
+
+- id: safe
+  icon: box
+  fr:
+    name: "Coffre-fort"
+    slug: "coffre-fort"
+    title: "Coffre-fort"
+    description: "Ouverture, installation et dépannage de coffres-forts."
+    city_desc: "Ouverture, installation et réparation de coffres-forts pour particuliers et entreprises de %city%."
+    tag: "Sur place"
+  en:
+    name: "Safe"
+    slug: "safe"
+    title: "Safe Services"
+    description: "Opening, installation and repair of safes."
+    city_desc: "Opening, installation and repair of safes for individuals and businesses in %city%."
+    tag: "On site"
+  nl:
+    name: "Kluis"
+    slug: "kluis"
+    title: "Kluisdiensten"
+    description: "Opening, installatie en reparatie van kluizen."
+    city_desc: "Opening, installatie en reparatie van kluizen voor particulieren en bedrijven in %city%."
+    tag: "Ter plaatse"
+
+- id: automotive
+  icon: car
+  fr:
+    name: "Serrurerie automobile"
+    slug: "serrurerie-automobile"
+    title: "Serrurerie Automobile"
+    description: "Ouverture de véhicules, clés de voiture perdues, programmation."
+    city_desc: "Ouverture de voiture, remplacement de clé de voiture pour les automobilistes de %city%."
+    tag: "Express"
+  en:
+    name: "Automotive Locksmith"
+    slug: "automotive-locksmith"
+    title: "Automotive Locksmith"
+    description: "Vehicle opening, lost car keys, key programming."
+    city_desc: "Car opening, car key replacement for motorists in %city%."
+    tag: "Express"
+  nl:
+    name: "Auto slotenmaker"
+    slug: "auto-slotenmaker"
+    title: "Auto Slotenmaker"
+    description: "Voertuigopening, verloren autosleutels, programmering."
+    city_desc: "Auto openen, autosleutel vervangen voor automobilisten in %city%."
+    tag: "Express"

@@ -1,0 +1,36 @@
+{% comment %}
+Generic related links section
+Usage: {% include related-links.html
+         title=t.service_page.other_services
+         items=site.data.services
+         current_id=service.id
+         url_prefix="/fr/services/"
+         name_key="name"
+         slug_key="slug"
+         lang=lang
+%}
+{% endcomment %}
+
+<section class="commune-neighbors">
+    <div class="commune-container">
+        <p class="neighbors-title">{{ include.title }}</p>
+        <div class="neighbors-grid">
+            {% for item in include.items %}
+            {% if item.id != include.current_id and item.slug != include.current_id %}
+                {% if include.lang %}
+                    {% assign item_data = item[include.lang] %}
+                    {% assign item_name = item_data[include.name_key] | default: item_data.name %}
+                    {% assign item_slug = item_data[include.slug_key] | default: item_data.slug %}
+                {% else %}
+                    {% assign item_name = item[include.name_key] | default: item.name %}
+                    {% assign item_slug = item[include.slug_key] | default: item.slug %}
+                {% endif %}
+                <a href="{{ include.url_prefix }}{{ item_slug }}/" class="neighbor-link">{{ item_name }}</a>
+            {% endif %}
+            {% endfor %}
+            {% if include.extra_link %}
+                <a href="{{ include.extra_link_url }}" class="neighbor-link">{{ include.extra_link }} &rarr;</a>
+            {% endif %}
+        </div>
+    </div>
+</section>

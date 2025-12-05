@@ -1,0 +1,124 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign services = site.data.services %}
+
+<!-- Hero -->
+<section class="commune-hero">
+    <div class="commune-container">
+        {% include breadcrumb.html items=page.city_name middle_text=t.breadcrumb.cities middle_link="#zones" %}
+
+        <h1 class="commune-title">
+            {{ t.city.title_prefix }} <span>{{ page.city_name }}</span>
+        </h1>
+
+        <p class="commune-subtitle">
+            {{ t.city.subtitle | replace: "%city%", page.city_name }}
+        </p>
+
+        <div class="commune-cta-group">
+            {% include hero-cta.html %}
+        </div>
+
+        <div class="commune-stats">
+            <div class="commune-stat">
+                <i data-lucide="clock"></i>
+                <span>{{ t.city.response_time | replace: "%city%", page.city_name }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="shield-check"></i>
+                <span>{{ t.common.free_quote }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="credit-card"></i>
+                <span>{{ t.common.pay_after }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="commune-content">
+    <div class="commune-container">
+
+        <div class="commune-section">
+            <h2><i data-lucide="wrench"></i> {{ t.city.services_title | replace: "%city%", page.city_name }}</h2>
+            <p>{{ t.city.services_intro | replace: "%city%", page.city_name }}</p>
+            <ul>
+                {% for service in services %}
+                <li>
+                    <i data-lucide="{{ service.icon }}"></i>
+                    <div><strong>{{ service[lang].name }} {{ t.city.at }} {{ page.city_name }}</strong> – {{ service[lang].city_desc | replace: "%city%", page.city_name }}</div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% capture cta_title %}{{ t.city.emergency_title | replace: "%city%", page.city_name }}{% endcapture %}
+        {% capture cta_text %}{{ t.city.emergency_text | replace: "%city%", page.city_name }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=cta_text %}
+
+        <div class="commune-section">
+            <h2><i data-lucide="zap"></i> {{ t.city.why_title | replace: "%city%", page.city_name }}</h2>
+            <p>{{ t.city.why_intro | replace: "%city%", page.city_name }}</p>
+            <ul>
+                <li>
+                    <i data-lucide="clock"></i>
+                    <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city.why_speed | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="euro"></i>
+                    <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city.why_price | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="thumbs-up"></i>
+                    <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city.why_no_damage | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="award"></i>
+                    <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city.why_pro | replace: "%city%", page.city_name | replace: "%region%", page.region_name }}</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="commune-section">
+            <h2><i data-lucide="map-pin"></i> {{ t.city.zone_title | replace: "%city%", page.city_name }}</h2>
+            <p>{{ t.city.zone_text_1 | replace: "%city%", page.city_name | replace: "%region%", page.region_name }}</p>
+            <p>{{ t.city.zone_text_2 | replace: "%city%", page.city_name }}</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Brands -->
+{% capture brands_url %}/{{ lang }}/{{ brands_folder }}/{% endcapture %}
+{% include related-grid.html title=t.city.brands_title items=site.data.brands url_prefix=brands_url name_key="name" slug_key="slug" section_style="padding:2rem 0;background:white" %}
+
+<!-- FAQ Section -->
+<section class="commune-faq">
+    <div class="commune-container">
+        <h2 class="faq-title"><i data-lucide="message-circle-question"></i> {{ t.city.faq_title | replace: "%city%", page.city_name }}</h2>
+        <div class="faq-list">
+            {% for i in (1..5) %}
+            {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+            {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+            <details class="faq-item">
+                <summary>{{ t.city[q_key] | replace: "%city%", page.city_name }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.city[a_key] | replace: "%city%", page.city_name }}</div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Nearby Cities -->
+{% if page.nearby_cities %}
+{% capture nearby_title %}{{ t.city.nearby_intro | replace: "%city%", page.city_name }}{% endcapture %}
+{% capture cities_url %}/{{ lang }}/{{ cities_folder }}/{% endcapture %}
+{% capture zones_url %}/{{ lang }}/#zones{% endcapture %}
+{% include related-grid.html title=nearby_title items=page.nearby_cities url_prefix=cities_url name_key="name" slug_key="slug" name_prefix=t.city.title_prefix show_all_link=zones_url show_all_text=t.city.see_all %}
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,56 @@
+# Business Information
+# ====================
+
+name: "Janssens Serrurier"
+company: "LAMRO GROUP"
+vat: "BE0712.625.742"
+
+# Contact
+phone: "+32495205400"
+phone_display: "0495 205 400"
+phone_international: "+32 495 20 54 00"
+email: "info@janssensserrurier.be"
+website: "janssensserrurier.be"
+
+# Address
+address:
+  street: "Chauss\u00e9e de Louvain 629"
+  postal: "1030"
+  city: "Schaerbeek"
+  region: "Bruxelles"
+  country: "Belgium"
+  country_code: "BE"
+  geo:
+    lat: 50.8503
+    lng: 4.3517
+
+# Hours
+hours: "24/7"
+opening_hours:
+  - "Mo-Su 00:00-24:00"
+
+# Social Media
+social:
+  facebook: "https://facebook.com/janssenslocksmith"
+  whatsapp: "https://wa.me/32495205400"
+  messenger: "https://m.me/janssenslocksmith"
+  linkedin: "https://linkedin.com/company/janssens-serrurier"
+
+# Key Statistics
+stats:
+  experience_years: 10
+  cities_covered: 96
+  response_time_minutes: 30
+  no_damage_rate: 95
+  reviews_count: 127
+  rating: 4.8
+
+# SEO
+og_image: "/assets/images/og-image.png"
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.svg"
+
+# Credit
+designer:
+  name: "Hiliyeh Bashir"
+  url: "https://www.linkedin.com/in/hiliyeh-bashir/"

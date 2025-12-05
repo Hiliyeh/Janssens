@@ -1,0 +1,399 @@
+# French Translations
+# ===================
+
+# Navigation
+nav:
+  services: "Services"
+  why_us: "Pourquoi nous"
+  trust: "Engagements"
+  areas: "Intervention"
+  contact: "Contact"
+  call: "Appeler"
+  whatsapp: "WhatsApp"
+
+# Hero Section
+hero:
+  title_1: "Votre serrurier"
+  title_2: "Bruxelles, Brabant wallon & flamand"
+  text: "Porte claquée ? Clé perdue ? Nous arrivons en <strong>30 minutes</strong>, sans abîmer votre porte. Plus de <strong>10 ans</strong> d'expérience, entreprise enregistrée, prix annoncé avant intervention."
+  cta_call: "Appeler maintenant"
+  cta_whatsapp: "WhatsApp"
+  trust_1: "Sans dégât"
+  trust_2: "Prix fixe annoncé"
+  trust_3: "Paiement après service"
+
+# Stats
+stats:
+  delay: "Délai moyen"
+  experience: "Ans d'expérience"
+  cities: "Communes couvertes"
+  delay_value: "30 min"
+  experience_value: "10+"
+  cities_value: "96"
+
+# Emergency Banner
+emergency:
+  title: "Porte claquée ? Clé perdue ou cassée ?"
+  text: "Un serrurier qualifié arrive chez vous en moins de 30 minutes."
+  btn: "Appel d'urgence"
+  badge: "Urgence 24h/24"
+
+# Services Section
+services:
+  tag: "Nos services"
+  title: "Solutions de serrurerie professionnelles"
+  desc: "Des interventions rapides et soignées pour tous vos besoins en sécurité"
+  learn_more: "En savoir plus"
+
+# Why Section
+why:
+  tag: "Pourquoi Janssens ?"
+  title: "La confiance se construit"
+  intro: "Depuis plus de 10 ans, nous intervenons auprès des particuliers, entreprises et institutions de Bruxelles et du Brabant. Notre réputation repose sur trois engagements."
+
+# Pillars
+pillars:
+  speed:
+    title: "Rapidité"
+    text: "Intervention garantie en moins de 30 minutes, 24h/24 et 7j/7, jours fériés inclus."
+  expertise:
+    title: "Expertise"
+    text: "Techniciens certifiés, équipement professionnel, travail soigné et sans dégât."
+  transparency:
+    title: "Transparence"
+    text: "Prix annoncé avant intervention. Aucune surprise. Paiement uniquement après service."
+
+# Trust
+trust:
+  available:
+    title: "Disponible 24h/24"
+    text: "Jours fériés et weekends inclus"
+  registered:
+    title: "Entreprise enregistrée"
+    text: "TVA BE0712.625.742 · LAMRO GROUP"
+  certified:
+    title: "Techniciens certifiés"
+    text: "Formation continue sur toutes les marques"
+
+# Live Feed
+live:
+  tag: "Notre couverture"
+  title: "Interventions en direct"
+  today: "Aujourd'hui:"
+  badge: "Entreprise enregistrée"
+  status:
+    enroute: "En route"
+    ongoing: "En cours"
+    completed: "Terminé"
+
+# Zones Section
+zones:
+  tag: "Zones d'intervention"
+  title: "Êtes-vous dans notre zone ?"
+  desc: "Vérifiez en 1 seconde si nous intervenons chez vous"
+  placeholder: "Entrez votre commune..."
+  initial: "Tapez le nom de votre commune pour vérifier"
+  success:
+    title: "Bonne nouvelle !"
+    text: "Nous intervenons à"
+    delay: "Intervention en <strong>~30 min</strong>"
+    available: "Disponible <strong>24h/24</strong>"
+    cta: "Appeler maintenant"
+  not_found:
+    title: "Zone non listée"
+    text: "Contactez-nous, nous pouvons peut-être intervenir."
+    cta: "Nous contacter"
+  municipalities: "communes"
+  regions:
+    title: "Nos 96 communes couvertes :"
+    brussels: "Bruxelles-Capitale"
+    walloon: "Brabant wallon"
+    flemish: "Brabant flamand"
+
+# Home Page
+home:
+  emergency_label: "Situation urgente ?"
+  hero_image_alt: "Serrurier Janssens intervenant à domicile à Bruxelles"
+  map_image_alt: "Carte zones intervention serrurier Bruxelles et Brabant"
+
+# Guides Section
+guides:
+  tag: "Guides pratiques"
+  title: "Conseils d'experts en serrurerie"
+  desc: "Retrouvez nos guides pratiques pour tout savoir sur la serrurerie"
+  view_all: "Voir tous les guides"
+
+# FAQ Section
+faq:
+  tag: "FAQ"
+  title: "Questions fréquentes"
+
+# Contact Section
+contact:
+  tag: "Contact"
+  title: "Besoin d'un serrurier ?"
+  text: "Appelez-nous directement ou envoyez-nous un message. Nous répondons en quelques minutes."
+  phone: "Téléphone"
+  whatsapp: "WhatsApp"
+  whatsapp_text: "Réponse rapide"
+  email: "Email"
+  address: "Adresse"
+
+# Footer
+footer:
+  desc: "Votre expert en serrurerie à Bruxelles depuis plus de 10 ans. Disponible 24h/24, 7j/7 pour toutes vos urgences."
+  services: "Services"
+  company: "Entreprise"
+  guides: "Guides & Conseils"
+  about: "À propos"
+  partners: "Partenaires"
+  terms: "Conditions d'utilisation"
+  privacy: "Politique de confidentialité"
+  credit: "Conçu par"
+
+# Breadcrumb
+breadcrumb:
+  home: "Accueil"
+  services: "Services"
+  cities: "Zones d'intervention"
+  emergency: "Urgences"
+  brands: "Marques"
+  guides: "Guides"
+
+# Common
+common:
+  call_now: "Appeler le"
+  learn_more: "En savoir plus"
+  back: "Retour"
+  all_services: "Tous les services"
+  free_quote: "Devis gratuit sur place"
+  response_time: "Arrivée en 30 min"
+  no_damage: "Sans dégât 95%"
+  available_247: "Disponible 24h/24"
+  fixed_price: "Prix fixe annoncé"
+  pay_after: "Paiement après intervention"
+
+# City Pages
+city:
+  title_prefix: "Serrurier à"
+  at: "à"
+  subtitle: "Besoin d'un <strong>serrurier à %city%</strong> ? Janssens Serrurier intervient rapidement dans toute la commune de <strong>%city%</strong> et ses environs. Disponible <strong>24h/24 et 7j/7</strong>, notre équipe arrive chez vous en <strong>30 minutes maximum</strong>."
+  services_title: "Nos services de serrurerie à %city%"
+  services_intro: "En tant que <strong>serrurier professionnel à %city%</strong>, nous proposons une gamme complète de services pour répondre à toutes vos urgences et besoins en serrurerie. Que vous soyez au centre de %city% ou dans les quartiers périphériques, notre technicien intervient rapidement."
+  response_time: "Intervention en 30 min à %city%"
+  emergency_title: "Urgence serrurerie à %city% ?"
+  emergency_text: "Notre serrurier est disponible 24h/24 pour intervenir à %city%"
+  why_title: "Pourquoi choisir Janssens Serrurier à %city% ?"
+  why_intro: "Les habitants de <strong>%city%</strong> nous font confiance depuis plus de 10 ans pour tous leurs besoins en serrurerie. Voici pourquoi notre service de <strong>serrurier à %city%</strong> se distingue :"
+  why_speed: "Nous arrivons en 30 minutes maximum à %city%, que ce soit le jour, la nuit, le week-end ou les jours fériés."
+  transparent_price: "Prix transparents"
+  why_price: "Devis gratuit sur place à %city%. Pas de mauvaise surprise, le prix annoncé est le prix final."
+  no_damage: "Ouverture sans dégât"
+  why_no_damage: "Notre technicien à %city% utilise des techniques non destructives dans 95% des interventions."
+  professionalism: "Professionnalisme"
+  why_pro: "Serrurier qualifié et expérimenté, intervenant régulièrement à %city% et en %region%."
+  zone_title: "Zone d'intervention autour de %city%"
+  zone_text_1: "Basés à Bruxelles, nous intervenons rapidement à <strong>%city%</strong> ainsi que dans toutes les communes de <strong>%region%</strong>. Si vous habitez à %city% ou dans les environs, notre serrurier peut être chez vous en moins de 30 minutes."
+  zone_text_2: "Notre connaissance de %city% et de ses quartiers nous permet d'optimiser nos trajets et d'intervenir au plus vite. Que vous soyez bloqué devant votre porte à %city% en pleine nuit ou que vous ayez besoin de sécuriser votre domicile, appelez-nous."
+  brands_title: "Experts toutes marques de serrures"
+  faq_title: "Questions fréquentes sur notre service à %city%"
+  faq_1_q: "Quel est le délai d'intervention à %city% ?"
+  faq_1_a: "Notre serrurier arrive en <strong>30 minutes maximum</strong> à %city%. Nous sommes disponibles 24h/24 et 7j/7, y compris les week-ends et jours fériés."
+  faq_2_q: "Combien coûte un serrurier à %city% ?"
+  faq_2_a: "Nos tarifs à %city% sont transparents et annoncés avant intervention. Le devis est gratuit et établi sur place avant toute intervention. Pas de frais cachés."
+  faq_3_q: "Intervenez-vous la nuit à %city% ?"
+  faq_3_a: "Oui, notre service de <strong>serrurier à %city%</strong> est disponible de jour comme de nuit. Un supplément nuit peut s'appliquer entre 21h et 7h."
+  faq_4_q: "Ouvrez-vous les portes sans casser la serrure ?"
+  faq_4_a: "Dans <strong>95% des cas</strong>, nous ouvrons les portes à %city% sans aucun dégât grâce à nos techniques non destructives. Si un remplacement est nécessaire, nous vous proposons un devis avant."
+  faq_5_q: "Quels types de serrures installez-vous à %city% ?"
+  faq_5_a: "Nous installons tous types de serrures à %city% : <strong>cylindres européens, serrures multipoints, serrures A2P</strong>, et serrures connectées. Nous travaillons avec les grandes marques comme Vachette, Bricard, Fichet."
+  nearby_title: "Communes voisines"
+  nearby_intro: "Nous intervenons également dans les communes voisines de %city%"
+  see_all: "Voir les 96 communes"
+
+# Emergency Pages
+emergency_page:
+  hero_text: "Notre serrurier intervient en <strong>30 minutes</strong> et résout votre problème <strong>sans dégât</strong>."
+  speed_title: "Intervention rapide garantie"
+  speed_1_title: "Arrivée en 30 minutes"
+  speed_1_text: "Notre serrurier le plus proche est envoyé immédiatement. Délai moyen d'arrivée : 30 minutes."
+  speed_2_title: "Sans dégât dans 95% des cas"
+  speed_2_text: "Techniques d'ouverture non-destructives. Votre serrure reste intacte et fonctionnelle."
+  speed_3_title: "Disponible 24h/24, 7j/7"
+  speed_3_text: "Jour, nuit, week-end, jours fériés... Nous intervenons quand vous avez besoin de nous."
+  speed_4_title: "Devis gratuit sur place"
+  speed_4_text: "Prix annoncé avant intervention. Pas de surprise sur la facture finale."
+  cta_now: "maintenant ?"
+  cta_text: "Ne restez pas bloqué ! Appelez-nous, on arrive en 30 minutes."
+  process_title: "Comment ça se passe ?"
+  process_1_title: "1. Vous nous appelez"
+  process_1_text: "Décrivez brièvement votre situation. On vous donne un délai d'arrivée précis."
+  process_2_title: "2. On arrive rapidement"
+  process_2_text: "Notre serrurier arrive avec tout l'équipement nécessaire."
+  process_3_title: "3. Devis avant intervention"
+  process_3_text: "On vous donne le prix exact avant de commencer. Vous validez, puis on intervient."
+  process_4_title: "4. Problème résolu"
+  process_4_text: "Intervention rapide et propre. Vous récupérez l'accès à votre domicile."
+  guarantees_title: "Nos garanties"
+  invoice_provided: "Facture fournie"
+  faq_1_q: "Combien coûte l'intervention ?"
+  faq_1_a: "Le prix dépend du type de serrure et de l'heure d'intervention. Nous vous donnons un devis gratuit sur place avant toute intervention. Le prix annoncé est le prix final, sans surprise."
+  faq_2_q: "L'ouverture va-t-elle abîmer ma serrure ?"
+  faq_2_a: "Dans 95% des cas, nous intervenons sans aucun dégât. Votre serrure reste parfaitement fonctionnelle. Si exceptionnellement un dommage est nécessaire, nous vous prévenons avant."
+  faq_3_q: "Combien de temps pour arriver ?"
+  faq_3_a: "Notre délai moyen d'arrivée est de 30 minutes à Bruxelles et environs. Nous vous donnons un délai précis au téléphone."
+  faq_4_q: "Intervenez-vous la nuit et le week-end ?"
+  faq_4_a: "Oui, nous sommes disponibles 24 heures sur 24, 7 jours sur 7, y compris les jours fériés. Un supplément peut s'appliquer pour les interventions nocturnes."
+  other_emergencies: "Autres situations d'urgence"
+
+# Service Pages
+service_page:
+  hero_suffix: "Notre serrurier intervient en <strong>30 minutes</strong> et travaille <strong>sans dégât dans 95% des cas</strong>."
+  when_title: "Quand faire appel à ce service ?"
+  situation_1_title: "Urgence"
+  situation_1_text: "Besoin immédiat ? Nous intervenons 24h/24, 7j/7."
+  situation_2_title: "Sécurité"
+  situation_2_text: "Renforcez la sécurité de votre domicile ou entreprise."
+  situation_3_title: "Dépannage"
+  situation_3_text: "Serrure bloquée, clé cassée ? On répare sur place."
+  situation_4_title: "Installation"
+  situation_4_text: "Nouvelle serrure, nouveau cylindre ? Installation propre."
+  cta_title: "Besoin de ce service ?"
+  cta_text: "Notre serrurier arrive en 30 minutes, 24h/24 et 7j/7"
+  why_title: "Pourquoi choisir Janssens ?"
+  non_destructive: "Techniques non-destructives"
+  process_title: "Comment ça se passe ?"
+  step_1_title: "1. Vous appelez"
+  step_1_text: "Décrivez votre situation, on vous donne un délai précis."
+  step_2_title: "2. On arrive"
+  step_2_text: "Notre serrurier arrive avec tout l'équipement nécessaire."
+  step_3_title: "3. Devis gratuit"
+  step_3_text: "Prix annoncé avant intervention. Vous validez."
+  step_4_title: "4. Intervention"
+  step_4_text: "Travail soigné et rapide. Paiement après."
+  faq_1_q: "Combien coûte ce service ?"
+  faq_1_a: "Le prix dépend de la situation. Devis gratuit sur place, prix annoncé avant intervention."
+  faq_2_q: "Intervenez-vous le week-end ?"
+  faq_2_a: "Oui, nous sommes disponibles 24h/24, 7j/7, y compris les jours fériés."
+  faq_3_q: "Travaillez-vous toutes les marques ?"
+  faq_3_a: "Oui, nos techniciens sont formés sur toutes les grandes marques : Fichet, Bricard, Vachette, Mul-T-Lock, Picard."
+  other_services: "Nos autres services"
+
+# Brand Pages
+brand_page:
+  title_prefix: "Expert"
+  models_title: "Modèles %brand% que nous maîtrisons"
+  model_expertise: "Installation, réparation, dépannage, reproduction de clés."
+  cta_title: "Besoin d'un expert %brand% ?"
+  cta_text: "Notre serrurier certifié intervient en 30 minutes"
+  why_title: "Pourquoi choisir un expert %brand% ?"
+  adv_1: "Techniciens certifiés"
+  adv_2: "Pièces d'origine"
+  adv_3: "Garantie sur les interventions"
+  adv_4: "Formation continue"
+  other_brands: "Autres marques expertes"
+
+# Guide Index Page
+guide_index:
+  title: "Guides & Conseils Serrurerie"
+  subtitle: "Retrouvez nos guides pratiques pour tout savoir sur la serrurerie : urgences, choix de serrures, conseils de sécurité et tarifs."
+  read_guide: "Lire le guide"
+
+# Guide Pages
+guide_page:
+  breadcrumb_guides: "Guides"
+  need_help: "Besoin d'aide ?"
+  cta_title: "Besoin d'un serrurier maintenant ?"
+  cta_text: "Intervention en 30 minutes à Bruxelles et environs"
+  related_title: "Guides connexes"
+
+# Emergency City Pages
+emergency_city:
+  in: "à"
+  arrival_text: "Notre serrurier arrive à %city% en 30 minutes, 24h/24."
+  tips_title: "Conseils en cas de %emergency% à %city%"
+  tip_1: "Restez calme, ne forcez pas"
+  tip_2: "Vérifiez les fenêtres"
+  tip_3: "Appelez un serrurier agréé"
+  tip_4: "Demandez un devis avant"
+  cta_text: "Notre serrurier arrive en 30 minutes, 24h/24"
+  why_us_title: "Pourquoi nous choisir à %city% ?"
+  adv_1_title: "Arrivée en 30 min"
+  adv_1_text: "Notre serrurier est proche de %city%"
+  adv_2_title: "Prix transparent"
+  adv_2_text: "Devis gratuit avant intervention"
+  adv_3_title: "Sans dégât"
+  adv_3_text: "Techniques professionnelles"
+  adv_4_title: "Agréé TVA"
+  faq_1_q: "Combien de temps pour résoudre un cas de %emergency% ?"
+  faq_1_a: "Arrivée en 30 min, intervention en 5-15 min selon la situation."
+  faq_2_q: "Y aura-t-il des dégâts ?"
+  faq_2_a: "Non, dans 95% des cas nous intervenons sans aucun dégât."
+  other_emergencies: "Autres urgences à %city%"
+  locksmith_in: "Serrurier à"
+
+# City Service Pages
+city_service:
+  subtitle: "Service de %service% disponible à %city%. Intervention rapide 24h/24, devis gratuit sur place."
+  what_title: "%service% à %city%"
+  what_intro: "Besoin d'un service de %service% à %city% ? Notre serrurier professionnel intervient rapidement dans toute la commune."
+  cta_title: "Besoin de %service% à %city% ?"
+  cta_text: "Notre serrurier arrive en 30 minutes, 24h/24"
+  why_title: "Pourquoi choisir notre service à %city% ?"
+  why_intro: "Les habitants de %city% nous font confiance pour leur service de %service%."
+  why_speed: "Intervention garantie en 30 minutes maximum à %city%."
+  why_price: "Devis gratuit sur place. Prix annoncé avant intervention."
+  why_quality: "Travail soigné et professionnel, sans dégât dans 95% des cas."
+  why_pro: "Techniciens certifiés intervenant régulièrement à %city%."
+  process_title: "Comment se déroule l'intervention ?"
+  step_1_title: "Appel"
+  step_1_text: "Décrivez votre besoin, nous vous donnons un délai précis."
+  step_2_title: "Arrivée"
+  step_2_text: "Notre serrurier arrive à %city% avec tout l'équipement."
+  step_3_title: "Devis"
+  step_3_text: "Prix annoncé sur place avant toute intervention."
+  step_4_title: "Intervention"
+  step_4_text: "Travail soigné et rapide. Paiement après service."
+  other_services: "Autres services à %city%"
+  faq_title: "Questions sur %service% à %city%"
+  faq_door_opening_1_q: "Combien coûte une ouverture de porte à %city% ?"
+  faq_door_opening_1_a: "Le prix dépend du type de serrure. Devis gratuit sur place avant intervention."
+  faq_door_opening_2_q: "Allez-vous abîmer ma porte ?"
+  faq_door_opening_2_a: "Non, dans 95% des cas nous ouvrons sans aucun dégât."
+  faq_door_opening_3_q: "Intervenez-vous la nuit à %city% ?"
+  faq_door_opening_3_a: "Oui, service disponible 24h/24, 7j/7."
+  faq_lock_replacement_1_q: "Quels types de serrures installez-vous ?"
+  faq_lock_replacement_1_a: "Cylindres européens, serrures multipoints, A2P. Toutes marques."
+  faq_lock_replacement_2_q: "Combien de temps pour remplacer une serrure ?"
+  faq_lock_replacement_2_a: "En général 30-60 minutes selon le type de serrure."
+  faq_lock_replacement_3_q: "Proposez-vous des serrures haute sécurité ?"
+  faq_lock_replacement_3_a: "Oui, nous installons des serrures A2P certifiées."
+  faq_key_duplication_1_q: "Pouvez-vous reproduire des clés sécurisées ?"
+  faq_key_duplication_1_a: "Oui, nous reproduisons tous types de clés, y compris les clés brevetées."
+  faq_key_duplication_2_q: "Combien de temps pour dupliquer une clé ?"
+  faq_key_duplication_2_a: "En général quelques minutes pour une clé standard."
+  faq_key_duplication_3_q: "Venez-vous sur place à %city% ?"
+  faq_key_duplication_3_a: "Oui, notre serrurier se déplace à %city% avec son équipement."
+  faq_door_reinforcement_1_q: "Qu'est-ce que le blindage de porte ?"
+  faq_door_reinforcement_1_a: "C'est le renforcement de votre porte existante avec des plaques en acier."
+  faq_door_reinforcement_2_q: "Le blindage est-il efficace contre les cambriolages ?"
+  faq_door_reinforcement_2_a: "Oui, il augmente considérablement la résistance de votre porte."
+  faq_door_reinforcement_3_q: "Combien coûte un blindage de porte ?"
+  faq_door_reinforcement_3_a: "Le prix dépend du type de porte. Devis gratuit sur place."
+  faq_safe_1_q: "Pouvez-vous ouvrir un coffre-fort bloqué ?"
+  faq_safe_1_a: "Oui, nous intervenons sur tous types de coffres-forts."
+  faq_safe_2_q: "Installez-vous des coffres-forts ?"
+  faq_safe_2_a: "Oui, vente et installation de coffres-forts à %city%."
+  faq_safe_3_q: "Code oublié, que faire ?"
+  faq_safe_3_a: "Appelez-nous, nous pouvons ouvrir et reprogrammer votre coffre."
+  faq_automotive_1_q: "Pouvez-vous ouvrir ma voiture ?"
+  faq_automotive_1_a: "Oui, ouverture de véhicules sans dégât."
+  faq_automotive_2_q: "Reproduisez-vous les clés de voiture ?"
+  faq_automotive_2_a: "Oui, reproduction et programmation de clés auto."
+  faq_automotive_3_q: "Intervenez-vous sur tous les véhicules ?"
+  faq_automotive_3_a: "Oui, toutes marques et modèles de véhicules."
+  back_to_city: "Retour à %city%"
+
+# Legal Pages
+legal:
+  updated: "Dernière mise à jour"

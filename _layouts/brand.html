@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign brand = nil %}
+{% for b in site.data.brands %}
+{% if b.id == page.brand_id %}{% assign brand = b %}{% endif %}
+{% endfor %}
+
+<!-- Hero -->
+<section class="service-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=brand.name middle_text=t.breadcrumb.brands middle_link="#services" %}
+        <div class="service-hero-icon brand-logo-hero">
+            <span class="brand-logo-text">{{ brand.logo_text }}</span>
+        </div>
+        <h1 class="service-title">{{ t.brand_page.title_prefix }} {{ brand.name }}</h1>
+        <p class="service-subtitle">{{ brand.description[lang] }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="list"></i> {{ t.brand_page.models_title | replace: "%brand%", brand.name }}</h2>
+            {% include content-grid.html items=brand.models title_key="name" %}
+        </div>
+
+        {% capture cta_title %}{{ t.brand_page.cta_title | replace: "%brand%", brand.name }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=t.brand_page.cta_text %}
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> {{ t.brand_page.why_title | replace: "%brand%", brand.name }}</h2>
+            <div class="advantages-list">
+                {% for i in (1..4) %}
+                {% capture adv_key %}adv_{{ i }}{% endcapture %}
+                <div class="advantage-item"><i data-lucide="check"></i><span>{{ t.brand_page[adv_key] }}</span></div>
+                {% endfor %}
+                <div class="advantage-item"><i data-lucide="check"></i><span>{{ t.common.free_quote }}</span></div>
+                <div class="advantage-item"><i data-lucide="check"></i><span>{{ t.common.pay_after }}</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% capture url_prefix %}/{{ lang }}/{{ brands_folder }}/{% endcapture %}
+{% include related-links.html title=t.brand_page.other_brands items=site.data.brands current_id=brand.id url_prefix=url_prefix name_key="name" slug_key="slug" %}
+
+{{ content }}

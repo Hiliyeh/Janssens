@@ -1,0 +1,26 @@
+{% comment %}
+Advantages List - Reusable advantages/guarantees section
+Usage: {% include advantages.html items=advantages_array source="common" extra_item=t.extra %}
+- items: array of translation keys
+- source: "common" looks up from t.common[key], otherwise uses key directly
+- extra_item: optional additional item text to append
+{% endcomment %}
+
+<div class="advantages-list">
+    {% for item in include.items %}
+    <div class="advantage-item">
+        <i data-lucide="check"></i>
+        {% if include.source == "common" %}
+        <span>{{ t.common[item] }}</span>
+        {% else %}
+        <span>{{ item }}</span>
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% if include.extra_item %}
+    <div class="advantage-item">
+        <i data-lucide="check"></i>
+        <span>{{ include.extra_item }}</span>
+    </div>
+    {% endif %}
+</div>

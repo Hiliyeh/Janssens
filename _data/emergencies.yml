@@ -1,0 +1,110 @@
+# Emergency Types Data
+# ====================
+
+- id: locked-out
+  icon: door-open
+  fr:
+    name: "Porte claqu\u00e9e"
+    slug: "porte-claquee"
+    title: "Porte Claqu\u00e9e"
+    description: "Vous avez claqu\u00e9 votre porte avec les cl\u00e9s \u00e0 l'int\u00e9rieur ? Pas de panique !"
+  en:
+    name: "Locked Out"
+    slug: "locked-out"
+    title: "Locked Out"
+    description: "Slammed your door with keys inside? Don't panic!"
+  nl:
+    name: "Dichtgevallen deur"
+    slug: "dichtgevallen-deur"
+    title: "Dichtgevallen Deur"
+    description: "Deur dichtgevallen met sleutels binnen? Geen paniek!"
+
+- id: broken-key
+  icon: key
+  fr:
+    name: "Cl\u00e9 cass\u00e9e dans la serrure"
+    slug: "cle-cassee-serrure"
+    title: "Cl\u00e9 Cass\u00e9e dans la Serrure"
+    description: "Votre cl\u00e9 s'est cass\u00e9e dans la serrure ? Extraction sans dommage."
+  en:
+    name: "Broken Key in Lock"
+    slug: "broken-key-lock"
+    title: "Broken Key in Lock"
+    description: "Your key broke inside the lock? Damage-free extraction."
+  nl:
+    name: "Gebroken sleutel in slot"
+    slug: "gebroken-sleutel-slot"
+    title: "Gebroken Sleutel in Slot"
+    description: "Sleutel gebroken in het slot? Schadevrije extractie."
+
+- id: burglary
+  icon: shield-alert
+  fr:
+    name: "Cambriolage"
+    slug: "cambriolage"
+    title: "Apr\u00e8s Cambriolage"
+    description: "Victime d'un cambriolage ? S\u00e9curisation et remplacement urgents."
+  en:
+    name: "Burglary"
+    slug: "burglary"
+    title: "After Burglary"
+    description: "Victim of a burglary? Urgent securing and replacement."
+  nl:
+    name: "Inbraak"
+    slug: "inbraak"
+    title: "Na Inbraak"
+    description: "Slachtoffer van inbraak? Dringende beveiliging en vervanging."
+
+- id: armored-door
+  icon: shield
+  fr:
+    name: "Porte blind\u00e9e bloqu\u00e9e"
+    slug: "porte-blindee-bloquee"
+    title: "Porte Blind\u00e9e Bloqu\u00e9e"
+    description: "Votre porte blind\u00e9e ne s'ouvre plus ? Sp\u00e9cialiste portes blind\u00e9es."
+  en:
+    name: "Armored Door Locked"
+    slug: "armored-door-locked"
+    title: "Armored Door Locked"
+    description: "Your armored door won't open? Armored door specialist."
+  nl:
+    name: "Gepantserde deur geblokkeerd"
+    slug: "gepantserde-deur-geblokkeerd"
+    title: "Gepantserde Deur Geblokkeerd"
+    description: "Gepantserde deur gaat niet meer open? Specialist gepantserde deuren."
+
+- id: night-locksmith
+  icon: moon
+  fr:
+    name: "Serrurier de nuit"
+    slug: "serrurier-nuit"
+    title: "Serrurier de Nuit"
+    description: "Urgence serrurerie la nuit ? Disponible 24h/24, 7j/7."
+  en:
+    name: "Night Locksmith"
+    slug: "night-locksmith"
+    title: "Night Locksmith"
+    description: "Locksmith emergency at night? Available 24/7."
+  nl:
+    name: "Nacht slotenmaker"
+    slug: "nacht-slotenmaker"
+    title: "Nacht Slotenmaker"
+    description: "Slotenmaker noodgeval 's nachts? Beschikbaar 24/7."
+
+- id: sunday-locksmith
+  icon: calendar
+  fr:
+    name: "Serrurier dimanche"
+    slug: "serrurier-dimanche"
+    title: "Serrurier Dimanche & Jours F\u00e9ri\u00e9s"
+    description: "Besoin d'un serrurier le dimanche ou un jour f\u00e9ri\u00e9 ? On intervient !"
+  en:
+    name: "Sunday Locksmith"
+    slug: "sunday-locksmith"
+    title: "Sunday & Holiday Locksmith"
+    description: "Need a locksmith on Sunday or holidays? We're here!"
+  nl:
+    name: "Zondag slotenmaker"
+    slug: "zondag-slotenmaker"
+    title: "Zondag & Feestdag Slotenmaker"
+    description: "Slotenmaker nodig op zondag of feestdag? Wij komen!"

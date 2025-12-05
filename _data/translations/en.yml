@@ -1,0 +1,399 @@
+# English Translations
+# ====================
+
+# Navigation
+nav:
+  services: "Services"
+  why_us: "Why us"
+  trust: "Trust"
+  areas: "Areas"
+  contact: "Contact"
+  call: "Call"
+  whatsapp: "WhatsApp"
+
+# Hero Section
+hero:
+  title_1: "Your locksmith"
+  title_2: "Brussels, Walloon & Flemish Brabant"
+  text: "Locked out? Lost key? We arrive in <strong>30 minutes</strong>, without damaging your door. Over <strong>10 years</strong> of experience, registered company, price quoted before intervention."
+  cta_call: "Call now"
+  cta_whatsapp: "WhatsApp"
+  trust_1: "No damage"
+  trust_2: "Fixed price"
+  trust_3: "Pay after service"
+
+# Stats
+stats:
+  delay: "Average time"
+  experience: "Years experience"
+  cities: "Cities covered"
+  delay_value: "30 min"
+  experience_value: "10+"
+  cities_value: "96"
+
+# Emergency Banner
+emergency:
+  title: "Locked out? Lost or broken key?"
+  text: "A qualified locksmith arrives at your place in less than 30 minutes."
+  btn: "Emergency call"
+  badge: "Emergency 24/7"
+
+# Services Section
+services:
+  tag: "Our services"
+  title: "Professional locksmith solutions"
+  desc: "Fast and careful interventions for all your security needs"
+  learn_more: "Learn more"
+
+# Why Section
+why:
+  tag: "Why Janssens?"
+  title: "Trust is built"
+  intro: "For over 10 years, we have served individuals, businesses and institutions in Brussels and Brabant. Our reputation is based on three commitments."
+
+# Pillars
+pillars:
+  speed:
+    title: "Speed"
+    text: "Guaranteed intervention in under 30 minutes, 24/7, including holidays."
+  expertise:
+    title: "Expertise"
+    text: "Certified technicians, professional equipment, careful work without damage."
+  transparency:
+    title: "Transparency"
+    text: "Price quoted before intervention. No surprises. Payment only after service."
+
+# Trust
+trust:
+  available:
+    title: "Available 24/7"
+    text: "Holidays and weekends included"
+  registered:
+    title: "Registered company"
+    text: "VAT BE0712.625.742 · LAMRO GROUP"
+  certified:
+    title: "Certified technicians"
+    text: "Continuous training on all brands"
+
+# Live Feed
+live:
+  tag: "Our coverage"
+  title: "Live interventions"
+  today: "Today:"
+  badge: "Registered company"
+  status:
+    enroute: "En route"
+    ongoing: "Ongoing"
+    completed: "Completed"
+
+# Zones Section
+zones:
+  tag: "Intervention zones"
+  title: "Are you in our zone?"
+  desc: "Check in 1 second if we come to you"
+  placeholder: "Enter your city..."
+  initial: "Type your city name to check"
+  success:
+    title: "Good news!"
+    text: "We serve"
+    delay: "Intervention in <strong>~30 min</strong>"
+    available: "Available <strong>24/7</strong>"
+    cta: "Call now"
+  not_found:
+    title: "Zone not listed"
+    text: "Contact us, we may still be able to help."
+    cta: "Contact us"
+  municipalities: "municipalities"
+  regions:
+    title: "Our 96 covered cities:"
+    brussels: "Brussels-Capital"
+    walloon: "Walloon Brabant"
+    flemish: "Flemish Brabant"
+
+# Home Page
+home:
+  emergency_label: "Emergency situation?"
+  hero_image_alt: "Janssens Locksmith home intervention in Brussels"
+  map_image_alt: "Locksmith service area map Brussels and Brabant"
+
+# Guides Section
+guides:
+  tag: "Practical guides"
+  title: "Expert locksmith advice"
+  desc: "Find our practical guides to learn everything about locksmithing"
+  view_all: "View all guides"
+
+# FAQ Section
+faq:
+  tag: "FAQ"
+  title: "Frequently asked questions"
+
+# Contact Section
+contact:
+  tag: "Contact"
+  title: "Need a locksmith?"
+  text: "Call us directly or send a message. We respond within minutes."
+  phone: "Phone"
+  whatsapp: "WhatsApp"
+  whatsapp_text: "Quick response"
+  email: "Email"
+  address: "Address"
+
+# Footer
+footer:
+  desc: "Your locksmith expert in Brussels for over 10 years. Available 24/7 for all your emergencies."
+  services: "Services"
+  company: "Company"
+  guides: "Guides & Tips"
+  about: "About"
+  partners: "Partners"
+  terms: "Terms of use"
+  privacy: "Privacy policy"
+  credit: "Designed by"
+
+# Breadcrumb
+breadcrumb:
+  home: "Home"
+  services: "Services"
+  cities: "Service areas"
+  emergency: "Emergency"
+  brands: "Brands"
+  guides: "Guides"
+
+# Common
+common:
+  call_now: "Call"
+  learn_more: "Learn more"
+  back: "Back"
+  all_services: "All services"
+  free_quote: "Free on-site quote"
+  response_time: "Arrival in 30 min"
+  no_damage: "No damage 95%"
+  available_247: "Available 24/7"
+  fixed_price: "Fixed price"
+  pay_after: "Pay after service"
+
+# City Pages
+city:
+  title_prefix: "Locksmith in"
+  at: "in"
+  subtitle: "Need a <strong>locksmith in %city%</strong>? Janssens Locksmith responds quickly throughout <strong>%city%</strong> and surrounding areas. Available <strong>24/7</strong>, our team arrives at your place in <strong>30 minutes maximum</strong>."
+  services_title: "Our locksmith services in %city%"
+  services_intro: "As a <strong>professional locksmith in %city%</strong>, we offer a complete range of services to meet all your locksmith emergencies and needs. Whether you're in central %city% or outlying neighborhoods, our technician responds quickly."
+  response_time: "Intervention in 30 min in %city%"
+  emergency_title: "Lock emergency in %city%?"
+  emergency_text: "Our locksmith is available 24/7 to intervene in %city%"
+  why_title: "Why choose Janssens Locksmith in %city%?"
+  why_intro: "Residents of <strong>%city%</strong> have trusted us for over 10 years for all their locksmith needs. Here's why our <strong>locksmith service in %city%</strong> stands out:"
+  why_speed: "We arrive within 30 minutes maximum in %city%, day or night, weekends or holidays."
+  transparent_price: "Transparent pricing"
+  why_price: "Free on-site quote in %city%. No surprises, the quoted price is the final price."
+  no_damage: "Damage-free opening"
+  why_no_damage: "Our technician in %city% uses non-destructive techniques in 95% of interventions."
+  professionalism: "Professionalism"
+  why_pro: "Qualified and experienced locksmith, regularly serving %city% and %region%."
+  zone_title: "Service area around %city%"
+  zone_text_1: "Based in Brussels, we respond quickly to <strong>%city%</strong> as well as all municipalities in <strong>%region%</strong>. If you live in %city% or nearby, our locksmith can be at your place in less than 30 minutes."
+  zone_text_2: "Our knowledge of %city% and its neighborhoods allows us to optimize our routes and respond as quickly as possible. Whether you're locked out in %city% in the middle of the night or need to secure your home, call us."
+  brands_title: "Experts in all lock brands"
+  faq_title: "Frequently asked questions about our service in %city%"
+  faq_1_q: "What is the response time in %city%?"
+  faq_1_a: "Our locksmith arrives within <strong>30 minutes maximum</strong> in %city%. We are available 24/7, including weekends and holidays."
+  faq_2_q: "How much does a locksmith cost in %city%?"
+  faq_2_a: "Our rates in %city% are transparent and quoted before intervention. The quote is free and provided on-site before any work. No hidden fees."
+  faq_3_q: "Do you work at night in %city%?"
+  faq_3_a: "Yes, our <strong>locksmith service in %city%</strong> is available day and night. A night supplement may apply between 9pm and 7am."
+  faq_4_q: "Do you open doors without breaking the lock?"
+  faq_4_a: "In <strong>95% of cases</strong>, we open doors in %city% without any damage thanks to our non-destructive techniques. If replacement is necessary, we provide a quote first."
+  faq_5_q: "What types of locks do you install in %city%?"
+  faq_5_a: "We install all types of locks in %city%: <strong>European cylinders, multipoint locks, A2P locks</strong>, and smart locks. We work with major brands like Vachette, Bricard, Fichet."
+  nearby_title: "Nearby cities"
+  nearby_intro: "We also serve cities near %city%"
+  see_all: "See all 96 cities"
+
+# Emergency Pages
+emergency_page:
+  hero_text: "Our locksmith arrives in <strong>30 minutes</strong> and solves your problem <strong>without damage</strong>."
+  speed_title: "Guaranteed fast intervention"
+  speed_1_title: "Arrival in 30 minutes"
+  speed_1_text: "Our nearest locksmith is dispatched immediately. Average arrival time: 30 minutes."
+  speed_2_title: "No damage in 95% of cases"
+  speed_2_text: "Non-destructive opening techniques. Your lock remains intact and functional."
+  speed_3_title: "Available 24/7"
+  speed_3_text: "Day, night, weekend, holidays... We intervene when you need us."
+  speed_4_title: "Free on-site quote"
+  speed_4_text: "Price quoted before intervention. No surprises on the final bill."
+  cta_now: "right now?"
+  cta_text: "Don't stay locked out! Call us, we arrive in 30 minutes."
+  process_title: "How does it work?"
+  process_1_title: "1. You call us"
+  process_1_text: "Briefly describe your situation. We give you a precise arrival time."
+  process_2_title: "2. We arrive quickly"
+  process_2_text: "Our locksmith arrives with all necessary equipment."
+  process_3_title: "3. Quote before intervention"
+  process_3_text: "We give you the exact price before starting. You approve, then we intervene."
+  process_4_title: "4. Problem solved"
+  process_4_text: "Quick and clean intervention. You regain access to your home."
+  guarantees_title: "Our guarantees"
+  invoice_provided: "Invoice provided"
+  faq_1_q: "How much does the intervention cost?"
+  faq_1_a: "The price depends on the type of lock and time of intervention. We provide a free on-site quote before any work. The quoted price is the final price, no surprises."
+  faq_2_q: "Will the opening damage my lock?"
+  faq_2_a: "In 95% of cases, we intervene without any damage. Your lock remains perfectly functional. If damage is exceptionally necessary, we inform you beforehand."
+  faq_3_q: "How long to arrive?"
+  faq_3_a: "Our average arrival time is 30 minutes in Brussels and surroundings. We give you a precise time on the phone."
+  faq_4_q: "Do you work nights and weekends?"
+  faq_4_a: "Yes, we are available 24 hours a day, 7 days a week, including holidays. A supplement may apply for night interventions."
+  other_emergencies: "Other emergency situations"
+
+# Service Pages
+service_page:
+  hero_suffix: "Our locksmith arrives in <strong>30 minutes</strong> and works <strong>without damage in 95% of cases</strong>."
+  when_title: "When to use this service?"
+  situation_1_title: "Emergency"
+  situation_1_text: "Immediate need? We're available 24/7."
+  situation_2_title: "Security"
+  situation_2_text: "Strengthen your home or business security."
+  situation_3_title: "Repair"
+  situation_3_text: "Jammed lock, broken key? We repair on site."
+  situation_4_title: "Installation"
+  situation_4_text: "New lock, new cylinder? Clean installation."
+  cta_title: "Need this service?"
+  cta_text: "Our locksmith arrives in 30 minutes, 24/7"
+  why_title: "Why choose Janssens?"
+  non_destructive: "Non-destructive techniques"
+  process_title: "How does it work?"
+  step_1_title: "1. You call"
+  step_1_text: "Describe your situation, we give you a precise time."
+  step_2_title: "2. We arrive"
+  step_2_text: "Our locksmith arrives with all necessary equipment."
+  step_3_title: "3. Free quote"
+  step_3_text: "Price quoted before work. You approve."
+  step_4_title: "4. Intervention"
+  step_4_text: "Careful and fast work. Pay after."
+  faq_1_q: "How much does this service cost?"
+  faq_1_a: "Price depends on the situation. Free on-site quote, price quoted before work."
+  faq_2_q: "Do you work weekends?"
+  faq_2_a: "Yes, we're available 24/7, including holidays."
+  faq_3_q: "Do you work with all brands?"
+  faq_3_a: "Yes, our technicians are trained on all major brands: Fichet, Bricard, Vachette, Mul-T-Lock, Picard."
+  other_services: "Our other services"
+
+# Brand Pages
+brand_page:
+  title_prefix: "Expert"
+  models_title: "%brand% models we master"
+  model_expertise: "Installation, repair, troubleshooting, key duplication."
+  cta_title: "Need a %brand% expert?"
+  cta_text: "Our certified locksmith arrives in 30 minutes"
+  why_title: "Why choose a %brand% expert?"
+  adv_1: "Certified technicians"
+  adv_2: "Original parts"
+  adv_3: "Warranty on work"
+  adv_4: "Ongoing training"
+  other_brands: "Other expert brands"
+
+# Guide Index Page
+guide_index:
+  title: "Locksmith Guides & Tips"
+  subtitle: "Find our practical guides to learn everything about locksmithing: emergencies, lock choices, security tips and pricing."
+  read_guide: "Read the guide"
+
+# Guide Pages
+guide_page:
+  breadcrumb_guides: "Guides"
+  need_help: "Need help?"
+  cta_title: "Need a locksmith now?"
+  cta_text: "We arrive in 30 minutes in Brussels and surroundings"
+  related_title: "Related guides"
+
+# Emergency City Pages
+emergency_city:
+  in: "in"
+  arrival_text: "Our locksmith arrives in %city% within 30 minutes, 24/7."
+  tips_title: "Tips for %emergency% in %city%"
+  tip_1: "Stay calm, don't force it"
+  tip_2: "Check the windows"
+  tip_3: "Call a certified locksmith"
+  tip_4: "Ask for a quote first"
+  cta_text: "Our locksmith arrives in 30 minutes, 24/7"
+  why_us_title: "Why choose us in %city%?"
+  adv_1_title: "Arrival in 30 min"
+  adv_1_text: "Our locksmith is near %city%"
+  adv_2_title: "Transparent pricing"
+  adv_2_text: "Free quote before work"
+  adv_3_title: "No damage"
+  adv_3_text: "Professional techniques"
+  adv_4_title: "VAT registered"
+  faq_1_q: "How long to resolve a %emergency% case?"
+  faq_1_a: "Arrival in 30 min, intervention in 5-15 min depending on the situation."
+  faq_2_q: "Will there be any damage?"
+  faq_2_a: "No, in 95% of cases we work without any damage."
+  other_emergencies: "Other emergencies in %city%"
+  locksmith_in: "Locksmith in"
+
+# City Service Pages
+city_service:
+  subtitle: "%service% service available in %city%. Fast intervention 24/7, free on-site quote."
+  what_title: "%service% in %city%"
+  what_intro: "Need %service% in %city%? Our professional locksmith arrives quickly throughout the municipality."
+  cta_title: "Need %service% in %city%?"
+  cta_text: "Our locksmith arrives in 30 minutes, 24/7"
+  why_title: "Why choose our service in %city%?"
+  why_intro: "%city% residents trust us for their %service% needs."
+  why_speed: "Guaranteed intervention in 30 minutes maximum in %city%."
+  why_price: "Free on-site quote. Price stated before work."
+  why_quality: "Clean and professional work, no damage in 95% of cases."
+  why_pro: "Certified technicians working regularly in %city%."
+  process_title: "How does the intervention work?"
+  step_1_title: "Call"
+  step_1_text: "Describe your need, we give you a precise timing."
+  step_2_title: "Arrival"
+  step_2_text: "Our locksmith arrives in %city% with all equipment."
+  step_3_title: "Quote"
+  step_3_text: "Price stated on-site before any work."
+  step_4_title: "Intervention"
+  step_4_text: "Clean and fast work. Payment after service."
+  other_services: "Other services in %city%"
+  faq_title: "Questions about %service% in %city%"
+  faq_door_opening_1_q: "How much does door opening cost in %city%?"
+  faq_door_opening_1_a: "Price depends on lock type. Free on-site quote before work."
+  faq_door_opening_2_q: "Will you damage my door?"
+  faq_door_opening_2_a: "No, in 95% of cases we open without any damage."
+  faq_door_opening_3_q: "Do you work at night in %city%?"
+  faq_door_opening_3_a: "Yes, service available 24/7."
+  faq_lock_replacement_1_q: "What types of locks do you install?"
+  faq_lock_replacement_1_a: "European cylinders, multipoint locks, A2P. All brands."
+  faq_lock_replacement_2_q: "How long to replace a lock?"
+  faq_lock_replacement_2_a: "Usually 30-60 minutes depending on lock type."
+  faq_lock_replacement_3_q: "Do you offer high-security locks?"
+  faq_lock_replacement_3_a: "Yes, we install certified A2P locks."
+  faq_key_duplication_1_q: "Can you duplicate security keys?"
+  faq_key_duplication_1_a: "Yes, we duplicate all types of keys, including patented keys."
+  faq_key_duplication_2_q: "How long to duplicate a key?"
+  faq_key_duplication_2_a: "Usually a few minutes for a standard key."
+  faq_key_duplication_3_q: "Do you come on-site to %city%?"
+  faq_key_duplication_3_a: "Yes, our locksmith travels to %city% with his equipment."
+  faq_door_reinforcement_1_q: "What is door reinforcement?"
+  faq_door_reinforcement_1_a: "It's reinforcing your existing door with steel plates."
+  faq_door_reinforcement_2_q: "Is reinforcement effective against burglaries?"
+  faq_door_reinforcement_2_a: "Yes, it significantly increases your door's resistance."
+  faq_door_reinforcement_3_q: "How much does door reinforcement cost?"
+  faq_door_reinforcement_3_a: "Price depends on door type. Free on-site quote."
+  faq_safe_1_q: "Can you open a locked safe?"
+  faq_safe_1_a: "Yes, we work on all types of safes."
+  faq_safe_2_q: "Do you install safes?"
+  faq_safe_2_a: "Yes, safe sales and installation in %city%."
+  faq_safe_3_q: "Forgotten code, what to do?"
+  faq_safe_3_a: "Call us, we can open and reprogram your safe."
+  faq_automotive_1_q: "Can you open my car?"
+  faq_automotive_1_a: "Yes, vehicle opening without damage."
+  faq_automotive_2_q: "Do you duplicate car keys?"
+  faq_automotive_2_a: "Yes, car key duplication and programming."
+  faq_automotive_3_q: "Do you work on all vehicles?"
+  faq_automotive_3_a: "Yes, all vehicle makes and models."
+  back_to_city: "Back to %city%"
+
+# Legal Pages
+legal:
+  updated: "Last updated"

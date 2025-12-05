@@ -1,0 +1,25 @@
+{% comment %}
+Generic content grid component
+Usage: {% include content-grid.html items=items_array title_key="title" text_key="text" source=t.section_name %}
+Or:    {% include content-grid.html count=4 prefix="step" source=t.section_name %}
+{% endcomment %}
+
+<div class="situations-grid">
+{% if include.items %}
+    {% for item in include.items %}
+    <div class="situation-card">
+        <h4>{{ item[include.title_key] | default: item.title | default: item }}</h4>
+        {% if include.text_key %}<p>{{ item[include.text_key] | default: item.text }}</p>{% endif %}
+    </div>
+    {% endfor %}
+{% elsif include.count %}
+    {% for i in (1..include.count) %}
+    {% capture title_key %}{{ include.prefix }}_{{ i }}_title{% endcapture %}
+    {% capture text_key %}{{ include.prefix }}_{{ i }}_text{% endcapture %}
+    <div class="situation-card">
+        <h4>{{ include.source[title_key] }}</h4>
+        <p>{{ include.source[text_key] }}</p>
+    </div>
+    {% endfor %}
+{% endif %}
+</div>

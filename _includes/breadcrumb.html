@@ -1,0 +1,17 @@
+{% comment %}
+Breadcrumb Navigation
+Usage: {% include breadcrumb.html items="Page Title" middle_text=t.breadcrumb.services middle_link="#services" %}
+- items: final page title (string)
+- middle_text: middle breadcrumb text
+- middle_link: middle breadcrumb link (appended to /lang/)
+{% endcomment %}
+
+<nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+    {% if include.middle_text %}
+    <span>/</span>
+    <a href="/{{ lang }}/{{ include.middle_link }}">{{ include.middle_text }}</a>
+    {% endif %}
+    <span>/</span>
+    <strong>{{ include.items }}</strong>
+</nav>

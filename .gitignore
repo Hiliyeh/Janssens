@@ -35,3 +35,14 @@ doc/
 docs/
 *.md
 !README.md
+
+# Archive (anciens fichiers statiques)
+_archive/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/

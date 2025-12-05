@@ -1,0 +1,84 @@
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+{% assign services = site.data.services %}
+{% assign guides = site.data.guides %}
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/{{ lang }}/" class="logo">
+                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ biz.name }}" class="logo-img" width="120" height="44" loading="lazy">
+                </a>
+                <p>{{ t.footer.desc }}</p>
+                <div class="footer-social">
+                    <a href="{{ biz.social.messenger }}" aria-label="Messenger" rel="noopener noreferrer" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                    <a href="{{ biz.social.whatsapp }}" aria-label="WhatsApp" rel="noopener noreferrer" target="_blank">
+                        <i data-lucide="smartphone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>{{ t.footer.services }}</h4>
+                    <ul>
+                        {% for service in services limit:5 %}
+                        <li><a href="/{{ lang }}/services/{{ service[lang].slug }}/">{{ service[lang].name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ t.footer.company }}</h4>
+                    <ul>
+                        <li><a href="/{{ lang }}/#pourquoi">{{ t.footer.about }}</a></li>
+                        <li><a href="/{{ lang }}/#confiance">{{ t.footer.partners }}</a></li>
+                        <li><a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a></li>
+                        <li><a href="/{{ lang }}/#faq">FAQ</a></li>
+                        <li><a href="/{{ lang }}/#contact">{{ t.nav.contact }}</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ t.footer.guides }}</h4>
+                    <ul>
+                        {% for guide in guides limit:4 %}
+                        <li><a href="/{{ lang }}/guides/{{ guide[lang].slug }}/">{{ guide[lang].title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>{{ t.nav.contact }}</h4>
+                    <ul>
+                        <li><a href="tel:{{ biz.phone }}">{{ biz.phone_display }}</a></li>
+                        <li><a href="mailto:{{ biz.email }}">{{ biz.email }}</a></li>
+                        <li>{{ biz.address.street }}</li>
+                        <li>{{ biz.address.postal }} {{ biz.address.city }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> {{ biz.name }} · {{ biz.company }} · TVA {{ biz.vat }}</p>
+            <div class="footer-legal">
+                <a href="/{{ lang }}/terms/">{{ t.footer.terms }}</a>
+                <a href="/{{ lang }}/privacy/">{{ t.footer.privacy }}</a>
+            </div>
+        </div>
+        <div class="footer-credit">
+            {{ t.footer.credit }} <a href="{{ biz.designer.url }}" target="_blank" rel="noopener noreferrer">{{ biz.designer.name }}</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating CTA -->
+<div class="floating-cta" id="floatingCta">
+    <a href="tel:{{ biz.phone }}" class="floating-btn floating-phone">
+        <i data-lucide="phone" class="icon"></i>
+        <span class="floating-text">{{ biz.phone_display }}</span>
+    </a>
+    <a href="{{ biz.social.whatsapp }}" class="floating-btn floating-whatsapp" rel="noopener noreferrer" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle" class="icon"></i>
+    </a>
+</div>

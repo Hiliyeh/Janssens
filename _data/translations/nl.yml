@@ -1,0 +1,399 @@
+# Dutch Translations
+# ==================
+
+# Navigation
+nav:
+  services: "Diensten"
+  why_us: "Waarom wij"
+  trust: "Engagementen"
+  areas: "Interventie"
+  contact: "Contact"
+  call: "Bellen"
+  whatsapp: "WhatsApp"
+
+# Hero Section
+hero:
+  title_1: "Uw slotenmaker"
+  title_2: "Brussel, Waals- & Vlaams-Brabant"
+  text: "Deur dichtgevallen? Sleutel verloren? Wij zijn er binnen <strong>30 minuten</strong>, zonder uw deur te beschadigen. Meer dan <strong>10 jaar</strong> ervaring, geregistreerd bedrijf, prijs meegedeeld voor interventie."
+  cta_call: "Nu bellen"
+  cta_whatsapp: "WhatsApp"
+  trust_1: "Zonder schade"
+  trust_2: "Vaste prijs"
+  trust_3: "Betaling na service"
+
+# Stats
+stats:
+  delay: "Gemiddelde tijd"
+  experience: "Jaar ervaring"
+  cities: "Gemeenten gedekt"
+  delay_value: "30 min"
+  experience_value: "10+"
+  cities_value: "96"
+
+# Emergency Banner
+emergency:
+  title: "Deur dichtgevallen? Sleutel verloren of gebroken?"
+  text: "Een gekwalificeerde slotenmaker is binnen 30 minuten bij u."
+  btn: "Noodoproep"
+  badge: "Noodgeval 24/7"
+
+# Services Section
+services:
+  tag: "Onze diensten"
+  title: "Professionele slotenmakeroplossingen"
+  desc: "Snelle en zorgvuldige interventies voor al uw beveiligingsbehoeften"
+  learn_more: "Meer weten"
+
+# Why Section
+why:
+  tag: "Waarom Janssens?"
+  title: "Vertrouwen bouw je op"
+  intro: "Al meer dan 10 jaar werken wij voor particulieren, bedrijven en instellingen in Brussel en Brabant. Onze reputatie is gebaseerd op drie engagementen."
+
+# Pillars
+pillars:
+  speed:
+    title: "Snelheid"
+    text: "Gegarandeerde interventie binnen 30 minuten, 24/7, inclusief feestdagen."
+  expertise:
+    title: "Expertise"
+    text: "Gecertificeerde technici, professionele uitrusting, zorgvuldig werk zonder schade."
+  transparency:
+    title: "Transparantie"
+    text: "Prijs meegedeeld voor interventie. Geen verrassingen. Betaling alleen na service."
+
+# Trust
+trust:
+  available:
+    title: "24/7 beschikbaar"
+    text: "Feestdagen en weekends inbegrepen"
+  registered:
+    title: "Geregistreerd bedrijf"
+    text: "BTW BE0712.625.742 · LAMRO GROUP"
+  certified:
+    title: "Gecertificeerde technici"
+    text: "Continue opleiding op alle merken"
+
+# Live Feed
+live:
+  tag: "Onze dekking"
+  title: "Live interventies"
+  today: "Vandaag:"
+  badge: "Geregistreerd bedrijf"
+  status:
+    enroute: "Onderweg"
+    ongoing: "Bezig"
+    completed: "Voltooid"
+
+# Zones Section
+zones:
+  tag: "Interventiezones"
+  title: "Bent u in onze zone?"
+  desc: "Controleer in 1 seconde of wij bij u komen"
+  placeholder: "Voer uw gemeente in..."
+  initial: "Typ de naam van uw gemeente om te controleren"
+  success:
+    title: "Goed nieuws!"
+    text: "Wij komen naar"
+    delay: "Interventie in <strong>~30 min</strong>"
+    available: "Beschikbaar <strong>24/7</strong>"
+    cta: "Nu bellen"
+  not_found:
+    title: "Zone niet vermeld"
+    text: "Neem contact met ons op, misschien kunnen we toch komen."
+    cta: "Contact opnemen"
+  municipalities: "gemeenten"
+  regions:
+    title: "Onze 96 gedekte gemeenten:"
+    brussels: "Brussels Hoofdstedelijk"
+    walloon: "Waals-Brabant"
+    flemish: "Vlaams-Brabant"
+
+# Home Page
+home:
+  emergency_label: "Noodsituatie?"
+  hero_image_alt: "Janssens Slotenmaker thuisinterventie in Brussel"
+  map_image_alt: "Dekkingskaart slotenmaker Brussel en Brabant"
+
+# Guides Section
+guides:
+  tag: "Praktische gidsen"
+  title: "Deskundig slotenmakeradvies"
+  desc: "Ontdek onze praktische gidsen om alles over slotenmakerij te leren"
+  view_all: "Alle gidsen bekijken"
+
+# FAQ Section
+faq:
+  tag: "FAQ"
+  title: "Veelgestelde vragen"
+
+# Contact Section
+contact:
+  tag: "Contact"
+  title: "Slotenmaker nodig?"
+  text: "Bel ons direct of stuur een bericht. Wij antwoorden binnen enkele minuten."
+  phone: "Telefoon"
+  whatsapp: "WhatsApp"
+  whatsapp_text: "Snel antwoord"
+  email: "E-mail"
+  address: "Adres"
+
+# Footer
+footer:
+  desc: "Uw slotenmaker-expert in Brussel sinds meer dan 10 jaar. 24/7 beschikbaar voor al uw noodgevallen."
+  services: "Diensten"
+  company: "Bedrijf"
+  guides: "Gidsen & Tips"
+  about: "Over ons"
+  partners: "Partners"
+  terms: "Gebruiksvoorwaarden"
+  privacy: "Privacybeleid"
+  credit: "Ontworpen door"
+
+# Breadcrumb
+breadcrumb:
+  home: "Home"
+  services: "Diensten"
+  cities: "Interventiezones"
+  emergency: "Noodgevallen"
+  brands: "Merken"
+  guides: "Gidsen"
+
+# Common
+common:
+  call_now: "Bel"
+  learn_more: "Meer weten"
+  back: "Terug"
+  all_services: "Alle diensten"
+  free_quote: "Gratis offerte ter plaatse"
+  response_time: "Aankomst in 30 min"
+  no_damage: "Zonder schade 95%"
+  available_247: "24/7 beschikbaar"
+  fixed_price: "Vaste prijs"
+  pay_after: "Betaling na interventie"
+
+# City Pages
+city:
+  title_prefix: "Slotenmaker in"
+  at: "in"
+  subtitle: "<strong>Slotenmaker nodig in %city%</strong>? Janssens Slotenmaker komt snel in heel <strong>%city%</strong> en omgeving. Beschikbaar <strong>24/7</strong>, ons team is binnen <strong>30 minuten</strong> bij u."
+  services_title: "Onze slotenmakerdiensten in %city%"
+  services_intro: "Als <strong>professionele slotenmaker in %city%</strong> bieden wij een volledig pakket diensten aan voor al uw slotenmaker noodgevallen en behoeften. Of u nu in het centrum van %city% of in de buitenwijken woont, onze technicus komt snel."
+  response_time: "Interventie in 30 min in %city%"
+  emergency_title: "Slotnoodgeval in %city%?"
+  emergency_text: "Onze slotenmaker is 24/7 beschikbaar om in %city% te interveniëren"
+  why_title: "Waarom Janssens Slotenmaker kiezen in %city%?"
+  why_intro: "Inwoners van <strong>%city%</strong> vertrouwen al meer dan 10 jaar op ons voor al hun slotenmakerbehoeften. Dit is waarom onze <strong>slotenmakerdienst in %city%</strong> eruit springt:"
+  why_speed: "Wij zijn binnen 30 minuten in %city%, dag of nacht, weekends of feestdagen."
+  transparent_price: "Transparante prijzen"
+  why_price: "Gratis offerte ter plaatse in %city%. Geen verrassingen, de opgegeven prijs is de eindprijs."
+  no_damage: "Opening zonder schade"
+  why_no_damage: "Onze technicus in %city% gebruikt niet-destructieve technieken in 95% van de interventies."
+  professionalism: "Professionalisme"
+  why_pro: "Gekwalificeerde en ervaren slotenmaker, regelmatig werkzaam in %city% en %region%."
+  zone_title: "Interventiegebied rond %city%"
+  zone_text_1: "Gevestigd in Brussel, komen wij snel naar <strong>%city%</strong> en alle gemeenten in <strong>%region%</strong>. Als u in %city% of omgeving woont, kan onze slotenmaker binnen 30 minuten bij u zijn."
+  zone_text_2: "Onze kennis van %city% en haar wijken stelt ons in staat onze routes te optimaliseren en zo snel mogelijk te reageren. Of u nu midden in de nacht buitengesloten bent in %city% of uw woning wilt beveiligen, bel ons."
+  brands_title: "Experts in alle slotmerken"
+  faq_title: "Veelgestelde vragen over onze dienst in %city%"
+  faq_1_q: "Wat is de responstijd in %city%?"
+  faq_1_a: "Onze slotenmaker is binnen <strong>30 minuten</strong> in %city%. Wij zijn 24/7 beschikbaar, inclusief weekends en feestdagen."
+  faq_2_q: "Hoeveel kost een slotenmaker in %city%?"
+  faq_2_a: "Onze tarieven in %city% zijn transparant en worden voor de interventie meegedeeld. De offerte is gratis en wordt ter plaatse opgesteld voor elk werk. Geen verborgen kosten."
+  faq_3_q: "Werkt u 's nachts in %city%?"
+  faq_3_a: "Ja, onze <strong>slotenmakerdienst in %city%</strong> is dag en nacht beschikbaar. Een nachttoeslag kan van toepassing zijn tussen 21u en 7u."
+  faq_4_q: "Opent u deuren zonder het slot te breken?"
+  faq_4_a: "In <strong>95% van de gevallen</strong> openen wij deuren in %city% zonder enige schade dankzij onze niet-destructieve technieken. Indien vervanging nodig is, geven wij eerst een offerte."
+  faq_5_q: "Welke soorten sloten installeert u in %city%?"
+  faq_5_a: "Wij installeren alle soorten sloten in %city%: <strong>Europese cilinders, meerpuntssloten, A2P-sloten</strong> en slimme sloten. Wij werken met grote merken zoals Vachette, Bricard, Fichet."
+  nearby_title: "Naburige gemeenten"
+  nearby_intro: "Wij komen ook in gemeenten nabij %city%"
+  see_all: "Bekijk alle 96 gemeenten"
+
+# Emergency Pages
+emergency_page:
+  hero_text: "Onze slotenmaker is er binnen <strong>30 minuten</strong> en lost uw probleem <strong>zonder schade</strong> op."
+  speed_title: "Gegarandeerd snelle interventie"
+  speed_1_title: "Aankomst in 30 minuten"
+  speed_1_text: "Onze dichtstbijzijnde slotenmaker wordt onmiddellijk gestuurd. Gemiddelde aankomsttijd: 30 minuten."
+  speed_2_title: "Zonder schade in 95% van de gevallen"
+  speed_2_text: "Niet-destructieve openingstechnieken. Uw slot blijft intact en functioneel."
+  speed_3_title: "24/7 beschikbaar"
+  speed_3_text: "Dag, nacht, weekend, feestdagen... Wij komen wanneer u ons nodig heeft."
+  speed_4_title: "Gratis offerte ter plaatse"
+  speed_4_text: "Prijs meegedeeld voor interventie. Geen verrassingen op de eindfactuur."
+  cta_now: "nu?"
+  cta_text: "Blijf niet buitengesloten! Bel ons, wij zijn er binnen 30 minuten."
+  process_title: "Hoe werkt het?"
+  process_1_title: "1. U belt ons"
+  process_1_text: "Beschrijf kort uw situatie. Wij geven u een precieze aankomsttijd."
+  process_2_title: "2. Wij komen snel"
+  process_2_text: "Onze slotenmaker komt met alle benodigde uitrusting."
+  process_3_title: "3. Offerte voor interventie"
+  process_3_text: "Wij geven u de exacte prijs voordat we beginnen. U keurt goed, dan grijpen wij in."
+  process_4_title: "4. Probleem opgelost"
+  process_4_text: "Snelle en nette interventie. U krijgt weer toegang tot uw woning."
+  guarantees_title: "Onze garanties"
+  invoice_provided: "Factuur geleverd"
+  faq_1_q: "Hoeveel kost de interventie?"
+  faq_1_a: "De prijs hangt af van het type slot en het tijdstip van interventie. Wij geven een gratis offerte ter plaatse voor elk werk. De opgegeven prijs is de eindprijs, geen verrassingen."
+  faq_2_q: "Zal de opening mijn slot beschadigen?"
+  faq_2_a: "In 95% van de gevallen grijpen wij in zonder enige schade. Uw slot blijft perfect functioneel. Als schade uitzonderlijk nodig is, waarschuwen wij u vooraf."
+  faq_3_q: "Hoe lang duurt het om te komen?"
+  faq_3_a: "Onze gemiddelde aankomsttijd is 30 minuten in Brussel en omgeving. Wij geven u een precieze tijd aan de telefoon."
+  faq_4_q: "Werkt u 's nachts en in het weekend?"
+  faq_4_a: "Ja, wij zijn 24 uur per dag, 7 dagen per week beschikbaar, inclusief feestdagen. Een toeslag kan van toepassing zijn voor nachtinterventies."
+  other_emergencies: "Andere noodsituaties"
+
+# Service Pages
+service_page:
+  hero_suffix: "Onze slotenmaker is er binnen <strong>30 minuten</strong> en werkt <strong>zonder schade in 95% van de gevallen</strong>."
+  when_title: "Wanneer deze dienst gebruiken?"
+  situation_1_title: "Noodgeval"
+  situation_1_text: "Dringend nodig? Wij zijn 24/7 beschikbaar."
+  situation_2_title: "Beveiliging"
+  situation_2_text: "Versterk de beveiliging van uw woning of bedrijf."
+  situation_3_title: "Reparatie"
+  situation_3_text: "Geblokkeerd slot, gebroken sleutel? Wij repareren ter plaatse."
+  situation_4_title: "Installatie"
+  situation_4_text: "Nieuw slot, nieuwe cilinder? Nette installatie."
+  cta_title: "Deze dienst nodig?"
+  cta_text: "Onze slotenmaker is er binnen 30 minuten, 24/7"
+  why_title: "Waarom Janssens kiezen?"
+  non_destructive: "Niet-destructieve technieken"
+  process_title: "Hoe werkt het?"
+  step_1_title: "1. U belt"
+  step_1_text: "Beschrijf uw situatie, wij geven u een precieze tijd."
+  step_2_title: "2. Wij komen"
+  step_2_text: "Onze slotenmaker komt met alle benodigde uitrusting."
+  step_3_title: "3. Gratis offerte"
+  step_3_text: "Prijs meegedeeld voor het werk. U keurt goed."
+  step_4_title: "4. Interventie"
+  step_4_text: "Zorgvuldig en snel werk. Betaling achteraf."
+  faq_1_q: "Hoeveel kost deze dienst?"
+  faq_1_a: "Prijs hangt af van de situatie. Gratis offerte ter plaatse, prijs meegedeeld voor het werk."
+  faq_2_q: "Werkt u in het weekend?"
+  faq_2_a: "Ja, wij zijn 24/7 beschikbaar, inclusief feestdagen."
+  faq_3_q: "Werkt u met alle merken?"
+  faq_3_a: "Ja, onze technici zijn opgeleid op alle grote merken: Fichet, Bricard, Vachette, Mul-T-Lock, Picard."
+  other_services: "Onze andere diensten"
+
+# Brand Pages
+brand_page:
+  title_prefix: "Expert"
+  models_title: "%brand% modellen die wij beheersen"
+  model_expertise: "Installatie, reparatie, probleemoplossing, sleutelreproductie."
+  cta_title: "%brand% expert nodig?"
+  cta_text: "Onze gecertificeerde slotenmaker is er binnen 30 minuten"
+  why_title: "Waarom een %brand% expert kiezen?"
+  adv_1: "Gecertificeerde technici"
+  adv_2: "Originele onderdelen"
+  adv_3: "Garantie op werk"
+  adv_4: "Continue opleiding"
+  other_brands: "Andere expertmerken"
+
+# Guide Index Page
+guide_index:
+  title: "Slotenmaker Gidsen & Tips"
+  subtitle: "Vind onze praktische gidsen om alles te leren over slotenmakerij: noodgevallen, slotkeuzes, veiligheidstips en prijzen."
+  read_guide: "Lees de gids"
+
+# Guide Pages
+guide_page:
+  breadcrumb_guides: "Gidsen"
+  need_help: "Hulp nodig?"
+  cta_title: "Nu een slotenmaker nodig?"
+  cta_text: "Wij zijn er binnen 30 minuten in Brussel en omgeving"
+  related_title: "Gerelateerde gidsen"
+
+# Emergency City Pages
+emergency_city:
+  in: "in"
+  arrival_text: "Onze slotenmaker komt binnen 30 minuten naar %city%, 24/7."
+  tips_title: "Tips voor %emergency% in %city%"
+  tip_1: "Blijf kalm, forceer niet"
+  tip_2: "Controleer de ramen"
+  tip_3: "Bel een erkende slotenmaker"
+  tip_4: "Vraag eerst een offerte"
+  cta_text: "Onze slotenmaker komt binnen 30 minuten, 24/7"
+  why_us_title: "Waarom ons kiezen in %city%?"
+  adv_1_title: "Aankomst in 30 min"
+  adv_1_text: "Onze slotenmaker is dicht bij %city%"
+  adv_2_title: "Transparante prijs"
+  adv_2_text: "Gratis offerte voor het werk"
+  adv_3_title: "Geen schade"
+  adv_3_text: "Professionele technieken"
+  adv_4_title: "BTW geregistreerd"
+  faq_1_q: "Hoe lang duurt het oplossen van een %emergency% geval?"
+  faq_1_a: "Aankomst in 30 min, interventie in 5-15 min afhankelijk van de situatie."
+  faq_2_q: "Zal er schade zijn?"
+  faq_2_a: "Nee, in 95% van de gevallen werken we zonder schade."
+  other_emergencies: "Andere noodgevallen in %city%"
+  locksmith_in: "Slotenmaker in"
+
+# City Service Pages
+city_service:
+  subtitle: "%service% dienst beschikbaar in %city%. Snelle interventie 24/7, gratis offerte ter plaatse."
+  what_title: "%service% in %city%"
+  what_intro: "%service% nodig in %city%? Onze professionele slotenmaker komt snel in de hele gemeente."
+  cta_title: "%service% nodig in %city%?"
+  cta_text: "Onze slotenmaker is er binnen 30 minuten, 24/7"
+  why_title: "Waarom onze dienst kiezen in %city%?"
+  why_intro: "Inwoners van %city% vertrouwen op ons voor hun %service% behoeften."
+  why_speed: "Gegarandeerde interventie binnen 30 minuten in %city%."
+  why_price: "Gratis offerte ter plaatse. Prijs voor het werk vermeld."
+  why_quality: "Netjes en professioneel werk, geen schade in 95% van de gevallen."
+  why_pro: "Gecertificeerde technici die regelmatig in %city% werken."
+  process_title: "Hoe verloopt de interventie?"
+  step_1_title: "Bellen"
+  step_1_text: "Beschrijf uw behoefte, wij geven u een precieze timing."
+  step_2_title: "Aankomst"
+  step_2_text: "Onze slotenmaker komt in %city% met alle uitrusting."
+  step_3_title: "Offerte"
+  step_3_text: "Prijs ter plaatse vermeld voor elk werk."
+  step_4_title: "Interventie"
+  step_4_text: "Netjes en snel werk. Betaling na dienst."
+  other_services: "Andere diensten in %city%"
+  faq_title: "Vragen over %service% in %city%"
+  faq_door_opening_1_q: "Hoeveel kost deuropening in %city%?"
+  faq_door_opening_1_a: "Prijs hangt af van slottype. Gratis offerte ter plaatse."
+  faq_door_opening_2_q: "Beschadigt u mijn deur?"
+  faq_door_opening_2_a: "Nee, in 95% van de gevallen openen we zonder schade."
+  faq_door_opening_3_q: "Werkt u 's nachts in %city%?"
+  faq_door_opening_3_a: "Ja, dienst beschikbaar 24/7."
+  faq_lock_replacement_1_q: "Welke soorten sloten installeert u?"
+  faq_lock_replacement_1_a: "Europese cilinders, meerpuntssloten, A2P. Alle merken."
+  faq_lock_replacement_2_q: "Hoe lang duurt het vervangen van een slot?"
+  faq_lock_replacement_2_a: "Meestal 30-60 minuten afhankelijk van slottype."
+  faq_lock_replacement_3_q: "Biedt u hoogbeveiligde sloten aan?"
+  faq_lock_replacement_3_a: "Ja, wij installeren gecertificeerde A2P sloten."
+  faq_key_duplication_1_q: "Kunt u beveiligde sleutels kopiëren?"
+  faq_key_duplication_1_a: "Ja, wij kopiëren alle soorten sleutels, inclusief gepatenteerde sleutels."
+  faq_key_duplication_2_q: "Hoe lang duurt het kopiëren van een sleutel?"
+  faq_key_duplication_2_a: "Meestal enkele minuten voor een standaard sleutel."
+  faq_key_duplication_3_q: "Komt u ter plaatse naar %city%?"
+  faq_key_duplication_3_a: "Ja, onze slotenmaker reist naar %city% met zijn uitrusting."
+  faq_door_reinforcement_1_q: "Wat is deurbepantsering?"
+  faq_door_reinforcement_1_a: "Het versterken van uw bestaande deur met stalen platen."
+  faq_door_reinforcement_2_q: "Is versterking effectief tegen inbraken?"
+  faq_door_reinforcement_2_a: "Ja, het verhoogt de weerstand van uw deur aanzienlijk."
+  faq_door_reinforcement_3_q: "Hoeveel kost deurbepantsering?"
+  faq_door_reinforcement_3_a: "Prijs hangt af van deurtype. Gratis offerte ter plaatse."
+  faq_safe_1_q: "Kunt u een geblokkeerde kluis openen?"
+  faq_safe_1_a: "Ja, wij werken aan alle soorten kluizen."
+  faq_safe_2_q: "Installeert u kluizen?"
+  faq_safe_2_a: "Ja, kluisverkoop en installatie in %city%."
+  faq_safe_3_q: "Code vergeten, wat te doen?"
+  faq_safe_3_a: "Bel ons, wij kunnen uw kluis openen en herprogrammeren."
+  faq_automotive_1_q: "Kunt u mijn auto openen?"
+  faq_automotive_1_a: "Ja, voertuigopening zonder schade."
+  faq_automotive_2_q: "Kopieert u autosleutels?"
+  faq_automotive_2_a: "Ja, autosleutel kopiëren en programmeren."
+  faq_automotive_3_q: "Werkt u aan alle voertuigen?"
+  faq_automotive_3_a: "Ja, alle merken en modellen voertuigen."
+  back_to_city: "Terug naar %city%"
+
+# Legal Pages
+legal:
+  updated: "Laatst bijgewerkt"

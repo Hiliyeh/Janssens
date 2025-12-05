@@ -1,0 +1,554 @@
+# Cities Data
+# ===========
+# 96 municipalities across 3 regions
+
+# Cities with full subpages (service pages per city)
+cities_with_subpages:
+  - anderlecht
+  - auderghem
+  - beersel
+  - berchem-sainte-agathe
+  - braine-lalleud
+  - bruxelles-ville
+  - dilbeek
+  - etterbeek
+  - evere
+  - forest
+  - ganshoren
+  - grimbergen
+  - halle
+  - ixelles
+  - jette
+  - koekelberg
+  - kraainem
+  - la-hulpe
+  - lasne
+  - leuven
+  - machelen
+  - molenbeek-saint-jean
+  - nivelles
+  - ottignies-louvain-la-neuve
+  - overijse
+  - rixensart
+  - saint-gilles
+  - saint-josse-ten-noode
+  - schaerbeek
+  - sint-genesius-rode
+  - sint-pieters-leeuw
+  - tervuren
+  - tubize
+  - uccle
+  - vilvoorde
+  - waterloo
+  - watermael-boitsfort
+  - wavre
+  - wemmel
+  - wezembeek-oppem
+  - woluwe-saint-lambert
+  - woluwe-saint-pierre
+  - zaventem
+
+# Bruxelles-Capitale (19 communes)
+brussels:
+  - name: "Anderlecht"
+    slug: "anderlecht"
+    postal: "1070"
+    has_subpages: true
+
+  - name: "Auderghem"
+    slug: "auderghem"
+    slug_nl: "oudergem"
+    postal: "1160"
+    has_subpages: true
+
+  - name: "Berchem-Sainte-Agathe"
+    slug: "berchem-sainte-agathe"
+    slug_nl: "sint-agatha-berchem"
+    postal: "1082"
+    has_subpages: true
+
+  - name: "Bruxelles-Ville"
+    slug: "bruxelles-ville"
+    slug_en: "city-of-brussels"
+    slug_nl: "brussel-stad"
+    postal: "1000"
+    has_subpages: true
+
+  - name: "Etterbeek"
+    slug: "etterbeek"
+    postal: "1040"
+    has_subpages: true
+
+  - name: "Evere"
+    slug: "evere"
+    postal: "1140"
+    has_subpages: true
+
+  - name: "Forest"
+    slug: "forest"
+    slug_nl: "vorst"
+    postal: "1190"
+    has_subpages: true
+
+  - name: "Ganshoren"
+    slug: "ganshoren"
+    postal: "1083"
+    has_subpages: true
+
+  - name: "Ixelles"
+    slug: "ixelles"
+    slug_nl: "elsene"
+    postal: "1050"
+    has_subpages: true
+
+  - name: "Jette"
+    slug: "jette"
+    postal: "1090"
+    has_subpages: true
+
+  - name: "Koekelberg"
+    slug: "koekelberg"
+    postal: "1081"
+    has_subpages: true
+
+  - name: "Molenbeek-Saint-Jean"
+    slug: "molenbeek-saint-jean"
+    slug_nl: "sint-jans-molenbeek"
+    postal: "1080"
+    has_subpages: true
+
+  - name: "Saint-Gilles"
+    slug: "saint-gilles"
+    slug_nl: "sint-gillis"
+    postal: "1060"
+    has_subpages: true
+
+  - name: "Saint-Josse-ten-Noode"
+    slug: "saint-josse-ten-noode"
+    slug_nl: "sint-joost-ten-node"
+    postal: "1210"
+    has_subpages: true
+
+  - name: "Schaerbeek"
+    slug: "schaerbeek"
+    slug_nl: "schaarbeek"
+    postal: "1030"
+    has_subpages: true
+
+  - name: "Uccle"
+    slug: "uccle"
+    slug_nl: "ukkel"
+    postal: "1180"
+    has_subpages: true
+
+  - name: "Watermael-Boitsfort"
+    slug: "watermael-boitsfort"
+    slug_nl: "watermaal-bosvoorde"
+    postal: "1170"
+    has_subpages: true
+
+  - name: "Woluwe-Saint-Lambert"
+    slug: "woluwe-saint-lambert"
+    slug_nl: "sint-lambrechts-woluwe"
+    postal: "1200"
+    has_subpages: true
+
+  - name: "Woluwe-Saint-Pierre"
+    slug: "woluwe-saint-pierre"
+    slug_nl: "sint-pieters-woluwe"
+    postal: "1150"
+    has_subpages: true
+
+# Brabant wallon (25 communes)
+walloon_brabant:
+  - name: "Beauvechain"
+    slug: "beauvechain"
+    postal: "1320"
+    has_subpages: false
+
+  - name: "Braine-l'Alleud"
+    slug: "braine-lalleud"
+    postal: "1420"
+    has_subpages: true
+
+  - name: "Braine-le-Ch\u00e2teau"
+    slug: "braine-le-chateau"
+    postal: "1440"
+    has_subpages: false
+
+  - name: "Chastre"
+    slug: "chastre"
+    postal: "1450"
+    has_subpages: false
+
+  - name: "Chaumont-Gistoux"
+    slug: "chaumont-gistoux"
+    postal: "1325"
+    has_subpages: false
+
+  - name: "Court-Saint-\u00c9tienne"
+    slug: "court-saint-etienne"
+    postal: "1490"
+    has_subpages: false
+
+  - name: "Genappe"
+    slug: "genappe"
+    postal: "1470"
+    has_subpages: false
+
+  - name: "Grez-Doiceau"
+    slug: "grez-doiceau"
+    postal: "1390"
+    has_subpages: false
+
+  - name: "H\u00e9l\u00e9cine"
+    slug: "helecine"
+    postal: "1357"
+    has_subpages: false
+
+  - name: "Incourt"
+    slug: "incourt"
+    postal: "1315"
+    has_subpages: false
+
+  - name: "Jodoigne"
+    slug: "jodoigne"
+    postal: "1370"
+    has_subpages: false
+
+  - name: "La Hulpe"
+    slug: "la-hulpe"
+    postal: "1310"
+    has_subpages: true
+
+  - name: "Lasne"
+    slug: "lasne"
+    postal: "1380"
+    has_subpages: true
+
+  - name: "Mont-Saint-Guibert"
+    slug: "mont-saint-guibert"
+    postal: "1435"
+    has_subpages: false
+
+  - name: "Nivelles"
+    slug: "nivelles"
+    postal: "1400"
+    has_subpages: true
+
+  - name: "Orp-Jauche"
+    slug: "orp-jauche"
+    postal: "1350"
+    has_subpages: false
+
+  - name: "Ottignies-Louvain-la-Neuve"
+    slug: "ottignies-louvain-la-neuve"
+    postal: "1340"
+    has_subpages: true
+
+  - name: "Perwez"
+    slug: "perwez"
+    postal: "1360"
+    has_subpages: false
+
+  - name: "Ramillies"
+    slug: "ramillies"
+    postal: "1367"
+    has_subpages: false
+
+  - name: "Rixensart"
+    slug: "rixensart"
+    postal: "1330"
+    has_subpages: true
+
+  - name: "Tubize"
+    slug: "tubize"
+    postal: "1480"
+    has_subpages: true
+
+  - name: "Villers-la-Ville"
+    slug: "villers-la-ville"
+    postal: "1495"
+    has_subpages: false
+
+  - name: "Walhain"
+    slug: "walhain"
+    postal: "1457"
+    has_subpages: false
+
+  - name: "Waterloo"
+    slug: "waterloo"
+    postal: "1410"
+    has_subpages: true
+
+  - name: "Wavre"
+    slug: "wavre"
+    postal: "1300"
+    has_subpages: true
+
+# Brabant flamand (52 communes)
+flemish_brabant:
+  - name: "Aarschot"
+    slug: "aarschot"
+    postal: "3200"
+    has_subpages: false
+
+  - name: "Asse"
+    slug: "asse"
+    postal: "1730"
+    has_subpages: false
+
+  - name: "Beersel"
+    slug: "beersel"
+    postal: "1650"
+    has_subpages: true
+
+  - name: "Begijnendijk"
+    slug: "begijnendijk"
+    postal: "3130"
+    has_subpages: false
+
+  - name: "Bekkevoort"
+    slug: "bekkevoort"
+    postal: "3460"
+    has_subpages: false
+
+  - name: "Bertem"
+    slug: "bertem"
+    postal: "3060"
+    has_subpages: false
+
+  - name: "Bierbeek"
+    slug: "bierbeek"
+    postal: "3360"
+    has_subpages: false
+
+  - name: "Boortmeerbeek"
+    slug: "boortmeerbeek"
+    postal: "3190"
+    has_subpages: false
+
+  - name: "Boutersem"
+    slug: "boutersem"
+    postal: "3370"
+    has_subpages: false
+
+  - name: "Diest"
+    slug: "diest"
+    postal: "3290"
+    has_subpages: false
+
+  - name: "Dilbeek"
+    slug: "dilbeek"
+    postal: "1700"
+    has_subpages: true
+
+  - name: "Drogenbos"
+    slug: "drogenbos"
+    postal: "1620"
+    has_subpages: false
+
+  - name: "Geetbets"
+    slug: "geetbets"
+    postal: "3450"
+    has_subpages: false
+
+  - name: "Glabbeek"
+    slug: "glabbeek"
+    postal: "3380"
+    has_subpages: false
+
+  - name: "Grimbergen"
+    slug: "grimbergen"
+    postal: "1850"
+    has_subpages: true
+
+  - name: "Haacht"
+    slug: "haacht"
+    postal: "3150"
+    has_subpages: false
+
+  - name: "Halle"
+    slug: "halle"
+    postal: "1500"
+    has_subpages: true
+
+  - name: "Herent"
+    slug: "herent"
+    postal: "3020"
+    has_subpages: false
+
+  - name: "Hoegaarden"
+    slug: "hoegaarden"
+    postal: "3320"
+    has_subpages: false
+
+  - name: "Hoeilaart"
+    slug: "hoeilaart"
+    postal: "1560"
+    has_subpages: false
+
+  - name: "Holsbeek"
+    slug: "holsbeek"
+    postal: "3220"
+    has_subpages: false
+
+  - name: "Huldenberg"
+    slug: "huldenberg"
+    postal: "3040"
+    has_subpages: false
+
+  - name: "Kampenhout"
+    slug: "kampenhout"
+    postal: "1910"
+    has_subpages: false
+
+  - name: "Kapelle-op-den-Bos"
+    slug: "kapelle-op-den-bos"
+    postal: "1880"
+    has_subpages: false
+
+  - name: "Keerbergen"
+    slug: "keerbergen"
+    postal: "3140"
+    has_subpages: false
+
+  - name: "Kortenaken"
+    slug: "kortenaken"
+    postal: "3470"
+    has_subpages: false
+
+  - name: "Kortenberg"
+    slug: "kortenberg"
+    postal: "3070"
+    has_subpages: false
+
+  - name: "Kraainem"
+    slug: "kraainem"
+    postal: "1950"
+    has_subpages: true
+
+  - name: "Landen"
+    slug: "landen"
+    postal: "3400"
+    has_subpages: false
+
+  - name: "Lennik"
+    slug: "lennik"
+    postal: "1750"
+    has_subpages: false
+
+  - name: "Leuven"
+    slug: "leuven"
+    postal: "3000"
+    has_subpages: true
+
+  - name: "Linkebeek"
+    slug: "linkebeek"
+    postal: "1630"
+    has_subpages: false
+
+  - name: "Londerzeel"
+    slug: "londerzeel"
+    postal: "1840"
+    has_subpages: false
+
+  - name: "Lubbeek"
+    slug: "lubbeek"
+    postal: "3210"
+    has_subpages: false
+
+  - name: "Machelen"
+    slug: "machelen"
+    postal: "1830"
+    has_subpages: true
+
+  - name: "Meise"
+    slug: "meise"
+    postal: "1860"
+    has_subpages: false
+
+  - name: "Oud-Heverlee"
+    slug: "oud-heverlee"
+    postal: "3050"
+    has_subpages: false
+
+  - name: "Overijse"
+    slug: "overijse"
+    postal: "3090"
+    has_subpages: true
+
+  - name: "Rotselaar"
+    slug: "rotselaar"
+    postal: "3110"
+    has_subpages: false
+
+  - name: "Scherpenheuvel-Zichem"
+    slug: "scherpenheuvel-zichem"
+    postal: "3270"
+    has_subpages: false
+
+  - name: "Sint-Genesius-Rode"
+    slug: "sint-genesius-rode"
+    postal: "1640"
+    has_subpages: true
+
+  - name: "Sint-Pieters-Leeuw"
+    slug: "sint-pieters-leeuw"
+    postal: "1600"
+    has_subpages: true
+
+  - name: "Steenokkerzeel"
+    slug: "steenokkerzeel"
+    postal: "1820"
+    has_subpages: false
+
+  - name: "Tervuren"
+    slug: "tervuren"
+    postal: "3080"
+    has_subpages: true
+
+  - name: "Tielt-Winge"
+    slug: "tielt-winge"
+    postal: "3390"
+    has_subpages: false
+
+  - name: "Tienen"
+    slug: "tienen"
+    postal: "3300"
+    has_subpages: false
+
+  - name: "Tremelo"
+    slug: "tremelo"
+    postal: "3120"
+    has_subpages: false
+
+  - name: "Vilvoorde"
+    slug: "vilvoorde"
+    postal: "1800"
+    has_subpages: true
+
+  - name: "Wemmel"
+    slug: "wemmel"
+    postal: "1780"
+    has_subpages: true
+
+  - name: "Wezembeek-Oppem"
+    slug: "wezembeek-oppem"
+    postal: "1970"
+    has_subpages: true
+
+  - name: "Zaventem"
+    slug: "zaventem"
+    postal: "1930"
+    has_subpages: true
+
+  - name: "Zemst"
+    slug: "zemst"
+    postal: "1980"
+    has_subpages: false
+
+  - name: "Zoutleeuw"
+    slug: "zoutleeuw"
+    postal: "3440"
+    has_subpages: false

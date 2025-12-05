@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign guides = site.data.guides %}
+
+{% for g in guides %}
+{% if g.id == page.guide_id %}{% assign guide = g %}{% endif %}
+{% endfor %}
+
+{% assign guide_title = guide[lang].title %}
+{% assign guides_breadcrumb_text = t.guide_page.breadcrumb_guides %}
+
+<!-- Hero -->
+<section class="service-hero guide-page-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=guide_title middle_text=guides_breadcrumb_text middle_link=guides_folder %}
+        <div class="guide-page-icon"><i data-lucide="{{ guide.icon }}"></i></div>
+        <h1 class="service-title">{{ guide[lang].title }}</h1>
+        <p class="service-subtitle">{{ guide[lang].description }}</p>
+        <div class="service-cta">
+            <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+                <i data-lucide="phone" class="icon"></i>
+                <div class="btn-content">
+                    <span class="btn-label">{{ guide[lang].cta_label | default: t.guide_page.need_help }}</span>
+                    <span class="btn-number">{{ biz.phone_display }}</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+        {{ content }}
+        {% include cta-box.html title=t.guide_page.cta_title text=t.guide_page.cta_text %}
+    </div>
+</section>
+
+<!-- Related Guides -->
+<section class="related-guides">
+    <div class="service-container">
+        <h3>{{ t.guide_page.related_title }}</h3>
+        <div class="guides-grid">
+            {% for g in guides %}
+            {% if g.id != page.guide_id %}
+            <a href="/{{ lang }}/{{ guides_folder }}/{{ g[lang].slug }}/" class="guide-card">
+                <i data-lucide="{{ g.icon }}"></i>
+                <span>{{ g[lang].title }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+{% comment %}
+Related Grid - Reusable neighbors/related items grid
+Usage: {% include related-grid.html
+    title="Title text"
+    items=items_array
+    current_id=current.id
+    url_prefix="/fr/services/"
+    name_key="name"
+    slug_key="slug"
+    id_key="id"
+    show_all_link="/fr/#services"
+    show_all_text="Voir tout"
+    section_style=""
+%}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+
+<section class="commune-neighbors"{% if include.section_style %} style="{{ include.section_style }}"{% endif %}>
+    <div class="commune-container">
+        <p class="neighbors-title">{{ include.title }}</p>
+        <div class="neighbors-grid">
+            {% for item in include.items %}
+            {% assign item_id = item[include.id_key] | default: item.id %}
+            {% if item_id != include.current_id %}
+            {% assign item_name = item[include.name_key] | default: item.name %}
+            {% assign item_slug = item[include.slug_key] | default: item.slug %}
+            <a href="{{ include.url_prefix }}{{ item_slug }}/" class="neighbor-link">{% if include.name_prefix %}{{ include.name_prefix }} {% endif %}{{ item_name }}</a>
+            {% endif %}
+            {% endfor %}
+            {% if include.show_all_link %}
+            <a href="{{ include.show_all_link }}" class="neighbor-link">{{ include.show_all_text }} &rarr;</a>
+            {% endif %}
+        </div>
+    </div>
+</section>

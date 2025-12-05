@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign emergency = nil %}
+{% for e in site.data.emergencies %}
+{% if e.id == page.emergency_id %}{% assign emergency = e %}{% endif %}
+{% endfor %}
+{% assign e_data = emergency[lang] %}
+{% assign advantages = "no_damage,response_time,available_247,fixed_price,pay_after" | split: "," %}
+
+<!-- Hero -->
+<section class="service-hero urgence-page-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=e_data.title middle_text=t.breadcrumb.emergency middle_link="#services" %}
+        <h1 class="service-title">{{ e_data.title }}</h1>
+        <p class="service-subtitle">{{ e_data.description }} {{ t.emergency_page.hero_text }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="zap"></i> {{ t.emergency_page.speed_title }}</h2>
+            {% include content-grid.html count=4 prefix="speed" source=t.emergency_page %}
+        </div>
+
+        {% capture cta_title %}{{ e_data.title }} {{ t.emergency_page.cta_now }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=t.emergency_page.cta_text %}
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="workflow"></i> {{ t.emergency_page.process_title }}</h2>
+            {% include content-grid.html count=4 prefix="process" source=t.emergency_page %}
+        </div>
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> {{ t.emergency_page.guarantees_title }}</h2>
+            {% include advantages.html items=advantages source="common" extra_item=t.emergency_page.invoice_provided %}
+        </div>
+    </div>
+</section>
+
+{% include faq-section.html source=t.emergency_page count=4 prefix="faq" %}
+
+{% capture url_prefix %}/{{ lang }}/{{ emergency_folder }}/{% endcapture %}
+{% capture extra_url %}/{{ lang }}/#services{% endcapture %}
+{% include related-links.html title=t.emergency_page.other_emergencies items=site.data.emergencies current_id=emergency.id url_prefix=url_prefix lang=lang extra_link=t.common.all_services extra_link_url=extra_url %}
+
+{{ content }}

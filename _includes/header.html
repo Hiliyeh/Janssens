@@ -1,0 +1,62 @@
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+
+<header class="header">
+    <div class="header-container">
+        <a href="/{{ lang }}/" class="logo">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ biz.name }}" class="logo-img" width="120" height="44">
+        </a>
+        <nav class="nav" id="nav">
+            <div class="nav-logo">
+                <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ biz.name }}" width="120" height="44" loading="lazy">
+            </div>
+            <div class="lang-switcher-mobile lang-switcher">
+                <a href="{{ page.alternate.fr | default: '/fr/' }}" class="lang-link{% if lang == 'fr' %} active{% endif %}">FR</a>
+                <a href="{{ page.alternate.nl | default: '/nl/' }}" class="lang-link{% if lang == 'nl' %} active{% endif %}">NL</a>
+                <a href="{{ page.alternate.en | default: '/en/' }}" class="lang-link{% if lang == 'en' %} active{% endif %}">EN</a>
+            </div>
+            <a href="/{{ lang }}/#services">{{ t.nav.services }}</a>
+            <a href="/{{ lang }}/#pourquoi">{{ t.nav.why_us }}</a>
+            <a href="/{{ lang }}/#confiance">{{ t.nav.trust }}</a>
+            <a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a>
+            <a href="/{{ lang }}/#contact">{{ t.nav.contact }}</a>
+            <div class="nav-cta">
+                <a href="tel:{{ biz.phone }}" class="nav-cta-item">
+                    <span class="nav-cta-btn nav-phone">
+                        <i data-lucide="phone"></i>
+                    </span>
+                    <span class="nav-cta-label">{{ t.nav.call }}</span>
+                </a>
+                <a href="{{ biz.social.whatsapp }}" class="nav-cta-item" rel="noopener noreferrer" target="_blank">
+                    <span class="nav-cta-btn nav-whatsapp">
+                        <i data-lucide="message-circle"></i>
+                    </span>
+                    <span class="nav-cta-label">{{ t.nav.whatsapp }}</span>
+                </a>
+            </div>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="{{ page.alternate.fr | default: '/fr/' }}" class="lang-link{% if lang == 'fr' %} active{% endif %}">FR</a>
+                <a href="{{ page.alternate.nl | default: '/nl/' }}" class="lang-link{% if lang == 'nl' %} active{% endif %}">NL</a>
+                <a href="{{ page.alternate.en | default: '/en/' }}" class="lang-link{% if lang == 'en' %} active{% endif %}">EN</a>
+            </div>
+            <div class="header-cta-buttons">
+                <a href="tel:{{ biz.phone }}" class="header-cta-btn header-phone">
+                    <i data-lucide="phone" class="icon"></i>
+                    <span class="header-cta-text">{{ biz.phone_display }}</span>
+                </a>
+                <a href="{{ biz.social.whatsapp }}" class="header-cta-btn header-whatsapp" rel="noopener noreferrer" target="_blank" aria-label="{{ t.nav.whatsapp }}">
+                    <i data-lucide="message-circle" class="icon"></i>
+                    <span class="header-cta-text">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>

@@ -1,0 +1,49 @@
+{% assign biz = site.data.business %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "{{ site.url }}/#locksmith",
+    "name": "{{ biz.name }}",
+    "alternateName": "{{ biz.company }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}{{ biz.logo }}",
+    "image": "{{ site.url }}{{ biz.og_image }}",
+    "telephone": "{{ biz.phone }}",
+    "email": "{{ biz.email }}",
+    "vatID": "{{ biz.vat }}",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Credit Card, Bancontact",
+    "priceRange": "\u20ac\u20ac",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ biz.address.street }}",
+        "addressLocality": "{{ biz.address.city }}",
+        "postalCode": "{{ biz.address.postal }}",
+        "addressRegion": "{{ biz.address.region }}",
+        "addressCountry": "{{ biz.address.country_code }}"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ biz.address.geo.lat }},
+        "longitude": {{ biz.address.geo.lng }}
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ biz.stats.rating }}",
+        "reviewCount": "{{ biz.stats.reviews_count }}"
+    },
+    "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Bruxelles-Capitale"},
+        {"@type": "AdministrativeArea", "name": "Brabant wallon"},
+        {"@type": "AdministrativeArea", "name": "Brabant flamand"}
+    ]
+}
+</script>

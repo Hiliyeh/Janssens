@@ -1,0 +1,19 @@
+{% comment %}
+Emergency Banner - Call-to-action for urgent situations
+Usage: {% include emergency-banner.html %}
+{% endcomment %}
+
+<section class="urgence">
+    <div class="urgence-container">
+        <div class="urgence-content">
+            <div class="urgence-text">
+                <strong>{{ t.emergency.title }}</strong>
+                <span>{{ t.emergency.text }}</span>
+            </div>
+        </div>
+        <a href="tel:{{ biz.phone }}" class="urgence-btn">
+            <i data-lucide="phone" class="icon"></i>
+            <span>{{ t.emergency.btn }}</span>
+        </a>
+    </div>
+</section>

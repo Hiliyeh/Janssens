@@ -1,0 +1,152 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign services = site.data.services %}
+
+{% comment %}Find the service data{% endcomment %}
+{% for s in services %}
+{% if s.id == page.service_id %}{% assign service = s %}{% endif %}
+{% endfor %}
+
+{% assign service_name = service[lang].name %}
+{% assign service_title = service[lang].title %}
+{% assign breadcrumb_city = page.city_name %}
+
+<!-- Hero -->
+<section class="service-hero city-service-hero">
+    <div class="service-container">
+        {% capture city_url %}/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{% endcapture %}
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+            <span>/</span>
+            <a href="/{{ lang }}/#zones">{{ t.breadcrumb.cities }}</a>
+            <span>/</span>
+            <a href="{{ city_url }}">{{ page.city_name }}</a>
+            <span>/</span>
+            <strong>{{ service_name }}</strong>
+        </nav>
+
+        <div class="service-icon"><i data-lucide="{{ service.icon }}"></i></div>
+        <h1 class="service-title">{{ service_name }} {{ page.city_name }}</h1>
+        <p class="service-subtitle">{{ t.city_service.subtitle | replace: "%service%", service_name | replace: "%city%", page.city_name }}</p>
+
+        <div class="service-cta">
+            {% include hero-cta.html %}
+        </div>
+
+        <div class="commune-stats">
+            <div class="commune-stat">
+                <i data-lucide="clock"></i>
+                <span>{{ t.city.response_time | replace: "%city%", page.city_name }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="shield-check"></i>
+                <span>{{ t.common.free_quote }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="credit-card"></i>
+                <span>{{ t.common.pay_after }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+
+        <div class="commune-section">
+            <h2><i data-lucide="{{ service.icon }}"></i> {{ t.city_service.what_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}</h2>
+            <p>{{ t.city_service.what_intro | replace: "%service%", service_name | replace: "%city%", page.city_name }}</p>
+            <p>{{ service[lang].city_desc | replace: "%city%", page.city_name }}</p>
+        </div>
+
+        {% capture cta_title %}{{ t.city_service.cta_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}{% endcapture %}
+        {% capture cta_text %}{{ t.city_service.cta_text | replace: "%service%", service_name | replace: "%city%", page.city_name }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=cta_text %}
+
+        <div class="commune-section">
+            <h2><i data-lucide="zap"></i> {{ t.city_service.why_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}</h2>
+            <p>{{ t.city_service.why_intro | replace: "%service%", service_name | replace: "%city%", page.city_name }}</p>
+            <ul>
+                <li>
+                    <i data-lucide="clock"></i>
+                    <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city_service.why_speed | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="euro"></i>
+                    <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city_service.why_price | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="thumbs-up"></i>
+                    <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city_service.why_quality | replace: "%city%", page.city_name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="award"></i>
+                    <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city_service.why_pro | replace: "%city%", page.city_name }}</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="commune-section">
+            <h2><i data-lucide="list-checks"></i> {{ t.city_service.process_title }}</h2>
+            <ol class="process-steps">
+                <li><strong>{{ t.city_service.step_1_title }}</strong> – {{ t.city_service.step_1_text }}</li>
+                <li><strong>{{ t.city_service.step_2_title }}</strong> – {{ t.city_service.step_2_text | replace: "%city%", page.city_name }}</li>
+                <li><strong>{{ t.city_service.step_3_title }}</strong> – {{ t.city_service.step_3_text }}</li>
+                <li><strong>{{ t.city_service.step_4_title }}</strong> – {{ t.city_service.step_4_text }}</li>
+            </ol>
+        </div>
+
+    </div>
+</section>
+
+<!-- Other Services -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>{{ t.city_service.other_services | replace: "%city%", page.city_name }}</h3>
+        <div class="services-grid">
+            {% for s in services %}
+            {% if s.id != page.service_id %}
+            <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+                <i data-lucide="{{ s.icon }}"></i>
+                <span>{{ s[lang].name }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="commune-faq">
+    <div class="commune-container">
+        <h2 class="faq-title"><i data-lucide="message-circle-question"></i> {{ t.city_service.faq_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}</h2>
+        <div class="faq-list">
+            {% for i in (1..3) %}
+            {% capture q_key %}faq_{{ page.service_id | replace: "-", "_" }}_{{ i }}_q{% endcapture %}
+            {% capture a_key %}faq_{{ page.service_id | replace: "-", "_" }}_{{ i }}_a{% endcapture %}
+            {% if t.city_service[q_key] %}
+            <details class="faq-item">
+                <summary>{{ t.city_service[q_key] | replace: "%city%", page.city_name }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.city_service[a_key] | replace: "%city%", page.city_name }}</div>
+            </details>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Back to City -->
+<section class="back-section">
+    <div class="service-container">
+        <a href="{{ city_url }}" class="back-link">
+            <i data-lucide="arrow-left"></i>
+            {{ t.city_service.back_to_city | replace: "%city%", page.city_name }}
+        </a>
+    </div>
+</section>
+
+{{ content }}

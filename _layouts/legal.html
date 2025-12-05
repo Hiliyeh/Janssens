@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+
+<!-- Hero -->
+<section class="service-hero legal-page-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=page.page_title %}
+        <div class="legal-page-icon"><i data-lucide="{{ page.icon | default: 'file-text' }}"></i></div>
+        <h1 class="service-title">{{ page.page_title }}</h1>
+        <p class="legal-date">{{ t.legal.updated }}: {{ page.last_updated | default: "2024" }}</p>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content legal-content">
+    <div class="service-container">
+        {{ content }}
+    </div>
+</section>

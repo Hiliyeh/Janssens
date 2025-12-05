@@ -1,0 +1,20 @@
+---
+# Jekyll needs this front matter to process SCSS
+---
+
+// Import variables
+@import "variables";
+
+// Import existing styles (for now, copy styles.css content here progressively)
+// Or use Jekyll's native CSS inclusion
+
+// For initial migration, we'll import the existing CSS
+// Later this can be split into modular components:
+// @import "components/header";
+// @import "components/hero";
+// @import "components/services";
+// @import "components/footer";
+// etc.
+
+// Temporary: Load existing CSS via symlink or copy
+// The existing styles.css will continue to work during migration

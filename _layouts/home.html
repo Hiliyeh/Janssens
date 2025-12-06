@@ -215,8 +215,10 @@ layout: default
                             <i data-lucide="map-pin" class="icon-sm"></i>
                             <span class="zone-accordion-title">{{ t.zones.regions[region_keys[idx]] }}</span>
                         </div>
-                        <span class="zone-accordion-count">{{ counts[idx] }} {{ t.zones.municipalities | default: "communes" }}</span>
-                        <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                        <div class="zone-accordion-right">
+                            <span class="zone-accordion-count">{{ counts[idx] }} {{ t.zones.municipalities | default: "communes" }}</span>
+                            <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                        </div>
                     </summary>
                     <div class="zone-cities">
                         {% for city in cities[region] %}

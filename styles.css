@@ -2137,6 +2137,7 @@ section {
 .zone-accordion summary {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: var(--space-md);
     padding: var(--space-md) var(--space-lg);
     cursor: pointer;
@@ -2156,7 +2157,13 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    flex: 1;
+}
+
+.zone-accordion-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .zone-accordion-header .icon-sm {

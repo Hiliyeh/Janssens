@@ -515,8 +515,9 @@
 
             if (commune) {
                 success.style.display = 'flex';
+                const successText = window.i18n && window.i18n.t ? window.i18n.t('zones.success.text') : 'Nous intervenons à';
                 success.querySelector('.result-commune').textContent =
-                    `Nous intervenons à ${commune.name} (${commune.region})`;
+                    `${successText} ${commune.name} (${commune.region})`;
                 initIcons();
             } else {
                 success.style.display = 'none';

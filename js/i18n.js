@@ -931,27 +931,14 @@ const i18n = {
     // =====================================================
 
     init() {
-        // Check for saved language preference
-        let savedLang = null;
-        try {
-            savedLang = localStorage.getItem('janssens-lang');
-        } catch (e) {
-            // localStorage not available (private browsing, etc.)
-        }
-
-        if (savedLang && this.translations[savedLang]) {
-            this.currentLang = savedLang;
-        } else {
-            // Try to detect from browser
-            const browserLang = navigator.language.split('-')[0];
-            if (this.translations[browserLang]) {
-                this.currentLang = browserLang;
+        // Read language from HTML lang attribute (set by Jekyll)
+        const htmlLang = document.documentElement.lang;
+        if (htmlLang) {
+            const pageLang = htmlLang.split('-')[0]; // "fr-BE" -> "fr"
+            if (this.translations[pageLang]) {
+                this.currentLang = pageLang;
             }
         }
-
-        // Update HTML lang attribute
-        document.documentElement.lang = this.currentLang === 'fr' ? 'fr-BE' :
-                                        this.currentLang === 'nl' ? 'nl-BE' : 'en';
 
         // Apply translations
         this.applyTranslations();

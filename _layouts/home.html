@@ -206,14 +206,24 @@ layout: default
             <div class="zones-accordions">
                 {% assign regions = "brussels,walloon_brabant,flemish_brabant" | split: "," %}
                 {% assign region_keys = "brussels,walloon,flemish" | split: "," %}
+                {% assign region_names_fr = "Bruxelles-Capitale,Brabant wallon,Brabant flamand" | split: "," %}
+                {% assign region_names_nl = "Brussels Hoofdstedelijk,Waals-Brabant,Vlaams-Brabant" | split: "," %}
+                {% assign region_names_en = "Brussels-Capital,Walloon Brabant,Flemish Brabant" | split: "," %}
                 {% assign counts = "19,27,50" | split: "," %}
                 {% for region in regions %}
                 {% assign idx = forloop.index0 %}
+                {% if lang == 'nl' %}
+                    {% assign region_name = region_names_nl[idx] %}
+                {% elsif lang == 'en' %}
+                    {% assign region_name = region_names_en[idx] %}
+                {% else %}
+                    {% assign region_name = region_names_fr[idx] %}
+                {% endif %}
                 <details class="zone-accordion">
                     <summary>
                         <div class="zone-accordion-header">
                             <i data-lucide="map-pin" class="icon-sm"></i>
-                            <span class="zone-accordion-title">{{ t.zones.regions[region_keys[idx]] }}</span>
+                            <span class="zone-accordion-title">{{ region_name }}</span>
                         </div>
                         <div class="zone-accordion-right">
                             <span class="zone-accordion-count">{{ counts[idx] }} {{ t.zones.municipalities | default: "communes" }}</span>

@@ -2137,8 +2137,7 @@ section {
 .zone-accordion summary {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--space-md);
+    gap: var(--space-sm);
     padding: var(--space-md) var(--space-lg);
     cursor: pointer;
     list-style: none;
@@ -2164,6 +2163,7 @@ section {
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
+    margin-left: auto;
 }
 
 .zone-accordion-header .icon-sm {
@@ -3159,6 +3159,14 @@ section {
         display: inline-flex;
         font-size: 0.65rem;
         padding: 4px 8px;
+    }
+
+    .intervention-type {
+        font-size: 0.8rem;
+    }
+
+    .intervention-location {
+        font-size: 0.7rem;
     }
 
     .company-badge {
@@ -5912,6 +5920,24 @@ section {
     color: var(--color-primary-light);
 }
 
+/* Brand logo for brand pages */
+.brand-logo-hero {
+    width: auto;
+    min-width: 80px;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, rgba(139, 69, 69, 0.4) 0%, rgba(80, 40, 40, 0.3) 100%);
+    border: 1px solid rgba(207, 46, 46, 0.3);
+}
+
+.brand-logo-text {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
 .service-title {
     font-family: var(--font-display);
     font-size: clamp(2.5rem, 6vw, 3.5rem);
@@ -5919,6 +5945,8 @@ section {
     margin-bottom: 1.25rem;
     line-height: 1.1;
     letter-spacing: -0.02em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .service-subtitle {
@@ -5927,6 +5955,8 @@ section {
     margin-bottom: 2.5rem;
     line-height: 1.75;
     max-width: 640px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .service-subtitle strong {
@@ -6800,7 +6830,10 @@ section {
     .service-title,
     .guide-title,
     .marque-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 
     .commune-cta-group,
@@ -7177,13 +7210,17 @@ section {
 }
 
 .marque-logo-text {
-    font-family: var(--font-heading);
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     color: white;
-    opacity: 0.9;
-    margin-bottom: 0.75rem;
+    background: var(--color-primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.25rem;
 }
 
 /* Models List Tags */
@@ -7216,7 +7253,8 @@ section {
 
 @media (max-width: 768px) {
     .marque-logo-text {
-        font-size: 1.75rem;
+        font-size: 0.65rem;
+        padding: 0.4rem 0.85rem;
     }
 
     .models-list {

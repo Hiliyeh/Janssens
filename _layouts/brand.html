@@ -12,9 +12,7 @@ layout: default
 <section class="service-hero">
     <div class="service-container">
         {% include breadcrumb.html items=brand.name middle_text=t.breadcrumb.brands middle_link="#services" %}
-        <div class="service-hero-icon brand-logo-hero">
-            <span class="brand-logo-text">{{ brand.logo_text }}</span>
-        </div>
+        <span class="marque-logo-text">{{ brand.logo_text }}</span>
         <h1 class="service-title">{{ t.brand_page.title_prefix }} {{ brand.name }}</h1>
         <p class="service-subtitle">{{ brand.description[lang] }}</p>
         {% include hero-cta.html %}

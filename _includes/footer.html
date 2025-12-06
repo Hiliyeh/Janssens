@@ -62,8 +62,17 @@
         <div class="footer-bottom">
             <p>&copy; <span id="currentYear"></span> {{ biz.name }} · {{ biz.company }} · TVA {{ biz.vat }}</p>
             <div class="footer-legal">
-                <a href="/{{ lang }}/terms/">{{ t.footer.terms }}</a>
-                <a href="/{{ lang }}/privacy/">{{ t.footer.privacy }}</a>
+                {% case lang %}
+                {% when 'nl' %}
+                <a href="/nl/voorwaarden/">{{ t.footer.terms }}</a>
+                <a href="/nl/privacy/">{{ t.footer.privacy }}</a>
+                {% when 'en' %}
+                <a href="/en/terms/">{{ t.footer.terms }}</a>
+                <a href="/en/privacy/">{{ t.footer.privacy }}</a>
+                {% else %}
+                <a href="/fr/conditions/">{{ t.footer.terms }}</a>
+                <a href="/fr/confidentialite/">{{ t.footer.privacy }}</a>
+                {% endcase %}
             </div>
         </div>
         <div class="footer-credit">

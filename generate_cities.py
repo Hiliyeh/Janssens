@@ -117,6 +117,7 @@ cities = {
 lang_config = {
     "fr": {
         "title_prefix": "Serrurier",
+        "title_suffix": "Dépannage 24/24",
         "desc_template": "Serrurier à {city} : intervention urgente en 30 min. Porte claquée, serrure bloquée ? Dépannage 24h/24 sans dégât. Devis gratuit.",
         "breadcrumb_zones": "Zones d'intervention",
         "faq_title": "Questions fréquentes sur nos services à {city}",
@@ -128,6 +129,7 @@ lang_config = {
     },
     "en": {
         "title_prefix": "Locksmith",
+        "title_suffix": "Emergency 24/7",
         "desc_template": "Locksmith in {city}: urgent intervention in 30 min. Locked out, jammed lock? 24/7 service without damage. Free quote.",
         "breadcrumb_zones": "Service areas",
         "faq_title": "FAQ about our services in {city}",
@@ -139,6 +141,7 @@ lang_config = {
     },
     "nl": {
         "title_prefix": "Slotenmaker",
+        "title_suffix": "Noodhulp 24/7",
         "desc_template": "Slotenmaker in {city}: dringende interventie in 30 min. Buitengesloten, slot geblokkeerd? 24/7 service zonder schade. Gratis offerte.",
         "breadcrumb_zones": "Interventiezones",
         "faq_title": "Veelgestelde vragen over onze diensten in {city}",
@@ -182,7 +185,7 @@ def generate_city_page(city, region, lang, all_cities):
     content = f'''---
 layout: city
 lang: {lang}
-title: "{config["title_prefix"]} {city["name"]} | 24h/24 | Janssens"
+title: "{config["title_prefix"]} {city["name"]} | {config["title_suffix"]} | Janssens"
 description: "{config["desc_template"].format(city=city["name"])}"
 city_name: "{city["name"]}"
 slug: "{slug}"

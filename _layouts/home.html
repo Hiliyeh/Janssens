@@ -98,88 +98,7 @@ layout: default
     </div>
 </section>
 
-<!-- Brands Section -->
-<section class="brands-section" id="brands">
-    <div class="section-container">
-        <header class="section-header">
-            <span class="section-tag">{{ t.brands.tag | default: "Marques" }}</span>
-            <h2 class="section-title">{{ t.brands.title | default: "Experts toutes marques" }}</h2>
-            <p class="section-desc">{{ t.brands.desc | default: "Spécialistes agréés des grandes marques de serrurerie" }}</p>
-        </header>
-        <div class="brands-grid">
-            {% for brand in site.data.brands %}
-            <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/" class="brand-card">
-                <span class="brand-logo-text">{{ brand.logo_text }}</span>
-                <span class="brand-name">{{ brand.name }}</span>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Why Section -->
-<section class="pourquoi" id="pourquoi">
-    <div class="section-container">
-        <div class="pourquoi-grid">
-            <div class="pourquoi-content">
-                <span class="section-tag">{{ t.why.tag }}</span>
-                <h2 class="section-title">{{ t.why.title }}</h2>
-                <p class="pourquoi-intro">{{ t.why.intro }}</p>
-                <div class="pillars">
-                    {% assign pillar_icons = "zap,badge-check,receipt" | split: "," %}
-                    {% assign pillar_keys = "speed,expertise,transparency" | split: "," %}
-                    {% for key in pillar_keys %}
-                    <div class="pillar">
-                        <div class="pillar-icon"><i data-lucide="{{ pillar_icons[forloop.index0] }}"></i></div>
-                        <div class="pillar-content">
-                            <h3>{{ t.pillars[key].title }}</h3>
-                            <p>{{ t.pillars[key].text }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="pourquoi-image">
-                <img src="/assets/images/{{ lang }}/{{ page.hero_image | default: 'serrurier-intervention-domicile-bruxelles.jpg' }}" alt="{{ t.home.hero_image_alt | default: 'Serrurier Janssens' }}" loading="lazy" width="600" height="750">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Trust Section -->
-<section class="confiance" id="confiance">
-    <div class="section-container">
-        <header class="section-header">
-            <span class="section-tag">{{ t.live.tag }}</span>
-            <h2 class="section-title">{{ t.live.title }}</h2>
-        </header>
-        <div class="confiance-content">
-            <div class="confiance-image">
-                <img src="/assets/images/{{ lang }}/{{ page.map_image | default: 'carte-zones-intervention-serrurier-bruxelles.jpg' }}" alt="{{ t.home.map_image_alt | default: 'Carte zones intervention' }}" loading="lazy" width="1200" height="900">
-            </div>
-            <div class="live-feed">
-                <div class="live-feed-header">
-                    <div class="live-indicator"><span class="live-pulse"></span></div>
-                    <span class="live-count">{{ t.live.today }} <strong id="interventionCount">12</strong></span>
-                </div>
-                <div class="interventions-list" id="interventionsList"></div>
-                <div class="company-badge">
-                    <div class="badge-icon"><i data-lucide="shield-check"></i></div>
-                    <div class="badge-content">
-                        <strong>{{ t.live.badge }}</strong>
-                        <span>{% if lang == 'en' %}VAT{% else %}TVA{% endif %} {{ biz.vat }}</span>
-                    </div>
-                    <div class="badge-experience">
-                        <span class="exp-value">10+</span>
-                        <span class="exp-label">{{ year_label }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Zones Section -->
+<!-- Zones Section (moved after Services) -->
 <section class="zones" id="zones">
     <div class="section-container">
         <header class="section-header">
@@ -257,6 +176,87 @@ layout: default
                 </details>
                 {% endfor %}
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Section (moved up) -->
+<section class="confiance" id="confiance">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.live.tag }}</span>
+            <h2 class="section-title">{{ t.live.title }}</h2>
+        </header>
+        <div class="confiance-content">
+            <div class="confiance-image">
+                <img src="/assets/images/{{ lang }}/{{ page.map_image | default: 'carte-zones-intervention-serrurier-bruxelles.jpg' }}" alt="{{ t.home.map_image_alt | default: 'Carte zones intervention' }}" loading="lazy" width="1200" height="900">
+            </div>
+            <div class="live-feed">
+                <div class="live-feed-header">
+                    <div class="live-indicator"><span class="live-pulse"></span></div>
+                    <span class="live-count">{{ t.live.today }} <strong id="interventionCount">12</strong></span>
+                </div>
+                <div class="interventions-list" id="interventionsList"></div>
+                <div class="company-badge">
+                    <div class="badge-icon"><i data-lucide="shield-check"></i></div>
+                    <div class="badge-content">
+                        <strong>{{ t.live.badge }}</strong>
+                        <span>{% if lang == 'en' %}VAT{% else %}TVA{% endif %} {{ biz.vat }}</span>
+                    </div>
+                    <div class="badge-experience">
+                        <span class="exp-value">10+</span>
+                        <span class="exp-label">{{ year_label }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Section -->
+<section class="pourquoi" id="pourquoi">
+    <div class="section-container">
+        <div class="pourquoi-grid">
+            <div class="pourquoi-content">
+                <span class="section-tag">{{ t.why.tag }}</span>
+                <h2 class="section-title">{{ t.why.title }}</h2>
+                <p class="pourquoi-intro">{{ t.why.intro }}</p>
+                <div class="pillars">
+                    {% assign pillar_icons = "zap,badge-check,receipt" | split: "," %}
+                    {% assign pillar_keys = "speed,expertise,transparency" | split: "," %}
+                    {% for key in pillar_keys %}
+                    <div class="pillar">
+                        <div class="pillar-icon"><i data-lucide="{{ pillar_icons[forloop.index0] }}"></i></div>
+                        <div class="pillar-content">
+                            <h3>{{ t.pillars[key].title }}</h3>
+                            <p>{{ t.pillars[key].text }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="pourquoi-image">
+                <img src="/assets/images/{{ lang }}/{{ page.hero_image | default: 'serrurier-intervention-domicile-bruxelles.jpg' }}" alt="{{ t.home.hero_image_alt | default: 'Serrurier Janssens' }}" loading="lazy" width="600" height="750">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brands Section (moved before FAQ) -->
+<section class="brands-section" id="brands">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.brands.tag | default: "Marques" }}</span>
+            <h2 class="section-title">{{ t.brands.title | default: "Experts toutes marques" }}</h2>
+            <p class="section-desc">{{ t.brands.desc | default: "Spécialistes agréés des grandes marques de serrurerie" }}</p>
+        </header>
+        <div class="brands-grid">
+            {% for brand in site.data.brands %}
+            <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/" class="brand-card">
+                <span class="brand-logo-text">{{ brand.logo_text }}</span>
+                <span class="brand-name">{{ brand.name }}</span>
+            </a>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -454,6 +454,13 @@ walloon_brabant:
     geo:
       lat: 50.7833
       lng: 4.7667
+    neighborhoods:
+      - "Beauvechain-Centre"
+      - "L'Écluse"
+      - "Hamme-Mille"
+    landmarks:
+      - "Base aérienne"
+      - "Église Saint-Martin"
 
   - name: "Braine-l'Alleud"
     slug: "braine-lalleud"
@@ -462,6 +469,15 @@ walloon_brabant:
     geo:
       lat: 50.6833
       lng: 4.3667
+    neighborhoods:
+      - "Centre"
+      - "Ophain-Bois-Seigneur-Isaac"
+      - "Lillois-Witterzée"
+      - "La Bruyère"
+    landmarks:
+      - "Butte du Lion"
+      - "Mémorial Waterloo 1815"
+      - "Gare de Braine-l'Alleud"
 
   - name: "Braine-le-Château"
     slug: "braine-le-chateau"
@@ -470,6 +486,12 @@ walloon_brabant:
     geo:
       lat: 50.6833
       lng: 4.2667
+    neighborhoods:
+      - "Centre"
+      - "Wauthier-Braine"
+    landmarks:
+      - "Château des Comtes"
+      - "Pilori"
 
   - name: "Chastre"
     slug: "chastre"
@@ -478,6 +500,12 @@ walloon_brabant:
     geo:
       lat: 50.6000
       lng: 4.6333
+    neighborhoods:
+      - "Chastre-Centre"
+      - "Cortil-Noirmont"
+      - "Villeroux"
+    landmarks:
+      - "Gare de Chastre"
 
   - name: "Chaumont-Gistoux"
     slug: "chaumont-gistoux"
@@ -486,6 +514,13 @@ walloon_brabant:
     geo:
       lat: 50.7000
       lng: 4.7000
+    neighborhoods:
+      - "Chaumont"
+      - "Gistoux"
+      - "Bonlez"
+      - "Dion-le-Val"
+    landmarks:
+      - "Château de Gistoux"
 
   - name: "Court-Saint-Étienne"
     slug: "court-saint-etienne"
@@ -494,6 +529,13 @@ walloon_brabant:
     geo:
       lat: 50.6333
       lng: 4.5667
+    neighborhoods:
+      - "Centre"
+      - "Faux"
+      - "Tangissart"
+    landmarks:
+      - "Site du Modave"
+      - "Bois des Rêves"
 
   - name: "Genappe"
     slug: "genappe"
@@ -502,6 +544,14 @@ walloon_brabant:
     geo:
       lat: 50.6000
       lng: 4.4500
+    neighborhoods:
+      - "Genappe-Centre"
+      - "Ways"
+      - "Vieux-Genappe"
+      - "Bousval"
+    landmarks:
+      - "Église Saint-Laurent"
+      - "Ferme de la Kelle"
 
   - name: "Grez-Doiceau"
     slug: "grez-doiceau"
@@ -510,6 +560,14 @@ walloon_brabant:
     geo:
       lat: 50.7333
       lng: 4.7000
+    neighborhoods:
+      - "Grez"
+      - "Doiceau"
+      - "Archennes"
+      - "Biez"
+    landmarks:
+      - "Château de Grez"
+      - "Église Saint-Georges"
 
   - name: "Hélécine"
     slug: "helecine"
@@ -518,6 +576,12 @@ walloon_brabant:
     geo:
       lat: 50.7500
       lng: 4.9667
+    neighborhoods:
+      - "Hélécine-Centre"
+      - "Linsmeau"
+      - "Neerheylissem"
+    landmarks:
+      - "Domaine provincial"
 
   - name: "Incourt"
     slug: "incourt"
@@ -526,6 +590,12 @@ walloon_brabant:
     geo:
       lat: 50.7167
       lng: 4.7833
+    neighborhoods:
+      - "Incourt-Centre"
+      - "Glimes"
+      - "Opprebais"
+    landmarks:
+      - "Ferme de Glimes"
 
   - name: "Jodoigne"
     slug: "jodoigne"
@@ -534,6 +604,15 @@ walloon_brabant:
     geo:
       lat: 50.7167
       lng: 4.8667
+    neighborhoods:
+      - "Centre historique"
+      - "Jodoigne-Souveraine"
+      - "Lathuy"
+      - "Mélin"
+    landmarks:
+      - "Collégiale Saint-Médard"
+      - "Château Pastur"
+      - "Gare de Jodoigne"
 
   - name: "La Hulpe"
     slug: "la-hulpe"
@@ -542,6 +621,14 @@ walloon_brabant:
     geo:
       lat: 50.7333
       lng: 4.4833
+    neighborhoods:
+      - "Centre"
+      - "Fond'Roy"
+      - "Argenteuil"
+    landmarks:
+      - "Domaine Solvay"
+      - "Fondation Folon"
+      - "Château de La Hulpe"
 
   - name: "Lasne"
     slug: "lasne"
@@ -550,6 +637,14 @@ walloon_brabant:
     geo:
       lat: 50.7000
       lng: 4.5000
+    neighborhoods:
+      - "Lasne-Centre"
+      - "Ohain"
+      - "Plancenoit"
+      - "Maransart"
+    landmarks:
+      - "Champ de bataille Waterloo"
+      - "Ferme d'Hougoumont"
 
   - name: "Mont-Saint-Guibert"
     slug: "mont-saint-guibert"
@@ -558,6 +653,13 @@ walloon_brabant:
     geo:
       lat: 50.6333
       lng: 4.6167
+    neighborhoods:
+      - "Centre"
+      - "Hévillers"
+      - "Corbais"
+    landmarks:
+      - "Axis Parc"
+      - "Église Saint-Guibert"
 
   - name: "Nivelles"
     slug: "nivelles"
@@ -566,6 +668,15 @@ walloon_brabant:
     geo:
       lat: 50.5986
       lng: 4.3264
+    neighborhoods:
+      - "Centre historique"
+      - "Bornival"
+      - "Thines"
+      - "Monstreux"
+    landmarks:
+      - "Collégiale Sainte-Gertrude"
+      - "Grand-Place"
+      - "Gare de Nivelles"
 
   - name: "Orp-Jauche"
     slug: "orp-jauche"
@@ -574,6 +685,12 @@ walloon_brabant:
     geo:
       lat: 50.7167
       lng: 4.9500
+    neighborhoods:
+      - "Orp-le-Grand"
+      - "Jauche"
+      - "Énines"
+    landmarks:
+      - "Tumulus d'Orp"
 
   - name: "Ottignies-Louvain-la-Neuve"
     slug: "ottignies-louvain-la-neuve"
@@ -582,6 +699,16 @@ walloon_brabant:
     geo:
       lat: 50.6667
       lng: 4.5667
+    neighborhoods:
+      - "Louvain-la-Neuve Centre"
+      - "Ottignies"
+      - "Limelette"
+      - "Céroux-Mousty"
+    landmarks:
+      - "UCLouvain"
+      - "L'Esplanade"
+      - "Aula Magna"
+      - "Gare d'Ottignies"
 
   - name: "Perwez"
     slug: "perwez"
@@ -590,6 +717,12 @@ walloon_brabant:
     geo:
       lat: 50.6333
       lng: 4.8000
+    neighborhoods:
+      - "Perwez-Centre"
+      - "Orbais"
+      - "Malèves"
+    landmarks:
+      - "Église Saint-Martin"
 
   - name: "Ramillies"
     slug: "ramillies"
@@ -598,6 +731,12 @@ walloon_brabant:
     geo:
       lat: 50.6333
       lng: 4.8833
+    neighborhoods:
+      - "Ramillies-Centre"
+      - "Grand-Rosière"
+      - "Autre-Église"
+    landmarks:
+      - "Site bataille Ramillies 1706"
 
   - name: "Rixensart"
     slug: "rixensart"
@@ -606,6 +745,14 @@ walloon_brabant:
     geo:
       lat: 50.7167
       lng: 4.5333
+    neighborhoods:
+      - "Rixensart-Centre"
+      - "Genval"
+      - "Rosières"
+    landmarks:
+      - "Lac de Genval"
+      - "Château de Rixensart"
+      - "Gare de Genval"
 
   - name: "Tubize"
     slug: "tubize"
@@ -614,6 +761,14 @@ walloon_brabant:
     geo:
       lat: 50.6917
       lng: 4.2000
+    neighborhoods:
+      - "Centre"
+      - "Clabecq"
+      - "Saintes"
+      - "Oisquercq"
+    landmarks:
+      - "Gare de Tubize"
+      - "Site Fabelta"
 
   - name: "Villers-la-Ville"
     slug: "villers-la-ville"
@@ -622,6 +777,14 @@ walloon_brabant:
     geo:
       lat: 50.5833
       lng: 4.5333
+    neighborhoods:
+      - "Centre"
+      - "Marbais"
+      - "Mellery"
+      - "Tilly"
+    landmarks:
+      - "Abbaye de Villers"
+      - "Ruines cisterciennes"
 
   - name: "Walhain"
     slug: "walhain"
@@ -630,6 +793,12 @@ walloon_brabant:
     geo:
       lat: 50.6167
       lng: 4.7000
+    neighborhoods:
+      - "Walhain-Centre"
+      - "Nil-Saint-Vincent"
+      - "Tourinnes"
+    landmarks:
+      - "Château-ferme"
 
   - name: "Waterloo"
     slug: "waterloo"
@@ -638,6 +807,16 @@ walloon_brabant:
     geo:
       lat: 50.7147
       lng: 4.3997
+    neighborhoods:
+      - "Centre"
+      - "Chenois"
+      - "Joli-Bois"
+      - "Faubourg"
+    landmarks:
+      - "Butte du Lion"
+      - "Musée Wellington"
+      - "Église Saint-Joseph"
+      - "Carrefour de la Cour"
 
   - name: "Wavre"
     slug: "wavre"
@@ -646,6 +825,15 @@ walloon_brabant:
     geo:
       lat: 50.7167
       lng: 4.6000
+    neighborhoods:
+      - "Centre"
+      - "Bierges"
+      - "Limal"
+    landmarks:
+      - "Walibi Belgium"
+      - "Aqualibi"
+      - "Hôtel de Ville"
+      - "Gare de Wavre"
 
 # Brabant flamand (52 communes)
 flemish_brabant:
@@ -656,6 +844,16 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 4.8333
+    neighborhoods:
+      - "Centrum"
+      - "Gelrode"
+      - "Langdorp"
+      - "Rillaar"
+    landmarks:
+      - "Onze-Lieve-Vrouwekerk"
+      - "Begijnhof"
+      - "Hertogelijke Warande"
+      - "Station Aarschot"
 
   - name: "Asse"
     slug: "asse"
@@ -664,6 +862,16 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 4.2000
+    neighborhoods:
+      - "Centrum"
+      - "Zellik"
+      - "Kobbegem"
+      - "Mollem"
+    landmarks:
+      - "Hopmuseum"
+      - "Sint-Martinuskerk"
+      - "Gemeentehuis"
+      - "Station Asse"
 
   - name: "Beersel"
     slug: "beersel"
@@ -672,6 +880,16 @@ flemish_brabant:
     geo:
       lat: 50.7667
       lng: 4.3000
+    neighborhoods:
+      - "Centrum"
+      - "Alsemberg"
+      - "Dworp"
+      - "Lot"
+    landmarks:
+      - "Kasteel van Beersel"
+      - "Geuzemuseum"
+      - "Brasserie 3 Fonteinen"
+      - "Sint-Lambertuskerk"
 
   - name: "Begijnendijk"
     slug: "begijnendijk"
@@ -680,6 +898,12 @@ flemish_brabant:
     geo:
       lat: 51.0167
       lng: 4.8000
+    neighborhoods:
+      - "Centrum"
+      - "Betekom"
+    landmarks:
+      - "Sint-Jan Baptistkerk"
+      - "Gemeentehuis"
 
   - name: "Bekkevoort"
     slug: "bekkevoort"
@@ -688,6 +912,13 @@ flemish_brabant:
     geo:
       lat: 50.9500
       lng: 4.9833
+    neighborhoods:
+      - "Centrum"
+      - "Assent"
+      - "Molenbeek-Wersbeek"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Gemeentehuis"
 
   - name: "Bertem"
     slug: "bertem"
@@ -696,6 +927,14 @@ flemish_brabant:
     geo:
       lat: 50.8667
       lng: 4.6333
+    neighborhoods:
+      - "Centrum"
+      - "Leefdaal"
+      - "Korbeek-Dijle"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Kasteel van Bertem"
+      - "Station Bertem"
 
   - name: "Bierbeek"
     slug: "bierbeek"
@@ -704,6 +943,15 @@ flemish_brabant:
     geo:
       lat: 50.8333
       lng: 4.7833
+    neighborhoods:
+      - "Centrum"
+      - "Korbeek-Lo"
+      - "Lovenjoel"
+      - "Opvelp"
+    landmarks:
+      - "Abdij van Vlierbeek"
+      - "Sint-Hilariuskerk"
+      - "Gemeentehuis"
 
   - name: "Boortmeerbeek"
     slug: "boortmeerbeek"
@@ -712,6 +960,14 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 4.5667
+    neighborhoods:
+      - "Centrum"
+      - "Hever"
+      - "Schiplaken"
+    landmarks:
+      - "Sint-Antonius van Paduakerk"
+      - "Station Boortmeerbeek"
+      - "Gemeentehuis"
 
   - name: "Boutersem"
     slug: "boutersem"
@@ -720,6 +976,15 @@ flemish_brabant:
     geo:
       lat: 50.8333
       lng: 4.8333
+    neighborhoods:
+      - "Centrum"
+      - "Kerkom"
+      - "Roosbeek"
+      - "Willebringen"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Gemeentehuis"
+      - "Molensteen"
 
   - name: "Diest"
     slug: "diest"
@@ -728,6 +993,16 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 5.0500
+    neighborhoods:
+      - "Centrum"
+      - "Schaffen"
+      - "Deurne"
+      - "Kaggevinne"
+    landmarks:
+      - "Sint-Sulpitiuskerk"
+      - "Begijnhof"
+      - "Stedelijk Museum"
+      - "Warande"
 
   - name: "Dilbeek"
     slug: "dilbeek"
@@ -736,6 +1011,17 @@ flemish_brabant:
     geo:
       lat: 50.8500
       lng: 4.2500
+    neighborhoods:
+      - "Centrum"
+      - "Groot-Bijgaarden"
+      - "Itterbeek"
+      - "Sint-Martens-Bodegem"
+      - "Sint-Ulriks-Kapelle"
+    landmarks:
+      - "Kasteel van Groot-Bijgaarden"
+      - "Sint-Ambrosiuskerk"
+      - "Westrand"
+      - "Station Dilbeek"
 
   - name: "Drogenbos"
     slug: "drogenbos"
@@ -744,6 +1030,13 @@ flemish_brabant:
     geo:
       lat: 50.7833
       lng: 4.3167
+    neighborhoods:
+      - "Centrum"
+      - "Negenmanneke"
+    landmarks:
+      - "Sint-Niklaaskerk"
+      - "Gemeentehuis"
+      - "Shopping Drogenbos"
 
   - name: "Geetbets"
     slug: "geetbets"
@@ -752,6 +1045,13 @@ flemish_brabant:
     geo:
       lat: 50.9000
       lng: 5.0833
+    neighborhoods:
+      - "Centrum"
+      - "Grazen"
+      - "Rummen"
+    landmarks:
+      - "Sint-Amanduskerk"
+      - "Gemeentehuis"
 
   - name: "Glabbeek"
     slug: "glabbeek"
@@ -760,6 +1060,14 @@ flemish_brabant:
     geo:
       lat: 50.8833
       lng: 4.9500
+    neighborhoods:
+      - "Centrum"
+      - "Attenrode"
+      - "Bunsbeek"
+      - "Kapellen"
+    landmarks:
+      - "Sint-Mauritiuskerk"
+      - "Gemeentehuis"
 
   - name: "Grimbergen"
     slug: "grimbergen"
@@ -768,6 +1076,16 @@ flemish_brabant:
     geo:
       lat: 50.9333
       lng: 4.3667
+    neighborhoods:
+      - "Centrum"
+      - "Strombeek-Bever"
+      - "Beigem"
+      - "Humbeek"
+    landmarks:
+      - "Abdij van Grimbergen"
+      - "Mira Sterrenwacht"
+      - "Brouwerij Grimbergen"
+      - "Prinsenbos"
 
   - name: "Haacht"
     slug: "haacht"
@@ -776,6 +1094,15 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 4.6333
+    neighborhoods:
+      - "Centrum"
+      - "Tildonk"
+      - "Wespelaar"
+      - "Wakkerzeel"
+    landmarks:
+      - "Sint-Remigiuskerk"
+      - "Brouwerij Haacht"
+      - "Station Haacht"
 
   - name: "Halle"
     slug: "halle"
@@ -784,6 +1111,16 @@ flemish_brabant:
     geo:
       lat: 50.7333
       lng: 4.2333
+    neighborhoods:
+      - "Centrum"
+      - "Buizingen"
+      - "Lembeek"
+      - "Essenbeek"
+    landmarks:
+      - "Sint-Martinusbasiliek"
+      - "Zwarte Madonna"
+      - "Station Halle"
+      - "De Bres"
 
   - name: "Herent"
     slug: "herent"
@@ -792,6 +1129,14 @@ flemish_brabant:
     geo:
       lat: 50.9000
       lng: 4.6667
+    neighborhoods:
+      - "Centrum"
+      - "Winksele"
+      - "Veltem-Beisem"
+    landmarks:
+      - "Sint-Niklaaskerk"
+      - "Station Herent"
+      - "Gemeentehuis"
 
   - name: "Hoegaarden"
     slug: "hoegaarden"
@@ -800,6 +1145,14 @@ flemish_brabant:
     geo:
       lat: 50.7833
       lng: 4.8833
+    neighborhoods:
+      - "Centrum"
+      - "Meldert"
+      - "Outgaarden"
+    landmarks:
+      - "Brouwerij Hoegaarden"
+      - "Sint-Gorgonius kerk"
+      - "Gemeentehuis"
 
   - name: "Hoeilaart"
     slug: "hoeilaart"
@@ -808,6 +1161,14 @@ flemish_brabant:
     geo:
       lat: 50.7667
       lng: 4.4667
+    neighborhoods:
+      - "Centrum"
+      - "Groenendaal"
+    landmarks:
+      - "Druivenmuseum"
+      - "Zoniënwoud"
+      - "Station Hoeilaart"
+      - "Sint-Clemenskerk"
 
   - name: "Holsbeek"
     slug: "holsbeek"
@@ -816,6 +1177,15 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 4.7667
+    neighborhoods:
+      - "Centrum"
+      - "Kortrijk-Dutsel"
+      - "Nieuwrode"
+      - "Sint-Pieters-Rode"
+    landmarks:
+      - "Kasteel Horst"
+      - "Sint-Mauritiuskerk"
+      - "Gemeentehuis"
 
   - name: "Huldenberg"
     slug: "huldenberg"
@@ -824,6 +1194,15 @@ flemish_brabant:
     geo:
       lat: 50.7833
       lng: 4.5833
+    neighborhoods:
+      - "Centrum"
+      - "Neerijse"
+      - "Ottenburg"
+      - "Sint-Agatha-Rode"
+    landmarks:
+      - "Abdij van Park"
+      - "Sint-Niklaaskerk"
+      - "Zoet Water"
 
   - name: "Kampenhout"
     slug: "kampenhout"
@@ -832,6 +1211,15 @@ flemish_brabant:
     geo:
       lat: 50.9500
       lng: 4.5500
+    neighborhoods:
+      - "Centrum"
+      - "Berg"
+      - "Buken"
+      - "Nederokkerzeel"
+    landmarks:
+      - "Sint-Jan Baptistkerk"
+      - "Kasteel Ter Borght"
+      - "Gemeentehuis"
 
   - name: "Kapelle-op-den-Bos"
     slug: "kapelle-op-den-bos"
@@ -840,6 +1228,14 @@ flemish_brabant:
     geo:
       lat: 51.0000
       lng: 4.3667
+    neighborhoods:
+      - "Centrum"
+      - "Nieuwenrode"
+      - "Ramsdonk"
+    landmarks:
+      - "Sint-Nicolaaskerk"
+      - "Station Kapelle-op-den-Bos"
+      - "Gemeentehuis"
 
   - name: "Keerbergen"
     slug: "keerbergen"
@@ -848,6 +1244,13 @@ flemish_brabant:
     geo:
       lat: 51.0000
       lng: 4.6333
+    neighborhoods:
+      - "Centrum"
+      - "Rijmenam"
+    landmarks:
+      - "Sint-Michielskerk"
+      - "Keerbergen Zwembad"
+      - "Station Keerbergen"
 
   - name: "Kortenaken"
     slug: "kortenaken"
@@ -856,6 +1259,14 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 5.0500
+    neighborhoods:
+      - "Centrum"
+      - "Hoeleden"
+      - "Ransberg"
+      - "Waanrode"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Gemeentehuis"
 
   - name: "Kortenberg"
     slug: "kortenberg"
@@ -864,6 +1275,15 @@ flemish_brabant:
     geo:
       lat: 50.8833
       lng: 4.5333
+    neighborhoods:
+      - "Centrum"
+      - "Erps-Kwerps"
+      - "Everberg"
+      - "Meerbeek"
+    landmarks:
+      - "Abdij van Kortenberg"
+      - "Sint-Martinuskerk"
+      - "Station Kortenberg"
 
   - name: "Kraainem"
     slug: "kraainem"
@@ -872,6 +1292,13 @@ flemish_brabant:
     geo:
       lat: 50.8667
       lng: 4.4667
+    neighborhoods:
+      - "Centrum"
+      - "Stockel"
+    landmarks:
+      - "Sint-Pancratiuskerk"
+      - "Gemeentehuis"
+      - "Parc Jourdain"
 
   - name: "Landen"
     slug: "landen"
@@ -880,6 +1307,15 @@ flemish_brabant:
     geo:
       lat: 50.7500
       lng: 5.0833
+    neighborhoods:
+      - "Centrum"
+      - "Attenhoven"
+      - "Eliksem"
+      - "Neerwinden"
+    landmarks:
+      - "Sint-Gertrudiskerk"
+      - "Station Landen"
+      - "Gemeentehuis"
 
   - name: "Lennik"
     slug: "lennik"
@@ -888,6 +1324,15 @@ flemish_brabant:
     geo:
       lat: 50.8167
       lng: 4.1500
+    neighborhoods:
+      - "Centrum"
+      - "Gaasbeek"
+      - "Sint-Kwintens-Lennik"
+      - "Sint-Martens-Lennik"
+    landmarks:
+      - "Kasteel van Gaasbeek"
+      - "Sint-Martinuskerk"
+      - "Gemeentehuis"
 
   - name: "Leuven"
     slug: "leuven"
@@ -896,6 +1341,18 @@ flemish_brabant:
     geo:
       lat: 50.8798
       lng: 4.7005
+    neighborhoods:
+      - "Centrum"
+      - "Kessel-Lo"
+      - "Heverlee"
+      - "Wilsele"
+      - "Wijgmaal"
+    landmarks:
+      - "Stadhuis"
+      - "Oude Markt"
+      - "KU Leuven"
+      - "Stella Artois Brouwerij"
+      - "M Leuven Museum"
 
   - name: "Linkebeek"
     slug: "linkebeek"
@@ -904,6 +1361,13 @@ flemish_brabant:
     geo:
       lat: 50.7667
       lng: 4.3333
+    neighborhoods:
+      - "Centrum"
+      - "Holleken"
+    landmarks:
+      - "Sint-Sebastiaankerk"
+      - "Station Linkebeek"
+      - "Gemeentehuis"
 
   - name: "Londerzeel"
     slug: "londerzeel"
@@ -912,6 +1376,14 @@ flemish_brabant:
     geo:
       lat: 51.0000
       lng: 4.3000
+    neighborhoods:
+      - "Centrum"
+      - "Malderen"
+      - "Steenhuffel"
+    landmarks:
+      - "Sint-Christoffelkerk"
+      - "Brasserie Palm"
+      - "Station Londerzeel"
 
   - name: "Lubbeek"
     slug: "lubbeek"
@@ -920,6 +1392,14 @@ flemish_brabant:
     geo:
       lat: 50.8833
       lng: 4.8333
+    neighborhoods:
+      - "Centrum"
+      - "Binkom"
+      - "Linden"
+      - "Pellenberg"
+    landmarks:
+      - "Sint-Martinuskerk"
+      - "Gemeentehuis"
 
   - name: "Machelen"
     slug: "machelen"
@@ -928,6 +1408,14 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 4.4333
+    neighborhoods:
+      - "Centrum"
+      - "Diegem"
+    landmarks:
+      - "Luchthaven Brussel-Nationaal"
+      - "Uplace"
+      - "Station Diegem"
+      - "NATO Hoofdkwartier"
 
   - name: "Meise"
     slug: "meise"
@@ -936,6 +1424,14 @@ flemish_brabant:
     geo:
       lat: 50.9333
       lng: 4.3333
+    neighborhoods:
+      - "Centrum"
+      - "Wolvertem"
+      - "Oppem"
+    landmarks:
+      - "Plantentuin Meise"
+      - "Kasteel van Bouchout"
+      - "Sint-Martinuskerk"
 
   - name: "Oud-Heverlee"
     slug: "oud-heverlee"
@@ -944,6 +1440,16 @@ flemish_brabant:
     geo:
       lat: 50.8333
       lng: 4.6667
+    neighborhoods:
+      - "Centrum"
+      - "Blanden"
+      - "Haasrode"
+      - "Sint-Joris-Weert"
+      - "Vaalbeek"
+    landmarks:
+      - "Abdij van Park"
+      - "Zoet Water"
+      - "Arenberg Kasteel"
 
   - name: "Overijse"
     slug: "overijse"
@@ -952,6 +1458,16 @@ flemish_brabant:
     geo:
       lat: 50.7833
       lng: 4.5333
+    neighborhoods:
+      - "Centrum"
+      - "Jezus-Eik"
+      - "Maleizen"
+      - "Terlanen"
+    landmarks:
+      - "Druivenstreek"
+      - "Station Overijse"
+      - "Zoniënwoud"
+      - "Sint-Martinuskerk"
 
   - name: "Rotselaar"
     slug: "rotselaar"
@@ -960,6 +1476,14 @@ flemish_brabant:
     geo:
       lat: 50.9500
       lng: 4.7167
+    neighborhoods:
+      - "Centrum"
+      - "Wezemaal"
+      - "Werchter"
+    landmarks:
+      - "Rock Werchter"
+      - "Sint-Jan de Doperkerk"
+      - "Gemeentehuis"
 
   - name: "Scherpenheuvel-Zichem"
     slug: "scherpenheuvel-zichem"
@@ -968,6 +1492,15 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 4.9667
+    neighborhoods:
+      - "Scherpenheuvel"
+      - "Zichem"
+      - "Averbode"
+      - "Messelbroek"
+    landmarks:
+      - "Basiliek Scherpenheuvel"
+      - "Abdij van Averbode"
+      - "Ernest Claes Museum"
 
   - name: "Sint-Genesius-Rode"
     slug: "sint-genesius-rode"
@@ -976,6 +1509,14 @@ flemish_brabant:
     geo:
       lat: 50.7500
       lng: 4.3500
+    neighborhoods:
+      - "Centrum"
+      - "Faubourg"
+      - "Espinette"
+    landmarks:
+      - "Sint-Genesiuskerk"
+      - "Zoniënwoud"
+      - "Station Rhode-Saint-Genèse"
 
   - name: "Sint-Pieters-Leeuw"
     slug: "sint-pieters-leeuw"
@@ -984,6 +1525,16 @@ flemish_brabant:
     geo:
       lat: 50.7833
       lng: 4.2500
+    neighborhoods:
+      - "Centrum"
+      - "Ruisbroek"
+      - "Vlezenbeek"
+      - "Oudenaken"
+    landmarks:
+      - "Coloma Rozentuin"
+      - "Sint-Pieterskerk"
+      - "Colomapark"
+      - "Station Ruisbroek"
 
   - name: "Steenokkerzeel"
     slug: "steenokkerzeel"
@@ -992,6 +1543,14 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 4.5167
+    neighborhoods:
+      - "Centrum"
+      - "Melsbroek"
+      - "Perk"
+    landmarks:
+      - "Kasteel van Ham"
+      - "Militair vliegveld Melsbroek"
+      - "Sint-Rumolduskerk"
 
   - name: "Tervuren"
     slug: "tervuren"
@@ -1000,6 +1559,16 @@ flemish_brabant:
     geo:
       lat: 50.8167
       lng: 4.5167
+    neighborhoods:
+      - "Centrum"
+      - "Duisburg"
+      - "Vossem"
+      - "Moorsel"
+    landmarks:
+      - "AfricaMuseum"
+      - "Tervuren Park"
+      - "Kapucijnenklooster"
+      - "Station Tervuren"
 
   - name: "Tielt-Winge"
     slug: "tielt-winge"
@@ -1008,6 +1577,15 @@ flemish_brabant:
     geo:
       lat: 50.9000
       lng: 4.9000
+    neighborhoods:
+      - "Centrum"
+      - "Houwaart"
+      - "Meensel-Kiezegem"
+      - "Sint-Joris-Winge"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Aardbeienstreek"
+      - "Gemeentehuis"
 
   - name: "Tienen"
     slug: "tienen"
@@ -1016,6 +1594,16 @@ flemish_brabant:
     geo:
       lat: 50.8000
       lng: 4.9333
+    neighborhoods:
+      - "Centrum"
+      - "Grimde"
+      - "Kumtich"
+      - "Oplinter"
+    landmarks:
+      - "Grote Markt"
+      - "Tiense Suikerraffinaderij"
+      - "Sint-Germanuskerk"
+      - "Station Tienen"
 
   - name: "Tremelo"
     slug: "tremelo"
@@ -1024,6 +1612,14 @@ flemish_brabant:
     geo:
       lat: 51.0000
       lng: 4.7000
+    neighborhoods:
+      - "Centrum"
+      - "Baal"
+      - "Ninde"
+    landmarks:
+      - "Pater Damiaan Museum"
+      - "Sint-Jan de Doperkerk"
+      - "Gemeentehuis"
 
   - name: "Vilvoorde"
     slug: "vilvoorde"
@@ -1032,6 +1628,16 @@ flemish_brabant:
     geo:
       lat: 50.9333
       lng: 4.4167
+    neighborhoods:
+      - "Centrum"
+      - "Koningslo"
+      - "Houtem"
+      - "Peutie"
+    landmarks:
+      - "Hangar 58"
+      - "Boudewijnpark"
+      - "Station Vilvoorde"
+      - "Kanaal Brussel-Schelde"
 
   - name: "Wemmel"
     slug: "wemmel"
@@ -1040,6 +1646,13 @@ flemish_brabant:
     geo:
       lat: 50.9167
       lng: 4.3167
+    neighborhoods:
+      - "Centrum"
+      - "Beverbos"
+    landmarks:
+      - "Sint-Servatiuskerk"
+      - "Gemeentehuis"
+      - "Jette Stadion nabij"
 
   - name: "Wezembeek-Oppem"
     slug: "wezembeek-oppem"
@@ -1048,6 +1661,13 @@ flemish_brabant:
     geo:
       lat: 50.8500
       lng: 4.4833
+    neighborhoods:
+      - "Wezembeek"
+      - "Oppem"
+    landmarks:
+      - "Sint-Pieterskerk"
+      - "Gemeentehuis"
+      - "Sportcentrum"
 
   - name: "Zaventem"
     slug: "zaventem"
@@ -1056,6 +1676,16 @@ flemish_brabant:
     geo:
       lat: 50.8833
       lng: 4.4667
+    neighborhoods:
+      - "Centrum"
+      - "Sint-Stevens-Woluwe"
+      - "Sterrebeek"
+      - "Nossegem"
+    landmarks:
+      - "Brussels Airport"
+      - "Station Zaventem"
+      - "Parking C"
+      - "Sint-Martinuskerk"
 
   - name: "Zemst"
     slug: "zemst"
@@ -1064,6 +1694,16 @@ flemish_brabant:
     geo:
       lat: 50.9833
       lng: 4.4667
+    neighborhoods:
+      - "Centrum"
+      - "Eppegem"
+      - "Elewijt"
+      - "Hofstade"
+      - "Weerde"
+    landmarks:
+      - "Bloso Hofstade"
+      - "Sint-Pieterskerk"
+      - "Kasteel van Elewijt"
 
   - name: "Zoutleeuw"
     slug: "zoutleeuw"
@@ -1072,3 +1712,12 @@ flemish_brabant:
     geo:
       lat: 50.8333
       lng: 5.1000
+    neighborhoods:
+      - "Centrum"
+      - "Budingen"
+      - "Dormaal"
+      - "Halle-Booienhoven"
+    landmarks:
+      - "Sint-Leonarduskerk"
+      - "Stadhuis"
+      - "Gete vallei"

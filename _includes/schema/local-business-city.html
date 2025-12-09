@@ -109,8 +109,12 @@ Supported layouts: city, city-service, emergency-city
         }
     },
     "sameAs": [
-        "{{ site.url }}"
-    ]
+        "{{ site.url }}",
+        "{{ biz.social.facebook }}",
+        "{{ biz.social.linkedin }}",
+        "{{ biz.google.maps_url }}"
+    ],
+    "hasMap": "{{ biz.google.maps_embed }}"
 }
 </script>
 {% endif %}

@@ -3,6 +3,7 @@ layout: default
 ---
 {% include init-vars.html %}
 {% include lang-folders.html %}
+{% include city-geo-lookup.html %}
 {% assign services = site.data.services %}
 
 <!-- Hero -->
@@ -24,16 +25,16 @@ layout: default
 
         <div class="commune-stats">
             <div class="commune-stat">
+                <i data-lucide="map-pin"></i>
+                <span>{{ page.postal | default: city_postal_code }} {{ page.city_name }}</span>
+            </div>
+            <div class="commune-stat">
                 <i data-lucide="clock"></i>
                 <span>{{ t.city.response_time | replace: "%city%", page.city_name }}</span>
             </div>
             <div class="commune-stat">
                 <i data-lucide="shield-check"></i>
                 <span>{{ t.common.free_quote }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="credit-card"></i>
-                <span>{{ t.common.pay_after }}</span>
             </div>
         </div>
     </div>
@@ -88,6 +89,19 @@ layout: default
             <p>{{ t.city.zone_text_1 | replace: "%city%", page.city_name | replace: "%region%", page.region_name }}</p>
             <p>{{ t.city.zone_text_2 | replace: "%city%", page.city_name }}</p>
         </div>
+
+        {% if city_neighborhoods or city_landmarks %}
+        <div class="commune-section">
+            <h2><i data-lucide="navigation"></i> {{ t.city.neighborhoods_title | default: "Quartiers desservis" | replace: "%city%", page.city_name }}</h2>
+            {% if city_neighborhoods %}
+            <p><strong>{{ t.city.neighborhoods_label | default: "Quartiers" }} :</strong> {{ city_neighborhoods | join: ", " }}</p>
+            {% endif %}
+            {% if city_landmarks %}
+            <p><strong>{{ t.city.landmarks_label | default: "Points de repère" }} :</strong> {{ city_landmarks | join: ", " }}</p>
+            {% endif %}
+            <p>{{ t.city.neighborhoods_text | default: "Notre serrurier intervient dans tous les quartiers de" }} {{ page.city_name }} {{ t.city.neighborhoods_suffix | default: "en moins de 30 minutes." }}</p>
+        </div>
+        {% endif %}
 
     </div>
 </section>

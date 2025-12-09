@@ -1,0 +1,38 @@
+{% comment %}
+Driving Directions Schema
+=========================
+Adds structured data for directions to the business location.
+Uses GeoCoordinates and potentialAction for navigation.
+
+Usage: {% include schema/directions.html %}
+{% endcomment %}
+
+{% assign biz = site.data.business %}
+{% assign lang = page.lang | default: 'fr' %}
+
+{% if city_geo_lat and page.city_name %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "{{ biz.name }} - {{ page.city_name }}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ page.city_name }}",
+        "postalCode": "{{ city_postal_code }}",
+        "addressCountry": "BE"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ city_geo_lat }},
+        "longitude": {{ city_geo_lng }}
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query={{ city_geo_lat }},{{ city_geo_lng }}",
+    "potentialAction": {
+        "@type": "Action",
+        "name": "{% case lang %}{% when 'fr' %}Obtenir l'itinéraire vers {{ page.city_name }}{% when 'en' %}Get directions to {{ page.city_name }}{% when 'nl' %}Route naar {{ page.city_name }}{% endcase %}",
+        "target": "https://www.google.com/maps/dir/?api=1&destination={{ city_geo_lat }},{{ city_geo_lng }}"
+    }
+}
+</script>
+{% endif %}

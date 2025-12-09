@@ -114,6 +114,16 @@ brussels:
     geo:
       lat: 50.8333
       lng: 4.3000
+    neighborhoods:
+      - "Cureghem"
+      - "Scheut"
+      - "Moortebeek"
+      - "Peterbos"
+      - "Birmingham"
+    landmarks:
+      - "Stade Constant Vanden Stock"
+      - "Westland Shopping"
+      - "Erasme"
 
   - name: "Auderghem"
     slug: "auderghem"
@@ -123,6 +133,15 @@ brussels:
     geo:
       lat: 50.8167
       lng: 4.4333
+    neighborhoods:
+      - "Herrmann-Debroux"
+      - "Transvaal"
+      - "Blankedelle"
+      - "Pinoy"
+    landmarks:
+      - "Forêt de Soignes"
+      - "Rouge-Cloître"
+      - "Shopping de Woluwe"
 
   - name: "Berchem-Sainte-Agathe"
     slug: "berchem-sainte-agathe"
@@ -132,6 +151,13 @@ brussels:
     geo:
       lat: 50.8667
       lng: 4.2833
+    neighborhoods:
+      - "Grand-Place"
+      - "Zavelenberg"
+      - "Moortebeek"
+    landmarks:
+      - "Parc Roi Baudouin"
+      - "Basilique de Koekelberg"
 
   - name: "Bruxelles-Ville"
     slug: "bruxelles-ville"
@@ -142,6 +168,21 @@ brussels:
     geo:
       lat: 50.8503
       lng: 4.3517
+    neighborhoods:
+      - "Centre historique"
+      - "Pentagone"
+      - "Marolles"
+      - "Sablon"
+      - "Quartier Européen"
+      - "Laeken"
+      - "Neder-Over-Heembeek"
+      - "Haren"
+    landmarks:
+      - "Grand-Place"
+      - "Manneken Pis"
+      - "Atomium"
+      - "Gare Centrale"
+      - "Palais Royal"
 
   - name: "Etterbeek"
     slug: "etterbeek"
@@ -150,6 +191,15 @@ brussels:
     geo:
       lat: 50.8333
       lng: 4.3833
+    neighborhoods:
+      - "Cinquantenaire"
+      - "Quartier des Chasseurs"
+      - "Jourdan"
+      - "Germoir"
+    landmarks:
+      - "Parc du Cinquantenaire"
+      - "VUB/ULB"
+      - "Place Jourdan"
 
   - name: "Evere"
     slug: "evere"
@@ -158,6 +208,14 @@ brussels:
     geo:
       lat: 50.8667
       lng: 4.4000
+    neighborhoods:
+      - "Tornooiveld"
+      - "Platon"
+      - "Évère Village"
+    landmarks:
+      - "OTAN/NATO"
+      - "Cimetière de Bruxelles"
+      - "Parc Platon"
 
   - name: "Forest"
     slug: "forest"
@@ -167,6 +225,15 @@ brussels:
     geo:
       lat: 50.8103
       lng: 4.3242
+    neighborhoods:
+      - "Altitude 100"
+      - "Saint-Denis"
+      - "Abbaye"
+      - "Bempt"
+    landmarks:
+      - "Forest National"
+      - "Abbaye de Forest"
+      - "Parc Duden"
 
   - name: "Ganshoren"
     slug: "ganshoren"
@@ -175,6 +242,12 @@ brussels:
     geo:
       lat: 50.8667
       lng: 4.3000
+    neighborhoods:
+      - "Centre"
+      - "Ganshoren-Village"
+    landmarks:
+      - "Basilique de Koekelberg"
+      - "Hôpital Brugmann"
 
   - name: "Ixelles"
     slug: "ixelles"
@@ -184,6 +257,18 @@ brussels:
     geo:
       lat: 50.8256
       lng: 4.3731
+    neighborhoods:
+      - "Flagey"
+      - "Place du Châtelain"
+      - "Toison d'Or"
+      - "Ma Campagne"
+      - "Université"
+      - "Etangs d'Ixelles"
+    landmarks:
+      - "Place Flagey"
+      - "Bois de la Cambre"
+      - "ULB"
+      - "Porte de Namur"
 
   - name: "Jette"
     slug: "jette"
@@ -192,6 +277,14 @@ brussels:
     geo:
       lat: 50.8833
       lng: 4.3167
+    neighborhoods:
+      - "Dieleghem"
+      - "Esseghem"
+      - "Miroir"
+    landmarks:
+      - "Hôpital Brugmann"
+      - "Parc de la Jeunesse"
+      - "Musée Magritte"
 
   - name: "Koekelberg"
     slug: "koekelberg"
@@ -200,6 +293,12 @@ brussels:
     geo:
       lat: 50.8667
       lng: 4.3167
+    neighborhoods:
+      - "Basilique"
+      - "Vieux Koekelberg"
+    landmarks:
+      - "Basilique du Sacré-Cœur"
+      - "Parc Elisabeth"
 
   - name: "Molenbeek-Saint-Jean"
     slug: "molenbeek-saint-jean"
@@ -209,6 +308,15 @@ brussels:
     geo:
       lat: 50.8550
       lng: 4.3208
+    neighborhoods:
+      - "Historique"
+      - "Maritime"
+      - "Karreveld"
+      - "Duchesse"
+    landmarks:
+      - "Gare de l'Ouest"
+      - "Tour & Taxis"
+      - "Château du Karreveld"
 
   - name: "Saint-Gilles"
     slug: "saint-gilles"
@@ -218,6 +326,15 @@ brussels:
     geo:
       lat: 50.8250
       lng: 4.3458
+    neighborhoods:
+      - "Parvis"
+      - "Ma Campagne"
+      - "Barrière"
+      - "Altitude 100"
+    landmarks:
+      - "Parvis de Saint-Gilles"
+      - "Prison de Saint-Gilles"
+      - "Hôtel de Ville"
 
   - name: "Saint-Josse-ten-Noode"
     slug: "saint-josse-ten-noode"
@@ -227,6 +344,14 @@ brussels:
     geo:
       lat: 50.8550
       lng: 4.3708
+    neighborhoods:
+      - "Madou"
+      - "Botanique"
+      - "Haecht"
+    landmarks:
+      - "Place Madou"
+      - "Jardin Botanique"
+      - "Gare du Nord"
 
   - name: "Schaerbeek"
     slug: "schaerbeek"
@@ -236,6 +361,17 @@ brussels:
     geo:
       lat: 50.8667
       lng: 4.3833
+    neighborhoods:
+      - "Helmet"
+      - "Pogge"
+      - "Josaphat"
+      - "Cage aux Ours"
+      - "Colignon"
+    landmarks:
+      - "Parc Josaphat"
+      - "Gare de Schaerbeek"
+      - "Place Colignon"
+      - "Halles de Schaerbeek"
 
   - name: "Uccle"
     slug: "uccle"
@@ -245,6 +381,16 @@ brussels:
     geo:
       lat: 50.8000
       lng: 4.3333
+    neighborhoods:
+      - "Fort Jaco"
+      - "Vivier d'Oie"
+      - "Globe"
+      - "Calevoet"
+      - "Stalle"
+    landmarks:
+      - "Observatoire Royal"
+      - "Bois de la Cambre"
+      - "Forêt de Soignes"
 
   - name: "Watermael-Boitsfort"
     slug: "watermael-boitsfort"
@@ -254,6 +400,15 @@ brussels:
     geo:
       lat: 50.7958
       lng: 4.4125
+    neighborhoods:
+      - "Watermael"
+      - "Boitsfort"
+      - "Coin du Balai"
+      - "Cité-Jardin Le Logis"
+    landmarks:
+      - "Hippodrome de Boitsfort"
+      - "Forêt de Soignes"
+      - "Cité-Jardin Le Logis"
 
   - name: "Woluwe-Saint-Lambert"
     slug: "woluwe-saint-lambert"
@@ -263,6 +418,15 @@ brussels:
     geo:
       lat: 50.8500
       lng: 4.4333
+    neighborhoods:
+      - "Tomberg"
+      - "Roodebeek"
+      - "Georges Henri"
+      - "Lindthout"
+    landmarks:
+      - "Woluwe Shopping"
+      - "Cliniques Saint-Luc"
+      - "Parc de Roodebeek"
 
   - name: "Woluwe-Saint-Pierre"
     slug: "woluwe-saint-pierre"
@@ -272,6 +436,14 @@ brussels:
     geo:
       lat: 50.8333
       lng: 4.4500
+    neighborhoods:
+      - "Stockel"
+      - "Quartier Montjoie"
+      - "Chant d'Oiseau"
+    landmarks:
+      - "Centre Sportif de Woluwe"
+      - "Parc de Woluwe"
+      - "Château Malou"
 
 # Brabant wallon (25 communes)
 walloon_brabant:

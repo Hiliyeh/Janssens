@@ -45,6 +45,13 @@ stats:
   reviews_count: 127
   rating: 4.8
 
+# Google Business Profile
+google:
+  cid: "0x47c3c3c5f28ad1c1:0x99a8ad844cb5b194"
+  maps_url: "https://www.google.com/maps/place/?q=place_id:ChIJwdGK8sXDw0cRlLG1TIStqJk"
+  maps_embed: "https://www.google.com/maps/search/?api=1&query=Janssens+Serrurier&query_place_id=ChIJwdGK8sXDw0cRlLG1TIStqJk"
+  reviews_url: "https://search.google.com/local/writereview?placeid=ChIJwdGK8sXDw0cRlLG1TIStqJk"
+
 # SEO
 og_image: "/assets/images/logo.png"
 logo: "/assets/images/logo.png"

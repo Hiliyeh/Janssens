@@ -3,7 +3,7 @@
 {% assign biz = site.data.business %}
 
 {% comment %}=== CITY GEO LOOKUP (for city pages) ==={% endcomment %}
-{% assign city_page_layouts = "city,city-service,emergency-city" | split: "," %}
+{% assign city_page_layouts = "city,city-service,emergency-city,brand-city" | split: "," %}
 {% if city_page_layouts contains page.layout %}
 {% include city-geo-lookup.html %}
 {% endif %}
@@ -84,10 +84,12 @@
 <meta property="business:contact_data:country_name" content="{{ biz.address.country }}">
 <meta property="business:contact_data:phone_number" content="{{ biz.phone }}">
 
-<!-- Favicon -->
+<!-- Favicon & PWA -->
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
 <link rel="alternate icon" type="image/png" href="{{ '/assets/images/logo.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<meta name="theme-color" content="#1a1a2e">
 
 <!-- Preconnect & Preload for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,9 +117,10 @@
 {% endif %}
 
 <!-- LocalBusiness Schema with City ServiceArea (for city pages) -->
-{% assign city_layouts = "city,city-service,emergency-city" | split: "," %}
+{% assign city_layouts = "city,city-service,emergency-city,brand-city" | split: "," %}
 {% if city_layouts contains page.layout %}
 {% include schema/local-business-city.html %}
+{% include schema/directions.html %}
 {% endif %}
 
 <!-- FAQPage Schema (for rich snippets) -->

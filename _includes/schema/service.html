@@ -1,0 +1,125 @@
+{% comment %}
+Service Schema JSON-LD Generator
+================================
+Generates structured data for service pages to help Google understand the services offered.
+
+Usage: {% include schema/service.html %}
+No parameters needed - auto-detects based on page.service_id
+
+Supported layouts:
+- service: Individual service pages (door-opening, lock-replacement, etc.)
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+
+{% comment %}Find the service data{% endcomment %}
+{% for s in site.data.services %}
+    {% if s.id == page.service_id %}{% assign service = s %}{% endif %}
+{% endfor %}
+
+{% if service %}
+{% assign s_data = service[lang] %}
+
+{% comment %}Define service category based on service type{% endcomment %}
+{% case service.id %}
+{% when 'door-opening' %}
+    {% assign service_type = "EmergencyService" %}
+    {% assign category = "Emergency Locksmith Service" %}
+{% when 'lock-replacement' %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Lock Installation Service" %}
+{% when 'key-duplication' %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Key Duplication Service" %}
+{% when 'door-reinforcement' %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Security Installation Service" %}
+{% when 'safe' %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Safe Service" %}
+{% when 'automotive' %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Automotive Locksmith Service" %}
+{% else %}
+    {% assign service_type = "LocksmithService" %}
+    {% assign category = "Locksmith Service" %}
+{% endcase %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "{{ category }}",
+    "name": "{{ s_data.title | escape }}",
+    "description": "{{ s_data.description | escape }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "{{ biz.name }}",
+        "telephone": "{{ biz.phone }}",
+        "url": "{{ site.url }}/{{ lang }}/",
+        "image": "{{ site.url }}{{ biz.logo }}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ biz.address.street }}",
+            "addressLocality": "{{ biz.address.city }}",
+            "postalCode": "{{ biz.address.postal }}",
+            "addressCountry": "{{ biz.address.country_code }}"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": {{ biz.address.geo.lat }},
+            "longitude": {{ biz.address.geo.lng }}
+        },
+        "priceRange": "€€"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Brussels",
+        "containedInPlace": {
+            "@type": "Country",
+            "name": "Belgium"
+        }
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{{ s_data.title | escape }}",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{{ s_data.title | escape }}"
+                }
+            }
+        ]
+    },
+    "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceType": "{{ category }}",
+        "availableLanguage": ["French", "Dutch", "English"],
+        "servicePhone": {
+            "@type": "ContactPoint",
+            "telephone": "{{ biz.phone }}",
+            "contactType": "customer service",
+            "availableLanguage": ["French", "Dutch", "English"],
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        }
+    },
+    "termsOfService": "{{ site.url }}/{{ lang }}/conditions/",
+    "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+    }
+}
+</script>
+{% endif %}

@@ -6,66 +6,21 @@ import yaml
 
 # Base path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, '_data')
 
-# Cities with subpages (from cities.yml)
-CITIES_WITH_SUBPAGES = [
-    "anderlecht", "auderghem", "beersel", "berchem-sainte-agathe", "braine-lalleud",
-    "bruxelles-ville", "dilbeek", "etterbeek", "evere", "forest", "ganshoren",
-    "grimbergen", "halle", "ixelles", "jette", "koekelberg", "kraainem", "la-hulpe",
-    "lasne", "leuven", "machelen", "molenbeek-saint-jean", "nivelles",
-    "ottignies-louvain-la-neuve", "overijse", "rixensart", "saint-gilles",
-    "saint-josse-ten-noode", "schaerbeek", "sint-genesius-rode", "sint-pieters-leeuw",
-    "tervuren", "tubize", "uccle", "vilvoorde", "waterloo", "watermael-boitsfort",
-    "wavre", "wemmel", "wezembeek-oppem", "woluwe-saint-lambert", "woluwe-saint-pierre",
-    "zaventem"
-]
+# Load cities from YAML
+with open(os.path.join(DATA_DIR, 'cities.yml'), 'r', encoding='utf-8') as f:
+    cities_data = yaml.safe_load(f)
 
-# City display names (for page titles)
-CITY_NAMES = {
-    "anderlecht": "Anderlecht",
-    "auderghem": "Auderghem",
-    "beersel": "Beersel",
-    "berchem-sainte-agathe": "Berchem-Sainte-Agathe",
-    "braine-lalleud": "Braine-l'Alleud",
-    "bruxelles-ville": "Bruxelles-Ville",
-    "dilbeek": "Dilbeek",
-    "etterbeek": "Etterbeek",
-    "evere": "Evere",
-    "forest": "Forest",
-    "ganshoren": "Ganshoren",
-    "grimbergen": "Grimbergen",
-    "halle": "Halle",
-    "ixelles": "Ixelles",
-    "jette": "Jette",
-    "koekelberg": "Koekelberg",
-    "kraainem": "Kraainem",
-    "la-hulpe": "La Hulpe",
-    "lasne": "Lasne",
-    "leuven": "Leuven",
-    "machelen": "Machelen",
-    "molenbeek-saint-jean": "Molenbeek-Saint-Jean",
-    "nivelles": "Nivelles",
-    "ottignies-louvain-la-neuve": "Ottignies-Louvain-la-Neuve",
-    "overijse": "Overijse",
-    "rixensart": "Rixensart",
-    "saint-gilles": "Saint-Gilles",
-    "saint-josse-ten-noode": "Saint-Josse-ten-Noode",
-    "schaerbeek": "Schaerbeek",
-    "sint-genesius-rode": "Sint-Genesius-Rode",
-    "sint-pieters-leeuw": "Sint-Pieters-Leeuw",
-    "tervuren": "Tervuren",
-    "tubize": "Tubize",
-    "uccle": "Uccle",
-    "vilvoorde": "Vilvoorde",
-    "waterloo": "Waterloo",
-    "watermael-boitsfort": "Watermael-Boitsfort",
-    "wavre": "Wavre",
-    "wemmel": "Wemmel",
-    "wezembeek-oppem": "Wezembeek-Oppem",
-    "woluwe-saint-lambert": "Woluwe-Saint-Lambert",
-    "woluwe-saint-pierre": "Woluwe-Saint-Pierre",
-    "zaventem": "Zaventem"
-}
+# Get list of cities with subpages
+CITIES_WITH_SUBPAGES = cities_data.get('cities_with_subpages', [])
+
+# Build city info from all regions
+ALL_CITIES = {}
+for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
+    if region in cities_data:
+        for city in cities_data[region]:
+            ALL_CITIES[city['slug']] = city
 
 # Services by language
 SERVICES = {
@@ -108,19 +63,38 @@ LANG_CONFIG = {
     "nl": {"cities_folder": "cities"}
 }
 
-def generate_page(lang, city_slug, service_id, service_data, city_name):
+def get_city_slug(city_data, lang):
+    """Get the correct city slug for a language."""
+    if lang == 'en' and city_data.get('slug_en'):
+        return city_data['slug_en']
+    elif lang == 'nl' and city_data.get('slug_nl'):
+        return city_data['slug_nl']
+    return city_data['slug']
+
+def get_city_name(city_data, lang):
+    """Get the correct city name for a language."""
+    if lang == 'en' and city_data.get('name_en'):
+        return city_data['name_en']
+    elif lang == 'nl' and city_data.get('name_nl'):
+        return city_data['name_nl']
+    return city_data['name']
+
+def generate_page(lang, city_data, service_id, service_data):
     """Generate a city-service page."""
 
+    city_slug = get_city_slug(city_data, lang)
+    city_name = get_city_name(city_data, lang)
     service_slug = service_data["slug"]
     service_name = service_data["name"]
     cities_folder = LANG_CONFIG[lang]["cities_folder"]
 
-    # Generate alternate links
+    # Generate alternate links with correct slugs per language
     alternates = {}
     for alt_lang in ["fr", "en", "nl"]:
+        alt_city_slug = get_city_slug(city_data, alt_lang)
         alt_service = SERVICES[service_id][alt_lang]
         alt_folder = LANG_CONFIG[alt_lang]["cities_folder"]
-        alternates[alt_lang] = f"/{alt_lang}/{alt_folder}/{city_slug}/{alt_service['slug']}/"
+        alternates[alt_lang] = f"/{alt_lang}/{alt_folder}/{alt_city_slug}/{alt_service['slug']}/"
 
     # Create page content
     content = f"""---
@@ -157,13 +131,16 @@ def main():
     for lang in ["fr", "en", "nl"]:
         lang_count = 0
 
-        for city_slug in CITIES_WITH_SUBPAGES:
-            city_name = CITY_NAMES.get(city_slug, city_slug.replace("-", " ").title())
+        for city_slug_fr in CITIES_WITH_SUBPAGES:
+            city_data = ALL_CITIES.get(city_slug_fr)
+            if not city_data:
+                print(f"Warning: City {city_slug_fr} not found in cities.yml")
+                continue
 
             for service_id, service_langs in SERVICES.items():
                 service_data = service_langs[lang]
 
-                path = generate_page(lang, city_slug, service_id, service_data, city_name)
+                path = generate_page(lang, city_data, service_id, service_data)
                 lang_count += 1
                 total_created += 1
 

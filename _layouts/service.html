@@ -45,6 +45,12 @@ layout: default
 
 {% include faq-section.html source=t.service_page count=3 prefix="faq" %}
 
+<!-- Service par ville -->
+{% capture service_cities_title %}{{ s_data.title }} {{ t.service_page.by_city | default: "par ville" }}{% endcapture %}
+{% capture service_url_prefix %}/{{ lang }}/{{ cities_folder }}/{% endcapture %}
+{% capture service_url_suffix %}/{{ s_data.slug }}/{% endcapture %}
+{% include cities-accordion.html title=service_cities_title url_prefix=service_url_prefix url_suffix=service_url_suffix %}
+
 {% capture url_prefix %}/{{ lang }}/{{ services_folder }}/{% endcapture %}
 {% include related-links.html title=t.service_page.other_services items=site.data.services current_id=service.id url_prefix=url_prefix lang=lang %}
 

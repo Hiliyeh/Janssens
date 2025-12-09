@@ -1,0 +1,159 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+
+{% comment %}Find the brand data{% endcomment %}
+{% assign brand = nil %}
+{% for b in site.data.brands %}
+{% if b.id == page.brand_id %}{% assign brand = b %}{% endif %}
+{% endfor %}
+
+{% assign city_name = page.city_name %}
+
+<!-- Hero -->
+<section class="service-hero brand-city-hero">
+    <div class="service-container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+            <span>/</span>
+            <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/">{{ brand.name }}</a>
+            <span>/</span>
+            <strong>{{ city_name }}</strong>
+        </nav>
+
+        <span class="marque-logo-text">{{ brand.logo_text }}</span>
+        <h1 class="service-title">{{ t.brand_city.title | replace: "%brand%", brand.name | replace: "%city%", city_name }}</h1>
+        <p class="service-subtitle">{{ t.brand_city.subtitle | replace: "%brand%", brand.name | replace: "%city%", city_name }}</p>
+
+        <div class="service-cta">
+            {% include hero-cta.html %}
+        </div>
+
+        <div class="commune-stats">
+            <div class="commune-stat">
+                <i data-lucide="clock"></i>
+                <span>{{ t.city.response_time | replace: "%city%", city_name }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="award"></i>
+                <span>{{ t.brand_city.certified | replace: "%brand%", brand.name }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="shield-check"></i>
+                <span>{{ t.common.free_quote }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+
+        <div class="commune-section">
+            <h2><i data-lucide="wrench"></i> {{ t.brand_city.expertise_title | replace: "%brand%", brand.name | replace: "%city%", city_name }}</h2>
+            <p>{{ t.brand_city.expertise_intro | replace: "%brand%", brand.name | replace: "%city%", city_name }}</p>
+            <p>{{ brand.description[lang] }}</p>
+        </div>
+
+        {% capture cta_title %}{{ t.brand_city.cta_title | replace: "%brand%", brand.name | replace: "%city%", city_name }}{% endcapture %}
+        {% capture cta_text %}{{ t.brand_city.cta_text | replace: "%brand%", brand.name | replace: "%city%", city_name }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=cta_text %}
+
+        <div class="commune-section">
+            <h2><i data-lucide="list"></i> {{ t.brand_city.models_title | replace: "%brand%", brand.name }}</h2>
+            <p>{{ t.brand_city.models_intro | replace: "%brand%", brand.name | replace: "%city%", city_name }}</p>
+            {% include content-grid.html items=brand.models title_key="name" %}
+        </div>
+
+        <div class="commune-section">
+            <h2><i data-lucide="check-circle"></i> {{ t.brand_city.services_title | replace: "%brand%", brand.name | replace: "%city%", city_name }}</h2>
+            <ul>
+                <li>
+                    <i data-lucide="door-open"></i>
+                    <div><strong>{{ t.brand_city.service_1_title }}</strong> – {{ t.brand_city.service_1_text | replace: "%brand%", brand.name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="lock"></i>
+                    <div><strong>{{ t.brand_city.service_2_title }}</strong> – {{ t.brand_city.service_2_text | replace: "%brand%", brand.name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="key"></i>
+                    <div><strong>{{ t.brand_city.service_3_title }}</strong> – {{ t.brand_city.service_3_text | replace: "%brand%", brand.name }}</div>
+                </li>
+                <li>
+                    <i data-lucide="shield"></i>
+                    <div><strong>{{ t.brand_city.service_4_title }}</strong> – {{ t.brand_city.service_4_text | replace: "%brand%", brand.name }}</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="commune-faq">
+    <div class="commune-container">
+        <h2 class="faq-title"><i data-lucide="message-circle-question"></i> {{ t.brand_city.faq_title | replace: "%brand%", brand.name | replace: "%city%", city_name }}</h2>
+        <div class="faq-list">
+            {% for i in (1..3) %}
+            {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+            {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+            <details class="faq-item">
+                <summary>{{ t.brand_city[q_key] | replace: "%brand%", brand.name | replace: "%city%", city_name }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.brand_city[a_key] | replace: "%brand%", brand.name | replace: "%city%", city_name }}</div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Services in this City -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>{{ t.city.our_services | default: "Nos services" }} {{ city_name }}</h3>
+        <div class="services-grid">
+            {% for s in site.data.services %}
+            <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+                <i data-lucide="{{ s.icon }}"></i>
+                <span>{{ s[lang].name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Other Brands in City -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>{{ t.brand_city.other_brands | replace: "%city%", city_name }}</h3>
+        <div class="services-grid">
+            {% for b in site.data.brands %}
+            {% if b.id != brand.id %}
+            <a href="/{{ lang }}/{{ brands_folder }}/{{ b.slug }}/{{ page.city_slug }}/" class="service-card-mini">
+                <i data-lucide="lock"></i>
+                <span>{{ b.name }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Back Links -->
+<section class="back-section">
+    <div class="service-container back-links">
+        <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/" class="back-link">
+            <i data-lucide="map-pin"></i>
+            {{ t.city_service.back_to_city | replace: "%city%", city_name }}
+        </a>
+        <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/" class="back-link">
+            <i data-lucide="arrow-left"></i>
+            {{ t.brand_city.back_to_brand | replace: "%brand%", brand.name }}
+        </a>
+    </div>
+</section>
+
+{{ content }}

@@ -394,6 +394,36 @@ city_service:
   faq_automotive_3_a: "Ja, alle merken en modellen voertuigen."
   back_to_city: "Terug naar %city%"
 
+# Brand City Pages
+brand_city:
+  title: "%brand% Expert in %city%"
+  subtitle: "Gecertificeerde %brand% slotenmaker in %city%. 24/7 service binnen 30 minuten."
+  certified: "%brand% Gecertificeerd"
+  expertise_title: "%brand% Expert in %city%"
+  expertise_intro: "Heeft u een %brand% slot in %city%? Onze gecertificeerde slotenmaker is volledig opgeleid voor dit hoogbeveiligde merk."
+  models_title: "%brand% Modellen die wij beheersen"
+  models_intro: "Onze technicus werkt aan alle %brand% modellen in %city%:"
+  services_title: "%brand% Diensten in %city%"
+  service_1_title: "Deuropening"
+  service_1_text: "Schadevrije opening van uw %brand% slot"
+  service_2_title: "Cilindervervanging"
+  service_2_text: "Installatie van originele %brand% cilinders"
+  service_3_title: "Sleutel kopiëren"
+  service_3_text: "%brand% sleutelkopieën met eigendomskaart"
+  service_4_title: "Reparatie & Onderhoud"
+  service_4_text: "Reparatie van elke %brand% storing"
+  cta_title: "%brand% expert nodig in %city%?"
+  cta_text: "Onze gecertificeerde slotenmaker arriveert binnen 30 minuten"
+  faq_title: "FAQ - %brand% in %city%"
+  faq_1_q: "Bent u %brand% gecertificeerd?"
+  faq_1_a: "Ja, onze technici zijn opgeleid en gecertificeerd voor %brand% producten. Wij gebruiken alleen originele onderdelen."
+  faq_2_q: "Hoeveel kost een %brand% interventie in %city%?"
+  faq_2_a: "De prijs hangt af van het type interventie. Wij geven een gratis offerte per telefoon voordat we komen."
+  faq_3_q: "Biedt u spoedservice voor %brand% sloten?"
+  faq_3_a: "Ja, wij zijn 24/7 beschikbaar in %city%. Aankomst binnen maximaal 30 minuten."
+  other_brands: "Andere merken in %city%"
+  back_to_brand: "Terug naar %brand%"
+
 # Legal Pages
 legal:
   updated: "Laatst bijgewerkt"

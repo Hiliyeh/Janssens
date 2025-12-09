@@ -394,6 +394,36 @@ city_service:
   faq_automotive_3_a: "Oui, toutes marques et modèles de véhicules."
   back_to_city: "Retour à %city%"
 
+# Brand City Pages
+brand_city:
+  title: "Expert %brand% à %city%"
+  subtitle: "Serrurier certifié %brand% à %city%. Intervention 24h/24 en 30 minutes."
+  certified: "Certifié %brand%"
+  expertise_title: "Expert %brand% à %city%"
+  expertise_intro: "Vous possédez une serrure %brand% à %city% ? Notre serrurier certifié maîtrise parfaitement cette marque de haute sécurité."
+  models_title: "Modèles %brand% que nous maîtrisons"
+  models_intro: "Notre technicien intervient sur tous les modèles %brand% à %city% :"
+  services_title: "Services %brand% à %city%"
+  service_1_title: "Ouverture de porte"
+  service_1_text: "Ouverture sans dégât de votre serrure %brand%"
+  service_2_title: "Remplacement de cylindre"
+  service_2_text: "Installation de cylindres %brand% d'origine"
+  service_3_title: "Reproduction de clés"
+  service_3_text: "Double de clés %brand% avec carte de propriété"
+  service_4_title: "Dépannage & réparation"
+  service_4_text: "Réparation de tout dysfonctionnement %brand%"
+  cta_title: "Besoin d'un expert %brand% à %city% ?"
+  cta_text: "Notre serrurier certifié arrive en 30 minutes"
+  faq_title: "Questions fréquentes - %brand% à %city%"
+  faq_1_q: "Êtes-vous certifié %brand% ?"
+  faq_1_a: "Oui, nos techniciens sont formés et certifiés sur les produits %brand%. Nous utilisons uniquement des pièces d'origine."
+  faq_2_q: "Combien coûte une intervention %brand% à %city% ?"
+  faq_2_a: "Le prix dépend du type d'intervention. Nous vous donnons un devis gratuit par téléphone avant de nous déplacer."
+  faq_3_q: "Intervenez-vous en urgence sur les serrures %brand% ?"
+  faq_3_a: "Oui, nous intervenons 24h/24, 7j/7 à %city%. Arrivée en 30 minutes maximum."
+  other_brands: "Autres marques à %city%"
+  back_to_brand: "Retour à %brand%"
+
 # Legal Pages
 legal:
   updated: "Dernière mise à jour"

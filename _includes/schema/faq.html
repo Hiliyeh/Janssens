@@ -1,0 +1,140 @@
+{% comment %}
+FAQPage Schema JSON-LD Generator
+================================
+Generates structured data for FAQ sections to enable rich snippets in Google.
+Automatically detects the page layout and extracts FAQ data accordingly.
+
+Usage: {% include schema/faq.html %}
+No parameters needed - auto-detects based on page.layout
+
+Supported layouts:
+- home: Uses site.data.home_faq (9 FAQs)
+- city: Uses t.city.faq_X_q/a (5 FAQs) with %city% replacement
+- service: Uses t.service_page.faq_X_q/a (3 FAQs)
+- city-service: Uses t.city_service.faq_[service_id]_X_q/a (3 FAQs)
+- emergency: Uses t.emergency_page.faq_X_q/a (4 FAQs)
+- emergency-city: Uses t.emergency_city.faq_X_q/a (2 FAQs)
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+{% assign faq_items = "" | split: "" %}
+
+{% case page.layout %}
+
+{% when 'home' %}
+  {% for faq in site.data.home_faq %}
+    {% assign q = faq[lang].question %}
+    {% assign a = faq[lang].answer | replace: "%phone%", biz.phone_display %}
+    {% assign item = q | append: "|||" | append: a %}
+    {% assign faq_items = faq_items | push: item %}
+  {% endfor %}
+
+{% when 'city' %}
+  {% for i in (1..5) %}
+    {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+    {% if t.city[q_key] %}
+      {% assign q = t.city[q_key] | replace: "%city%", page.city_name %}
+      {% assign a = t.city[a_key] | replace: "%city%", page.city_name | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% when 'service' %}
+  {% for i in (1..3) %}
+    {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+    {% if t.service_page[q_key] %}
+      {% assign q = t.service_page[q_key] %}
+      {% assign a = t.service_page[a_key] | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% when 'city-service' %}
+  {% assign service_key = page.service_id | replace: "-", "_" %}
+  {% for i in (1..3) %}
+    {% capture q_key %}faq_{{ service_key }}_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ service_key }}_{{ i }}_a{% endcapture %}
+    {% if t.city_service[q_key] %}
+      {% assign q = t.city_service[q_key] | replace: "%city%", page.city_name %}
+      {% assign a = t.city_service[a_key] | replace: "%city%", page.city_name | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% when 'emergency' %}
+  {% for i in (1..4) %}
+    {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+    {% if t.emergency_page[q_key] %}
+      {% assign q = t.emergency_page[q_key] %}
+      {% assign a = t.emergency_page[a_key] | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% when 'emergency-city' %}
+  {% assign emergency = nil %}
+  {% for e in site.data.emergencies %}
+    {% if e.id == page.emergency_id %}{% assign emergency = e %}{% endif %}
+  {% endfor %}
+  {% assign e_name = emergency[lang].name %}
+  {% for i in (1..2) %}
+    {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+    {% if t.emergency_city[q_key] %}
+      {% assign q = t.emergency_city[q_key] | replace: "%city%", page.city_name | replace: "%emergency%", e_name %}
+      {% assign a = t.emergency_city[a_key] | replace: "%city%", page.city_name | replace: "%emergency%", e_name | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% when 'brand-city' %}
+  {% assign brand = nil %}
+  {% for b in site.data.brands %}
+    {% if b.id == page.brand_id %}{% assign brand = b %}{% endif %}
+  {% endfor %}
+  {% for i in (1..3) %}
+    {% capture q_key %}faq_{{ i }}_q{% endcapture %}
+    {% capture a_key %}faq_{{ i }}_a{% endcapture %}
+    {% if t.brand_city[q_key] %}
+      {% assign q = t.brand_city[q_key] | replace: "%city%", page.city_name | replace: "%brand%", brand.name %}
+      {% assign a = t.brand_city[a_key] | replace: "%city%", page.city_name | replace: "%brand%", brand.name | strip_html %}
+      {% assign item = q | append: "|||" | append: a %}
+      {% assign faq_items = faq_items | push: item %}
+    {% endif %}
+  {% endfor %}
+
+{% endcase %}
+
+{% if faq_items.size > 0 %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for item in faq_items %}
+        {% assign parts = item | split: "|||" %}
+        {% assign question = parts[0] | escape %}
+        {% assign answer = parts[1] | escape %}
+        {
+            "@type": "Question",
+            "name": "{{ question }}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ answer }}"
+            }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endif %}

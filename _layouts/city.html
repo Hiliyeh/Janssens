@@ -92,9 +92,20 @@ layout: default
     </div>
 </section>
 
-<!-- Brands -->
-{% capture brands_url %}/{{ lang }}/{{ brands_folder }}/{% endcapture %}
-{% include related-grid.html title=t.city.brands_title items=site.data.brands url_prefix=brands_url name_key="name" slug_key="slug" section_style="padding:2rem 0;background:white" %}
+<!-- Brands in this city -->
+<section class="related-services" style="padding:2rem 0;background:white">
+    <div class="service-container">
+        <h3>{{ t.city.brands_title }}</h3>
+        <div class="services-grid">
+            {% for brand in site.data.brands %}
+            <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/{{ page.slug }}/" class="service-card-mini">
+                <i data-lucide="key"></i>
+                <span>{{ brand.name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
 <!-- FAQ Section -->
 <section class="commune-faq">

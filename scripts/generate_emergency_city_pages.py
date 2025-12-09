@@ -1,35 +1,28 @@
 #!/usr/bin/env python3
 """
 Generate emergency city pages for all languages.
-19 cities x 6 emergency types x 3 languages = 342 pages
+43 cities x 6 emergency types x 3 languages = 774 pages
 """
 
 import os
+import yaml
 
-BASE_DIR = "/Users/hiliyeh/Desktop/project/Janssens"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, '_data')
 
-# Cities with emergency pages (from archive)
-CITIES = [
-    {"slug": "anderlecht", "name": "Anderlecht"},
-    {"slug": "braine-lalleud", "name": "Braine-l'Alleud"},
-    {"slug": "bruxelles-ville", "name": "Bruxelles-Ville", "name_en": "City of Brussels", "name_nl": "Stad Brussel"},
-    {"slug": "etterbeek", "name": "Etterbeek"},
-    {"slug": "forest", "name": "Forest", "name_nl": "Vorst"},
-    {"slug": "ixelles", "name": "Ixelles", "name_nl": "Elsene"},
-    {"slug": "leuven", "name": "Leuven", "name_fr": "Louvain"},
-    {"slug": "molenbeek-saint-jean", "name": "Molenbeek-Saint-Jean", "name_nl": "Sint-Jans-Molenbeek"},
-    {"slug": "nivelles", "name": "Nivelles", "name_nl": "Nijvel"},
-    {"slug": "ottignies-louvain-la-neuve", "name": "Ottignies-Louvain-la-Neuve"},
-    {"slug": "saint-gilles", "name": "Saint-Gilles", "name_nl": "Sint-Gillis"},
-    {"slug": "schaerbeek", "name": "Schaerbeek", "name_nl": "Schaarbeek"},
-    {"slug": "uccle", "name": "Uccle", "name_nl": "Ukkel"},
-    {"slug": "vilvoorde", "name": "Vilvoorde", "name_fr": "Vilvorde"},
-    {"slug": "waterloo", "name": "Waterloo"},
-    {"slug": "wavre", "name": "Wavre", "name_nl": "Waver"},
-    {"slug": "woluwe-saint-lambert", "name": "Woluwe-Saint-Lambert", "name_nl": "Sint-Lambrechts-Woluwe"},
-    {"slug": "woluwe-saint-pierre", "name": "Woluwe-Saint-Pierre", "name_nl": "Sint-Pieters-Woluwe"},
-    {"slug": "zaventem", "name": "Zaventem"},
-]
+# Load cities from YAML
+with open(os.path.join(DATA_DIR, 'cities.yml'), 'r', encoding='utf-8') as f:
+    cities_data = yaml.safe_load(f)
+
+# Get list of cities with subpages (43 cities)
+CITIES_WITH_SUBPAGES = cities_data.get('cities_with_subpages', [])
+
+# Build city info from all regions
+ALL_CITIES = {}
+for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
+    if region in cities_data:
+        for city in cities_data[region]:
+            ALL_CITIES[city['slug']] = city
 
 # Emergency types with slugs for each language
 EMERGENCIES = [
@@ -78,35 +71,39 @@ LANGS = [
     {"code": "nl", "folder": "noodgeval"}
 ]
 
-def get_city_name(city, lang):
-    """Get city name for specific language"""
-    if lang == "fr":
-        return city.get("name_fr", city["name"])
-    elif lang == "en":
-        return city.get("name_en", city["name"])
-    elif lang == "nl":
-        return city.get("name_nl", city["name"])
-    return city["name"]
+def get_city_slug(city_data, lang):
+    """Get the correct city slug for a language."""
+    if lang == 'en' and city_data.get('slug_en'):
+        return city_data['slug_en']
+    elif lang == 'nl' and city_data.get('slug_nl'):
+        return city_data['slug_nl']
+    return city_data['slug']
 
-def generate_page(city, emergency, lang_config):
+def get_city_name(city_data, lang):
+    """Get city name for specific language"""
+    if lang == 'en' and city_data.get('name_en'):
+        return city_data['name_en']
+    elif lang == 'nl' and city_data.get('name_nl'):
+        return city_data['name_nl']
+    return city_data['name']
+
+def generate_page(city_data, emergency, lang_config):
     """Generate a single emergency city page"""
     lang = lang_config["code"]
     folder = lang_config["folder"]
-    city_slug = city["slug"]
-    city_name = get_city_name(city, lang)
+    city_slug = get_city_slug(city_data, lang)
+    city_name = get_city_name(city_data, lang)
     emergency_slug = emergency[lang]["slug"]
     emergency_id = emergency["id"]
 
-    # Build alternates
+    # Build alternates with correct slugs per language
     alternates = {}
     for l in LANGS:
         l_code = l["code"]
         l_folder = l["folder"]
+        l_city_slug = get_city_slug(city_data, l_code)
         l_emergency_slug = emergency[l_code]["slug"]
-        if l_code == "fr":
-            alternates[l_code] = f"/fr/{l_folder}/{city_slug}/{l_emergency_slug}/"
-        else:
-            alternates[l_code] = f"/{l_code}/{l_folder}/{city_slug}/{l_emergency_slug}/"
+        alternates[l_code] = f"/{l_code}/{l_folder}/{l_city_slug}/{l_emergency_slug}/"
 
     # Build title
     if lang == "fr":
@@ -140,26 +137,26 @@ def main():
         lang = lang_config["code"]
         folder = lang_config["folder"]
 
-        for city in CITIES:
-            city_slug = city["slug"]
+        for city_slug_fr in CITIES_WITH_SUBPAGES:
+            city_data = ALL_CITIES.get(city_slug_fr)
+            if not city_data:
+                print(f"Warning: City {city_slug_fr} not found in cities.yml")
+                continue
+
+            city_slug = get_city_slug(city_data, lang)
 
             for emergency in EMERGENCIES:
                 emergency_slug = emergency[lang]["slug"]
 
                 # Determine base path
-                if lang == "fr":
-                    dir_path = os.path.join(BASE_DIR, "fr", folder, city_slug)
-                else:
-                    dir_path = os.path.join(BASE_DIR, lang, folder, city_slug)
+                dir_path = os.path.join(BASE_DIR, lang, folder, city_slug)
 
                 # Create directory
                 os.makedirs(dir_path, exist_ok=True)
 
                 # Generate page content
-                content = generate_page(city, emergency, lang_config)
+                content = generate_page(city_data, emergency, lang_config)
 
-                # Write file
-                file_path = os.path.join(dir_path, "index.html") if emergency_slug == emergency[lang]["slug"] else os.path.join(dir_path, f"{emergency_slug}.html")
                 # Use subfolder with index.html for clean URLs
                 sub_dir = os.path.join(dir_path, emergency_slug)
                 os.makedirs(sub_dir, exist_ok=True)
@@ -169,9 +166,13 @@ def main():
                     f.write(content)
 
                 count += 1
-                print(f"Created: {file_path}")
+
+        print(f"{lang.upper()}: {count // len(EMERGENCIES)} cities processed")
 
     print(f"\n=== Generated {count} emergency city pages ===")
+    print(f"  - {len(CITIES_WITH_SUBPAGES)} cities")
+    print(f"  - {len(EMERGENCIES)} emergency types")
+    print(f"  - {len(LANGS)} languages")
 
 if __name__ == "__main__":
     main()

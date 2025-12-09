@@ -1,52 +1,109 @@
 # Cities Data
 # ===========
-# 96 municipalities across 3 regions
+# 96 municipalities across 3 regions with GPS coordinates
 
-# Cities with full subpages (service pages per city)
+# Cities with full subpages (service pages per city) - ALL 96 communes
 cities_with_subpages:
+  # Bruxelles-Capitale (19)
   - anderlecht
   - auderghem
-  - beersel
   - berchem-sainte-agathe
-  - braine-lalleud
   - bruxelles-ville
-  - dilbeek
   - etterbeek
   - evere
   - forest
   - ganshoren
-  - grimbergen
-  - halle
   - ixelles
   - jette
   - koekelberg
-  - kraainem
-  - la-hulpe
-  - lasne
-  - leuven
-  - machelen
   - molenbeek-saint-jean
-  - nivelles
-  - ottignies-louvain-la-neuve
-  - overijse
-  - rixensart
   - saint-gilles
   - saint-josse-ten-noode
   - schaerbeek
-  - sint-genesius-rode
-  - sint-pieters-leeuw
-  - tervuren
-  - tubize
   - uccle
-  - vilvoorde
-  - waterloo
   - watermael-boitsfort
-  - wavre
-  - wemmel
-  - wezembeek-oppem
   - woluwe-saint-lambert
   - woluwe-saint-pierre
+  # Brabant wallon (25)
+  - beauvechain
+  - braine-lalleud
+  - braine-le-chateau
+  - chastre
+  - chaumont-gistoux
+  - court-saint-etienne
+  - genappe
+  - grez-doiceau
+  - helecine
+  - incourt
+  - jodoigne
+  - la-hulpe
+  - lasne
+  - mont-saint-guibert
+  - nivelles
+  - orp-jauche
+  - ottignies-louvain-la-neuve
+  - perwez
+  - ramillies
+  - rixensart
+  - tubize
+  - villers-la-ville
+  - walhain
+  - waterloo
+  - wavre
+  # Brabant flamand (52)
+  - aarschot
+  - asse
+  - beersel
+  - begijnendijk
+  - bekkevoort
+  - bertem
+  - bierbeek
+  - boortmeerbeek
+  - boutersem
+  - diest
+  - dilbeek
+  - drogenbos
+  - geetbets
+  - glabbeek
+  - grimbergen
+  - haacht
+  - halle
+  - herent
+  - hoegaarden
+  - hoeilaart
+  - holsbeek
+  - huldenberg
+  - kampenhout
+  - kapelle-op-den-bos
+  - keerbergen
+  - kortenaken
+  - kortenberg
+  - kraainem
+  - landen
+  - lennik
+  - leuven
+  - linkebeek
+  - londerzeel
+  - lubbeek
+  - machelen
+  - meise
+  - oud-heverlee
+  - overijse
+  - rotselaar
+  - scherpenheuvel-zichem
+  - sint-genesius-rode
+  - sint-pieters-leeuw
+  - steenokkerzeel
+  - tervuren
+  - tielt-winge
+  - tienen
+  - tremelo
+  - vilvoorde
+  - wemmel
+  - wezembeek-oppem
   - zaventem
+  - zemst
+  - zoutleeuw
 
 # Bruxelles-Capitale (19 communes)
 brussels:
@@ -54,18 +111,27 @@ brussels:
     slug: "anderlecht"
     postal: "1070"
     has_subpages: true
+    geo:
+      lat: 50.8333
+      lng: 4.3000
 
   - name: "Auderghem"
     slug: "auderghem"
     slug_nl: "oudergem"
     postal: "1160"
     has_subpages: true
+    geo:
+      lat: 50.8167
+      lng: 4.4333
 
   - name: "Berchem-Sainte-Agathe"
     slug: "berchem-sainte-agathe"
     slug_nl: "sint-agatha-berchem"
     postal: "1082"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.2833
 
   - name: "Bruxelles-Ville"
     slug: "bruxelles-ville"
@@ -73,91 +139,139 @@ brussels:
     slug_nl: "brussel-stad"
     postal: "1000"
     has_subpages: true
+    geo:
+      lat: 50.8503
+      lng: 4.3517
 
   - name: "Etterbeek"
     slug: "etterbeek"
     postal: "1040"
     has_subpages: true
+    geo:
+      lat: 50.8333
+      lng: 4.3833
 
   - name: "Evere"
     slug: "evere"
     postal: "1140"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.4000
 
   - name: "Forest"
     slug: "forest"
     slug_nl: "vorst"
     postal: "1190"
     has_subpages: true
+    geo:
+      lat: 50.8103
+      lng: 4.3242
 
   - name: "Ganshoren"
     slug: "ganshoren"
     postal: "1083"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.3000
 
   - name: "Ixelles"
     slug: "ixelles"
     slug_nl: "elsene"
     postal: "1050"
     has_subpages: true
+    geo:
+      lat: 50.8256
+      lng: 4.3731
 
   - name: "Jette"
     slug: "jette"
     postal: "1090"
     has_subpages: true
+    geo:
+      lat: 50.8833
+      lng: 4.3167
 
   - name: "Koekelberg"
     slug: "koekelberg"
     postal: "1081"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.3167
 
   - name: "Molenbeek-Saint-Jean"
     slug: "molenbeek-saint-jean"
     slug_nl: "sint-jans-molenbeek"
     postal: "1080"
     has_subpages: true
+    geo:
+      lat: 50.8550
+      lng: 4.3208
 
   - name: "Saint-Gilles"
     slug: "saint-gilles"
     slug_nl: "sint-gillis"
     postal: "1060"
     has_subpages: true
+    geo:
+      lat: 50.8250
+      lng: 4.3458
 
   - name: "Saint-Josse-ten-Noode"
     slug: "saint-josse-ten-noode"
     slug_nl: "sint-joost-ten-node"
     postal: "1210"
     has_subpages: true
+    geo:
+      lat: 50.8550
+      lng: 4.3708
 
   - name: "Schaerbeek"
     slug: "schaerbeek"
     slug_nl: "schaarbeek"
     postal: "1030"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.3833
 
   - name: "Uccle"
     slug: "uccle"
     slug_nl: "ukkel"
     postal: "1180"
     has_subpages: true
+    geo:
+      lat: 50.8000
+      lng: 4.3333
 
   - name: "Watermael-Boitsfort"
     slug: "watermael-boitsfort"
     slug_nl: "watermaal-bosvoorde"
     postal: "1170"
     has_subpages: true
+    geo:
+      lat: 50.7958
+      lng: 4.4125
 
   - name: "Woluwe-Saint-Lambert"
     slug: "woluwe-saint-lambert"
     slug_nl: "sint-lambrechts-woluwe"
     postal: "1200"
     has_subpages: true
+    geo:
+      lat: 50.8500
+      lng: 4.4333
 
   - name: "Woluwe-Saint-Pierre"
     slug: "woluwe-saint-pierre"
     slug_nl: "sint-pieters-woluwe"
     postal: "1150"
     has_subpages: true
+    geo:
+      lat: 50.8333
+      lng: 4.4500
 
 # Brabant wallon (25 communes)
 walloon_brabant:
@@ -165,126 +279,201 @@ walloon_brabant:
     slug: "beauvechain"
     postal: "1320"
     has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 4.7667
 
   - name: "Braine-l'Alleud"
     slug: "braine-lalleud"
     postal: "1420"
     has_subpages: true
+    geo:
+      lat: 50.6833
+      lng: 4.3667
 
-  - name: "Braine-le-Ch\u00e2teau"
+  - name: "Braine-le-Château"
     slug: "braine-le-chateau"
     postal: "1440"
     has_subpages: false
+    geo:
+      lat: 50.6833
+      lng: 4.2667
 
   - name: "Chastre"
     slug: "chastre"
     postal: "1450"
     has_subpages: false
+    geo:
+      lat: 50.6000
+      lng: 4.6333
 
   - name: "Chaumont-Gistoux"
     slug: "chaumont-gistoux"
     postal: "1325"
     has_subpages: false
+    geo:
+      lat: 50.7000
+      lng: 4.7000
 
-  - name: "Court-Saint-\u00c9tienne"
+  - name: "Court-Saint-Étienne"
     slug: "court-saint-etienne"
     postal: "1490"
     has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 4.5667
 
   - name: "Genappe"
     slug: "genappe"
     postal: "1470"
     has_subpages: false
+    geo:
+      lat: 50.6000
+      lng: 4.4500
 
   - name: "Grez-Doiceau"
     slug: "grez-doiceau"
     postal: "1390"
     has_subpages: false
+    geo:
+      lat: 50.7333
+      lng: 4.7000
 
-  - name: "H\u00e9l\u00e9cine"
+  - name: "Hélécine"
     slug: "helecine"
     postal: "1357"
     has_subpages: false
+    geo:
+      lat: 50.7500
+      lng: 4.9667
 
   - name: "Incourt"
     slug: "incourt"
     postal: "1315"
     has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 4.7833
 
   - name: "Jodoigne"
     slug: "jodoigne"
     postal: "1370"
     has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 4.8667
 
   - name: "La Hulpe"
     slug: "la-hulpe"
     postal: "1310"
     has_subpages: true
+    geo:
+      lat: 50.7333
+      lng: 4.4833
 
   - name: "Lasne"
     slug: "lasne"
     postal: "1380"
     has_subpages: true
+    geo:
+      lat: 50.7000
+      lng: 4.5000
 
   - name: "Mont-Saint-Guibert"
     slug: "mont-saint-guibert"
     postal: "1435"
     has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 4.6167
 
   - name: "Nivelles"
     slug: "nivelles"
     postal: "1400"
     has_subpages: true
+    geo:
+      lat: 50.5986
+      lng: 4.3264
 
   - name: "Orp-Jauche"
     slug: "orp-jauche"
     postal: "1350"
     has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 4.9500
 
   - name: "Ottignies-Louvain-la-Neuve"
     slug: "ottignies-louvain-la-neuve"
     postal: "1340"
     has_subpages: true
+    geo:
+      lat: 50.6667
+      lng: 4.5667
 
   - name: "Perwez"
     slug: "perwez"
     postal: "1360"
     has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 4.8000
 
   - name: "Ramillies"
     slug: "ramillies"
     postal: "1367"
     has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 4.8833
 
   - name: "Rixensart"
     slug: "rixensart"
     postal: "1330"
     has_subpages: true
+    geo:
+      lat: 50.7167
+      lng: 4.5333
 
   - name: "Tubize"
     slug: "tubize"
     postal: "1480"
     has_subpages: true
+    geo:
+      lat: 50.6917
+      lng: 4.2000
 
   - name: "Villers-la-Ville"
     slug: "villers-la-ville"
     postal: "1495"
     has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 4.5333
 
   - name: "Walhain"
     slug: "walhain"
     postal: "1457"
     has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 4.7000
 
   - name: "Waterloo"
     slug: "waterloo"
     postal: "1410"
     has_subpages: true
+    geo:
+      lat: 50.7147
+      lng: 4.3997
 
   - name: "Wavre"
     slug: "wavre"
     postal: "1300"
     has_subpages: true
+    geo:
+      lat: 50.7167
+      lng: 4.6000
 
 # Brabant flamand (52 communes)
 flemish_brabant:
@@ -292,263 +481,422 @@ flemish_brabant:
     slug: "aarschot"
     postal: "3200"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 4.8333
 
   - name: "Asse"
     slug: "asse"
     postal: "1730"
     has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 4.2000
 
   - name: "Beersel"
     slug: "beersel"
     postal: "1650"
     has_subpages: true
+    geo:
+      lat: 50.7667
+      lng: 4.3000
 
   - name: "Begijnendijk"
     slug: "begijnendijk"
     postal: "3130"
     has_subpages: false
+    geo:
+      lat: 51.0167
+      lng: 4.8000
 
   - name: "Bekkevoort"
     slug: "bekkevoort"
     postal: "3460"
     has_subpages: false
+    geo:
+      lat: 50.9500
+      lng: 4.9833
 
   - name: "Bertem"
     slug: "bertem"
     postal: "3060"
     has_subpages: false
+    geo:
+      lat: 50.8667
+      lng: 4.6333
 
   - name: "Bierbeek"
     slug: "bierbeek"
     postal: "3360"
     has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 4.7833
 
   - name: "Boortmeerbeek"
     slug: "boortmeerbeek"
     postal: "3190"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 4.5667
 
   - name: "Boutersem"
     slug: "boutersem"
     postal: "3370"
     has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 4.8333
 
   - name: "Diest"
     slug: "diest"
     postal: "3290"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 5.0500
 
   - name: "Dilbeek"
     slug: "dilbeek"
     postal: "1700"
     has_subpages: true
+    geo:
+      lat: 50.8500
+      lng: 4.2500
 
   - name: "Drogenbos"
     slug: "drogenbos"
     postal: "1620"
     has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 4.3167
 
   - name: "Geetbets"
     slug: "geetbets"
     postal: "3450"
     has_subpages: false
+    geo:
+      lat: 50.9000
+      lng: 5.0833
 
   - name: "Glabbeek"
     slug: "glabbeek"
     postal: "3380"
     has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 4.9500
 
   - name: "Grimbergen"
     slug: "grimbergen"
     postal: "1850"
     has_subpages: true
+    geo:
+      lat: 50.9333
+      lng: 4.3667
 
   - name: "Haacht"
     slug: "haacht"
     postal: "3150"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 4.6333
 
   - name: "Halle"
     slug: "halle"
     postal: "1500"
     has_subpages: true
+    geo:
+      lat: 50.7333
+      lng: 4.2333
 
   - name: "Herent"
     slug: "herent"
     postal: "3020"
     has_subpages: false
+    geo:
+      lat: 50.9000
+      lng: 4.6667
 
   - name: "Hoegaarden"
     slug: "hoegaarden"
     postal: "3320"
     has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 4.8833
 
   - name: "Hoeilaart"
     slug: "hoeilaart"
     postal: "1560"
     has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 4.4667
 
   - name: "Holsbeek"
     slug: "holsbeek"
     postal: "3220"
     has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 4.7667
 
   - name: "Huldenberg"
     slug: "huldenberg"
     postal: "3040"
     has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 4.5833
 
   - name: "Kampenhout"
     slug: "kampenhout"
     postal: "1910"
     has_subpages: false
+    geo:
+      lat: 50.9500
+      lng: 4.5500
 
   - name: "Kapelle-op-den-Bos"
     slug: "kapelle-op-den-bos"
     postal: "1880"
     has_subpages: false
+    geo:
+      lat: 51.0000
+      lng: 4.3667
 
   - name: "Keerbergen"
     slug: "keerbergen"
     postal: "3140"
     has_subpages: false
+    geo:
+      lat: 51.0000
+      lng: 4.6333
 
   - name: "Kortenaken"
     slug: "kortenaken"
     postal: "3470"
     has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 5.0500
 
   - name: "Kortenberg"
     slug: "kortenberg"
     postal: "3070"
     has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 4.5333
 
   - name: "Kraainem"
     slug: "kraainem"
     postal: "1950"
     has_subpages: true
+    geo:
+      lat: 50.8667
+      lng: 4.4667
 
   - name: "Landen"
     slug: "landen"
     postal: "3400"
     has_subpages: false
+    geo:
+      lat: 50.7500
+      lng: 5.0833
 
   - name: "Lennik"
     slug: "lennik"
     postal: "1750"
     has_subpages: false
+    geo:
+      lat: 50.8167
+      lng: 4.1500
 
   - name: "Leuven"
     slug: "leuven"
     postal: "3000"
     has_subpages: true
+    geo:
+      lat: 50.8798
+      lng: 4.7005
 
   - name: "Linkebeek"
     slug: "linkebeek"
     postal: "1630"
     has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 4.3333
 
   - name: "Londerzeel"
     slug: "londerzeel"
     postal: "1840"
     has_subpages: false
+    geo:
+      lat: 51.0000
+      lng: 4.3000
 
   - name: "Lubbeek"
     slug: "lubbeek"
     postal: "3210"
     has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 4.8333
 
   - name: "Machelen"
     slug: "machelen"
     postal: "1830"
     has_subpages: true
+    geo:
+      lat: 50.9167
+      lng: 4.4333
 
   - name: "Meise"
     slug: "meise"
     postal: "1860"
     has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 4.3333
 
   - name: "Oud-Heverlee"
     slug: "oud-heverlee"
     postal: "3050"
     has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 4.6667
 
   - name: "Overijse"
     slug: "overijse"
     postal: "3090"
     has_subpages: true
+    geo:
+      lat: 50.7833
+      lng: 4.5333
 
   - name: "Rotselaar"
     slug: "rotselaar"
     postal: "3110"
     has_subpages: false
+    geo:
+      lat: 50.9500
+      lng: 4.7167
 
   - name: "Scherpenheuvel-Zichem"
     slug: "scherpenheuvel-zichem"
     postal: "3270"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 4.9667
 
   - name: "Sint-Genesius-Rode"
     slug: "sint-genesius-rode"
     postal: "1640"
     has_subpages: true
+    geo:
+      lat: 50.7500
+      lng: 4.3500
 
   - name: "Sint-Pieters-Leeuw"
     slug: "sint-pieters-leeuw"
     postal: "1600"
     has_subpages: true
+    geo:
+      lat: 50.7833
+      lng: 4.2500
 
   - name: "Steenokkerzeel"
     slug: "steenokkerzeel"
     postal: "1820"
     has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 4.5167
 
   - name: "Tervuren"
     slug: "tervuren"
     postal: "3080"
     has_subpages: true
+    geo:
+      lat: 50.8167
+      lng: 4.5167
 
   - name: "Tielt-Winge"
     slug: "tielt-winge"
     postal: "3390"
     has_subpages: false
+    geo:
+      lat: 50.9000
+      lng: 4.9000
 
   - name: "Tienen"
     slug: "tienen"
     postal: "3300"
     has_subpages: false
+    geo:
+      lat: 50.8000
+      lng: 4.9333
 
   - name: "Tremelo"
     slug: "tremelo"
     postal: "3120"
     has_subpages: false
+    geo:
+      lat: 51.0000
+      lng: 4.7000
 
   - name: "Vilvoorde"
     slug: "vilvoorde"
     postal: "1800"
     has_subpages: true
+    geo:
+      lat: 50.9333
+      lng: 4.4167
 
   - name: "Wemmel"
     slug: "wemmel"
     postal: "1780"
     has_subpages: true
+    geo:
+      lat: 50.9167
+      lng: 4.3167
 
   - name: "Wezembeek-Oppem"
     slug: "wezembeek-oppem"
     postal: "1970"
     has_subpages: true
+    geo:
+      lat: 50.8500
+      lng: 4.4833
 
   - name: "Zaventem"
     slug: "zaventem"
     postal: "1930"
     has_subpages: true
+    geo:
+      lat: 50.8833
+      lng: 4.4667
 
   - name: "Zemst"
     slug: "zemst"
     postal: "1980"
     has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 4.4667
 
   - name: "Zoutleeuw"
     slug: "zoutleeuw"
     postal: "3440"
     has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 5.1000

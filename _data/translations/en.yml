@@ -394,6 +394,36 @@ city_service:
   faq_automotive_3_a: "Yes, all vehicle makes and models."
   back_to_city: "Back to %city%"
 
+# Brand City Pages
+brand_city:
+  title: "%brand% Expert in %city%"
+  subtitle: "Certified %brand% locksmith in %city%. 24/7 service within 30 minutes."
+  certified: "%brand% Certified"
+  expertise_title: "%brand% Expert in %city%"
+  expertise_intro: "Do you have a %brand% lock in %city%? Our certified locksmith is fully trained on this high-security brand."
+  models_title: "%brand% Models We Master"
+  models_intro: "Our technician services all %brand% models in %city%:"
+  services_title: "%brand% Services in %city%"
+  service_1_title: "Door Opening"
+  service_1_text: "Damage-free opening of your %brand% lock"
+  service_2_title: "Cylinder Replacement"
+  service_2_text: "Installation of original %brand% cylinders"
+  service_3_title: "Key Duplication"
+  service_3_text: "%brand% key copies with ownership card"
+  service_4_title: "Repair & Maintenance"
+  service_4_text: "Repair of any %brand% malfunction"
+  cta_title: "Need a %brand% expert in %city%?"
+  cta_text: "Our certified locksmith arrives within 30 minutes"
+  faq_title: "FAQ - %brand% in %city%"
+  faq_1_q: "Are you %brand% certified?"
+  faq_1_a: "Yes, our technicians are trained and certified on %brand% products. We only use original parts."
+  faq_2_q: "How much does a %brand% service cost in %city%?"
+  faq_2_a: "The price depends on the type of service. We provide a free quote by phone before coming."
+  faq_3_q: "Do you provide emergency service for %brand% locks?"
+  faq_3_a: "Yes, we're available 24/7 in %city%. Arrival within 30 minutes maximum."
+  other_brands: "Other brands in %city%"
+  back_to_brand: "Back to %brand%"
+
 # Legal Pages
 legal:
   updated: "Last updated"

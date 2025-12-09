@@ -1,0 +1,88 @@
+{% comment %}
+Article Schema JSON-LD Generator
+================================
+Generates structured data for guide/article pages to improve visibility in Google News and Discover.
+
+Usage: {% include schema/article.html %}
+No parameters needed - auto-detects based on page.guide_id
+
+Supported layouts:
+- guide: Individual guide pages (locked-out-what-to-do, avoid-locksmith-scams, etc.)
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% assign biz = site.data.business %}
+
+{% comment %}Find the guide data{% endcomment %}
+{% for g in site.data.guides %}
+    {% if g.id == page.guide_id %}{% assign guide = g %}{% endif %}
+{% endfor %}
+
+{% if guide %}
+{% assign g_data = guide[lang] %}
+
+{% comment %}Set article section based on guide type{% endcomment %}
+{% case guide.id %}
+{% when 'locked-out-what-to-do' %}
+    {% assign article_section = "Emergency Tips" %}
+{% when 'avoid-locksmith-scams' %}
+    {% assign article_section = "Consumer Protection" %}
+{% when 'choose-security-lock' %}
+    {% assign article_section = "Security Guide" %}
+{% when 'after-burglary' %}
+    {% assign article_section = "Emergency Tips" %}
+{% else %}
+    {% assign article_section = "Guide" %}
+{% endcase %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ g_data.title | escape }}",
+    "description": "{{ g_data.description | escape }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ biz.logo }}",
+        "width": 512,
+        "height": 512
+    },
+    "author": {
+        "@type": "Organization",
+        "name": "{{ biz.name }}",
+        "url": "{{ site.url }}/{{ lang }}/"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ biz.name }}",
+        "url": "{{ site.url }}/{{ lang }}/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}{{ biz.logo }}",
+            "width": 512,
+            "height": 512
+        }
+    },
+    "datePublished": "{{ page.date | default: '2024-01-01' | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+    "articleSection": "{{ article_section }}",
+    "inLanguage": "{{ lang }}",
+    "about": {
+        "@type": "Thing",
+        "name": "Locksmith Services",
+        "description": "Professional locksmith tips and guides"
+    },
+    "isPartOf": {
+        "@type": "WebSite",
+        "name": "{{ biz.name }}",
+        "url": "{{ site.url }}/{{ lang }}/"
+    }
+}
+</script>
+{% endif %}

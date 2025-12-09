@@ -98,6 +98,25 @@ layout: default
     </div>
 </section>
 
+<!-- Brands Section -->
+<section class="brands-section" id="brands">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{{ t.brands.tag | default: "Marques" }}</span>
+            <h2 class="section-title">{{ t.brands.title | default: "Experts toutes marques" }}</h2>
+            <p class="section-desc">{{ t.brands.desc | default: "Spécialistes agréés des grandes marques de serrurerie" }}</p>
+        </header>
+        <div class="brands-grid">
+            {% for brand in site.data.brands %}
+            <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/" class="brand-card">
+                <span class="brand-logo-text">{{ brand.logo_text }}</span>
+                <span class="brand-name">{{ brand.name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <!-- Why Section -->
 <section class="pourquoi" id="pourquoi">
     <div class="section-container">

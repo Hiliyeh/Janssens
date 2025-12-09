@@ -39,14 +39,29 @@ layout: default
     </div>
 </section>
 
+<!-- Related Services -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>{{ t.guide_page.related_services | default: "Services associés" }}</h3>
+        <div class="services-grid">
+            {% for service in site.data.services %}
+            <a href="/{{ lang }}/{{ services_folder }}/{{ service[lang].slug }}/" class="service-card-mini">
+                <i data-lucide="{{ service.icon }}"></i>
+                <span>{{ service[lang].name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <!-- Related Guides -->
-<section class="related-guides">
+<section class="related-services">
     <div class="service-container">
         <h3>{{ t.guide_page.related_title }}</h3>
-        <div class="guides-grid">
+        <div class="services-grid">
             {% for g in guides %}
             {% if g.id != page.guide_id %}
-            <a href="/{{ lang }}/{{ guides_folder }}/{{ g[lang].slug }}/" class="guide-card">
+            <a href="/{{ lang }}/{{ guides_folder }}/{{ g[lang].slug }}/" class="service-card-mini">
                 <i data-lucide="{{ g.icon }}"></i>
                 <span>{{ g[lang].title }}</span>
             </a>

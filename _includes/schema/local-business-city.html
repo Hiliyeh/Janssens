@@ -1,0 +1,116 @@
+{% comment %}
+LocalBusiness Schema with Dynamic City/ServiceArea
+===================================================
+Generates localized LocalBusiness structured data for city pages.
+This helps Google understand the specific service area for each city.
+Uses city_geo_lat and city_geo_lng from city-geo-lookup.html include.
+
+Usage: {% include schema/local-business-city.html %}
+Supported layouts: city, city-service, emergency-city
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign biz = site.data.business %}
+
+{% if page.city_name and city_geo_lat %}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "{{ site.url }}/#locksmith-{{ page.slug | default: page.city_slug }}",
+    "name": "{{ biz.name }} {{ page.city_name }}",
+    "alternateName": "{{ biz.company }}",
+    "description": "{% case lang %}{% when 'fr' %}Serrurier professionnel à {{ page.city_name }}. Intervention urgente 24h/24, 7j/7. Ouverture de porte, remplacement serrure, dépannage rapide.{% when 'en' %}Professional locksmith in {{ page.city_name }}. 24/7 emergency service. Door opening, lock replacement, fast repair.{% when 'nl' %}Professionele slotenmaker in {{ page.city_name }}. 24/7 nooddienst. Deuropening, slotvervanging, snelle reparatie.{% endcase %}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "logo": "{{ site.url }}{{ biz.logo }}",
+    "image": "{{ site.url }}{{ biz.og_image }}",
+    "telephone": "{{ biz.phone }}",
+    "email": "{{ biz.email }}",
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Credit Card, Bancontact",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ biz.address.street }}",
+        "addressLocality": "{{ biz.address.city }}",
+        "postalCode": "{{ biz.address.postal }}",
+        "addressRegion": "{{ biz.address.region }}",
+        "addressCountry": "{{ biz.address.country_code }}"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ city_geo_lat }},
+        "longitude": {{ city_geo_lng }}
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "{{ page.city_name }}",
+        {% if city_postal_code %}"postalCode": "{{ city_postal_code }}",{% endif %}
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": {{ city_geo_lat }},
+            "longitude": {{ city_geo_lng }}
+        },
+        "containedInPlace": {
+            "@type": "Country",
+            "name": "Belgium"
+        }
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ biz.stats.rating }}",
+        "reviewCount": "{{ biz.stats.reviews_count }}",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "{% case lang %}{% when 'fr' %}Services de serrurerie à {{ page.city_name }}{% when 'en' %}Locksmith services in {{ page.city_name }}{% when 'nl' %}Slotenmaker diensten in {{ page.city_name }}{% endcase %}",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{% case lang %}{% when 'fr' %}Ouverture de porte{% when 'en' %}Door Opening{% when 'nl' %}Deuropening{% endcase %}"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{% case lang %}{% when 'fr' %}Remplacement serrure{% when 'en' %}Lock Replacement{% when 'nl' %}Slotvervanging{% endcase %}"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "{% case lang %}{% when 'fr' %}Dépannage urgence{% when 'en' %}Emergency Repair{% when 'nl' %}Noodreparatie{% endcase %}"
+                }
+            }
+        ]
+    },
+    "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:{{ biz.phone }}",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        },
+        "result": {
+            "@type": "Reservation",
+            "name": "{% case lang %}{% when 'fr' %}Intervention serrurier à {{ page.city_name }}{% when 'en' %}Locksmith service in {{ page.city_name }}{% when 'nl' %}Slotenmaker dienst in {{ page.city_name }}{% endcase %}"
+        }
+    },
+    "sameAs": [
+        "{{ site.url }}"
+    ]
+}
+</script>
+{% endif %}

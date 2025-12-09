@@ -45,6 +45,12 @@ layout: default
 
 {% include faq-section.html source=t.emergency_page count=4 prefix="faq" %}
 
+<!-- Urgence par ville -->
+{% capture emergency_cities_title %}{{ e_data.title }} {{ t.emergency_page.by_city | default: "par ville" }}{% endcapture %}
+{% capture emergency_url_prefix %}/{{ lang }}/{{ emergency_folder }}/{% endcapture %}
+{% capture emergency_url_suffix %}/{{ e_data.slug }}/{% endcapture %}
+{% include cities-accordion.html title=emergency_cities_title url_prefix=emergency_url_prefix url_suffix=emergency_url_suffix %}
+
 {% capture url_prefix %}/{{ lang }}/{{ emergency_folder }}/{% endcapture %}
 {% capture extra_url %}/{{ lang }}/#services{% endcapture %}
 {% include related-links.html title=t.emergency_page.other_emergencies items=site.data.emergencies current_id=emergency.id url_prefix=url_prefix lang=lang extra_link=t.common.all_services extra_link_url=extra_url %}

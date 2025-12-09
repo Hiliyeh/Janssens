@@ -2,6 +2,18 @@
 {% assign t = site.data.translations[lang] %}
 {% assign biz = site.data.business %}
 
+{% comment %}=== CITY GEO LOOKUP (for city pages) ==={% endcomment %}
+{% assign city_page_layouts = "city,city-service,emergency-city" | split: "," %}
+{% if city_page_layouts contains page.layout %}
+{% include city-geo-lookup.html %}
+{% endif %}
+
+{% comment %}=== SEO DYNAMIC DESCRIPTION & KEYWORDS GENERATOR ==={% endcomment %}
+{% capture seo_desc %}{% case page.layout %}{% when 'city' %}{% case lang %}{% when 'fr' %}Serrurier {{ page.city_name }} : intervention urgente en 30 min. Porte claquée, clé perdue, serrure bloquée ? Dépannage 24h/24 sans dégât. Devis gratuit.{% when 'en' %}Locksmith {{ page.city_name }}: emergency service in 30 min. Locked out, lost key, jammed lock? 24/7 repair without damage. Free quote.{% when 'nl' %}Slotenmaker {{ page.city_name }}: noodinterventie binnen 30 min. Deur dichtgevallen, sleutel verloren? 24/7 reparatie zonder schade. Gratis offerte.{% endcase %}{% when 'city-service' %}{% for s in site.data.services %}{% if s.id == page.service_id %}{% assign svc = s %}{% endif %}{% endfor %}{% case lang %}{% when 'fr' %}{{ svc.fr.name }} à {{ page.city_name }} | Serrurier expert en 30 min, 24h/24. Sans dégât dans 95% des cas. Devis gratuit.{% when 'en' %}{{ svc.en.name }} in {{ page.city_name }} | Expert locksmith in 30 min, 24/7. No damage in 95% of cases. Free quote.{% when 'nl' %}{{ svc.nl.name }} in {{ page.city_name }} | Expert slotenmaker binnen 30 min, 24/7. Geen schade in 95%. Gratis offerte.{% endcase %}{% when 'service' %}{% for s in site.data.services %}{% if s.id == page.service_id %}{% assign svc = s %}{% endif %}{% endfor %}{% case lang %}{% when 'fr' %}{{ svc.fr.name }} par serrurier professionnel à Bruxelles et Brabant. Intervention 24h/24 en 30 min. Devis gratuit, sans dégât.{% when 'en' %}Professional {{ svc.en.name | downcase }} in Brussels & Brabant. 24/7 intervention in 30 min. Free quote, no damage.{% when 'nl' %}Professionele {{ svc.nl.name | downcase }} in Brussel & Brabant. 24/7 interventie binnen 30 min. Gratis offerte, geen schade.{% endcase %}{% when 'emergency' %}{% for e in site.data.emergencies %}{% if e.id == page.emergency_id %}{% assign emg = e %}{% endif %}{% endfor %}{% case lang %}{% when 'fr' %}{{ emg.fr.name }} ? Serrurier urgence 24h/24 à Bruxelles. Arrivée en 30 min, ouverture sans dégât dans 95% des cas. Devis gratuit.{% when 'en' %}{{ emg.en.name }}? 24/7 emergency locksmith in Brussels. Arrival in 30 min, no damage in 95% of cases. Free quote.{% when 'nl' %}{{ emg.nl.name }}? 24/7 nood slotenmaker in Brussel. Aankomst binnen 30 min, geen schade in 95%. Gratis offerte.{% endcase %}{% when 'emergency-city' %}{% for e in site.data.emergencies %}{% if e.id == page.emergency_id %}{% assign emg = e %}{% endif %}{% endfor %}{% case lang %}{% when 'fr' %}{{ emg.fr.name }} à {{ page.city_name }} ? Serrurier urgence en 30 min, 24h/24. Intervention sans dégât. Devis gratuit.{% when 'en' %}{{ emg.en.name }} in {{ page.city_name }}? Emergency locksmith in 30 min, 24/7. No damage. Free quote.{% when 'nl' %}{{ emg.nl.name }} in {{ page.city_name }}? Nood slotenmaker binnen 30 min, 24/7. Geen schade. Gratis offerte.{% endcase %}{% when 'brand' %}{% for b in site.data.brands %}{% if b.id == page.brand_id %}{% assign br = b %}{% endif %}{% endfor %}{% case lang %}{% when 'fr' %}Expert serrures {{ br.name }} à Bruxelles. Installation, réparation, dépannage 24h/24. Techniciens certifiés. Devis gratuit.{% when 'en' %}{{ br.name }} lock expert in Brussels. Installation, repair, 24/7 service. Certified technicians. Free quote.{% when 'nl' %}{{ br.name }} slot expert in Brussel. Installatie, reparatie, 24/7. Gecertificeerde technici. Gratis offerte.{% endcase %}{% else %}{{ page.description | default: site.description }}{% endcase %}{% endcapture %}
+{% assign seo_desc = seo_desc | strip | truncate: 160 %}
+{% capture seo_kw %}{% case page.layout %}{% when 'city' %}serrurier {{ page.city_name }}, dépannage serrure {{ page.city_name }}, serrurerie {{ page.city_name }}, 24h/24{% when 'city-service' %}{{ svc[lang].name | downcase }} {{ page.city_name }}, serrurier {{ page.city_name }}, 24h/24{% when 'service' %}{{ svc[lang].name | downcase }}, serrurier bruxelles, serrurerie, 24h/24{% when 'emergency' %}{{ emg[lang].name | downcase }}, urgence serrurier, dépannage 24h/24{% when 'emergency-city' %}{{ emg[lang].name | downcase }} {{ page.city_name }}, serrurier urgence{% else %}serrurier bruxelles, serrurerie, dépannage, 24h/24{% endcase %}{% endcapture %}
+{% assign seo_kw = seo_kw | strip %}
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQYBLWR0KQ"></script>
 <script>
@@ -16,18 +28,25 @@
 
 <!-- SEO Meta Tags -->
 <title>{{ page.title | default: site.title }}</title>
-<meta name="description" content="{{ page.description | default: site.description }}">
-{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+<meta name="description" content="{{ seo_desc }}">
+<meta name="keywords" content="{{ seo_kw }}">
 <meta name="author" content="{{ biz.name }} - {{ biz.company }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<!-- Geo Tags Belgium -->
+<!-- Geo Tags Belgium (dynamic per city) -->
+{% if city_geo_lat %}
+<meta name="geo.region" content="BE">
+<meta name="geo.placename" content="{{ page.city_name }}">
+<meta name="geo.position" content="{{ city_geo_lat }};{{ city_geo_lng }}">
+<meta name="ICBM" content="{{ city_geo_lat }}, {{ city_geo_lng }}">
+{% else %}
 <meta name="geo.region" content="BE-BRU">
 <meta name="geo.placename" content="{{ page.city_name | default: 'Bruxelles' }}">
 <meta name="geo.position" content="{{ biz.address.geo.lat }};{{ biz.address.geo.lng }}">
 <meta name="ICBM" content="{{ biz.address.geo.lat }}, {{ biz.address.geo.lng }}">
+{% endif %}
 
 <!-- Language / hreflang -->
 {% if page.alternate %}
@@ -46,16 +65,16 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:title" content="{{ page.og_title | default: page.title }}">
-<meta property="og:description" content="{{ page.og_description | default: page.description }}">
+<meta property="og:description" content="{{ seo_desc }}">
 <meta property="og:image" content="{{ site.url }}{{ biz.og_image }}">
 <meta property="og:image:alt" content="{{ biz.name }}">
 <meta property="og:locale" content="{{ page.lang | default: 'fr' }}_BE">
 <meta property="og:site_name" content="{{ biz.name }}">
 
 <!-- Twitter / X -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title }}">
-<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:description" content="{{ seo_desc }}">
 <meta name="twitter:image" content="{{ site.url }}{{ biz.og_image }}">
 
 <!-- Business Contact Meta -->
@@ -93,4 +112,32 @@
 {{ page.schema }}
 {% else %}
 {% include schema/business.html %}
+{% endif %}
+
+<!-- LocalBusiness Schema with City ServiceArea (for city pages) -->
+{% assign city_layouts = "city,city-service,emergency-city" | split: "," %}
+{% if city_layouts contains page.layout %}
+{% include schema/local-business-city.html %}
+{% endif %}
+
+<!-- FAQPage Schema (for rich snippets) -->
+{% assign faq_layouts = "home,city,service,city-service,emergency,emergency-city,brand-city" | split: "," %}
+{% if faq_layouts contains page.layout %}
+{% include schema/faq.html %}
+{% endif %}
+
+<!-- BreadcrumbList Schema (for rich snippets) -->
+{% assign bc_layouts = "city,service,city-service,emergency,emergency-city,brand,brand-city,guide,guide-index" | split: "," %}
+{% if bc_layouts contains page.layout %}
+{% include schema/breadcrumb.html %}
+{% endif %}
+
+<!-- Service Schema (for service pages) -->
+{% if page.layout == 'service' %}
+{% include schema/service.html %}
+{% endif %}
+
+<!-- Article Schema (for guide pages) -->
+{% if page.layout == 'guide' %}
+{% include schema/article.html %}
 {% endif %}

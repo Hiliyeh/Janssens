@@ -1,0 +1,76 @@
+{% comment %}
+  Composant accordéon pour afficher les 43 villes groupées par région
+
+  Paramètres:
+    - title: Titre de la section
+    - url_prefix: Début de l'URL (ex: /fr/services/ouverture-porte/)
+    - url_suffix: Fin de l'URL après le slug ville (ex: vide ou /)
+{% endcomment %}
+
+{% assign cities_list = site.data.cities.cities_with_subpages %}
+{% assign all_cities = site.data.cities %}
+
+<section class="related-services cities-accordion-section">
+    <div class="service-container">
+        <h3>{{ include.title }}</h3>
+        <div class="zones-accordions">
+            {% assign regions = "brussels,walloon_brabant,flemish_brabant" | split: "," %}
+            {% assign region_names_fr = "Bruxelles-Capitale,Brabant wallon,Brabant flamand" | split: "," %}
+            {% assign region_names_nl = "Brussels Hoofdstedelijk,Waals-Brabant,Vlaams-Brabant" | split: "," %}
+            {% assign region_names_en = "Brussels-Capital,Walloon Brabant,Flemish Brabant" | split: "," %}
+
+            {% for region in regions %}
+            {% assign idx = forloop.index0 %}
+            {% if lang == 'nl' %}
+                {% assign region_name = region_names_nl[idx] %}
+            {% elsif lang == 'en' %}
+                {% assign region_name = region_names_en[idx] %}
+            {% else %}
+                {% assign region_name = region_names_fr[idx] %}
+            {% endif %}
+
+            {% comment %} Compter les villes de cette région qui ont des sous-pages {% endcomment %}
+            {% assign region_cities = "" | split: "" %}
+            {% for city in all_cities[region] %}
+                {% if cities_list contains city.slug %}
+                    {% assign region_cities = region_cities | push: city %}
+                {% endif %}
+            {% endfor %}
+
+            {% if region_cities.size > 0 %}
+            <details class="zone-accordion">
+                <summary>
+                    <div class="zone-accordion-header">
+                        <i data-lucide="map-pin" class="icon-sm"></i>
+                        <span class="zone-accordion-title">{{ region_name }}</span>
+                    </div>
+                    <div class="zone-accordion-right">
+                        <span class="zone-accordion-count">{{ region_cities.size }} {{ t.zones.cities | default: "villes" }}</span>
+                        <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                    </div>
+                </summary>
+                <div class="zone-cities">
+                    {% for city in region_cities %}
+                        {% if lang == 'en' and city.slug_en %}
+                            {% assign city_slug = city.slug_en %}
+                        {% elsif lang == 'nl' and city.slug_nl %}
+                            {% assign city_slug = city.slug_nl %}
+                        {% else %}
+                            {% assign city_slug = city.slug %}
+                        {% endif %}
+                        {% if lang == 'en' and city.name_en %}
+                            {% assign city_name = city.name_en %}
+                        {% elsif lang == 'nl' and city.name_nl %}
+                            {% assign city_name = city.name_nl %}
+                        {% else %}
+                            {% assign city_name = city.name %}
+                        {% endif %}
+                        <a href="{{ include.url_prefix }}{{ city_slug }}{{ include.url_suffix }}">{{ city_name }}</a>
+                    {% endfor %}
+                </div>
+            </details>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

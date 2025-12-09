@@ -44,6 +44,11 @@ layout: default
     </div>
 </section>
 
+<!-- Cette marque par ville -->
+{% capture brand_cities_title %}{{ brand.name }} {{ t.brand_page.by_city | default: "par ville" }}{% endcapture %}
+{% capture brand_url_prefix %}/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/{% endcapture %}
+{% include cities-accordion.html title=brand_cities_title url_prefix=brand_url_prefix url_suffix="/" %}
+
 {% capture url_prefix %}/{{ lang }}/{{ brands_folder }}/{% endcapture %}
 {% include related-links.html title=t.brand_page.other_brands items=site.data.brands current_id=brand.id url_prefix=url_prefix name_key="name" slug_key="slug" %}
 

@@ -1,0 +1,50 @@
+{% comment %}
+City Geo Lookup
+===============
+Looks up the city's geo coordinates from cities.yml based on city_slug or slug.
+Sets: city_geo_lat, city_geo_lng, city_postal_code
+
+Usage: {% include city-geo-lookup.html %}
+{% endcomment %}
+
+{% assign city_found = false %}
+{% assign lookup_slug = page.city_slug | default: page.slug %}
+
+{% comment %}Search in Brussels{% endcomment %}
+{% unless city_found %}
+{% for city in site.data.cities.brussels %}
+  {% if city.slug == lookup_slug or city.slug_nl == lookup_slug or city.slug_en == lookup_slug %}
+    {% assign city_geo_lat = city.geo.lat %}
+    {% assign city_geo_lng = city.geo.lng %}
+    {% assign city_postal_code = city.postal %}
+    {% assign city_found = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% endunless %}
+
+{% comment %}Search in Walloon Brabant{% endcomment %}
+{% unless city_found %}
+{% for city in site.data.cities.walloon_brabant %}
+  {% if city.slug == lookup_slug or city.slug_nl == lookup_slug or city.slug_en == lookup_slug %}
+    {% assign city_geo_lat = city.geo.lat %}
+    {% assign city_geo_lng = city.geo.lng %}
+    {% assign city_postal_code = city.postal %}
+    {% assign city_found = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% endunless %}
+
+{% comment %}Search in Flemish Brabant{% endcomment %}
+{% unless city_found %}
+{% for city in site.data.cities.flemish_brabant %}
+  {% if city.slug == lookup_slug or city.slug_nl == lookup_slug or city.slug_en == lookup_slug %}
+    {% assign city_geo_lat = city.geo.lat %}
+    {% assign city_geo_lng = city.geo.lng %}
+    {% assign city_postal_code = city.postal %}
+    {% assign city_found = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% endunless %}

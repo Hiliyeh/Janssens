@@ -91,7 +91,11 @@ layout: default
                 <h3>{{ service[lang].name }}</h3>
                 <p>{{ service[lang].description }}</p>
                 <ul class="service-tags"><li>{{ service[lang].tag }}</li></ul>
+                {% if service.special_link %}
+                <a href="/{{ lang }}/{{ service[lang].slug }}/" class="service-link">{{ t.services.learn_more }} <i data-lucide="arrow-right"></i></a>
+                {% else %}
                 <a href="/{{ lang }}/{{ services_folder }}/{{ service[lang].slug }}/" class="service-link">{{ t.services.learn_more }} <i data-lucide="arrow-right"></i></a>
+                {% endif %}
             </article>
             {% endfor %}
         </div>
@@ -193,7 +197,7 @@ layout: default
             </div>
             <div class="live-feed">
                 <div class="live-feed-header">
-                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ biz.name }}" class="live-logo" width="80" height="29">
+                    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ biz.logo_alt }}" class="live-logo" width="80" height="29">
                     <span class="live-count">{{ t.live.today }} <strong id="interventionCount">12</strong></span>
                 </div>
                 <div class="interventions-list" id="interventionsList"></div>

@@ -55,6 +55,7 @@ google:
 # SEO
 og_image: "/assets/images/logo.png"
 logo: "/assets/images/logo.png"
+logo_alt: "Janssens Serrurier - Dépannage serrurerie Bruxelles 24h/24"
 favicon: "/assets/images/favicon.svg"
 
 # Credit

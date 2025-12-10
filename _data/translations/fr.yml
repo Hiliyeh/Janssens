@@ -113,8 +113,8 @@ zones:
 # Home Page
 home:
   emergency_label: "Situation urgente ?"
-  hero_image_alt: "Serrurier Janssens intervenant à domicile à Bruxelles"
-  map_image_alt: "Carte zones intervention serrurier Bruxelles et Brabant"
+  hero_image_alt: "Serrurier professionnel Janssens ouvrant une porte à Bruxelles - dépannage rapide 24h/24"
+  map_image_alt: "Carte des 96 communes couvertes par Janssens Serrurier à Bruxelles et Brabant wallon et flamand"
 
 # Guides Section
 guides:

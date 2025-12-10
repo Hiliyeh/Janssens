@@ -144,3 +144,25 @@
     description: "Voertuigopening, verloren autosleutels, programmering."
     city_desc: "Auto openen, autosleutel vervangen voor automobilisten in %city%."
     tag: "Express"
+
+- id: license-plate
+  icon: rectangle-horizontal
+  special_link: true
+  fr:
+    name: "Plaque d'immatriculation"
+    slug: "plaque-immatriculation"
+    title: "Plaque d'immatriculation"
+    description: "Fabrication de plaques d'immatriculation belges sur place. Service rapide."
+    tag: "En magasin"
+  en:
+    name: "License Plate"
+    slug: "license-plate"
+    title: "License Plate"
+    description: "Belgian license plate manufacturing on site. Fast service."
+    tag: "In store"
+  nl:
+    name: "Nummerplaat"
+    slug: "nummerplaat"
+    title: "Nummerplaat"
+    description: "Belgische nummerplaten ter plaatse gemaakt. Snelle service."
+    tag: "In winkel"

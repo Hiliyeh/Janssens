@@ -113,8 +113,8 @@ zones:
 # Home Page
 home:
   emergency_label: "Emergency situation?"
-  hero_image_alt: "Janssens Locksmith home intervention in Brussels"
-  map_image_alt: "Locksmith service area map Brussels and Brabant"
+  hero_image_alt: "Professional locksmith Janssens opening a door in Brussels - fast 24/7 emergency service"
+  map_image_alt: "Map of 96 municipalities covered by Janssens Locksmith in Brussels and Walloon and Flemish Brabant"
 
 # Guides Section
 guides:

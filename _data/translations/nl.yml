@@ -113,8 +113,8 @@ zones:
 # Home Page
 home:
   emergency_label: "Noodsituatie?"
-  hero_image_alt: "Janssens Slotenmaker thuisinterventie in Brussel"
-  map_image_alt: "Dekkingskaart slotenmaker Brussel en Brabant"
+  hero_image_alt: "Professionele slotenmaker Janssens opent deur in Brussel - snelle 24/7 hulpdienst"
+  map_image_alt: "Kaart van 96 gemeenten gedekt door Janssens Slotenmaker in Brussel en Waals en Vlaams Brabant"
 
 # Guides Section
 guides:

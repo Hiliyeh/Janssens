@@ -1,0 +1,201 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+
+<!-- Hero -->
+<section class="service-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=page.page_title %}
+        <div class="service-hero-icon"><i data-lucide="car"></i></div>
+        <h1 class="service-title">{{ page.page_title }}</h1>
+        <p class="service-subtitle">{{ page.page_subtitle }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+
+        <!-- Intro -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="info"></i> {{ page.section1_title }}</h2>
+            <div class="plate-intro">
+                <p>{{ page.section1_text }}</p>
+            </div>
+        </div>
+
+        <!-- Types de plaques -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="layers"></i> {{ page.section2_title }}</h2>
+            <div class="plate-types-grid">
+                {% for type in page.plate_types %}
+                <div class="plate-type-card">
+                    <div class="plate-type-icon"><i data-lucide="{{ type.icon }}"></i></div>
+                    <h3>{{ type.title }}</h3>
+                    <p>{{ type.desc }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% include cta-box.html title=page.cta_title text=page.cta_text %}
+
+        <!-- Avantages -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> {{ page.section3_title }}</h2>
+            <div class="plate-advantages">
+                {% for adv in page.advantages %}
+                <div class="plate-advantage">
+                    <div class="advantage-icon"><i data-lucide="{{ adv.icon }}"></i></div>
+                    <div class="advantage-content">
+                        <strong>{{ adv.title }}</strong>
+                        <span>{{ adv.desc }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Processus -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="workflow"></i> {{ page.section4_title }}</h2>
+            <div class="plate-steps">
+                {% for step in page.steps %}
+                <div class="plate-step">
+                    <div class="step-number">{{ forloop.index }}</div>
+                    <div class="step-content">
+                        <h4>{{ step.title }}</h4>
+                        <p>{{ step.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Adresse magasin -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="map-pin"></i> {{ page.address_title }}</h2>
+            <div class="plate-address-box">
+                <div class="address-icon">
+                    <i data-lucide="store"></i>
+                </div>
+                <div class="address-content">
+                    <strong>{{ page.address_shop_name }}</strong>
+                    <p class="address-line">
+                        <i data-lucide="map-pin"></i>
+                        Chaussée de Louvain 629, 1030 Schaerbeek
+                    </p>
+                    <p class="address-note">{{ page.address_note }}</p>
+                    <a href="https://maps.google.com/?q=Chaussée+de+Louvain+629,+1030+Schaerbeek" target="_blank" rel="noopener noreferrer" class="address-map-link">
+                        <i data-lucide="external-link"></i>
+                        {{ page.address_map_link }}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ -->
+{% if page.faqs %}
+<section class="faq" id="faq">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">{{ page.faq_title }}</h2>
+        </header>
+        <div class="faq-list">
+            {% for faq in page.faqs %}
+            <details class="faq-item">
+                <summary>
+                    <span>{{ faq.q }}</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>{{ faq.a }}</p>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Maillage communes -->
+<section class="plate-cities-section">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">{% if lang == 'nl' %}Zones{% elsif lang == 'en' %}Areas{% else %}Zones{% endif %}</span>
+            <h2 class="section-title">{% if lang == 'nl' %}Nummerplaat per gemeente{% elsif lang == 'en' %}License plate by municipality{% else %}Plaque d'immatriculation par commune{% endif %}</h2>
+        </header>
+        <div class="plate-cities-grid">
+            {% if lang == 'fr' %}
+            <a href="/fr/plaque-immatriculation/anderlecht/">Anderlecht</a>
+            <a href="/fr/plaque-immatriculation/auderghem/">Auderghem</a>
+            <a href="/fr/plaque-immatriculation/berchem-sainte-agathe/">Berchem-Sainte-Agathe</a>
+            <a href="/fr/plaque-immatriculation/bruxelles/">Bruxelles</a>
+            <a href="/fr/plaque-immatriculation/etterbeek/">Etterbeek</a>
+            <a href="/fr/plaque-immatriculation/evere/">Evere</a>
+            <a href="/fr/plaque-immatriculation/forest/">Forest</a>
+            <a href="/fr/plaque-immatriculation/ganshoren/">Ganshoren</a>
+            <a href="/fr/plaque-immatriculation/ixelles/">Ixelles</a>
+            <a href="/fr/plaque-immatriculation/jette/">Jette</a>
+            <a href="/fr/plaque-immatriculation/koekelberg/">Koekelberg</a>
+            <a href="/fr/plaque-immatriculation/molenbeek-saint-jean/">Molenbeek-Saint-Jean</a>
+            <a href="/fr/plaque-immatriculation/saint-gilles/">Saint-Gilles</a>
+            <a href="/fr/plaque-immatriculation/saint-josse-ten-noode/">Saint-Josse-ten-Noode</a>
+            <a href="/fr/plaque-immatriculation/schaerbeek/">Schaerbeek</a>
+            <a href="/fr/plaque-immatriculation/uccle/">Uccle</a>
+            <a href="/fr/plaque-immatriculation/watermael-boitsfort/">Watermael-Boitsfort</a>
+            <a href="/fr/plaque-immatriculation/woluwe-saint-lambert/">Woluwe-Saint-Lambert</a>
+            <a href="/fr/plaque-immatriculation/woluwe-saint-pierre/">Woluwe-Saint-Pierre</a>
+            {% elsif lang == 'en' %}
+            <a href="/en/license-plate/anderlecht/">Anderlecht</a>
+            <a href="/en/license-plate/auderghem/">Auderghem</a>
+            <a href="/en/license-plate/berchem-sainte-agathe/">Berchem-Sainte-Agathe</a>
+            <a href="/en/license-plate/brussels/">Brussels</a>
+            <a href="/en/license-plate/etterbeek/">Etterbeek</a>
+            <a href="/en/license-plate/evere/">Evere</a>
+            <a href="/en/license-plate/forest/">Forest</a>
+            <a href="/en/license-plate/ganshoren/">Ganshoren</a>
+            <a href="/en/license-plate/ixelles/">Ixelles</a>
+            <a href="/en/license-plate/jette/">Jette</a>
+            <a href="/en/license-plate/koekelberg/">Koekelberg</a>
+            <a href="/en/license-plate/molenbeek-saint-jean/">Molenbeek-Saint-Jean</a>
+            <a href="/en/license-plate/saint-gilles/">Saint-Gilles</a>
+            <a href="/en/license-plate/saint-josse-ten-noode/">Saint-Josse-ten-Noode</a>
+            <a href="/en/license-plate/schaerbeek/">Schaerbeek</a>
+            <a href="/en/license-plate/uccle/">Uccle</a>
+            <a href="/en/license-plate/watermael-boitsfort/">Watermael-Boitsfort</a>
+            <a href="/en/license-plate/woluwe-saint-lambert/">Woluwe-Saint-Lambert</a>
+            <a href="/en/license-plate/woluwe-saint-pierre/">Woluwe-Saint-Pierre</a>
+            {% else %}
+            <a href="/nl/nummerplaat/anderlecht/">Anderlecht</a>
+            <a href="/nl/nummerplaat/oudergem/">Oudergem</a>
+            <a href="/nl/nummerplaat/sint-agatha-berchem/">Sint-Agatha-Berchem</a>
+            <a href="/nl/nummerplaat/brussel/">Brussel</a>
+            <a href="/nl/nummerplaat/etterbeek/">Etterbeek</a>
+            <a href="/nl/nummerplaat/evere/">Evere</a>
+            <a href="/nl/nummerplaat/vorst/">Vorst</a>
+            <a href="/nl/nummerplaat/ganshoren/">Ganshoren</a>
+            <a href="/nl/nummerplaat/elsene/">Elsene</a>
+            <a href="/nl/nummerplaat/jette/">Jette</a>
+            <a href="/nl/nummerplaat/koekelberg/">Koekelberg</a>
+            <a href="/nl/nummerplaat/sint-jans-molenbeek/">Sint-Jans-Molenbeek</a>
+            <a href="/nl/nummerplaat/sint-gillis/">Sint-Gillis</a>
+            <a href="/nl/nummerplaat/sint-joost-ten-node/">Sint-Joost-ten-Node</a>
+            <a href="/nl/nummerplaat/schaarbeek/">Schaarbeek</a>
+            <a href="/nl/nummerplaat/ukkel/">Ukkel</a>
+            <a href="/nl/nummerplaat/watermaal-bosvoorde/">Watermaal-Bosvoorde</a>
+            <a href="/nl/nummerplaat/sint-lambrechts-woluwe/">Sint-Lambrechts-Woluwe</a>
+            <a href="/nl/nummerplaat/sint-pieters-woluwe/">Sint-Pieters-Woluwe</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{{ content }}

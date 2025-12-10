@@ -24,43 +24,43 @@ for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
         for city in cities_data[region]:
             ALL_CITIES[city['slug']] = city
 
-# Emergency types with slugs for each language
+# Emergency types with slugs and SEO descriptions for each language
 EMERGENCIES = [
     {
         "id": "locked-out",
-        "fr": {"slug": "porte-claquee"},
-        "en": {"slug": "locked-out"},
-        "nl": {"slug": "dichtgevallen-deur"}
+        "fr": {"slug": "porte-claquee", "title": "Porte Claquée", "desc": "Porte claquée à {city} ? Serrurier urgence 24h/24. Intervention rapide 30 min, ouverture sans dégât. Appelez 0489 24 73 64."},
+        "en": {"slug": "locked-out", "title": "Locked Out", "desc": "Locked out in {city}? 24/7 emergency locksmith. Fast 30-min response, damage-free entry. Call 0489 24 73 64."},
+        "nl": {"slug": "dichtgevallen-deur", "title": "Dichtgevallen Deur", "desc": "Deur dichtgevallen in {city}? Nood slotenmaker 24/7. Snelle interventie 30 min, zonder schade. Bel 0489 24 73 64."}
     },
     {
         "id": "broken-key",
-        "fr": {"slug": "cle-cassee-serrure"},
-        "en": {"slug": "broken-key-lock"},
-        "nl": {"slug": "gebroken-sleutel-slot"}
+        "fr": {"slug": "cle-cassee-serrure", "title": "Clé Cassée dans Serrure", "desc": "Clé cassée dans la serrure à {city} ? Serrurier urgence extrait la clé et remplace si nécessaire. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "broken-key-lock", "title": "Broken Key in Lock", "desc": "Broken key stuck in lock in {city}? Emergency locksmith extracts key and replaces if needed. 24/7 service. Call 0489 24 73 64."},
+        "nl": {"slug": "gebroken-sleutel-slot", "title": "Gebroken Sleutel in Slot", "desc": "Sleutel afgebroken in slot in {city}? Nood slotenmaker haalt sleutel eruit en vervangt indien nodig. 24/7. Bel 0489 24 73 64."}
     },
     {
         "id": "burglary",
-        "fr": {"slug": "cambriolage"},
-        "en": {"slug": "burglary"},
-        "nl": {"slug": "inbraak"}
+        "fr": {"slug": "cambriolage", "title": "Cambriolage", "desc": "Victime de cambriolage à {city} ? Serrurier urgence sécurise votre domicile 24h/24. Remplacement serrure, blindage porte. Appelez 0489 24 73 64."},
+        "en": {"slug": "burglary", "title": "Burglary", "desc": "Burglary victim in {city}? Emergency locksmith secures your home 24/7. Lock replacement, door reinforcement. Call 0489 24 73 64."},
+        "nl": {"slug": "inbraak", "title": "Inbraak", "desc": "Slachtoffer van inbraak in {city}? Nood slotenmaker beveiligt uw woning 24/7. Slotvervanging, deurbepantsering. Bel 0489 24 73 64."}
     },
     {
         "id": "armored-door",
-        "fr": {"slug": "porte-blindee-bloquee"},
-        "en": {"slug": "armored-door-locked"},
-        "nl": {"slug": "gepantserde-deur-geblokkeerd"}
+        "fr": {"slug": "porte-blindee-bloquee", "title": "Porte Blindée Bloquée", "desc": "Porte blindée bloquée à {city} ? Serrurier spécialisé portes sécurisées. Ouverture sans destruction 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "armored-door-locked", "title": "Armored Door Locked", "desc": "Armored door locked in {city}? Specialist locksmith for security doors. Non-destructive opening 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "gepantserde-deur-geblokkeerd", "title": "Gepantserde Deur Geblokkeerd", "desc": "Gepantserde deur geblokkeerd in {city}? Specialist slotenmaker voor beveiligde deuren. Opening zonder schade 24/7. Bel 0489 24 73 64."}
     },
     {
         "id": "night-locksmith",
-        "fr": {"slug": "serrurier-nuit"},
-        "en": {"slug": "night-locksmith"},
-        "nl": {"slug": "nacht-slotenmaker"}
+        "fr": {"slug": "serrurier-nuit", "title": "Serrurier de Nuit", "desc": "Serrurier de nuit à {city}. Intervention urgente entre 22h et 6h. Porte claquée, clé perdue ? Disponible 7j/7. Appelez 0489 24 73 64."},
+        "en": {"slug": "night-locksmith", "title": "Night Locksmith", "desc": "Night locksmith in {city}. Emergency service 10PM-6AM. Locked out, lost key? Available 7 days. Call 0489 24 73 64."},
+        "nl": {"slug": "nacht-slotenmaker", "title": "Nacht Slotenmaker", "desc": "Nacht slotenmaker in {city}. Dringende interventie 22u-6u. Deur dichtgevallen, sleutel verloren? 7 dagen beschikbaar. Bel 0489 24 73 64."}
     },
     {
         "id": "sunday-locksmith",
-        "fr": {"slug": "serrurier-dimanche"},
-        "en": {"slug": "sunday-locksmith"},
-        "nl": {"slug": "zondag-slotenmaker"}
+        "fr": {"slug": "serrurier-dimanche", "title": "Serrurier Dimanche", "desc": "Serrurier dimanche à {city}. Intervention urgente le dimanche et jours fériés. Même tarif, même rapidité. Appelez 0489 24 73 64."},
+        "en": {"slug": "sunday-locksmith", "title": "Sunday Locksmith", "desc": "Sunday locksmith in {city}. Emergency service on Sundays and holidays. Same rate, same speed. Call 0489 24 73 64."},
+        "nl": {"slug": "zondag-slotenmaker", "title": "Zondag Slotenmaker", "desc": "Zondag slotenmaker in {city}. Dringende interventie op zondag en feestdagen. Zelfde tarief, zelfde snelheid. Bel 0489 24 73 64."}
     }
 ]
 
@@ -93,7 +93,10 @@ def generate_page(city_data, emergency, lang_config):
     folder = lang_config["folder"]
     city_slug = get_city_slug(city_data, lang)
     city_name = get_city_name(city_data, lang)
-    emergency_slug = emergency[lang]["slug"]
+    emergency_data = emergency[lang]
+    emergency_slug = emergency_data["slug"]
+    emergency_title = emergency_data["title"]
+    emergency_desc = emergency_data["desc"].format(city=city_name)
     emergency_id = emergency["id"]
 
     # Build alternates with correct slugs per language
@@ -105,19 +108,19 @@ def generate_page(city_data, emergency, lang_config):
         l_emergency_slug = emergency[l_code]["slug"]
         alternates[l_code] = f"/{l_code}/{l_folder}/{l_city_slug}/{l_emergency_slug}/"
 
-    # Build title
+    # Build title with proper brand name per language
     if lang == "fr":
-        title = f"{emergency_slug.replace('-', ' ').title()} {city_name} | Janssens Serrurier"
+        title = f"{emergency_title} {city_name} | Serrurier Urgence | Janssens"
     elif lang == "en":
-        title = f"{emergency_slug.replace('-', ' ').title()} {city_name} | Janssens Locksmith"
+        title = f"{emergency_title} {city_name} | Emergency Locksmith | Janssens"
     else:
-        title = f"{emergency_slug.replace('-', ' ').title()} {city_name} | Janssens Slotenmaker"
+        title = f"{emergency_title} {city_name} | Nood Slotenmaker | Janssens"
 
     content = f'''---
 layout: emergency-city
 lang: {lang}
 title: "{title}"
-description: "{emergency_slug.replace('-', ' ').title()} {city_name}"
+description: "{emergency_desc}"
 emergency_id: "{emergency_id}"
 city_slug: "{city_slug}"
 city_name: "{city_name}"

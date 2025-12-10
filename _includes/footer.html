@@ -44,6 +44,14 @@
                         <li><a href="/{{ lang }}/#pourquoi">{{ t.footer.about }}</a></li>
                         <li><a href="/{{ lang }}/#confiance">{{ t.footer.partners }}</a></li>
                         <li><a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a></li>
+                        {% case lang %}
+                        {% when 'nl' %}
+                        <li><a href="/nl/provincies/luik/">{{ t.footer.other_provinces | default: "Andere provincies" }}</a></li>
+                        {% when 'en' %}
+                        <li><a href="/en/provinces/liege/">{{ t.footer.other_provinces | default: "Other provinces" }}</a></li>
+                        {% else %}
+                        <li><a href="/fr/provinces/liege/">{{ t.footer.other_provinces | default: "Autres provinces" }}</a></li>
+                        {% endcase %}
                         <li><a href="/{{ lang }}/#faq">FAQ</a></li>
                         <li><a href="/{{ lang }}/#contact">{{ t.nav.contact }}</a></li>
                     </ul>

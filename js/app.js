@@ -469,13 +469,25 @@
         let selectedIndex = -1;
 
         const normalize = (str) => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        const isPostalQuery = (query) => /^\d+$/.test(query);
 
         const filterCommunes = (query) => {
             if (!query || query.length < 2) return [];
             const normalizedQuery = normalize(query);
-            return communes.filter(c =>
-                normalize(c.name).includes(normalizedQuery)
-            ).slice(0, 8);
+
+            // Search by postal code if query is numeric
+            if (isPostalQuery(query)) {
+                return communes.filter(c =>
+                    c.postal && c.postal.some(p => p.startsWith(query))
+                ).slice(0, 8);
+            }
+
+            // Search by name or alternative names
+            return communes.filter(c => {
+                if (normalize(c.name).includes(normalizedQuery)) return true;
+                if (c.altNames && c.altNames.some(alt => normalize(alt).includes(normalizedQuery))) return true;
+                return false;
+            }).slice(0, 8);
         };
 
         const highlightMatch = (text, query) => {
@@ -494,13 +506,16 @@
                 return;
             }
 
-            zoneSuggestions.innerHTML = filtered.map((c, i) => `
-                <div class="suggestion-item${i === selectedIndex ? ' active' : ''}" data-index="${i}">
+            zoneSuggestions.innerHTML = filtered.map((c, i) => {
+                const postalDisplay = c.postal ? c.postal[0] : '';
+                const coveredClass = c.covered ? 'covered' : 'not-covered';
+                return `
+                <div class="suggestion-item ${coveredClass}${i === selectedIndex ? ' active' : ''}" data-index="${i}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    <span class="suggestion-name">${highlightMatch(c.name, query)}</span>
+                    <span class="suggestion-name">${highlightMatch(c.name, query)} <span class="suggestion-postal">(${postalDisplay})</span></span>
                     <span class="suggestion-region">${c.region}</span>
                 </div>
-            `).join('');
+            `}).join('');
             zoneSuggestions.classList.add('active');
             selectedIndex = -1;
         };
@@ -509,18 +524,35 @@
             const initial = checkerResult.querySelector('.result-initial');
             const success = checkerResult.querySelector('.result-success');
             const notfound = checkerResult.querySelector('.result-notfound');
+            const outside = checkerResult.querySelector('.result-outside');
 
             initial.style.display = 'none';
+            success.style.display = 'none';
             notfound.style.display = 'none';
+            if (outside) outside.style.display = 'none';
 
             if (commune) {
-                success.style.display = 'flex';
-                const successText = window.i18n && window.i18n.t ? window.i18n.t('zones.success.text') : 'Nous intervenons à';
-                success.querySelector('.result-commune').textContent =
-                    `${successText} ${commune.name} (${commune.region})`;
+                const postalDisplay = commune.postal ? commune.postal[0] : '';
+                if (commune.covered) {
+                    // Zone covered - show success
+                    success.style.display = 'flex';
+                    const successText = window.i18n && window.i18n.t ? window.i18n.t('zones.success.text') : 'Nous intervenons à';
+                    success.querySelector('.result-commune').textContent =
+                        `${successText} ${commune.name} (${postalDisplay}) - ${commune.region}`;
+                } else {
+                    // Zone not covered - show outside message
+                    if (outside) {
+                        outside.style.display = 'flex';
+                        const outsideText = window.i18n && window.i18n.t ? window.i18n.t('zones.outside.text') : 'Zone hors couverture standard';
+                        outside.querySelector('.result-commune').textContent =
+                            `${commune.name} (${postalDisplay}) - ${commune.region}`;
+                    } else {
+                        // Fallback to notfound if outside element doesn't exist
+                        notfound.style.display = 'flex';
+                    }
+                }
                 initIcons();
             } else {
-                success.style.display = 'none';
                 notfound.style.display = 'flex';
                 initIcons();
             }

@@ -1,0 +1,131 @@
+# Provinces belges pour pages hub SEO
+# 8 provinces (zones etendues hors Bruxelles-Capitale et Brabants)
+
+provinces:
+  - name_fr: "Anvers"
+    name_nl: "Antwerpen"
+    name_en: "Antwerp"
+    slug_fr: "anvers"
+    slug_nl: "antwerpen"
+    slug_en: "antwerp"
+    communes_count: 69
+    population: "1.9M"
+    major_cities:
+      - Antwerpen
+      - Mechelen
+      - Turnhout
+      - Lier
+      - Heist-op-den-Berg
+    avg_intervention_time: "45 min"
+
+  - name_fr: "Limbourg"
+    name_nl: "Limburg"
+    name_en: "Limburg"
+    slug_fr: "limbourg"
+    slug_nl: "limburg"
+    slug_en: "limburg"
+    communes_count: 42
+    population: "880K"
+    major_cities:
+      - Hasselt
+      - Genk
+      - Sint-Truiden
+      - Beringen
+      - Lommel
+    avg_intervention_time: "50 min"
+
+  - name_fr: "Flandre orientale"
+    name_nl: "Oost-Vlaanderen"
+    name_en: "East Flanders"
+    slug_fr: "flandre-orientale"
+    slug_nl: "oost-vlaanderen"
+    slug_en: "east-flanders"
+    communes_count: 60
+    population: "1.5M"
+    major_cities:
+      - Gent
+      - Aalst
+      - Sint-Niklaas
+      - Dendermonde
+      - Lokeren
+    avg_intervention_time: "50 min"
+
+  - name_fr: "Flandre occidentale"
+    name_nl: "West-Vlaanderen"
+    name_en: "West Flanders"
+    slug_fr: "flandre-occidentale"
+    slug_nl: "west-vlaanderen"
+    slug_en: "west-flanders"
+    communes_count: 64
+    population: "1.2M"
+    major_cities:
+      - Brugge
+      - Oostende
+      - Kortrijk
+      - Roeselare
+      - Knokke-Heist
+    avg_intervention_time: "60 min"
+
+  - name_fr: "Hainaut"
+    name_nl: "Henegouwen"
+    name_en: "Hainaut"
+    slug_fr: "hainaut"
+    slug_nl: "henegouwen"
+    slug_en: "hainaut"
+    communes_count: 69
+    population: "1.3M"
+    major_cities:
+      - Charleroi
+      - Mons
+      - La Louviere
+      - Tournai
+      - Mouscron
+    avg_intervention_time: "40 min"
+
+  - name_fr: "Liege"
+    name_nl: "Luik"
+    name_en: "Liege"
+    slug_fr: "liege"
+    slug_nl: "luik"
+    slug_en: "liege"
+    communes_count: 84
+    population: "1.1M"
+    major_cities:
+      - Liege
+      - Seraing
+      - Verviers
+      - Herstal
+      - Vise
+    avg_intervention_time: "45 min"
+
+  - name_fr: "Namur"
+    name_nl: "Namen"
+    name_en: "Namur"
+    slug_fr: "namur"
+    slug_nl: "namen"
+    slug_en: "namur"
+    communes_count: 38
+    population: "500K"
+    major_cities:
+      - Namur
+      - Sambreville
+      - Gembloux
+      - Andenne
+      - Ciney
+    avg_intervention_time: "45 min"
+
+  - name_fr: "Luxembourg"
+    name_nl: "Luxemburg"
+    name_en: "Luxembourg"
+    slug_fr: "luxembourg"
+    slug_nl: "luxemburg"
+    slug_en: "luxembourg"
+    communes_count: 44
+    population: "290K"
+    major_cities:
+      - Arlon
+      - Marche-en-Famenne
+      - Bastogne
+      - Virton
+      - Durbuy
+    avg_intervention_time: "60 min"

@@ -44228,4 +44228,246 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Province Hub Pages (24 URLs) -->
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/anvers/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/antwerpen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/antwerp/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/antwerpen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/antwerpen/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/antwerp/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/antwerpen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/anvers/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/limbourg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/limburg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/limburg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/limburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/limbourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/flandre-orientale/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/east-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/oost-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/east-flanders/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/east-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/oost-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/oost-vlaanderen/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/east-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/oost-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-orientale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/flandre-occidentale/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/west-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/west-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/west-flanders/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/west-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/west-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/west-vlaanderen/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/west-flanders/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/west-vlaanderen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/flandre-occidentale/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/hainaut/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/henegouwen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/hainaut/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/henegouwen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/henegouwen/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/hainaut/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/henegouwen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/hainaut/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/liege/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/liege/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/luik/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/liege/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/liege/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/namur/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/namen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/namur/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/namen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/namen/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/namur/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/namen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/namur/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/fr/provinces/luxembourg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luxemburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/en/provinces/luxembourg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luxemburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://janssensserrurier.be/nl/provincies/luxemburg/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-BE" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://janssensserrurier.be/en/provinces/luxembourg/"/>
+    <xhtml:link rel="alternate" hreflang="nl-BE" href="https://janssensserrurier.be/nl/provincies/luxemburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://janssensserrurier.be/fr/provinces/luxembourg/"/>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

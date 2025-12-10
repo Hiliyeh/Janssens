@@ -2497,7 +2497,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -2521,7 +2521,7 @@ section {
 
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
 }
 
@@ -2577,6 +2577,25 @@ section {
     font-weight: 600;
     color: var(--color-dark);
     font-size: 0.95rem;
+}
+
+/* Desktop compact contact cards */
+@media (min-width: 769px) {
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+        padding: var(--space-lg);
+    }
+
+    .contact-card-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .contact-card span {
+        white-space: nowrap;
+    }
 }
 
 /* =====================================================
@@ -3815,8 +3834,8 @@ section {
 }
 
 .gdpr-box {
-    background: linear-gradient(135deg, var(--color-primary-light) 0%, rgba(207, 46, 46, 0.05) 100%);
-    border-left: 4px solid var(--color-primary);
+    background: var(--color-gray-100);
+    border: 1px solid var(--color-gray-200);
     padding: 1.5rem;
     border-radius: var(--radius-md);
     margin: 1.5rem 0;

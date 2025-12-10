@@ -45,7 +45,11 @@ layout: default
         <h3>{{ t.guide_page.related_services | default: "Services associés" }}</h3>
         <div class="services-grid">
             {% for service in site.data.services %}
+            {% if service.special_link %}
+            <a href="/{{ lang }}/{{ service[lang].slug }}/" class="service-card-mini">
+            {% else %}
             <a href="/{{ lang }}/{{ services_folder }}/{{ service[lang].slug }}/" class="service-card-mini">
+            {% endif %}
                 <i data-lucide="{{ service.icon }}"></i>
                 <span>{{ service[lang].name }}</span>
             </a>

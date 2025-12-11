@@ -1,7 +1,27 @@
 # Provinces belges pour pages hub SEO
-# 8 provinces (zones etendues hors Bruxelles-Capitale et Brabants)
+# 10 provinces (toutes les provinces belges)
 
 provinces:
+  - name_fr: "Brabant wallon"
+    name_nl: "Waals-Brabant"
+    name_en: "Walloon Brabant"
+    slug_fr: "brabant-wallon"
+    slug_nl: "waals-brabant"
+    slug_en: "walloon-brabant"
+    communes_count: 27
+    population: "400K"
+    major_cities:
+      - Nivelles
+      - Wavre
+      - Ottignies-Louvain-la-Neuve
+      - Braine-l'Alleud
+      - Waterloo
+    avg_intervention_time: "30 min"
+    google:
+      cid: "0x47c17db24cb0e699:0xef7016b29d93026d"
+      maps_url: "https://www.google.com/maps?q=Janssens+Serrurier+-+Brabant+Wallon&ftid=0x47c17db24cb0e699:0xef7016b29d93026d"
+
+
   - name_fr: "Anvers"
     name_nl: "Antwerpen"
     name_en: "Antwerp"

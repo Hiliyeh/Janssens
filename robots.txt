@@ -8,6 +8,7 @@ Allow: /
 Sitemap: https://janssensserrurier.be/sitemap.xml
 
 # Ressources à ne pas indexer
+Disallow: /doc/
 Disallow: /js/
 Disallow: /*.json$
 Disallow: /build.js

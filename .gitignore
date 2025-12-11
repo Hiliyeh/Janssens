@@ -30,6 +30,10 @@ build/
 tmp/
 *.tmp
 
+# Python
+__pycache__/
+*.pyc
+
 # Documentation
 doc/
 docs/

@@ -2,6 +2,14 @@
 {% assign t = site.data.translations[lang] %}
 {% assign biz = site.data.business %}
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9VS86QX');</script>
+<!-- End Google Tag Manager -->
+
 {% comment %}=== CITY GEO LOOKUP (for city pages) ==={% endcomment %}
 {% assign city_page_layouts = "city,city-service,emergency-city,brand-city" | split: "," %}
 {% if city_page_layouts contains page.layout %}
@@ -13,15 +21,6 @@
 {% assign seo_desc = seo_desc | strip | truncate: 160 %}
 {% capture seo_kw %}{% case page.layout %}{% when 'city' %}serrurier {{ page.city_name }}, dépannage serrure {{ page.city_name }}, serrurerie {{ page.city_name }}, 24h/24{% when 'city-service' %}{{ svc[lang].name | downcase }} {{ page.city_name }}, serrurier {{ page.city_name }}, 24h/24{% when 'service' %}{{ svc[lang].name | downcase }}, serrurier bruxelles, serrurerie, 24h/24{% when 'emergency' %}{{ emg[lang].name | downcase }}, urgence serrurier, dépannage 24h/24{% when 'emergency-city' %}{{ emg[lang].name | downcase }} {{ page.city_name }}, serrurier urgence{% else %}serrurier bruxelles, serrurerie, dépannage, 24h/24{% endcase %}{% endcapture %}
 {% assign seo_kw = seo_kw | strip %}
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQYBLWR0KQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JQYBLWR0KQ');
-</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

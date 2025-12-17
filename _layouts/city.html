@@ -57,19 +57,6 @@ layout: default
             </ul>
         </div>
 
-        <!-- Zone Check Section -->
-        <div class="commune-section zone-check-section">
-            <h2><i data-lucide="map-pin-check"></i> {{ t.city.zone_check_title | default: "Êtes-vous dans notre zone ?" }}</h2>
-            <p>{{ t.city.zone_check_text | default: "Vérifiez en 1 seconde si nous intervenons chez vous." }}</p>
-            <div class="zone-check-badge">
-                <i data-lucide="check-circle"></i>
-                <span><strong>{{ page.city_name }}</strong> {{ t.city.zone_check_yes | default: "est couvert par nos services 24h/24" }}</span>
-            </div>
-            {% if city_postal_code %}
-            <p class="zone-postal"><i data-lucide="mail"></i> {{ t.city.zone_postal | default: "Code postal" }} : <strong>{{ city_postal_code }}</strong></p>
-            {% endif %}
-        </div>
-
         {% capture cta_title %}{{ t.city.emergency_title | replace: "%city%", page.city_name }}{% endcapture %}
         {% capture cta_text %}{{ t.city.emergency_text | replace: "%city%", page.city_name }}{% endcapture %}
         {% include cta-box.html title=cta_title text=cta_text %}

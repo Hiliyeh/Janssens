@@ -41,7 +41,14 @@
                 <div class="footer-col">
                     <h4>{{ t.footer.company }}</h4>
                     <ul>
-                        <li><a href="/{{ lang }}/#pourquoi">{{ t.footer.about }}</a></li>
+                        {% case lang %}
+                        {% when 'nl' %}
+                        <li><a href="/nl/over-ons/">{{ t.footer.about }}</a></li>
+                        {% when 'en' %}
+                        <li><a href="/en/about/">{{ t.footer.about }}</a></li>
+                        {% else %}
+                        <li><a href="/fr/a-propos/">{{ t.footer.about }}</a></li>
+                        {% endcase %}
                         <li><a href="/{{ lang }}/#confiance">{{ t.footer.partners }}</a></li>
                         <li><a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a></li>
                         {% case lang %}

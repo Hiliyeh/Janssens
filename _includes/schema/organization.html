@@ -1,0 +1,106 @@
+{% comment %}
+Organization Schema JSON-LD Generator
+=====================================
+Generates structured data for the About page to establish E-E-A-T and brand entity.
+
+Usage: {% include schema/organization.html %}
+Used on: About pages (à-propos, about, over-ons)
+
+Note: No founder/numberOfEmployees per client request.
+areaServed covers all 3 Belgian regions.
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign biz = site.data.business %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "{{ biz.name }}",
+    "legalName": "{{ biz.company }}",
+    "description": "{% case lang %}{% when 'fr' %}Serrurier professionnel à Bruxelles et dans le Brabant. Service d'urgence 24h/24, 7j/7. Ouverture de porte, remplacement de serrure, sécurisation.{% when 'en' %}Professional locksmith in Brussels and Brabant. 24/7 emergency service. Door opening, lock replacement, security solutions.{% when 'nl' %}Professionele slotenmaker in Brussel en Brabant. 24/7 nooddienst. Deuropening, slotvervanging, beveiligingsoplossingen.{% endcase %}",
+    "url": "{{ site.url }}/{{ lang }}/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ biz.logo }}",
+        "width": 512,
+        "height": 512
+    },
+    "image": "{{ site.url }}{{ biz.og_image }}",
+    "telephone": "{{ biz.phone }}",
+    "email": "{{ biz.email }}",
+    "vatID": "{{ biz.vat }}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ biz.address.street }}",
+        "addressLocality": "{{ biz.address.city }}",
+        "postalCode": "{{ biz.address.postal }}",
+        "addressRegion": "{{ biz.address.region }}",
+        "addressCountry": "{{ biz.address.country_code }}"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ biz.address.geo.lat }},
+        "longitude": {{ biz.address.geo.lng }}
+    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": "Région de Bruxelles-Capitale",
+            "alternateName": "Brussels Hoofdstedelijk Gewest"
+        },
+        {
+            "@type": "AdministrativeArea",
+            "name": "Brabant wallon",
+            "alternateName": "Waals-Brabant"
+        },
+        {
+            "@type": "AdministrativeArea",
+            "name": "Brabant flamand",
+            "alternateName": "Vlaams-Brabant"
+        }
+    ],
+    "serviceType": [
+        "{% case lang %}{% when 'fr' %}Ouverture de porte{% when 'en' %}Door opening{% when 'nl' %}Deuropening{% endcase %}",
+        "{% case lang %}{% when 'fr' %}Remplacement de serrure{% when 'en' %}Lock replacement{% when 'nl' %}Slotvervanging{% endcase %}",
+        "{% case lang %}{% when 'fr' %}Dépannage serrurerie{% when 'en' %}Lock repair{% when 'nl' %}Slotreparatie{% endcase %}",
+        "{% case lang %}{% when 'fr' %}Sécurisation{% when 'en' %}Security solutions{% when 'nl' %}Beveiliging{% endcase %}"
+    ],
+    "knowsAbout": [
+        "Locksmith services",
+        "Door security",
+        "Lock installation",
+        "Emergency lockout service",
+        "High-security locks",
+        "A2P certified locks"
+    ],
+    "slogan": "{% case lang %}{% when 'fr' %}Votre serrurier de confiance 24h/24{% when 'en' %}Your trusted locksmith 24/7{% when 'nl' %}Uw betrouwbare slotenmaker 24/7{% endcase %}",
+    "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "{% case lang %}{% when 'fr' %}Entreprise enregistrée BCE{% when 'en' %}BCE registered company{% when 'nl' %}KBO geregistreerd bedrijf{% endcase %}",
+        "recognizedBy": {
+            "@type": "Organization",
+            "name": "SPF Economie / FOD Economie"
+        }
+    },
+    "sameAs": [
+        "{{ biz.social.facebook }}",
+        "{{ biz.social.linkedin }}",
+        "{{ biz.google.maps_url }}"
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "{{ biz.phone }}",
+        "contactType": "customer service",
+        "availableLanguage": ["French", "Dutch", "English"],
+        "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    }
+}
+</script>

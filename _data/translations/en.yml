@@ -313,6 +313,11 @@ guide_page:
   cta_text: "We arrive in 30 minutes in Brussels and surroundings"
   related_title: "Related guides"
 
+# About Page
+about:
+  cta_title: "Need a locksmith?"
+  cta_text: "Available 24/7 in Brussels, Walloon and Flemish Brabant"
+
 # Emergency City Pages
 emergency_city:
   in: "in"

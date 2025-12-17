@@ -313,6 +313,11 @@ guide_page:
   cta_text: "Intervention en 30 minutes à Bruxelles et environs"
   related_title: "Guides connexes"
 
+# About Page
+about:
+  cta_title: "Besoin d'un serrurier ?"
+  cta_text: "Disponible 24h/24 à Bruxelles, Brabant wallon et flamand"
+
 # Emergency City Pages
 emergency_city:
   in: "à"

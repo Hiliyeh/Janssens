@@ -1,0 +1,77 @@
+{% comment %}
+WebPage Schema JSON-LD Generator
+================================
+Generates WebPage structured data with dateModified for all pages.
+This helps Google understand when content was last updated (GEO signal).
+
+Usage: {% include schema/webpage.html %}
+Auto-included on all pages via head.html
+
+dateModified priority:
+1. page.date_modified (if specified in front matter)
+2. site.time (Jekyll build time - automatic)
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign biz = site.data.business %}
+
+{% comment %}Determine page type based on layout{% endcomment %}
+{% case page.layout %}
+{% when 'guide' %}
+    {% assign webpage_type = "Article" %}
+{% when 'service' %}
+    {% assign webpage_type = "ServicePage" %}
+{% when 'city' or 'city-service' or 'emergency-city' %}
+    {% assign webpage_type = "LocalBusinessPage" %}
+{% when 'home' %}
+    {% assign webpage_type = "WebPage" %}
+{% else %}
+    {% assign webpage_type = "WebPage" %}
+{% endcase %}
+
+{% comment %}Get dateModified - use page.date_modified if set, else site.time{% endcomment %}
+{% if page.date_modified %}
+    {% assign date_mod = page.date_modified %}
+{% else %}
+    {% assign date_mod = site.time | date: '%Y-%m-%d' %}
+{% endif %}
+
+{% comment %}Get datePublished - use page.date if set, else default{% endcomment %}
+{% if page.date %}
+    {% assign date_pub = page.date | date: '%Y-%m-%d' %}
+{% else %}
+    {% assign date_pub = '2024-01-01' %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}#webpage",
+    "url": "{{ site.url }}{{ page.url }}",
+    "name": "{{ page.title | escape }}",
+    "description": "{{ page.description | default: site.description | escape | truncate: 160 }}",
+    "inLanguage": "{{ lang }}-BE",
+    "datePublished": "{{ date_pub }}",
+    "dateModified": "{{ date_mod }}",
+    "isPartOf": {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}/",
+        "name": "{{ biz.name }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "{{ biz.name }}",
+            "url": "{{ site.url }}"
+        }
+    },
+    "about": {
+        "@type": "LocalBusiness",
+        "@id": "{{ site.url }}/#locksmith"
+    },
+    "potentialAction": {
+        "@type": "ReadAction",
+        "target": "{{ site.url }}{{ page.url }}"
+    }
+}
+</script>

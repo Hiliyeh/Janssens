@@ -42,20 +42,31 @@ Supported layouts: city, city-service, emergency-city
         "latitude": {{ city_geo_lat }},
         "longitude": {{ city_geo_lng }}
     },
-    "areaServed": {
-        "@type": "City",
-        "name": "{{ page.city_name }}",
-        {% if city_postal_code %}"postalCode": "{{ city_postal_code }}",{% endif %}
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": {{ city_geo_lat }},
-            "longitude": {{ city_geo_lng }}
+    "areaServed": [
+        {
+            "@type": "City",
+            "name": "{{ page.city_name }}",
+            {% if city_postal_code %}"postalCode": "{{ city_postal_code }}",{% endif %}
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": {{ city_geo_lat }},
+                "longitude": {{ city_geo_lng }}
+            },
+            "containedInPlace": {
+                "@type": "Country",
+                "name": "Belgium"
+            }
         },
-        "containedInPlace": {
-            "@type": "Country",
-            "name": "Belgium"
+        {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": {{ city_geo_lat }},
+                "longitude": {{ city_geo_lng }}
+            },
+            "geoRadius": "15000"
         }
-    },
+    ],
     "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

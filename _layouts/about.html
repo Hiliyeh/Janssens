@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+
+<!-- Hero Simple -->
+<section class="service-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=page.page_title %}
+        <div class="service-hero-icon"><i data-lucide="building-2"></i></div>
+        <h1 class="service-title">{{ page.page_title }}</h1>
+        <p class="service-subtitle">{{ page.subtitle }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content about-content">
+    <div class="service-container">
+        {{ content }}
+        {% include cta-box.html title=t.about.cta_title text=t.about.cta_text %}
+    </div>
+</section>
+
+<!-- Organization Schema -->
+{% include schema/organization.html %}

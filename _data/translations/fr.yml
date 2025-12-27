@@ -108,6 +108,7 @@ zones:
     text: "Nous n'avons pas trouvé cette commune. Vérifiez l'orthographe ou contactez-nous."
     cta: "Nous contacter"
   municipalities: "communes"
+  view_province: "Voir toutes les communes de"
   regions:
     title: "Nos zones principales :"
     brussels: "Bruxelles-Capitale"

@@ -1,0 +1,176 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+{% assign services = site.data.services %}
+{% assign provinces = site.data.provinces.provinces %}
+
+{% comment %}Find the service data{% endcomment %}
+{% for s in services %}
+{% if s.id == page.service_id %}{% assign service = s %}{% endif %}
+{% endfor %}
+
+{% comment %}Find the province data{% endcomment %}
+{% for p in provinces %}
+{% if p.slug_fr == page.province_slug or p.slug_nl == page.province_slug or p.slug_en == page.province_slug %}
+    {% assign province = p %}
+{% endif %}
+{% endfor %}
+
+{% if lang == "fr" %}
+    {% assign province_name = province.name_fr %}
+    {% assign province_slug = province.slug_fr %}
+{% elsif lang == "nl" %}
+    {% assign province_name = province.name_nl %}
+    {% assign province_slug = province.slug_nl %}
+{% else %}
+    {% assign province_name = province.name_en %}
+    {% assign province_slug = province.slug_en %}
+{% endif %}
+
+{% assign service_name = service[lang].name %}
+
+<!-- Hero -->
+<section class="service-hero city-service-hero">
+    <div class="service-container">
+        {% capture province_url %}/{{ lang }}/provinces/{{ province_slug }}/{% endcapture %}
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
+            <span>/</span>
+            <a href="/{{ lang }}/#zones">{{ t.breadcrumb.provinces | default: "Provinces" }}</a>
+            <span>/</span>
+            <a href="{{ province_url }}">{{ province_name }}</a>
+            <span>/</span>
+            <strong>{{ service_name }}</strong>
+        </nav>
+
+        <div class="service-icon"><i data-lucide="{{ service.icon }}"></i></div>
+        <h1 class="service-title">{{ service_name }} {{ province_name }}</h1>
+        <p class="service-subtitle">{{ t.province_service.subtitle | default: "Service professionnel dans toute la province. Intervention rapide, devis gratuit." }}</p>
+
+        <div class="service-cta">
+            {% include hero-cta.html %}
+        </div>
+
+        <div class="commune-stats">
+            <div class="commune-stat">
+                <i data-lucide="map-pin"></i>
+                <span>{{ province.communes_count }} {{ t.province.communes | default: "communes" }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="clock"></i>
+                <span>{{ t.province.avg_time | default: "Intervention en" }} {{ province.avg_intervention_time }}</span>
+            </div>
+            <div class="commune-stat">
+                <i data-lucide="shield-check"></i>
+                <span>{{ t.common.free_quote }}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+
+        <div class="commune-section">
+            <h2><i data-lucide="{{ service.icon }}"></i> {{ service_name }} {{ t.province_service.in_province | default: "dans la province de" }} {{ province_name }}</h2>
+            <p>{{ t.province_service.intro | default: "Vous recherchez un serrurier pour" }} {{ service_name | downcase }} {{ t.province_service.in_province | default: "dans la province de" }} {{ province_name }} ? {{ t.province_service.intro_2 | default: "Nos equipes professionnelles interviennent rapidement dans toutes les communes." }}</p>
+            <p>{{ service[lang].province_desc | default: service[lang].desc }}</p>
+        </div>
+
+        {% capture cta_title %}{{ service_name }} {{ province_name }} ?{% endcapture %}
+        {% capture cta_text %}{{ t.province_service.cta_text | default: "Appelez maintenant pour une intervention rapide dans toute la province." }}{% endcapture %}
+        {% include cta-box.html title=cta_title text=cta_text %}
+
+        <div class="commune-section">
+            <h2><i data-lucide="map-pin"></i> {{ t.province_service.coverage_title | default: "Zone couverte" }}</h2>
+            <p>{{ t.province_service.coverage_intro | default: "Notre service de" }} {{ service_name | downcase }} {{ t.province_service.coverage_intro_2 | default: "est disponible dans les" }} {{ province.communes_count }} {{ t.province_service.coverage_intro_3 | default: "communes de la province de" }} {{ province_name }}.</p>
+
+            <h3><i data-lucide="building-2"></i> {{ t.province.major_cities | default: "Grandes villes couvertes" }}</h3>
+            <ul>
+                {% for city in province.major_cities %}
+                <li>
+                    <i data-lucide="check"></i>
+                    <div><strong>{{ city }}</strong></div>
+                </li>
+                {% endfor %}
+            </ul>
+            <p class="province-count">{{ t.province.and_more | default: "Et" }} {{ province.communes_count | minus: 5 }} {{ t.province.other_communes | default: "autres communes dans la province." }}</p>
+        </div>
+
+        <div class="commune-section">
+            <h2><i data-lucide="zap"></i> {{ t.province_service.why_title | default: "Pourquoi nous choisir" }} ?</h2>
+            <ul>
+                <li>
+                    <i data-lucide="clock"></i>
+                    <div><strong>{{ t.pillars.speed.title | default: "Intervention rapide" }}</strong> – {{ t.province_service.why_speed | default: "Nos equipes sont strategiquement positionnees pour une intervention en moins d'une heure dans toute la province." }}</div>
+                </li>
+                <li>
+                    <i data-lucide="euro"></i>
+                    <div><strong>{{ t.province.transparent | default: "Prix transparent" }}</strong> – {{ t.province_service.why_price | default: "Devis gratuit avant intervention. Pas de frais caches, pas de surprises." }}</div>
+                </li>
+                <li>
+                    <i data-lucide="shield-check"></i>
+                    <div><strong>{{ t.province.pro | default: "Professionnels agrees" }}</strong> – {{ t.province_service.why_pro | default: "Serruriers qualifies et assures pour toutes interventions." }}</div>
+                </li>
+                <li>
+                    <i data-lucide="phone"></i>
+                    <div><strong>{{ t.province.available | default: "Disponible 24h/24" }}</strong> – {{ t.province_service.why_available | default: "Urgences de jour comme de nuit, week-ends et jours feries inclus." }}</div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Other Services in Province -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>{{ t.province_service.other_services | default: "Autres services dans la province de" }} {{ province_name }}</h3>
+        <div class="services-grid">
+            {% for s in services %}
+            {% if s.id != page.service_id %}
+            <a href="/{{ lang }}/provinces/{{ province_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+                <i data-lucide="{{ s.icon }}"></i>
+                <span>{{ s[lang].name }}</span>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="commune-faq">
+    <div class="commune-container">
+        <h2 class="faq-title"><i data-lucide="message-circle-question"></i> {{ t.province_service.faq_title | default: "Questions frequentes" }} - {{ service_name }} {{ province_name }}</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>{{ t.province_service.faq_1_q | default: "Intervenez-vous dans toutes les communes ?" }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.province_service.faq_1_a | default: "Oui, nous intervenons dans les" }} {{ province.communes_count }} {{ t.province_service.faq_1_a2 | default: "communes de la province pour ce service." }}</div>
+            </details>
+            <details class="faq-item">
+                <summary>{{ t.province_service.faq_2_q | default: "Quel est le delai d'intervention ?" }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.province_service.faq_2_a | default: "En moyenne, nos serruriers arrivent en" }} {{ province.avg_intervention_time }}{{ t.province_service.faq_2_a2 | default: " selon votre localisation." }}</div>
+            </details>
+            <details class="faq-item">
+                <summary>{{ t.province_service.faq_3_q | default: "Le devis est-il gratuit ?" }}<i data-lucide="plus" class="faq-icon"></i></summary>
+                <div class="faq-answer">{{ t.province_service.faq_3_a | default: "Oui, le devis est toujours gratuit et sans engagement. Appelez-nous pour obtenir une estimation." }}</div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Province -->
+<section class="back-section">
+    <div class="service-container">
+        <a href="{{ province_url }}" class="back-link">
+            <i data-lucide="arrow-left"></i>
+            {{ t.province_service.back_to_province | default: "Retour a" }} {{ province_name }}
+        </a>
+    </div>
+</section>
+
+{{ content }}

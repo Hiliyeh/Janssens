@@ -1721,3 +1721,4245 @@ flemish_brabant:
       - "Sint-Leonarduskerk"
       - "Stadhuis"
       - "Gete vallei"
+
+# =====================================================
+# AUTRES PROVINCES (générées automatiquement)
+# =====================================================
+
+# Anvers (69 communes)
+antwerp:
+  - name: "Antwerpen"
+    slug: "antwerpen"
+    postal: "2000"
+    has_subpages: false
+    geo:
+      lat: 51.2194
+      lng: 4.4025
+    province: "antwerp"
+
+  - name: "Mechelen"
+    slug: "mechelen"
+    postal: "2800"
+    has_subpages: false
+    geo:
+      lat: 51.0259
+      lng: 4.4776
+    province: "antwerp"
+
+  - name: "Turnhout"
+    slug: "turnhout"
+    postal: "2300"
+    has_subpages: false
+    geo:
+      lat: 51.3226
+      lng: 4.9443
+    province: "antwerp"
+
+  - name: "Lier"
+    slug: "lier"
+    postal: "2500"
+    has_subpages: false
+    geo:
+      lat: 51.1314
+      lng: 4.5697
+    province: "antwerp"
+
+  - name: "Heist-op-den-Berg"
+    slug: "heist-op-den-berg"
+    postal: "2220"
+    has_subpages: false
+    geo:
+      lat: 51.075
+      lng: 4.7264
+    province: "antwerp"
+
+  - name: "Mortsel"
+    slug: "mortsel"
+    postal: "2640"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 4.45
+    province: "antwerp"
+
+  - name: "Brasschaat"
+    slug: "brasschaat"
+    postal: "2930"
+    has_subpages: false
+    geo:
+      lat: 51.2917
+      lng: 4.4917
+    province: "antwerp"
+
+  - name: "Schoten"
+    slug: "schoten"
+    postal: "2900"
+    has_subpages: false
+    geo:
+      lat: 51.25
+      lng: 4.5
+    province: "antwerp"
+
+  - name: "Boom"
+    slug: "boom"
+    postal: "2850"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 4.3667
+    province: "antwerp"
+
+  - name: "Willebroek"
+    slug: "willebroek"
+    postal: "2830"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 4.3667
+    province: "antwerp"
+
+  - name: "Kontich"
+    slug: "kontich"
+    postal: "2550"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.45
+    province: "antwerp"
+
+  - name: "Edegem"
+    slug: "edegem"
+    postal: "2650"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.4333
+    province: "antwerp"
+
+  - name: "Aartselaar"
+    slug: "aartselaar"
+    postal: "2630"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.3833
+    province: "antwerp"
+
+  - name: "Lint"
+    slug: "lint"
+    postal: "2547"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.4833
+    province: "antwerp"
+
+  - name: "Hove"
+    slug: "hove"
+    postal: "2540"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.4667
+    province: "antwerp"
+
+  - name: "Boechout"
+    slug: "boechout"
+    postal: "2530"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.5
+    province: "antwerp"
+
+  - name: "Borsbeek"
+    slug: "borsbeek"
+    postal: "2150"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 4.4833
+    province: "antwerp"
+
+  - name: "Wijnegem"
+    slug: "wijnegem"
+    postal: "2110"
+    has_subpages: false
+    geo:
+      lat: 51.2333
+      lng: 4.5167
+    province: "antwerp"
+
+  - name: "Wommelgem"
+    slug: "wommelgem"
+    postal: "2160"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.5333
+    province: "antwerp"
+
+  - name: "Ranst"
+    slug: "ranst"
+    postal: "2520"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 4.5667
+    province: "antwerp"
+
+  - name: "Zandhoven"
+    slug: "zandhoven"
+    postal: "2240"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.6667
+    province: "antwerp"
+
+  - name: "Zoersel"
+    slug: "zoersel"
+    postal: "2980"
+    has_subpages: false
+    geo:
+      lat: 51.2667
+      lng: 4.7
+    province: "antwerp"
+
+  - name: "Malle"
+    slug: "malle"
+    postal: "2390"
+    has_subpages: false
+    geo:
+      lat: 51.3
+      lng: 4.7
+    province: "antwerp"
+
+  - name: "Brecht"
+    slug: "brecht"
+    postal: "2960"
+    has_subpages: false
+    geo:
+      lat: 51.35
+      lng: 4.6333
+    province: "antwerp"
+
+  - name: "Schilde"
+    slug: "schilde"
+    postal: "2970"
+    has_subpages: false
+    geo:
+      lat: 51.25
+      lng: 4.5833
+    province: "antwerp"
+
+  - name: "Kapellen"
+    slug: "kapellen"
+    postal: "2950"
+    has_subpages: false
+    geo:
+      lat: 51.3167
+      lng: 4.4333
+    province: "antwerp"
+
+  - name: "Stabroek"
+    slug: "stabroek"
+    postal: "2940"
+    has_subpages: false
+    geo:
+      lat: 51.3333
+      lng: 4.3667
+    province: "antwerp"
+
+  - name: "Kalmthout"
+    slug: "kalmthout"
+    postal: "2920"
+    has_subpages: false
+    geo:
+      lat: 51.3833
+      lng: 4.4667
+    province: "antwerp"
+
+  - name: "Essen"
+    slug: "essen"
+    postal: "2910"
+    has_subpages: false
+    geo:
+      lat: 51.4667
+      lng: 4.4667
+    province: "antwerp"
+
+  - name: "Wuustwezel"
+    slug: "wuustwezel"
+    postal: "2990"
+    has_subpages: false
+    geo:
+      lat: 51.3833
+      lng: 4.6
+    province: "antwerp"
+
+  - name: "Hoogstraten"
+    slug: "hoogstraten"
+    postal: "2320"
+    has_subpages: false
+    geo:
+      lat: 51.4
+      lng: 4.7667
+    province: "antwerp"
+
+  - name: "Merksplas"
+    slug: "merksplas"
+    postal: "2330"
+    has_subpages: false
+    geo:
+      lat: 51.3667
+      lng: 4.8667
+    province: "antwerp"
+
+  - name: "Beerse"
+    slug: "beerse"
+    postal: "2340"
+    has_subpages: false
+    geo:
+      lat: 51.3167
+      lng: 4.85
+    province: "antwerp"
+
+  - name: "Vosselaar"
+    slug: "vosselaar"
+    postal: "2350"
+    has_subpages: false
+    geo:
+      lat: 51.3167
+      lng: 4.8833
+    province: "antwerp"
+
+  - name: "Oud-Turnhout"
+    slug: "oud-turnhout"
+    postal: "2360"
+    has_subpages: false
+    geo:
+      lat: 51.3167
+      lng: 4.9833
+    province: "antwerp"
+
+  - name: "Arendonk"
+    slug: "arendonk"
+    postal: "2370"
+    has_subpages: false
+    geo:
+      lat: 51.3333
+      lng: 5.0833
+    province: "antwerp"
+
+  - name: "Ravels"
+    slug: "ravels"
+    postal: "2380"
+    has_subpages: false
+    geo:
+      lat: 51.4
+      lng: 5.0167
+    province: "antwerp"
+
+  - name: "Baarle-Hertog"
+    slug: "baarle-hertog"
+    postal: "2387"
+    has_subpages: false
+    geo:
+      lat: 51.4333
+      lng: 4.9333
+    province: "antwerp"
+
+  - name: "Rijkevorsel"
+    slug: "rijkevorsel"
+    postal: "2310"
+    has_subpages: false
+    geo:
+      lat: 51.35
+      lng: 4.7667
+    province: "antwerp"
+
+  - name: "Geel"
+    slug: "geel"
+    postal: "2440"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 4.9833
+    province: "antwerp"
+
+  - name: "Meerhout"
+    slug: "meerhout"
+    postal: "2450"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 5.0833
+    province: "antwerp"
+
+  - name: "Laakdal"
+    slug: "laakdal"
+    postal: "2430"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 5.0
+    province: "antwerp"
+
+  - name: "Westerlo"
+    slug: "westerlo"
+    postal: "2260"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 4.9167
+    province: "antwerp"
+
+  - name: "Hulshout"
+    slug: "hulshout"
+    postal: "2235"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 4.7833
+    province: "antwerp"
+
+  - name: "Herenthout"
+    slug: "herenthout"
+    postal: "2270"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.75
+    province: "antwerp"
+
+  - name: "Herentals"
+    slug: "herentals"
+    postal: "2200"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 4.8333
+    province: "antwerp"
+
+  - name: "Olen"
+    slug: "olen"
+    postal: "2250"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.85
+    province: "antwerp"
+
+  - name: "Grobbendonk"
+    slug: "grobbendonk"
+    postal: "2280"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 4.7333
+    province: "antwerp"
+
+  - name: "Vorselaar"
+    slug: "vorselaar"
+    postal: "2290"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 4.7667
+    province: "antwerp"
+
+  - name: "Lille"
+    slug: "lille"
+    postal: "2275"
+    has_subpages: false
+    geo:
+      lat: 51.2333
+      lng: 4.8167
+    province: "antwerp"
+
+  - name: "Kasterlee"
+    slug: "kasterlee"
+    postal: "2460"
+    has_subpages: false
+    geo:
+      lat: 51.25
+      lng: 4.9667
+    province: "antwerp"
+
+  - name: "Retie"
+    slug: "retie"
+    postal: "2470"
+    has_subpages: false
+    geo:
+      lat: 51.2667
+      lng: 5.0833
+    province: "antwerp"
+
+  - name: "Dessel"
+    slug: "dessel"
+    postal: "2480"
+    has_subpages: false
+    geo:
+      lat: 51.2333
+      lng: 5.1167
+    province: "antwerp"
+
+  - name: "Mol"
+    slug: "mol"
+    postal: "2400"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 5.1167
+    province: "antwerp"
+
+  - name: "Balen"
+    slug: "balen"
+    postal: "2490"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 5.1833
+    province: "antwerp"
+
+  - name: "Berlaar"
+    slug: "berlaar"
+    postal: "2590"
+    has_subpages: false
+    geo:
+      lat: 51.1167
+      lng: 4.65
+    province: "antwerp"
+
+  - name: "Nijlen"
+    slug: "nijlen"
+    postal: "2560"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.6667
+    province: "antwerp"
+
+  - name: "Duffel"
+    slug: "duffel"
+    postal: "2570"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 4.5
+    province: "antwerp"
+
+  - name: "Sint-Katelijne-Waver"
+    slug: "sint-katelijne-waver"
+    postal: "2860"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 4.5333
+    province: "antwerp"
+
+  - name: "Putte"
+    slug: "putte"
+    postal: "2580"
+    has_subpages: false
+    geo:
+      lat: 51.05
+      lng: 4.6333
+    province: "antwerp"
+
+  - name: "Bonheiden"
+    slug: "bonheiden"
+    postal: "2820"
+    has_subpages: false
+    geo:
+      lat: 51.0167
+      lng: 4.5333
+    province: "antwerp"
+
+  - name: "Puurs-Sint-Amands"
+    slug: "puurs-sint-amands"
+    postal: "2870"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 4.2833
+    province: "antwerp"
+
+  - name: "Bornem"
+    slug: "bornem"
+    postal: "2880"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 4.2333
+    province: "antwerp"
+
+  - name: "Rumst"
+    slug: "rumst"
+    postal: "2840"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 4.4167
+    province: "antwerp"
+
+  - name: "Niel"
+    slug: "niel"
+    postal: "2845"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 4.3333
+    province: "antwerp"
+
+  - name: "Schelle"
+    slug: "schelle"
+    postal: "2627"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.3333
+    province: "antwerp"
+
+  - name: "Hemiksem"
+    slug: "hemiksem"
+    postal: "2620"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 4.3333
+    province: "antwerp"
+
+  - name: "Zwijndrecht"
+    slug: "zwijndrecht"
+    postal: "2070"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.3333
+    province: "antwerp"
+
+  - name: "Beveren"
+    slug: "beveren"
+    postal: "9120"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.25
+    province: "antwerp"
+
+# Limbourg (42 communes)
+limburg:
+  - name: "Hasselt"
+    slug: "hasselt"
+    postal: "3500"
+    has_subpages: false
+    geo:
+      lat: 50.9311
+      lng: 5.3378
+    province: "limburg"
+
+  - name: "Genk"
+    slug: "genk"
+    postal: "3600"
+    has_subpages: false
+    geo:
+      lat: 50.9653
+      lng: 5.5
+    province: "limburg"
+
+  - name: "Sint-Truiden"
+    slug: "sint-truiden"
+    postal: "3800"
+    has_subpages: false
+    geo:
+      lat: 50.8167
+      lng: 5.1833
+    province: "limburg"
+
+  - name: "Beringen"
+    slug: "beringen"
+    postal: "3580"
+    has_subpages: false
+    geo:
+      lat: 51.05
+      lng: 5.2167
+    province: "limburg"
+
+  - name: "Lommel"
+    slug: "lommel"
+    postal: "3920"
+    has_subpages: false
+    geo:
+      lat: 51.2333
+      lng: 5.3167
+    province: "limburg"
+
+  - name: "Tongeren"
+    slug: "tongeren"
+    postal: "3700"
+    has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 5.4667
+    province: "limburg"
+
+  - name: "Maasmechelen"
+    slug: "maasmechelen"
+    postal: "3630"
+    has_subpages: false
+    geo:
+      lat: 50.9667
+      lng: 5.7
+    province: "limburg"
+
+  - name: "Heusden-Zolder"
+    slug: "heusden-zolder"
+    postal: "3550"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 5.2833
+    province: "limburg"
+
+  - name: "Bilzen"
+    slug: "bilzen"
+    postal: "3740"
+    has_subpages: false
+    geo:
+      lat: 50.8667
+      lng: 5.5167
+    province: "limburg"
+
+  - name: "Diepenbeek"
+    slug: "diepenbeek"
+    postal: "3590"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 5.4167
+    province: "limburg"
+
+  - name: "Lanaken"
+    slug: "lanaken"
+    postal: "3620"
+    has_subpages: false
+    geo:
+      lat: 50.9
+      lng: 5.65
+    province: "limburg"
+
+  - name: "Bree"
+    slug: "bree"
+    postal: "3960"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 5.6
+    province: "limburg"
+
+  - name: "Leopoldsburg"
+    slug: "leopoldsburg"
+    postal: "3970"
+    has_subpages: false
+    geo:
+      lat: 51.1167
+      lng: 5.25
+    province: "limburg"
+
+  - name: "Peer"
+    slug: "peer"
+    postal: "3990"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 5.4667
+    province: "limburg"
+
+  - name: "Hamont-Achel"
+    slug: "hamont-achel"
+    postal: "3930"
+    has_subpages: false
+    geo:
+      lat: 51.2667
+      lng: 5.5333
+    province: "limburg"
+
+  - name: "Houthalen-Helchteren"
+    slug: "houthalen-helchteren"
+    postal: "3530"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 5.3833
+    province: "limburg"
+
+  - name: "Tessenderlo"
+    slug: "tessenderlo"
+    postal: "3980"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 5.0833
+    province: "limburg"
+
+  - name: "Ham"
+    slug: "ham"
+    postal: "3945"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 5.1667
+    province: "limburg"
+
+  - name: "Zonhoven"
+    slug: "zonhoven"
+    postal: "3520"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 5.3667
+    province: "limburg"
+
+  - name: "As"
+    slug: "as"
+    postal: "3665"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 5.5833
+    province: "limburg"
+
+  - name: "Zutendaal"
+    slug: "zutendaal"
+    postal: "3690"
+    has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 5.5667
+    province: "limburg"
+
+  - name: "Oudsbergen"
+    slug: "oudsbergen"
+    postal: "3670"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 5.5833
+    province: "limburg"
+
+  - name: "Dilsen-Stokkem"
+    slug: "dilsen-stokkem"
+    postal: "3650"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 5.7167
+    province: "limburg"
+
+  - name: "Maaseik"
+    slug: "maaseik"
+    postal: "3680"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 5.7833
+    province: "limburg"
+
+  - name: "Kinrooi"
+    slug: "kinrooi"
+    postal: "3640"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 5.75
+    province: "limburg"
+
+  - name: "Bocholt"
+    slug: "bocholt"
+    postal: "3950"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 5.5833
+    province: "limburg"
+
+  - name: "Hechtel-Eksel"
+    slug: "hechtel-eksel"
+    postal: "3940"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 5.3667
+    province: "limburg"
+
+  - name: "Pelt"
+    slug: "pelt"
+    postal: "3900"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 5.4333
+    province: "limburg"
+
+  - name: "Herk-de-Stad"
+    slug: "herk-de-stad"
+    postal: "3540"
+    has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 5.1667
+    province: "limburg"
+
+  - name: "Lummen"
+    slug: "lummen"
+    postal: "3560"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 5.2
+    province: "limburg"
+
+  - name: "Nieuwerkerken"
+    slug: "nieuwerkerken"
+    postal: "3850"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 5.1333
+    province: "limburg"
+
+  - name: "Gingelom"
+    slug: "gingelom"
+    postal: "3890"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 5.1333
+    province: "limburg"
+
+  - name: "Borgloon"
+    slug: "borgloon"
+    postal: "3840"
+    has_subpages: false
+    geo:
+      lat: 50.8
+      lng: 5.35
+    province: "limburg"
+
+  - name: "Heers"
+    slug: "heers"
+    postal: "3870"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 5.3
+    province: "limburg"
+
+  - name: "Kortessem"
+    slug: "kortessem"
+    postal: "3720"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 5.4
+    province: "limburg"
+
+  - name: "Hoeselt"
+    slug: "hoeselt"
+    postal: "3730"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 5.4833
+    province: "limburg"
+
+  - name: "Riemst"
+    slug: "riemst"
+    postal: "3770"
+    has_subpages: false
+    geo:
+      lat: 50.8167
+      lng: 5.6
+    province: "limburg"
+
+  - name: "Voeren"
+    slug: "voeren"
+    postal: "3790"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 5.8167
+    province: "limburg"
+
+  - name: "Alken"
+    slug: "alken"
+    postal: "3570"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 5.3
+    province: "limburg"
+
+  - name: "Wellen"
+    slug: "wellen"
+    postal: "3830"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 5.35
+    province: "limburg"
+
+  - name: "Herstappe"
+    slug: "herstappe"
+    postal: "3717"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 5.4167
+    province: "limburg"
+
+  - name: "Boutersem"
+    slug: "boutersem-limburg"
+    postal: "3370"
+    has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 4.8333
+    province: "limburg"
+
+# Flandre orientale (60 communes)
+east_flanders:
+  - name: "Gent"
+    slug: "gent"
+    postal: "9000"
+    has_subpages: false
+    geo:
+      lat: 51.0543
+      lng: 3.7174
+    province: "east_flanders"
+
+  - name: "Aalst"
+    slug: "aalst"
+    postal: "9300"
+    has_subpages: false
+    geo:
+      lat: 50.9367
+      lng: 4.04
+    province: "east_flanders"
+
+  - name: "Sint-Niklaas"
+    slug: "sint-niklaas"
+    postal: "9100"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 4.1333
+    province: "east_flanders"
+
+  - name: "Dendermonde"
+    slug: "dendermonde"
+    postal: "9200"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 4.1
+    province: "east_flanders"
+
+  - name: "Lokeren"
+    slug: "lokeren"
+    postal: "9160"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 3.9833
+    province: "east_flanders"
+
+  - name: "Wetteren"
+    slug: "wetteren"
+    postal: "9230"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.8833
+    province: "east_flanders"
+
+  - name: "Ronse"
+    slug: "ronse"
+    postal: "9600"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 3.6
+    province: "east_flanders"
+
+  - name: "Eeklo"
+    slug: "eeklo"
+    postal: "9900"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 3.5667
+    province: "east_flanders"
+
+  - name: "Zottegem"
+    slug: "zottegem"
+    postal: "9620"
+    has_subpages: false
+    geo:
+      lat: 50.8667
+      lng: 3.8167
+    province: "east_flanders"
+
+  - name: "Geraardsbergen"
+    slug: "geraardsbergen"
+    postal: "9500"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 3.8833
+    province: "east_flanders"
+
+  - name: "Ninove"
+    slug: "ninove"
+    postal: "9400"
+    has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 4.0333
+    province: "east_flanders"
+
+  - name: "Temse"
+    slug: "temse"
+    postal: "9140"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 4.2167
+    province: "east_flanders"
+
+  - name: "Hamme"
+    slug: "hamme"
+    postal: "9220"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 4.1333
+    province: "east_flanders"
+
+  - name: "Zele"
+    slug: "zele"
+    postal: "9240"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 4.0333
+    province: "east_flanders"
+
+  - name: "Buggenhout"
+    slug: "buggenhout"
+    postal: "9255"
+    has_subpages: false
+    geo:
+      lat: 51.0167
+      lng: 4.2
+    province: "east_flanders"
+
+  - name: "Lebbeke"
+    slug: "lebbeke"
+    postal: "9280"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 4.1333
+    province: "east_flanders"
+
+  - name: "Berlare"
+    slug: "berlare"
+    postal: "9290"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 4.0
+    province: "east_flanders"
+
+  - name: "Wichelen"
+    slug: "wichelen"
+    postal: "9260"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.9667
+    province: "east_flanders"
+
+  - name: "Laarne"
+    slug: "laarne"
+    postal: "9270"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 3.85
+    province: "east_flanders"
+
+  - name: "Destelbergen"
+    slug: "destelbergen"
+    postal: "9070"
+    has_subpages: false
+    geo:
+      lat: 51.05
+      lng: 3.8
+    province: "east_flanders"
+
+  - name: "Melle"
+    slug: "melle"
+    postal: "9090"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.8
+    province: "east_flanders"
+
+  - name: "Merelbeke"
+    slug: "merelbeke"
+    postal: "9820"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.75
+    province: "east_flanders"
+
+  - name: "De Pinte"
+    slug: "de-pinte"
+    postal: "9840"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 3.65
+    province: "east_flanders"
+
+  - name: "Nazareth"
+    slug: "nazareth"
+    postal: "9810"
+    has_subpages: false
+    geo:
+      lat: 50.95
+      lng: 3.6
+    province: "east_flanders"
+
+  - name: "Gavere"
+    slug: "gavere"
+    postal: "9890"
+    has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 3.6667
+    province: "east_flanders"
+
+  - name: "Kruisem"
+    slug: "kruisem"
+    postal: "9770"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 3.5167
+    province: "east_flanders"
+
+  - name: "Zwalm"
+    slug: "zwalm"
+    postal: "9630"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 3.7167
+    province: "east_flanders"
+
+  - name: "Lierde"
+    slug: "lierde"
+    postal: "9570"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.85
+    province: "east_flanders"
+
+  - name: "Brakel"
+    slug: "brakel"
+    postal: "9660"
+    has_subpages: false
+    geo:
+      lat: 50.8
+      lng: 3.75
+    province: "east_flanders"
+
+  - name: "Kluisbergen"
+    slug: "kluisbergen"
+    postal: "9690"
+    has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 3.5167
+    province: "east_flanders"
+
+  - name: "Oudenaarde"
+    slug: "oudenaarde"
+    postal: "9700"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.6
+    province: "east_flanders"
+
+  - name: "Wortegem-Petegem"
+    slug: "wortegem-petegem"
+    postal: "9790"
+    has_subpages: false
+    geo:
+      lat: 50.8667
+      lng: 3.5333
+    province: "east_flanders"
+
+  - name: "Horebeke"
+    slug: "horebeke"
+    postal: "9667"
+    has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 3.6833
+    province: "east_flanders"
+
+  - name: "Maarkedal"
+    slug: "maarkedal"
+    postal: "9680"
+    has_subpages: false
+    geo:
+      lat: 50.8
+      lng: 3.6
+    province: "east_flanders"
+
+  - name: "Deinze"
+    slug: "deinze"
+    postal: "9800"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 3.5333
+    province: "east_flanders"
+
+  - name: "Lievegem"
+    slug: "lievegem"
+    postal: "9930"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 3.5667
+    province: "east_flanders"
+
+  - name: "Aalter"
+    slug: "aalter"
+    postal: "9880"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 3.45
+    province: "east_flanders"
+
+  - name: "Zelzate"
+    slug: "zelzate"
+    postal: "9060"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 3.8167
+    province: "east_flanders"
+
+  - name: "Wachtebeke"
+    slug: "wachtebeke"
+    postal: "9185"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 3.8833
+    province: "east_flanders"
+
+  - name: "Moerbeke"
+    slug: "moerbeke"
+    postal: "9180"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 3.95
+    province: "east_flanders"
+
+  - name: "Stekene"
+    slug: "stekene"
+    postal: "9190"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.0333
+    province: "east_flanders"
+
+  - name: "Sint-Gillis-Waas"
+    slug: "sint-gillis-waas"
+    postal: "9170"
+    has_subpages: false
+    geo:
+      lat: 51.2167
+      lng: 4.1167
+    province: "east_flanders"
+
+  - name: "Kruibeke"
+    slug: "kruibeke"
+    postal: "9150"
+    has_subpages: false
+    geo:
+      lat: 51.1667
+      lng: 4.3
+    province: "east_flanders"
+
+  - name: "Assenede"
+    slug: "assenede"
+    postal: "9960"
+    has_subpages: false
+    geo:
+      lat: 51.2333
+      lng: 3.75
+    province: "east_flanders"
+
+  - name: "Kaprijke"
+    slug: "kaprijke"
+    postal: "9970"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 3.6167
+    province: "east_flanders"
+
+  - name: "Evergem"
+    slug: "evergem"
+    postal: "9940"
+    has_subpages: false
+    geo:
+      lat: 51.1167
+      lng: 3.6833
+    province: "east_flanders"
+
+  - name: "Lochristi"
+    slug: "lochristi"
+    postal: "9080"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 3.8333
+    province: "east_flanders"
+
+  - name: "Lochristie"
+    slug: "lochristie"
+    postal: "9080"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 3.8333
+    province: "east_flanders"
+
+  - name: "Oosterzele"
+    slug: "oosterzele"
+    postal: "9860"
+    has_subpages: false
+    geo:
+      lat: 50.95
+      lng: 3.8
+    province: "east_flanders"
+
+  - name: "Sint-Lievens-Houtem"
+    slug: "sint-lievens-houtem"
+    postal: "9520"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 3.8667
+    province: "east_flanders"
+
+  - name: "Herzele"
+    slug: "herzele"
+    postal: "9550"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 3.8833
+    province: "east_flanders"
+
+  - name: "Haaltert"
+    slug: "haaltert"
+    postal: "9450"
+    has_subpages: false
+    geo:
+      lat: 50.9
+      lng: 4.0
+    province: "east_flanders"
+
+  - name: "Erpe-Mere"
+    slug: "erpe-mere"
+    postal: "9420"
+    has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 3.9667
+    province: "east_flanders"
+
+  - name: "Lede"
+    slug: "lede"
+    postal: "9340"
+    has_subpages: false
+    geo:
+      lat: 50.9667
+      lng: 3.9833
+    province: "east_flanders"
+
+  - name: "Denderleeuw"
+    slug: "denderleeuw"
+    postal: "9470"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 4.0667
+    province: "east_flanders"
+
+  - name: "Affligem"
+    slug: "affligem"
+    postal: "1790"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 4.1167
+    province: "east_flanders"
+
+  - name: "Sint-Martens-Latem"
+    slug: "sint-martens-latem"
+    postal: "9830"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.6333
+    province: "east_flanders"
+
+  - name: "Maldegem"
+    slug: "maldegem"
+    postal: "9990"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 3.45
+    province: "east_flanders"
+
+  - name: "Damme"
+    slug: "damme"
+    postal: "8340"
+    has_subpages: false
+    geo:
+      lat: 51.25
+      lng: 3.2833
+    province: "east_flanders"
+
+  - name: "Knesselare"
+    slug: "knesselare"
+    postal: "9910"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 3.4167
+    province: "east_flanders"
+
+# Flandre occidentale (64 communes)
+west_flanders:
+  - name: "Brugge"
+    slug: "brugge"
+    postal: "8000"
+    has_subpages: false
+    geo:
+      lat: 51.2093
+      lng: 3.2247
+    province: "west_flanders"
+
+  - name: "Oostende"
+    slug: "oostende"
+    postal: "8400"
+    has_subpages: false
+    geo:
+      lat: 51.225
+      lng: 2.9167
+    province: "west_flanders"
+
+  - name: "Kortrijk"
+    slug: "kortrijk"
+    postal: "8500"
+    has_subpages: false
+    geo:
+      lat: 50.8283
+      lng: 3.265
+    province: "west_flanders"
+
+  - name: "Roeselare"
+    slug: "roeselare"
+    postal: "8800"
+    has_subpages: false
+    geo:
+      lat: 50.95
+      lng: 3.1167
+    province: "west_flanders"
+
+  - name: "Knokke-Heist"
+    slug: "knokke-heist"
+    postal: "8300"
+    has_subpages: false
+    geo:
+      lat: 51.35
+      lng: 3.2833
+    province: "west_flanders"
+
+  - name: "Ieper"
+    slug: "ieper"
+    postal: "8900"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 2.8833
+    province: "west_flanders"
+
+  - name: "Waregem"
+    slug: "waregem"
+    postal: "8790"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 3.4167
+    province: "west_flanders"
+
+  - name: "Izegem"
+    slug: "izegem"
+    postal: "8870"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 3.2167
+    province: "west_flanders"
+
+  - name: "Harelbeke"
+    slug: "harelbeke"
+    postal: "8530"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.3
+    province: "west_flanders"
+
+  - name: "Menen"
+    slug: "menen"
+    postal: "8930"
+    has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 3.1167
+    province: "west_flanders"
+
+  - name: "Wevelgem"
+    slug: "wevelgem"
+    postal: "8560"
+    has_subpages: false
+    geo:
+      lat: 50.8
+      lng: 3.1833
+    province: "west_flanders"
+
+  - name: "Kuurne"
+    slug: "kuurne"
+    postal: "8520"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.2833
+    province: "west_flanders"
+
+  - name: "Torhout"
+    slug: "torhout"
+    postal: "8820"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 3.1
+    province: "west_flanders"
+
+  - name: "Tielt"
+    slug: "tielt"
+    postal: "8700"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.3333
+    province: "west_flanders"
+
+  - name: "Blankenberge"
+    slug: "blankenberge"
+    postal: "8370"
+    has_subpages: false
+    geo:
+      lat: 51.3167
+      lng: 3.1333
+    province: "west_flanders"
+
+  - name: "Middelkerke"
+    slug: "middelkerke"
+    postal: "8430"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 2.8167
+    province: "west_flanders"
+
+  - name: "De Haan"
+    slug: "de-haan"
+    postal: "8420"
+    has_subpages: false
+    geo:
+      lat: 51.2833
+      lng: 3.0333
+    province: "west_flanders"
+
+  - name: "Bredene"
+    slug: "bredene"
+    postal: "8450"
+    has_subpages: false
+    geo:
+      lat: 51.25
+      lng: 2.9667
+    province: "west_flanders"
+
+  - name: "Oudenburg"
+    slug: "oudenburg"
+    postal: "8460"
+    has_subpages: false
+    geo:
+      lat: 51.2
+      lng: 3.0
+    province: "west_flanders"
+
+  - name: "Gistel"
+    slug: "gistel"
+    postal: "8470"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 2.9667
+    province: "west_flanders"
+
+  - name: "Jabbeke"
+    slug: "jabbeke"
+    postal: "8490"
+    has_subpages: false
+    geo:
+      lat: 51.1833
+      lng: 3.1
+    province: "west_flanders"
+
+  - name: "Zedelgem"
+    slug: "zedelgem"
+    postal: "8210"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 3.1333
+    province: "west_flanders"
+
+  - name: "Oostkamp"
+    slug: "oostkamp"
+    postal: "8020"
+    has_subpages: false
+    geo:
+      lat: 51.15
+      lng: 3.2333
+    province: "west_flanders"
+
+  - name: "Beernem"
+    slug: "beernem"
+    postal: "8730"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 3.3333
+    province: "west_flanders"
+
+  - name: "Wingene"
+    slug: "wingene"
+    postal: "8750"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 3.2667
+    province: "west_flanders"
+
+  - name: "Ruiselede"
+    slug: "ruiselede"
+    postal: "8755"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 3.3833
+    province: "west_flanders"
+
+  - name: "Dentergem"
+    slug: "dentergem"
+    postal: "8720"
+    has_subpages: false
+    geo:
+      lat: 50.9667
+      lng: 3.4167
+    province: "west_flanders"
+
+  - name: "Wielsbeke"
+    slug: "wielsbeke"
+    postal: "8710"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 3.3833
+    province: "west_flanders"
+
+  - name: "Oostrozebeke"
+    slug: "oostrozebeke"
+    postal: "8780"
+    has_subpages: false
+    geo:
+      lat: 50.9333
+      lng: 3.35
+    province: "west_flanders"
+
+  - name: "Meulebeke"
+    slug: "meulebeke"
+    postal: "8760"
+    has_subpages: false
+    geo:
+      lat: 50.95
+      lng: 3.2833
+    province: "west_flanders"
+
+  - name: "Ingelmunster"
+    slug: "ingelmunster"
+    postal: "8770"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 3.25
+    province: "west_flanders"
+
+  - name: "Lendelede"
+    slug: "lendelede"
+    postal: "8860"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 3.2333
+    province: "west_flanders"
+
+  - name: "Moorslede"
+    slug: "moorslede"
+    postal: "8890"
+    has_subpages: false
+    geo:
+      lat: 50.8833
+      lng: 3.0833
+    province: "west_flanders"
+
+  - name: "Ledegem"
+    slug: "ledegem"
+    postal: "8880"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.1167
+    province: "west_flanders"
+
+  - name: "Zwevegem"
+    slug: "zwevegem"
+    postal: "8550"
+    has_subpages: false
+    geo:
+      lat: 50.8
+      lng: 3.3333
+    province: "west_flanders"
+
+  - name: "Avelgem"
+    slug: "avelgem"
+    postal: "8580"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 3.45
+    province: "west_flanders"
+
+  - name: "Spiere-Helkijn"
+    slug: "spiere-helkijn"
+    postal: "8587"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 3.35
+    province: "west_flanders"
+
+  - name: "Deerlijk"
+    slug: "deerlijk"
+    postal: "8540"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 3.35
+    province: "west_flanders"
+
+  - name: "Anzegem"
+    slug: "anzegem"
+    postal: "8570"
+    has_subpages: false
+    geo:
+      lat: 50.8333
+      lng: 3.4833
+    province: "west_flanders"
+
+  - name: "Poperinge"
+    slug: "poperinge"
+    postal: "8970"
+    has_subpages: false
+    geo:
+      lat: 50.85
+      lng: 2.7167
+    province: "west_flanders"
+
+  - name: "Vleteren"
+    slug: "vleteren"
+    postal: "8640"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 2.7333
+    province: "west_flanders"
+
+  - name: "Lo-Reninge"
+    slug: "lo-reninge"
+    postal: "8647"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 2.75
+    province: "west_flanders"
+
+  - name: "Alveringem"
+    slug: "alveringem"
+    postal: "8690"
+    has_subpages: false
+    geo:
+      lat: 51.0167
+      lng: 2.7167
+    province: "west_flanders"
+
+  - name: "Veurne"
+    slug: "veurne"
+    postal: "8630"
+    has_subpages: false
+    geo:
+      lat: 51.0667
+      lng: 2.6667
+    province: "west_flanders"
+
+  - name: "De Panne"
+    slug: "de-panne"
+    postal: "8660"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 2.5833
+    province: "west_flanders"
+
+  - name: "Koksijde"
+    slug: "koksijde"
+    postal: "8670"
+    has_subpages: false
+    geo:
+      lat: 51.1167
+      lng: 2.65
+    province: "west_flanders"
+
+  - name: "Nieuwpoort"
+    slug: "nieuwpoort"
+    postal: "8620"
+    has_subpages: false
+    geo:
+      lat: 51.1333
+      lng: 2.75
+    province: "west_flanders"
+
+  - name: "Diksmuide"
+    slug: "diksmuide"
+    postal: "8600"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 2.8667
+    province: "west_flanders"
+
+  - name: "Koekelare"
+    slug: "koekelare"
+    postal: "8680"
+    has_subpages: false
+    geo:
+      lat: 51.0833
+      lng: 2.9667
+    province: "west_flanders"
+
+  - name: "Kortemark"
+    slug: "kortemark"
+    postal: "8610"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 3.0333
+    province: "west_flanders"
+
+  - name: "Houthulst"
+    slug: "houthulst"
+    postal: "8650"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 2.95
+    province: "west_flanders"
+
+  - name: "Langemark-Poelkapelle"
+    slug: "langemark-poelkapelle"
+    postal: "8920"
+    has_subpages: false
+    geo:
+      lat: 50.9167
+      lng: 2.9167
+    province: "west_flanders"
+
+  - name: "Zonnebeke"
+    slug: "zonnebeke"
+    postal: "8980"
+    has_subpages: false
+    geo:
+      lat: 50.8667
+      lng: 3.0
+    province: "west_flanders"
+
+  - name: "Wervik"
+    slug: "wervik"
+    postal: "8940"
+    has_subpages: false
+    geo:
+      lat: 50.7833
+      lng: 3.0333
+    province: "west_flanders"
+
+  - name: "Heuvelland"
+    slug: "heuvelland"
+    postal: "8950"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 2.8167
+    province: "west_flanders"
+
+  - name: "Messines"
+    slug: "messines"
+    postal: "8957"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 2.9
+    province: "west_flanders"
+
+  - name: "Staden"
+    slug: "staden"
+    postal: "8840"
+    has_subpages: false
+    geo:
+      lat: 50.9833
+      lng: 3.0167
+    province: "west_flanders"
+
+  - name: "Hooglede"
+    slug: "hooglede"
+    postal: "8830"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.0833
+    province: "west_flanders"
+
+  - name: "Lichtervelde"
+    slug: "lichtervelde"
+    postal: "8810"
+    has_subpages: false
+    geo:
+      lat: 51.0333
+      lng: 3.15
+    province: "west_flanders"
+
+  - name: "Ardooie"
+    slug: "ardooie"
+    postal: "8850"
+    has_subpages: false
+    geo:
+      lat: 50.9667
+      lng: 3.2
+    province: "west_flanders"
+
+  - name: "Pittem"
+    slug: "pittem"
+    postal: "8740"
+    has_subpages: false
+    geo:
+      lat: 51.0
+      lng: 3.2667
+    province: "west_flanders"
+
+  - name: "Ichtegem"
+    slug: "ichtegem"
+    postal: "8480"
+    has_subpages: false
+    geo:
+      lat: 51.1
+      lng: 3.0167
+    province: "west_flanders"
+
+  - name: "De Moeren"
+    slug: "de-moeren"
+    postal: "8630"
+    has_subpages: false
+    geo:
+      lat: 51.0167
+      lng: 2.6333
+    province: "west_flanders"
+
+  - name: "Zuienkerke"
+    slug: "zuienkerke"
+    postal: "8377"
+    has_subpages: false
+    geo:
+      lat: 51.2667
+      lng: 3.15
+    province: "west_flanders"
+
+# Hainaut (68 communes)
+hainaut:
+  - name: "Charleroi"
+    slug: "charleroi"
+    postal: "6000"
+    has_subpages: false
+    geo:
+      lat: 50.4108
+      lng: 4.4447
+    province: "hainaut"
+
+  - name: "Mons"
+    slug: "mons"
+    postal: "7000"
+    has_subpages: false
+    geo:
+      lat: 50.4542
+      lng: 3.9567
+    province: "hainaut"
+
+  - name: "La Louvière"
+    slug: "la-louviere"
+    postal: "7100"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 4.1833
+    province: "hainaut"
+
+  - name: "Tournai"
+    slug: "tournai"
+    postal: "7500"
+    has_subpages: false
+    geo:
+      lat: 50.6056
+      lng: 3.3878
+    province: "hainaut"
+
+  - name: "Mouscron"
+    slug: "mouscron"
+    postal: "7700"
+    has_subpages: false
+    geo:
+      lat: 50.7333
+      lng: 3.2167
+    province: "hainaut"
+
+  - name: "Binche"
+    slug: "binche"
+    postal: "7130"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 4.1667
+    province: "hainaut"
+
+  - name: "Soignies"
+    slug: "soignies"
+    postal: "7060"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 4.0667
+    province: "hainaut"
+
+  - name: "Châtelet"
+    slug: "chatelet"
+    postal: "6200"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 4.5333
+    province: "hainaut"
+
+  - name: "Manage"
+    slug: "manage"
+    postal: "7170"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 4.2333
+    province: "hainaut"
+
+  - name: "Courcelles"
+    slug: "courcelles"
+    postal: "6180"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 4.3667
+    province: "hainaut"
+
+  - name: "Frameries"
+    slug: "frameries"
+    postal: "7080"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 3.8833
+    province: "hainaut"
+
+  - name: "Quaregnon"
+    slug: "quaregnon"
+    postal: "7390"
+    has_subpages: false
+    geo:
+      lat: 50.45
+      lng: 3.8667
+    province: "hainaut"
+
+  - name: "Boussu"
+    slug: "boussu"
+    postal: "7300"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 3.7833
+    province: "hainaut"
+
+  - name: "Saint-Ghislain"
+    slug: "saint-ghislain"
+    postal: "7330"
+    has_subpages: false
+    geo:
+      lat: 50.45
+      lng: 3.8167
+    province: "hainaut"
+
+  - name: "Dour"
+    slug: "dour"
+    postal: "7370"
+    has_subpages: false
+    geo:
+      lat: 50.3833
+      lng: 3.7833
+    province: "hainaut"
+
+  - name: "Quiévrain"
+    slug: "quievrain"
+    postal: "7380"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 3.6833
+    province: "hainaut"
+
+  - name: "Hensies"
+    slug: "hensies"
+    postal: "7350"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 3.6833
+    province: "hainaut"
+
+  - name: "Colfontaine"
+    slug: "colfontaine"
+    postal: "7340"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 3.85
+    province: "hainaut"
+
+  - name: "Jurbise"
+    slug: "jurbise"
+    postal: "7050"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 3.9167
+    province: "hainaut"
+
+  - name: "Lens"
+    slug: "lens"
+    postal: "7870"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 3.9
+    province: "hainaut"
+
+  - name: "Chièvres"
+    slug: "chievres"
+    postal: "7950"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 3.8
+    province: "hainaut"
+
+  - name: "Brugelette"
+    slug: "brugelette"
+    postal: "7940"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 3.85
+    province: "hainaut"
+
+  - name: "Ath"
+    slug: "ath"
+    postal: "7800"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 3.7667
+    province: "hainaut"
+
+  - name: "Lessines"
+    slug: "lessines"
+    postal: "7860"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 3.8333
+    province: "hainaut"
+
+  - name: "Ellezelles"
+    slug: "ellezelles"
+    postal: "7890"
+    has_subpages: false
+    geo:
+      lat: 50.7333
+      lng: 3.6833
+    province: "hainaut"
+
+  - name: "Flobecq"
+    slug: "flobecq"
+    postal: "7880"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 3.7333
+    province: "hainaut"
+
+  - name: "Enghien"
+    slug: "enghien"
+    postal: "7850"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 4.0333
+    province: "hainaut"
+
+  - name: "Silly"
+    slug: "silly"
+    postal: "7830"
+    has_subpages: false
+    geo:
+      lat: 50.65
+      lng: 3.9167
+    province: "hainaut"
+
+  - name: "Braine-le-Comte"
+    slug: "braine-le-comte"
+    postal: "7090"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 4.1333
+    province: "hainaut"
+
+  - name: "Écaussinnes"
+    slug: "ecaussinnes"
+    postal: "7190"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 4.1667
+    province: "hainaut"
+
+  - name: "Seneffe"
+    slug: "seneffe"
+    postal: "7180"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 4.2667
+    province: "hainaut"
+
+  - name: "Le Roeulx"
+    slug: "le-roeulx"
+    postal: "7070"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 4.1167
+    province: "hainaut"
+
+  - name: "Estinnes"
+    slug: "estinnes"
+    postal: "7120"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 4.1
+    province: "hainaut"
+
+  - name: "Anderlues"
+    slug: "anderlues"
+    postal: "6150"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 4.2667
+    province: "hainaut"
+
+  - name: "Fontaine-l'Évêque"
+    slug: "fontaine-leveque"
+    postal: "6140"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 4.3333
+    province: "hainaut"
+
+  - name: "Chapelle-lez-Herlaimont"
+    slug: "chapelle-lez-herlaimont"
+    postal: "7160"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 4.2833
+    province: "hainaut"
+
+  - name: "Morlanwelz"
+    slug: "morlanwelz"
+    postal: "7140"
+    has_subpages: false
+    geo:
+      lat: 50.45
+      lng: 4.2333
+    province: "hainaut"
+
+  - name: "Mont-Sainte-Aldegonde"
+    slug: "mont-sainte-aldegonde"
+    postal: "7141"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 4.2333
+    province: "hainaut"
+
+  - name: "Fleurus"
+    slug: "fleurus"
+    postal: "6220"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 4.55
+    province: "hainaut"
+
+  - name: "Farciennes"
+    slug: "farciennes"
+    postal: "6240"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 4.55
+    province: "hainaut"
+
+  - name: "Aiseau-Presles"
+    slug: "aiseau-presles"
+    postal: "6250"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 4.5833
+    province: "hainaut"
+
+  - name: "Pont-à-Celles"
+    slug: "pont-a-celles"
+    postal: "6230"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 4.3667
+    province: "hainaut"
+
+  - name: "Les Bons Villers"
+    slug: "les-bons-villers"
+    postal: "6210"
+    has_subpages: false
+    geo:
+      lat: 50.5167
+      lng: 4.4167
+    province: "hainaut"
+
+  - name: "Gerpinnes"
+    slug: "gerpinnes"
+    postal: "6280"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 4.5167
+    province: "hainaut"
+
+  - name: "Ham-sur-Heure-Nalinnes"
+    slug: "ham-sur-heure-nalinnes"
+    postal: "6120"
+    has_subpages: false
+    geo:
+      lat: 50.3167
+      lng: 4.3833
+    province: "hainaut"
+
+  - name: "Montigny-le-Tilleul"
+    slug: "montigny-le-tilleul"
+    postal: "6110"
+    has_subpages: false
+    geo:
+      lat: 50.3667
+      lng: 4.3667
+    province: "hainaut"
+
+  - name: "Thuin"
+    slug: "thuin"
+    postal: "6530"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 4.2833
+    province: "hainaut"
+
+  - name: "Lobbes"
+    slug: "lobbes"
+    postal: "6540"
+    has_subpages: false
+    geo:
+      lat: 50.35
+      lng: 4.2667
+    province: "hainaut"
+
+  - name: "Merbes-le-Château"
+    slug: "merbes-le-chateau"
+    postal: "6567"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 4.1667
+    province: "hainaut"
+
+  - name: "Erquelinnes"
+    slug: "erquelinnes"
+    postal: "6560"
+    has_subpages: false
+    geo:
+      lat: 50.3167
+      lng: 4.1167
+    province: "hainaut"
+
+  - name: "Beaumont"
+    slug: "beaumont"
+    postal: "6500"
+    has_subpages: false
+    geo:
+      lat: 50.2333
+      lng: 4.2333
+    province: "hainaut"
+
+  - name: "Sivry-Rance"
+    slug: "sivry-rance"
+    postal: "6470"
+    has_subpages: false
+    geo:
+      lat: 50.1667
+      lng: 4.2167
+    province: "hainaut"
+
+  - name: "Froidchapelle"
+    slug: "froidchapelle"
+    postal: "6440"
+    has_subpages: false
+    geo:
+      lat: 50.15
+      lng: 4.3167
+    province: "hainaut"
+
+  - name: "Chimay"
+    slug: "chimay"
+    postal: "6460"
+    has_subpages: false
+    geo:
+      lat: 50.05
+      lng: 4.3167
+    province: "hainaut"
+
+  - name: "Momignies"
+    slug: "momignies"
+    postal: "6590"
+    has_subpages: false
+    geo:
+      lat: 50.0333
+      lng: 4.1667
+    province: "hainaut"
+
+  - name: "Comines-Warneton"
+    slug: "comines-warneton"
+    postal: "7780"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 3.0167
+    province: "hainaut"
+
+  - name: "Estaimpuis"
+    slug: "estaimpuis"
+    postal: "7730"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 3.2833
+    province: "hainaut"
+
+  - name: "Pecq"
+    slug: "pecq"
+    postal: "7740"
+    has_subpages: false
+    geo:
+      lat: 50.6833
+      lng: 3.3333
+    province: "hainaut"
+
+  - name: "Celles"
+    slug: "celles"
+    postal: "7760"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 3.45
+    province: "hainaut"
+
+  - name: "Mont-de-l'Enclus"
+    slug: "mont-de-lenclus"
+    postal: "7750"
+    has_subpages: false
+    geo:
+      lat: 50.75
+      lng: 3.5
+    province: "hainaut"
+
+  - name: "Rumes"
+    slug: "rumes"
+    postal: "7610"
+    has_subpages: false
+    geo:
+      lat: 50.5167
+      lng: 3.3
+    province: "hainaut"
+
+  - name: "Brunehaut"
+    slug: "brunehaut"
+    postal: "7620"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 3.4
+    province: "hainaut"
+
+  - name: "Antoing"
+    slug: "antoing"
+    postal: "7640"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 3.45
+    province: "hainaut"
+
+  - name: "Péruwelz"
+    slug: "peruwelz"
+    postal: "7600"
+    has_subpages: false
+    geo:
+      lat: 50.5167
+      lng: 3.5833
+    province: "hainaut"
+
+  - name: "Beloeil"
+    slug: "beloeil"
+    postal: "7970"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 3.7333
+    province: "hainaut"
+
+  - name: "Bernissart"
+    slug: "bernissart"
+    postal: "7320"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 3.65
+    province: "hainaut"
+
+  - name: "Leuze-en-Hainaut"
+    slug: "leuze-en-hainaut"
+    postal: "7900"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 3.6167
+    province: "hainaut"
+
+  - name: "Frasnes-lez-Anvaing"
+    slug: "frasnes-lez-anvaing"
+    postal: "7910"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 3.5833
+    province: "hainaut"
+
+# Liège (84 communes)
+liege:
+  - name: "Liège"
+    slug: "liege-ville"
+    postal: "4000"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 5.5667
+    province: "liege"
+
+  - name: "Seraing"
+    slug: "seraing"
+    postal: "4100"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.5
+    province: "liege"
+
+  - name: "Verviers"
+    slug: "verviers"
+    postal: "4800"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.8667
+    province: "liege"
+
+  - name: "Herstal"
+    slug: "herstal"
+    postal: "4040"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.6333
+    province: "liege"
+
+  - name: "Visé"
+    slug: "vise"
+    postal: "4600"
+    has_subpages: false
+    geo:
+      lat: 50.7333
+      lng: 5.7
+    province: "liege"
+
+  - name: "Ans"
+    slug: "ans"
+    postal: "4430"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.5167
+    province: "liege"
+
+  - name: "Saint-Nicolas"
+    slug: "saint-nicolas-liege"
+    postal: "4420"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 5.5333
+    province: "liege"
+
+  - name: "Grâce-Hollogne"
+    slug: "grace-hollogne"
+    postal: "4460"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 5.5
+    province: "liege"
+
+  - name: "Flémalle"
+    slug: "flemalle"
+    postal: "4400"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 5.4667
+    province: "liege"
+
+  - name: "Chaudfontaine"
+    slug: "chaudfontaine"
+    postal: "4050"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.65
+    province: "liege"
+
+  - name: "Beyne-Heusay"
+    slug: "beyne-heusay"
+    postal: "4610"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 5.6667
+    province: "liege"
+
+  - name: "Fléron"
+    slug: "fleron"
+    postal: "4620"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 5.6833
+    province: "liege"
+
+  - name: "Soumagne"
+    slug: "soumagne"
+    postal: "4630"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 5.75
+    province: "liege"
+
+  - name: "Blegny"
+    slug: "blegny"
+    postal: "4670"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.7167
+    province: "liege"
+
+  - name: "Dalhem"
+    slug: "dalhem"
+    postal: "4607"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.7333
+    province: "liege"
+
+  - name: "Oupeye"
+    slug: "oupeye"
+    postal: "4680"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 5.65
+    province: "liege"
+
+  - name: "Bassenge"
+    slug: "bassenge"
+    postal: "4690"
+    has_subpages: false
+    geo:
+      lat: 50.7667
+      lng: 5.6167
+    province: "liege"
+
+  - name: "Juprelle"
+    slug: "juprelle"
+    postal: "4450"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 5.5333
+    province: "liege"
+
+  - name: "Awans"
+    slug: "awans"
+    postal: "4340"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.45
+    province: "liege"
+
+  - name: "Crisnée"
+    slug: "crisnee"
+    postal: "4367"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.5
+    province: "liege"
+
+  - name: "Fexhe-le-Haut-Clocher"
+    slug: "fexhe-le-haut-clocher"
+    postal: "4347"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.4167
+    province: "liege"
+
+  - name: "Remicourt"
+    slug: "remicourt"
+    postal: "4350"
+    has_subpages: false
+    geo:
+      lat: 50.6833
+      lng: 5.3167
+    province: "liege"
+
+  - name: "Oreye"
+    slug: "oreye"
+    postal: "4360"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 5.35
+    province: "liege"
+
+  - name: "Waremme"
+    slug: "waremme"
+    postal: "4300"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.25
+    province: "liege"
+
+  - name: "Berloz"
+    slug: "berloz"
+    postal: "4257"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.2167
+    province: "liege"
+
+  - name: "Geer"
+    slug: "geer"
+    postal: "4250"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.1667
+    province: "liege"
+
+  - name: "Faimes"
+    slug: "faimes"
+    postal: "4317"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.2667
+    province: "liege"
+
+  - name: "Braives"
+    slug: "braives"
+    postal: "4260"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 5.1333
+    province: "liege"
+
+  - name: "Burdinne"
+    slug: "burdinne"
+    postal: "4210"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.0833
+    province: "liege"
+
+  - name: "Héron"
+    slug: "heron"
+    postal: "4217"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 5.1
+    province: "liege"
+
+  - name: "Wanze"
+    slug: "wanze"
+    postal: "4520"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 5.2
+    province: "liege"
+
+  - name: "Huy"
+    slug: "huy"
+    postal: "4500"
+    has_subpages: false
+    geo:
+      lat: 50.5167
+      lng: 5.2333
+    province: "liege"
+
+  - name: "Amay"
+    slug: "amay"
+    postal: "4540"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 5.3167
+    province: "liege"
+
+  - name: "Engis"
+    slug: "engis"
+    postal: "4480"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 5.4
+    province: "liege"
+
+  - name: "Neupré"
+    slug: "neupre"
+    postal: "4120"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 5.4667
+    province: "liege"
+
+  - name: "Esneux"
+    slug: "esneux"
+    postal: "4130"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 5.5667
+    province: "liege"
+
+  - name: "Comblain-au-Pont"
+    slug: "comblain-au-pont"
+    postal: "4170"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 5.5833
+    province: "liege"
+
+  - name: "Aywaille"
+    slug: "aywaille"
+    postal: "4920"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 5.6667
+    province: "liege"
+
+  - name: "Sprimont"
+    slug: "sprimont"
+    postal: "4140"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 5.6667
+    province: "liege"
+
+  - name: "Trooz"
+    slug: "trooz"
+    postal: "4870"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 5.7
+    province: "liege"
+
+  - name: "Olne"
+    slug: "olne"
+    postal: "4877"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.75
+    province: "liege"
+
+  - name: "Pepinster"
+    slug: "pepinster"
+    postal: "4860"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 5.8
+    province: "liege"
+
+  - name: "Theux"
+    slug: "theux"
+    postal: "4910"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 5.8167
+    province: "liege"
+
+  - name: "Spa"
+    slug: "spa"
+    postal: "4900"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 5.8667
+    province: "liege"
+
+  - name: "Jalhay"
+    slug: "jalhay"
+    postal: "4845"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 5.9667
+    province: "liege"
+
+  - name: "Baelen"
+    slug: "baelen"
+    postal: "4837"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 5.9667
+    province: "liege"
+
+  - name: "Limbourg"
+    slug: "limbourg"
+    postal: "4830"
+    has_subpages: false
+    geo:
+      lat: 50.6167
+      lng: 5.9333
+    province: "liege"
+
+  - name: "Welkenraedt"
+    slug: "welkenraedt"
+    postal: "4840"
+    has_subpages: false
+    geo:
+      lat: 50.65
+      lng: 5.9667
+    province: "liege"
+
+  - name: "Plombières"
+    slug: "plombieres"
+    postal: "4850"
+    has_subpages: false
+    geo:
+      lat: 50.7333
+      lng: 5.9667
+    province: "liege"
+
+  - name: "Aubel"
+    slug: "aubel"
+    postal: "4880"
+    has_subpages: false
+    geo:
+      lat: 50.7
+      lng: 5.85
+    province: "liege"
+
+  - name: "Thimister-Clermont"
+    slug: "thimister-clermont"
+    postal: "4890"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.85
+    province: "liege"
+
+  - name: "Herve"
+    slug: "herve"
+    postal: "4650"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 5.8
+    province: "liege"
+
+  - name: "Dison"
+    slug: "dison"
+    postal: "4820"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 5.85
+    province: "liege"
+
+  - name: "Eupen"
+    slug: "eupen"
+    postal: "4700"
+    has_subpages: false
+    geo:
+      lat: 50.6333
+      lng: 6.0333
+    province: "liege"
+
+  - name: "La Calamine"
+    slug: "la-calamine"
+    postal: "4720"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 6.0
+    province: "liege"
+
+  - name: "Lontzen"
+    slug: "lontzen"
+    postal: "4710"
+    has_subpages: false
+    geo:
+      lat: 50.6833
+      lng: 6.0
+    province: "liege"
+
+  - name: "Raeren"
+    slug: "raeren"
+    postal: "4730"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 6.1167
+    province: "liege"
+
+  - name: "Butgenbach"
+    slug: "butgenbach"
+    postal: "4750"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 6.2
+    province: "liege"
+
+  - name: "Büllingen"
+    slug: "bullingen"
+    postal: "4760"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 6.2833
+    province: "liege"
+
+  - name: "Amel"
+    slug: "amel"
+    postal: "4770"
+    has_subpages: false
+    geo:
+      lat: 50.35
+      lng: 6.1833
+    province: "liege"
+
+  - name: "Sankt Vith"
+    slug: "sankt-vith"
+    postal: "4780"
+    has_subpages: false
+    geo:
+      lat: 50.2833
+      lng: 6.1167
+    province: "liege"
+
+  - name: "Burg-Reuland"
+    slug: "burg-reuland"
+    postal: "4790"
+    has_subpages: false
+    geo:
+      lat: 50.1833
+      lng: 6.1333
+    province: "liege"
+
+  - name: "Malmedy"
+    slug: "malmedy"
+    postal: "4960"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 6.0333
+    province: "liege"
+
+  - name: "Waimes"
+    slug: "waimes"
+    postal: "4950"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 6.1167
+    province: "liege"
+
+  - name: "Stavelot"
+    slug: "stavelot"
+    postal: "4970"
+    has_subpages: false
+    geo:
+      lat: 50.3833
+      lng: 5.9333
+    province: "liege"
+
+  - name: "Trois-Ponts"
+    slug: "trois-ponts"
+    postal: "4980"
+    has_subpages: false
+    geo:
+      lat: 50.3667
+      lng: 5.8667
+    province: "liege"
+
+  - name: "Stoumont"
+    slug: "stoumont"
+    postal: "4987"
+    has_subpages: false
+    geo:
+      lat: 50.4167
+      lng: 5.8167
+    province: "liege"
+
+  - name: "Lierneux"
+    slug: "lierneux"
+    postal: "4990"
+    has_subpages: false
+    geo:
+      lat: 50.2833
+      lng: 5.7833
+    province: "liege"
+
+  - name: "Ferrières"
+    slug: "ferrieres"
+    postal: "4190"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 5.6167
+    province: "liege"
+
+  - name: "Hamoir"
+    slug: "hamoir"
+    postal: "4180"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 5.5333
+    province: "liege"
+
+  - name: "Ouffet"
+    slug: "ouffet"
+    postal: "4590"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 5.45
+    province: "liege"
+
+  - name: "Clavier"
+    slug: "clavier"
+    postal: "4560"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 5.3667
+    province: "liege"
+
+  - name: "Anthisnes"
+    slug: "anthisnes"
+    postal: "4160"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 5.5167
+    province: "liege"
+
+  - name: "Nandrin"
+    slug: "nandrin"
+    postal: "4550"
+    has_subpages: false
+    geo:
+      lat: 50.5
+      lng: 5.4167
+    province: "liege"
+
+  - name: "Tinlot"
+    slug: "tinlot"
+    postal: "4557"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 5.3667
+    province: "liege"
+
+  - name: "Modave"
+    slug: "modave"
+    postal: "4577"
+    has_subpages: false
+    geo:
+      lat: 50.45
+      lng: 5.3
+    province: "liege"
+
+  - name: "Marchin"
+    slug: "marchin"
+    postal: "4570"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 5.2333
+    province: "liege"
+
+  - name: "Villers-le-Bouillet"
+    slug: "villers-le-bouillet"
+    postal: "4530"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 5.2667
+    province: "liege"
+
+  - name: "Verlaine"
+    slug: "verlaine"
+    postal: "4537"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 5.3167
+    province: "liege"
+
+  - name: "Saint-Georges-sur-Meuse"
+    slug: "saint-georges-sur-meuse"
+    postal: "4470"
+    has_subpages: false
+    geo:
+      lat: 50.5833
+      lng: 5.3333
+    province: "liege"
+
+  - name: "Donceel"
+    slug: "donceel"
+    postal: "4357"
+    has_subpages: false
+    geo:
+      lat: 50.65
+      lng: 5.3333
+    province: "liege"
+
+  - name: "Wasseiges"
+    slug: "wasseiges"
+    postal: "4219"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 5.0
+    province: "liege"
+
+  - name: "Hannut"
+    slug: "hannut"
+    postal: "4280"
+    has_subpages: false
+    geo:
+      lat: 50.6667
+      lng: 5.0833
+    province: "liege"
+
+  - name: "Lincent"
+    slug: "lincent"
+    postal: "4287"
+    has_subpages: false
+    geo:
+      lat: 50.7167
+      lng: 5.0333
+    province: "liege"
+
+# Namur (38 communes)
+namur:
+  - name: "Namur"
+    slug: "namur-ville"
+    postal: "5000"
+    has_subpages: false
+    geo:
+      lat: 50.4667
+      lng: 4.8667
+    province: "namur"
+
+  - name: "Sambreville"
+    slug: "sambreville"
+    postal: "5060"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 4.6
+    province: "namur"
+
+  - name: "Gembloux"
+    slug: "gembloux"
+    postal: "5030"
+    has_subpages: false
+    geo:
+      lat: 50.5667
+      lng: 4.7
+    province: "namur"
+
+  - name: "Andenne"
+    slug: "andenne"
+    postal: "5300"
+    has_subpages: false
+    geo:
+      lat: 50.4833
+      lng: 5.1
+    province: "namur"
+
+  - name: "Ciney"
+    slug: "ciney"
+    postal: "5590"
+    has_subpages: false
+    geo:
+      lat: 50.3
+      lng: 5.1
+    province: "namur"
+
+  - name: "Dinant"
+    slug: "dinant"
+    postal: "5500"
+    has_subpages: false
+    geo:
+      lat: 50.2667
+      lng: 4.9167
+    province: "namur"
+
+  - name: "Rochefort"
+    slug: "rochefort"
+    postal: "5580"
+    has_subpages: false
+    geo:
+      lat: 50.1667
+      lng: 5.2167
+    province: "namur"
+
+  - name: "Couvin"
+    slug: "couvin"
+    postal: "5660"
+    has_subpages: false
+    geo:
+      lat: 50.05
+      lng: 4.5
+    province: "namur"
+
+  - name: "Philippeville"
+    slug: "philippeville"
+    postal: "5600"
+    has_subpages: false
+    geo:
+      lat: 50.2
+      lng: 4.55
+    province: "namur"
+
+  - name: "Florennes"
+    slug: "florennes"
+    postal: "5620"
+    has_subpages: false
+    geo:
+      lat: 50.25
+      lng: 4.6
+    province: "namur"
+
+  - name: "Walcourt"
+    slug: "walcourt"
+    postal: "5650"
+    has_subpages: false
+    geo:
+      lat: 50.25
+      lng: 4.4333
+    province: "namur"
+
+  - name: "Fosses-la-Ville"
+    slug: "fosses-la-ville"
+    postal: "5070"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 4.6833
+    province: "namur"
+
+  - name: "Jemeppe-sur-Sambre"
+    slug: "jemeppe-sur-sambre"
+    postal: "5190"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 4.6667
+    province: "namur"
+
+  - name: "Floreffe"
+    slug: "floreffe"
+    postal: "5150"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 4.75
+    province: "namur"
+
+  - name: "Profondeville"
+    slug: "profondeville"
+    postal: "5170"
+    has_subpages: false
+    geo:
+      lat: 50.3833
+      lng: 4.8667
+    province: "namur"
+
+  - name: "Anhée"
+    slug: "anhee"
+    postal: "5537"
+    has_subpages: false
+    geo:
+      lat: 50.3167
+      lng: 4.8833
+    province: "namur"
+
+  - name: "Yvoir"
+    slug: "yvoir"
+    postal: "5530"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 4.8833
+    province: "namur"
+
+  - name: "Onhaye"
+    slug: "onhaye"
+    postal: "5520"
+    has_subpages: false
+    geo:
+      lat: 50.25
+      lng: 4.8333
+    province: "namur"
+
+  - name: "Hastière"
+    slug: "hastiere"
+    postal: "5540"
+    has_subpages: false
+    geo:
+      lat: 50.2167
+      lng: 4.8333
+    province: "namur"
+
+  - name: "Houyet"
+    slug: "houyet"
+    postal: "5560"
+    has_subpages: false
+    geo:
+      lat: 50.1833
+      lng: 5.0
+    province: "namur"
+
+  - name: "Beauraing"
+    slug: "beauraing"
+    postal: "5570"
+    has_subpages: false
+    geo:
+      lat: 50.1167
+      lng: 5.0667
+    province: "namur"
+
+  - name: "Gedinne"
+    slug: "gedinne"
+    postal: "5575"
+    has_subpages: false
+    geo:
+      lat: 49.9833
+      lng: 4.9333
+    province: "namur"
+
+  - name: "Bièvre"
+    slug: "bievre"
+    postal: "5555"
+    has_subpages: false
+    geo:
+      lat: 49.9667
+      lng: 5.0
+    province: "namur"
+
+  - name: "Vresse-sur-Semois"
+    slug: "vresse-sur-semois"
+    postal: "5550"
+    has_subpages: false
+    geo:
+      lat: 49.8667
+      lng: 4.9333
+    province: "namur"
+
+  - name: "Doische"
+    slug: "doische"
+    postal: "5680"
+    has_subpages: false
+    geo:
+      lat: 50.1167
+      lng: 4.75
+    province: "namur"
+
+  - name: "Viroinval"
+    slug: "viroinval"
+    postal: "5670"
+    has_subpages: false
+    geo:
+      lat: 50.0833
+      lng: 4.6
+    province: "namur"
+
+  - name: "Cerfontaine"
+    slug: "cerfontaine"
+    postal: "5630"
+    has_subpages: false
+    geo:
+      lat: 50.1667
+      lng: 4.4
+    province: "namur"
+
+  - name: "La Bruyère"
+    slug: "la-bruyere"
+    postal: "5080"
+    has_subpages: false
+    geo:
+      lat: 50.5167
+      lng: 4.7667
+    province: "namur"
+
+  - name: "Eghezée"
+    slug: "eghezee"
+    postal: "5310"
+    has_subpages: false
+    geo:
+      lat: 50.6
+      lng: 4.9167
+    province: "namur"
+
+  - name: "Fernelmont"
+    slug: "fernelmont"
+    postal: "5380"
+    has_subpages: false
+    geo:
+      lat: 50.55
+      lng: 4.9667
+    province: "namur"
+
+  - name: "Ohey"
+    slug: "ohey"
+    postal: "5350"
+    has_subpages: false
+    geo:
+      lat: 50.4333
+      lng: 5.1333
+    province: "namur"
+
+  - name: "Gesves"
+    slug: "gesves"
+    postal: "5340"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 5.0667
+    province: "namur"
+
+  - name: "Assesse"
+    slug: "assesse"
+    postal: "5330"
+    has_subpages: false
+    geo:
+      lat: 50.3667
+      lng: 5.0167
+    province: "namur"
+
+  - name: "Hamois"
+    slug: "hamois"
+    postal: "5360"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 5.1667
+    province: "namur"
+
+  - name: "Havelange"
+    slug: "havelange"
+    postal: "5370"
+    has_subpages: false
+    geo:
+      lat: 50.4
+      lng: 5.2333
+    province: "namur"
+
+  - name: "Somme-Leuze"
+    slug: "somme-leuze"
+    postal: "5377"
+    has_subpages: false
+    geo:
+      lat: 50.3333
+      lng: 5.3167
+    province: "namur"
+
+  - name: "Mettet"
+    slug: "mettet"
+    postal: "5640"
+    has_subpages: false
+    geo:
+      lat: 50.3167
+      lng: 4.6667
+    province: "namur"
+
+  - name: "Sombreffe"
+    slug: "sombreffe"
+    postal: "5140"
+    has_subpages: false
+    geo:
+      lat: 50.5333
+      lng: 4.6
+    province: "namur"
+
+# Luxembourg (44 communes)
+luxembourg:
+  - name: "Arlon"
+    slug: "arlon"
+    postal: "6700"
+    has_subpages: false
+    geo:
+      lat: 49.6833
+      lng: 5.8167
+    province: "luxembourg"
+
+  - name: "Marche-en-Famenne"
+    slug: "marche-en-famenne"
+    postal: "6900"
+    has_subpages: false
+    geo:
+      lat: 50.2333
+      lng: 5.35
+    province: "luxembourg"
+
+  - name: "Bastogne"
+    slug: "bastogne"
+    postal: "6600"
+    has_subpages: false
+    geo:
+      lat: 50.0
+      lng: 5.7167
+    province: "luxembourg"
+
+  - name: "Virton"
+    slug: "virton"
+    postal: "6760"
+    has_subpages: false
+    geo:
+      lat: 49.5667
+      lng: 5.5333
+    province: "luxembourg"
+
+  - name: "Durbuy"
+    slug: "durbuy"
+    postal: "6940"
+    has_subpages: false
+    geo:
+      lat: 50.35
+      lng: 5.45
+    province: "luxembourg"
+
+  - name: "Aubange"
+    slug: "aubange"
+    postal: "6790"
+    has_subpages: false
+    geo:
+      lat: 49.5667
+      lng: 5.8
+    province: "luxembourg"
+
+  - name: "Bertrix"
+    slug: "bertrix"
+    postal: "6880"
+    has_subpages: false
+    geo:
+      lat: 49.85
+      lng: 5.2667
+    province: "luxembourg"
+
+  - name: "Bouillon"
+    slug: "bouillon"
+    postal: "6830"
+    has_subpages: false
+    geo:
+      lat: 49.7833
+      lng: 5.0667
+    province: "luxembourg"
+
+  - name: "Libramont-Chevigny"
+    slug: "libramont-chevigny"
+    postal: "6800"
+    has_subpages: false
+    geo:
+      lat: 49.9333
+      lng: 5.3833
+    province: "luxembourg"
+
+  - name: "Neufchâteau"
+    slug: "neufchateau"
+    postal: "6840"
+    has_subpages: false
+    geo:
+      lat: 49.85
+      lng: 5.4333
+    province: "luxembourg"
+
+  - name: "Saint-Hubert"
+    slug: "saint-hubert"
+    postal: "6870"
+    has_subpages: false
+    geo:
+      lat: 50.0333
+      lng: 5.3833
+    province: "luxembourg"
+
+  - name: "La Roche-en-Ardenne"
+    slug: "la-roche-en-ardenne"
+    postal: "6980"
+    has_subpages: false
+    geo:
+      lat: 50.1833
+      lng: 5.5833
+    province: "luxembourg"
+
+  - name: "Vielsalm"
+    slug: "vielsalm"
+    postal: "6690"
+    has_subpages: false
+    geo:
+      lat: 50.2833
+      lng: 5.9167
+    province: "luxembourg"
+
+  - name: "Houffalize"
+    slug: "houffalize"
+    postal: "6660"
+    has_subpages: false
+    geo:
+      lat: 50.1333
+      lng: 5.7833
+    province: "luxembourg"
+
+  - name: "Gouvy"
+    slug: "gouvy"
+    postal: "6670"
+    has_subpages: false
+    geo:
+      lat: 50.1833
+      lng: 5.95
+    province: "luxembourg"
+
+  - name: "Manhay"
+    slug: "manhay"
+    postal: "6960"
+    has_subpages: false
+    geo:
+      lat: 50.2833
+      lng: 5.6833
+    province: "luxembourg"
+
+  - name: "Érezée"
+    slug: "erezee"
+    postal: "6997"
+    has_subpages: false
+    geo:
+      lat: 50.3
+      lng: 5.55
+    province: "luxembourg"
+
+  - name: "Hotton"
+    slug: "hotton"
+    postal: "6990"
+    has_subpages: false
+    geo:
+      lat: 50.2667
+      lng: 5.45
+    province: "luxembourg"
+
+  - name: "Rendeux"
+    slug: "rendeux"
+    postal: "6987"
+    has_subpages: false
+    geo:
+      lat: 50.2333
+      lng: 5.5
+    province: "luxembourg"
+
+  - name: "Nassogne"
+    slug: "nassogne"
+    postal: "6950"
+    has_subpages: false
+    geo:
+      lat: 50.1333
+      lng: 5.35
+    province: "luxembourg"
+
+  - name: "Tenneville"
+    slug: "tenneville"
+    postal: "6970"
+    has_subpages: false
+    geo:
+      lat: 50.1
+      lng: 5.5333
+    province: "luxembourg"
+
+  - name: "Sainte-Ode"
+    slug: "sainte-ode"
+    postal: "6680"
+    has_subpages: false
+    geo:
+      lat: 50.0167
+      lng: 5.5167
+    province: "luxembourg"
+
+  - name: "Bertogne"
+    slug: "bertogne"
+    postal: "6687"
+    has_subpages: false
+    geo:
+      lat: 50.0833
+      lng: 5.6667
+    province: "luxembourg"
+
+  - name: "Fauvillers"
+    slug: "fauvillers"
+    postal: "6637"
+    has_subpages: false
+    geo:
+      lat: 49.8667
+      lng: 5.6667
+    province: "luxembourg"
+
+  - name: "Léglise"
+    slug: "leglise"
+    postal: "6860"
+    has_subpages: false
+    geo:
+      lat: 49.8
+      lng: 5.5333
+    province: "luxembourg"
+
+  - name: "Vaux-sur-Sûre"
+    slug: "vaux-sur-sure"
+    postal: "6640"
+    has_subpages: false
+    geo:
+      lat: 49.9167
+      lng: 5.5667
+    province: "luxembourg"
+
+  - name: "Paliseul"
+    slug: "paliseul"
+    postal: "6850"
+    has_subpages: false
+    geo:
+      lat: 49.9
+      lng: 5.1333
+    province: "luxembourg"
+
+  - name: "Wellin"
+    slug: "wellin"
+    postal: "6920"
+    has_subpages: false
+    geo:
+      lat: 50.0833
+      lng: 5.1167
+    province: "luxembourg"
+
+  - name: "Tellin"
+    slug: "tellin"
+    postal: "6927"
+    has_subpages: false
+    geo:
+      lat: 50.0833
+      lng: 5.2167
+    province: "luxembourg"
+
+  - name: "Daverdisse"
+    slug: "daverdisse"
+    postal: "6929"
+    has_subpages: false
+    geo:
+      lat: 50.0167
+      lng: 5.1167
+    province: "luxembourg"
+
+  - name: "Libin"
+    slug: "libin"
+    postal: "6890"
+    has_subpages: false
+    geo:
+      lat: 49.9833
+      lng: 5.25
+    province: "luxembourg"
+
+  - name: "Saint-Léger"
+    slug: "saint-leger"
+    postal: "6747"
+    has_subpages: false
+    geo:
+      lat: 49.6167
+      lng: 5.65
+    province: "luxembourg"
+
+  - name: "Messancy"
+    slug: "messancy"
+    postal: "6780"
+    has_subpages: false
+    geo:
+      lat: 49.5833
+      lng: 5.8167
+    province: "luxembourg"
+
+  - name: "Attert"
+    slug: "attert"
+    postal: "6717"
+    has_subpages: false
+    geo:
+      lat: 49.75
+      lng: 5.7833
+    province: "luxembourg"
+
+  - name: "Habay"
+    slug: "habay"
+    postal: "6720"
+    has_subpages: false
+    geo:
+      lat: 49.7167
+      lng: 5.6333
+    province: "luxembourg"
+
+  - name: "Étalle"
+    slug: "etalle"
+    postal: "6740"
+    has_subpages: false
+    geo:
+      lat: 49.6667
+      lng: 5.6
+    province: "luxembourg"
+
+  - name: "Tintigny"
+    slug: "tintigny"
+    postal: "6730"
+    has_subpages: false
+    geo:
+      lat: 49.6833
+      lng: 5.5167
+    province: "luxembourg"
+
+  - name: "Meix-devant-Virton"
+    slug: "meix-devant-virton"
+    postal: "6769"
+    has_subpages: false
+    geo:
+      lat: 49.6167
+      lng: 5.4833
+    province: "luxembourg"
+
+  - name: "Rouvroy"
+    slug: "rouvroy"
+    postal: "6767"
+    has_subpages: false
+    geo:
+      lat: 49.5333
+      lng: 5.4833
+    province: "luxembourg"
+
+  - name: "Musson"
+    slug: "musson"
+    postal: "6750"
+    has_subpages: false
+    geo:
+      lat: 49.55
+      lng: 5.7
+    province: "luxembourg"
+
+  - name: "Chiny"
+    slug: "chiny"
+    postal: "6810"
+    has_subpages: false
+    geo:
+      lat: 49.7333
+      lng: 5.3333
+    province: "luxembourg"
+
+  - name: "Florenville"
+    slug: "florenville"
+    postal: "6820"
+    has_subpages: false
+    geo:
+      lat: 49.7
+      lng: 5.3
+    province: "luxembourg"
+
+  - name: "Herbeumont"
+    slug: "herbeumont"
+    postal: "6887"
+    has_subpages: false
+    geo:
+      lat: 49.7833
+      lng: 5.2333
+    province: "luxembourg"
+
+  - name: "Martelange"
+    slug: "martelange"
+    postal: "6630"
+    has_subpages: false
+    geo:
+      lat: 49.8333
+      lng: 5.7333
+    province: "luxembourg"
+

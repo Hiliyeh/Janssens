@@ -193,36 +193,56 @@ layout: default
             <!-- Other Provinces -->
             <div class="zones-provinces">
                 <h4 class="zones-provinces-title">{{ t.zones.other_provinces | default: "Autres provinces couvertes" }}</h4>
-                <div class="zones-provinces-grid">
-                    {% case lang %}
-                    {% when 'nl' %}
-                    <a href="/nl/provincies/antwerpen/" class="zone-province-link">Antwerpen</a>
-                    <a href="/nl/provincies/limburg/" class="zone-province-link">Limburg</a>
-                    <a href="/nl/provincies/oost-vlaanderen/" class="zone-province-link">Oost-Vlaanderen</a>
-                    <a href="/nl/provincies/west-vlaanderen/" class="zone-province-link">West-Vlaanderen</a>
-                    <a href="/nl/provincies/henegouwen/" class="zone-province-link">Henegouwen</a>
-                    <a href="/nl/provincies/luik/" class="zone-province-link">Luik</a>
-                    <a href="/nl/provincies/namen/" class="zone-province-link">Namen</a>
-                    <a href="/nl/provincies/luxemburg/" class="zone-province-link">Luxemburg</a>
-                    {% when 'en' %}
-                    <a href="/en/provinces/antwerp/" class="zone-province-link">Antwerp</a>
-                    <a href="/en/provinces/limburg/" class="zone-province-link">Limburg</a>
-                    <a href="/en/provinces/east-flanders/" class="zone-province-link">East Flanders</a>
-                    <a href="/en/provinces/west-flanders/" class="zone-province-link">West Flanders</a>
-                    <a href="/en/provinces/hainaut/" class="zone-province-link">Hainaut</a>
-                    <a href="/en/provinces/liege/" class="zone-province-link">Liege</a>
-                    <a href="/en/provinces/namur/" class="zone-province-link">Namur</a>
-                    <a href="/en/provinces/luxembourg/" class="zone-province-link">Luxembourg</a>
+                <div class="zones-accordions">
+                    {% assign other_provinces = "antwerp,limburg,east_flanders,west_flanders,hainaut,liege,namur,luxembourg" | split: "," %}
+                    {% assign other_provinces_fr = "Anvers,Limbourg,Flandre orientale,Flandre occidentale,Hainaut,Liège,Namur,Luxembourg" | split: "," %}
+                    {% assign other_provinces_nl = "Antwerpen,Limburg,Oost-Vlaanderen,West-Vlaanderen,Henegouwen,Luik,Namen,Luxemburg" | split: "," %}
+                    {% assign other_provinces_en = "Antwerp,Limburg,East Flanders,West Flanders,Hainaut,Liège,Namur,Luxembourg" | split: "," %}
+                    {% assign province_slugs_fr = "anvers,limbourg,flandre-orientale,flandre-occidentale,hainaut,liege,namur,luxembourg" | split: "," %}
+                    {% assign province_slugs_nl = "antwerpen,limburg,oost-vlaanderen,west-vlaanderen,henegouwen,luik,namen,luxemburg" | split: "," %}
+                    {% assign province_slugs_en = "antwerp,limburg,east-flanders,west-flanders,hainaut,liege,namur,luxembourg" | split: "," %}
+
+                    {% for province_key in other_provinces %}
+                    {% assign idx = forloop.index0 %}
+                    {% if lang == 'nl' %}
+                        {% assign prov_name = other_provinces_nl[idx] %}
+                        {% assign prov_slug = province_slugs_nl[idx] %}
+                        {% assign prov_folder = "provincies" %}
+                    {% elsif lang == 'en' %}
+                        {% assign prov_name = other_provinces_en[idx] %}
+                        {% assign prov_slug = province_slugs_en[idx] %}
+                        {% assign prov_folder = "provinces" %}
                     {% else %}
-                    <a href="/fr/provinces/anvers/" class="zone-province-link">Anvers</a>
-                    <a href="/fr/provinces/limbourg/" class="zone-province-link">Limbourg</a>
-                    <a href="/fr/provinces/flandre-orientale/" class="zone-province-link">Flandre orientale</a>
-                    <a href="/fr/provinces/flandre-occidentale/" class="zone-province-link">Flandre occidentale</a>
-                    <a href="/fr/provinces/hainaut/" class="zone-province-link">Hainaut</a>
-                    <a href="/fr/provinces/liege/" class="zone-province-link">Liege</a>
-                    <a href="/fr/provinces/namur/" class="zone-province-link">Namur</a>
-                    <a href="/fr/provinces/luxembourg/" class="zone-province-link">Luxembourg</a>
-                    {% endcase %}
+                        {% assign prov_name = other_provinces_fr[idx] %}
+                        {% assign prov_slug = province_slugs_fr[idx] %}
+                        {% assign prov_folder = "provinces" %}
+                    {% endif %}
+
+                    {% assign province_cities = cities[province_key] %}
+                    {% assign cities_count = province_cities.size %}
+
+                    <details class="zone-accordion">
+                        <summary>
+                            <div class="zone-accordion-header">
+                                <i data-lucide="map-pin" class="icon-sm"></i>
+                                <a href="/{{ lang }}/{{ prov_folder }}/{{ prov_slug }}/" class="zone-accordion-title zone-province-link" onclick="event.stopPropagation()">{{ prov_name }}</a>
+                            </div>
+                            <div class="zone-accordion-right">
+                                <span class="zone-accordion-count">{{ cities_count }} {{ t.zones.municipalities | default: "communes" }}</span>
+                                <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                            </div>
+                        </summary>
+                        <div class="zone-cities">
+                            {% for city in province_cities %}
+                            <a href="/{{ lang }}/{{ cities_folder }}/{{ city.slug }}/">{{ city.name }}</a>
+                            {% endfor %}
+                            <a href="/{{ lang }}/{{ prov_folder }}/{{ prov_slug }}/" class="zone-province-main-link">
+                                <i data-lucide="arrow-right"></i>
+                                {{ t.zones.view_province | default: "Voir la province" }}
+                            </a>
+                        </div>
+                    </details>
+                    {% endfor %}
                 </div>
             </div>
         </div>

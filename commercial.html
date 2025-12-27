@@ -3,13 +3,164 @@ layout: default
 lang: fr
 title: "Serrurier Commercial Bruxelles | Entreprises & Commerces | Janssens"
 description: "Service de serrurerie pour entreprises et commerces à Bruxelles. Sécurisation locaux, systèmes d'accès, dépannage urgent 24h/24."
+alternate:
+  fr: "/commercial/"
+  nl: "/commercieel/"
+  en: "/commercial-en/"
 ---
-<main>
+{% include init-vars.html %}
+
+<!-- Hero Section -->
 <section class="service-hero">
-<div class="service-container">
-<h1>Serrurerie Commerciale</h1>
-<p>Solutions de sécurité pour entreprises, commerces et institutions à Bruxelles.</p>
-<a href="tel:+32495205400" class="btn btn-primary">0495 205 400</a>
-</div>
+    <div class="service-container">
+        {% include breadcrumb.html items="Serrurerie Commerciale" %}
+        <div class="service-hero-icon"><i data-lucide="building-2"></i></div>
+        <h1 class="service-title">Serrurerie Commerciale</h1>
+        <p class="service-subtitle">Solutions de sécurité professionnelles pour entreprises, commerces et institutions à Bruxelles. Intervention rapide <strong>24h/24</strong>.</p>
+        {% include hero-cta.html %}
+    </div>
 </section>
-</main>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="building"></i> Nos clients professionnels</h2>
+            <div class="situations-grid">
+                <div class="situation-card">
+                    <h4>Commerces</h4>
+                    <p>Magasins, boutiques, restaurants : sécurisation des accès et protection contre le vol.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Bureaux</h4>
+                    <p>Entreprises et espaces de coworking : systèmes d'accès, badges, organigrammes de clés.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Entrepôts</h4>
+                    <p>Sécurisation des locaux de stockage, portes industrielles, cadenas haute sécurité.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Institutions</h4>
+                    <p>Écoles, hôpitaux, administrations : solutions adaptées aux besoins spécifiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-cta-box">
+            <h3>Urgence pour votre entreprise ?</h3>
+            <p>Nos serruriers commerciaux interviennent en urgence 24h/24 pour minimiser l'impact sur votre activité.</p>
+            <a href="tel:+32495205400" class="btn btn-primary">
+                <i data-lucide="phone" class="icon"></i>
+                <span>0495 205 400</span>
+            </a>
+        </div>
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="wrench"></i> Services pour professionnels</h2>
+            <div class="situations-grid">
+                <div class="situation-card">
+                    <h4>Systèmes d'accès</h4>
+                    <p>Installation de systèmes de contrôle d'accès : badges, digicodes, lecteurs biométriques.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Organigramme de clés</h4>
+                    <p>Création de systèmes de passes : une clé maître pour plusieurs serrures, gestion des accès.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Coffres-forts</h4>
+                    <p>Fourniture, installation et ouverture de coffres-forts professionnels.</p>
+                </div>
+                <div class="situation-card">
+                    <h4>Dépannage urgent</h4>
+                    <p>Intervention rapide en cas de blocage, effraction ou panne de système d'accès.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> Pourquoi nous faire confiance ?</h2>
+            <div class="advantages-list">
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Intervention rapide pour minimiser les pertes</span>
+                </div>
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Disponible 24h/24, 7j/7</span>
+                </div>
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Devis gratuit et détaillé</span>
+                </div>
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Facturation TVA pour entreprises</span>
+                </div>
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Contrats de maintenance disponibles</span>
+                </div>
+                <div class="advantage-item">
+                    <i data-lucide="check"></i>
+                    <span>Garantie sur tous les travaux</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="service-faq">
+    <div class="service-container">
+        <h2 class="service-section-title">
+            <i data-lucide="message-circle-question"></i>
+            Questions fréquentes
+        </h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>
+                    Proposez-vous des contrats de maintenance ?
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Oui, nous proposons des contrats de maintenance adaptés aux entreprises, incluant des visites régulières et une intervention prioritaire en cas d'urgence.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    Pouvez-vous créer un système de passe-partout ?
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Oui, nous concevons des organigrammes de clés personnalisés permettant une gestion optimale des accès dans vos locaux.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary>
+                    Intervenez-vous en urgence le week-end ?
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>Absolument. Notre service commercial est disponible 24h/24, 7j/7, y compris les week-ends et jours fériés.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Related Services -->
+<section class="related-services">
+    <div class="service-container">
+        <h3>Nos services de serrurerie</h3>
+        <div class="services-grid">
+            {% for service in site.data.services limit:6 %}
+            <a href="/fr/services/{{ service.fr.slug }}/" class="service-card-mini">
+                <i data-lucide="{{ service.icon }}"></i>
+                <span>{{ service.fr.name }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include floating-cta.html %}

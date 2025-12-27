@@ -108,6 +108,7 @@ zones:
     text: "We hebben deze gemeente niet gevonden. Controleer de spelling of neem contact met ons op."
     cta: "Contact opnemen"
   municipalities: "gemeenten"
+  view_province: "Bekijk alle gemeenten van"
   regions:
     title: "Onze hoofdzones:"
     brussels: "Brussels Hoofdstedelijk"

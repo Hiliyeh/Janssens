@@ -80,14 +80,19 @@ layout: default
         <div class="commune-section">
             <h2><i data-lucide="wrench"></i> {{ t.province.services_title | default: "Services disponibles" }}</h2>
             <p>{{ t.province.services_intro | default: "Tous nos services de serrurerie sont disponibles dans la province de" }} {{ province_name }} :</p>
-            <ul>
+            <div class="services-grid province-services-grid">
+                {% if lang == "nl" %}
+                    {% assign prov_folder = "provincies" %}
+                {% else %}
+                    {% assign prov_folder = "provinces" %}
+                {% endif %}
                 {% for service in site.data.services %}
-                <li>
+                <a href="/{{ lang }}/{{ prov_folder }}/{{ page.province_slug }}/{{ service[lang].slug }}/" class="service-card-mini">
                     <i data-lucide="{{ service.icon }}"></i>
-                    <div><strong>{{ service[lang].name }}</strong> – {{ service[lang].short_desc | default: service[lang].desc }}</div>
-                </li>
+                    <span>{{ service[lang].name }}</span>
+                </a>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
 
         <div class="commune-section">
@@ -140,17 +145,70 @@ layout: default
     </div>
 </section>
 
-<!-- Link to main zones -->
-<section class="related-services" style="padding:2rem 0;background:white">
+<!-- All cities in province - Accordion by arrondissement -->
+<section class="related-services province-cities-section" style="padding:2rem 0;background:white">
     <div class="service-container">
-        <h2><i data-lucide="map"></i> {{ t.province.zones_title | default: "Nos zones principales" }}</h2>
-        <p>{{ t.province.zones_text | default: "Decouvrez nos zones d'intervention principales avec des pages dediees par commune." }}</p>
-        <div class="cta-buttons" style="justify-content:center;margin-top:1.5rem">
-            <a href="/{{ lang }}/#zones" class="cta-primary">
-                <i data-lucide="search"></i>
-                {{ t.province.zones_cta | default: "Voir toutes les zones" }}
-            </a>
-        </div>
+        <h2><i data-lucide="map-pin"></i> {{ t.province.all_cities_title | default: "Toutes les communes de" }} {{ province_name }}</h2>
+        <p>{{ t.province.all_cities_text | default: "Nous intervenons dans chacune de ces communes. Cliquez pour plus d'informations." }}</p>
+
+        {% comment %}Map province slug to cities key{% endcomment %}
+        {% assign prov_to_key = "anvers:antwerp,antwerpen:antwerp,antwerp:antwerp,limbourg:limburg,limburg:limburg,flandre-orientale:east_flanders,oost-vlaanderen:east_flanders,east-flanders:east_flanders,flandre-occidentale:west_flanders,west-vlaanderen:west_flanders,west-flanders:west_flanders,hainaut:hainaut,henegouwen:hainaut,liege:liege,luik:liege,namur:namur,namen:namur,luxembourg:luxembourg,luxemburg:luxembourg" | split: "," %}
+        {% assign province_key = "" %}
+        {% for mapping in prov_to_key %}
+            {% assign parts = mapping | split: ":" %}
+            {% if parts[0] == page.province_slug %}
+                {% assign province_key = parts[1] %}
+            {% endif %}
+        {% endfor %}
+
+        {% assign province_cities_raw = site.data.other_provinces_cities[province_key] %}
+        {% assign province_arrondissements = site.data.arrondissements[province_key] %}
+
+        {% if province_cities_raw and province_arrondissements %}
+            <div class="zones-accordions province-cities-accordions">
+                {% for arr in province_arrondissements %}
+                    {% comment %}Get arrondissement name based on language{% endcomment %}
+                    {% if lang == "fr" %}
+                        {% assign arr_name = arr.name_fr %}
+                    {% elsif lang == "nl" %}
+                        {% assign arr_name = arr.name_nl %}
+                    {% else %}
+                        {% assign arr_name = arr.name_en %}
+                    {% endif %}
+
+                    {% comment %}Collect cities for this arrondissement{% endcomment %}
+                    {% assign arr_cities = "" | split: "" %}
+                    {% for city in province_cities_raw %}
+                        {% if city.arrondissement == arr.id %}
+                            {% assign arr_cities = arr_cities | push: city %}
+                        {% endif %}
+                    {% endfor %}
+                    {% assign arr_cities = arr_cities | sort: "name" %}
+
+                    {% if arr_cities.size > 0 %}
+                    <details class="zone-accordion">
+                        <summary>
+                            <div class="zone-accordion-header">
+                                <i data-lucide="building-2"></i>
+                                <span class="zone-accordion-title">{{ t.province.arrondissement | default: "Arrondissement" }} {{ arr_name }}</span>
+                            </div>
+                            <div class="zone-accordion-right">
+                                <span class="zone-accordion-count">{{ arr_cities.size }} {{ t.zones.municipalities | default: "communes" }}</span>
+                                <i data-lucide="chevron-down" class="zone-accordion-icon"></i>
+                            </div>
+                        </summary>
+                        <div class="zone-cities">
+                            {% for city in arr_cities %}
+                            <a href="/{{ lang }}/{{ cities_folder }}/{{ city.slug }}/">{{ city.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </details>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>{{ t.province.contact_for_cities | default: "Contactez-nous pour connaitre les communes desservies dans cette province." }}</p>
+        {% endif %}
     </div>
 </section>
 

@@ -1,0 +1,222 @@
+# Belgian Administrative Arrondissements
+# ======================================
+# 43 arrondissements grouped by province with trilingual names
+
+# Province: Antwerp (Antwerpen / Anvers)
+antwerp:
+  - id: "antwerpen"
+    name_fr: "Anvers"
+    name_nl: "Antwerpen"
+    name_en: "Antwerp"
+    postal_ranges: ["2000-2660", "2840-2890"]
+  - id: "mechelen"
+    name_fr: "Malines"
+    name_nl: "Mechelen"
+    name_en: "Mechelen"
+    postal_ranges: ["2800-2830", "2860-2861", "2870", "2880"]
+  - id: "turnhout"
+    name_fr: "Turnhout"
+    name_nl: "Turnhout"
+    name_en: "Turnhout"
+    postal_ranges: ["2200-2490", "2910-2990"]
+
+# Province: Limburg
+limburg:
+  - id: "hasselt"
+    name_fr: "Hasselt"
+    name_nl: "Hasselt"
+    name_en: "Hasselt"
+    postal_ranges: ["3500-3590", "3600-3690", "3700-3790", "3800-3830"]
+  - id: "maaseik"
+    name_fr: "Maaseik"
+    name_nl: "Maaseik"
+    name_en: "Maaseik"
+    postal_ranges: ["3630-3680", "3900-3990"]
+  - id: "tongeren"
+    name_fr: "Tongres"
+    name_nl: "Tongeren"
+    name_en: "Tongeren"
+    postal_ranges: ["3700-3798", "3840-3899"]
+
+# Province: East Flanders (Oost-Vlaanderen / Flandre orientale)
+east_flanders:
+  - id: "aalst"
+    name_fr: "Alost"
+    name_nl: "Aalst"
+    name_en: "Aalst"
+    postal_ranges: ["9300-9340", "9400-9473", "9500-9552"]
+  - id: "dendermonde"
+    name_fr: "Termonde"
+    name_nl: "Dendermonde"
+    name_en: "Dendermonde"
+    postal_ranges: ["9200-9299", "9280-9291"]
+  - id: "eeklo"
+    name_fr: "Eeklo"
+    name_nl: "Eeklo"
+    name_en: "Eeklo"
+    postal_ranges: ["9900-9999"]
+  - id: "gent"
+    name_fr: "Gand"
+    name_nl: "Gent"
+    name_en: "Ghent"
+    postal_ranges: ["9000-9190", "9800-9890"]
+  - id: "oudenaarde"
+    name_fr: "Audenarde"
+    name_nl: "Oudenaarde"
+    name_en: "Oudenaarde"
+    postal_ranges: ["9600-9699", "9680-9690"]
+  - id: "sint-niklaas"
+    name_fr: "Saint-Nicolas"
+    name_nl: "Sint-Niklaas"
+    name_en: "Sint-Niklaas"
+    postal_ranges: ["9100-9199", "9120-9150"]
+
+# Province: West Flanders (West-Vlaanderen / Flandre occidentale)
+west_flanders:
+  - id: "brugge"
+    name_fr: "Bruges"
+    name_nl: "Brugge"
+    name_en: "Bruges"
+    postal_ranges: ["8000-8099", "8200-8299", "8300-8399"]
+  - id: "diksmuide"
+    name_fr: "Dixmude"
+    name_nl: "Diksmuide"
+    name_en: "Diksmuide"
+    postal_ranges: ["8600-8699"]
+  - id: "ieper"
+    name_fr: "Ypres"
+    name_nl: "Ieper"
+    name_en: "Ypres"
+    postal_ranges: ["8900-8999"]
+  - id: "kortrijk"
+    name_fr: "Courtrai"
+    name_nl: "Kortrijk"
+    name_en: "Kortrijk"
+    postal_ranges: ["8500-8599", "8700-8799"]
+  - id: "oostende"
+    name_fr: "Ostende"
+    name_nl: "Oostende"
+    name_en: "Ostend"
+    postal_ranges: ["8400-8499"]
+  - id: "roeselare"
+    name_fr: "Roulers"
+    name_nl: "Roeselare"
+    name_en: "Roeselare"
+    postal_ranges: ["8800-8899"]
+  - id: "tielt"
+    name_fr: "Tielt"
+    name_nl: "Tielt"
+    name_en: "Tielt"
+    postal_ranges: ["8700-8799"]
+  - id: "veurne"
+    name_fr: "Furnes"
+    name_nl: "Veurne"
+    name_en: "Veurne"
+    postal_ranges: ["8600-8699"]
+
+# Province: Hainaut (Henegouwen)
+hainaut:
+  - id: "ath"
+    name_fr: "Ath"
+    name_nl: "Aat"
+    name_en: "Ath"
+    postal_ranges: ["7800-7899", "7900-7972"]
+  - id: "charleroi"
+    name_fr: "Charleroi"
+    name_nl: "Charleroi"
+    name_en: "Charleroi"
+    postal_ranges: ["6000-6099", "6110-6200", "6220-6299"]
+  - id: "la-louviere"
+    name_fr: "La Louvière"
+    name_nl: "La Louvière"
+    name_en: "La Louvière"
+    postal_ranges: ["7100-7199"]
+  - id: "mons"
+    name_fr: "Mons"
+    name_nl: "Bergen"
+    name_en: "Mons"
+    postal_ranges: ["7000-7099", "7300-7399"]
+  - id: "soignies"
+    name_fr: "Soignies"
+    name_nl: "Zinnik"
+    name_en: "Soignies"
+    postal_ranges: ["7060-7099", "7140-7199"]
+  - id: "thuin"
+    name_fr: "Thuin"
+    name_nl: "Thuin"
+    name_en: "Thuin"
+    postal_ranges: ["6500-6599", "6530-6599"]
+  - id: "tournai"
+    name_fr: "Tournai-Mouscron"
+    name_nl: "Doornik-Moeskroen"
+    name_en: "Tournai-Mouscron"
+    postal_ranges: ["7500-7799"]
+
+# Province: Liège (Luik)
+liege:
+  - id: "huy"
+    name_fr: "Huy"
+    name_nl: "Hoei"
+    name_en: "Huy"
+    postal_ranges: ["4500-4599", "4520-4590"]
+  - id: "liege"
+    name_fr: "Liège"
+    name_nl: "Luik"
+    name_en: "Liège"
+    postal_ranges: ["4000-4499", "4600-4699"]
+  - id: "verviers"
+    name_fr: "Verviers"
+    name_nl: "Verviers"
+    name_en: "Verviers"
+    postal_ranges: ["4700-4999"]
+  - id: "waremme"
+    name_fr: "Waremme"
+    name_nl: "Borgworm"
+    name_en: "Waremme"
+    postal_ranges: ["4280-4299", "4350-4399"]
+
+# Province: Namur (Namen)
+namur:
+  - id: "dinant"
+    name_fr: "Dinant"
+    name_nl: "Dinant"
+    name_en: "Dinant"
+    postal_ranges: ["5500-5599", "5600-5699"]
+  - id: "namur"
+    name_fr: "Namur"
+    name_nl: "Namen"
+    name_en: "Namur"
+    postal_ranges: ["5000-5499"]
+  - id: "philippeville"
+    name_fr: "Philippeville"
+    name_nl: "Philippeville"
+    name_en: "Philippeville"
+    postal_ranges: ["5600-5699"]
+
+# Province: Luxembourg (Luxemburg)
+luxembourg:
+  - id: "arlon"
+    name_fr: "Arlon"
+    name_nl: "Aarlen"
+    name_en: "Arlon"
+    postal_ranges: ["6700-6799"]
+  - id: "bastogne"
+    name_fr: "Bastogne"
+    name_nl: "Bastenaken"
+    name_en: "Bastogne"
+    postal_ranges: ["6600-6699"]
+  - id: "marche"
+    name_fr: "Marche-en-Famenne"
+    name_nl: "Marche-en-Famenne"
+    name_en: "Marche-en-Famenne"
+    postal_ranges: ["6900-6999"]
+  - id: "neufchateau"
+    name_fr: "Neufchâteau"
+    name_nl: "Neufchâteau"
+    name_en: "Neufchâteau"
+    postal_ranges: ["6800-6899"]
+  - id: "virton"
+    name_fr: "Virton"
+    name_nl: "Virton"
+    name_en: "Virton"
+    postal_ranges: ["6760-6799"]

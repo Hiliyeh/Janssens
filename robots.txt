@@ -73,4 +73,5 @@ Allow: /
 # ============================================
 # LLMs.txt - AI-optimized content summary
 # ============================================
-# See: https://janssensserrurier.be/llms.txt
+# Summary: https://janssensserrurier.be/llms.txt
+# Full documentation: https://janssensserrurier.be/llms-full.txt

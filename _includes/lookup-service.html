@@ -1,0 +1,13 @@
+{% comment %}
+Lookup Service by ID
+Usage: {% include lookup-service.html id=page.service_id %}
+Sets: service, service_name
+{% endcomment %}
+
+{% assign services = site.data.services %}
+{% for s in services %}
+  {% if s.id == include.id %}
+    {% assign service = s %}
+  {% endif %}
+{% endfor %}
+{% assign service_name = service[lang].name %}

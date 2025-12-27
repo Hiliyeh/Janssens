@@ -3,12 +3,7 @@ layout: default
 ---
 {% include init-vars.html %}
 {% include lang-folders.html %}
-
-{% comment %}Find the brand data{% endcomment %}
-{% assign brand = nil %}
-{% for b in site.data.brands %}
-{% if b.id == page.brand_id %}{% assign brand = b %}{% endif %}
-{% endfor %}
+{% include lookup-brand.html id=page.brand_id %}
 
 {% assign city_name = page.city_name %}
 
@@ -31,20 +26,7 @@ layout: default
             {% include hero-cta.html %}
         </div>
 
-        <div class="commune-stats">
-            <div class="commune-stat">
-                <i data-lucide="clock"></i>
-                <span>{{ t.city.response_time | replace: "%city%", city_name }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="award"></i>
-                <span>{{ t.brand_city.certified | replace: "%brand%", brand.name }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="shield-check"></i>
-                <span>{{ t.common.free_quote }}</span>
-            </div>
-        </div>
+        {% include stats-bar.html type="brand" city=city_name brand=brand.name %}
     </div>
 </section>
 
@@ -114,14 +96,7 @@ layout: default
 <section class="related-services">
     <div class="service-container">
         <h3>{{ t.city.our_services | default: "Nos services" }} {{ city_name }}</h3>
-        <div class="services-grid">
-            {% for s in site.data.services %}
-            <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
-                <i data-lucide="{{ s.icon }}"></i>
-                <span>{{ s[lang].name }}</span>
-            </a>
-            {% endfor %}
-        </div>
+        {% include services-grid.html type="city" city_slug=page.city_slug %}
     </div>
 </section>
 
@@ -149,10 +124,7 @@ layout: default
             <i data-lucide="map-pin"></i>
             {{ t.city_service.back_to_city | replace: "%city%", city_name }}
         </a>
-        <a href="/{{ lang }}/{{ brands_folder }}/{{ brand.slug }}/" class="back-link">
-            <i data-lucide="arrow-left"></i>
-            {{ t.brand_city.back_to_brand | replace: "%brand%", brand.name }}
-        </a>
+        {% include back-link.html type="brand" brand_slug=brand.slug brand_name=brand.name %}
     </div>
 </section>
 

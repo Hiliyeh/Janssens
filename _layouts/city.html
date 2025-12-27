@@ -23,20 +23,7 @@ layout: default
             {% include hero-cta.html %}
         </div>
 
-        <div class="commune-stats">
-            <div class="commune-stat">
-                <i data-lucide="map-pin"></i>
-                <span>{{ page.postal | default: city_postal_code }} {{ page.city_name }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="clock"></i>
-                <span>{{ t.city.response_time | replace: "%city%", page.city_name }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="shield-check"></i>
-                <span>{{ t.common.free_quote }}</span>
-            </div>
-        </div>
+        {% include stats-bar.html type="city-location" city=page.city_name postal=page.postal %}
     </div>
 </section>
 
@@ -64,24 +51,7 @@ layout: default
         <div class="commune-section">
             <h2><i data-lucide="zap"></i> {{ t.city.why_title | replace: "%city%", page.city_name }}</h2>
             <p>{{ t.city.why_intro | replace: "%city%", page.city_name }}</p>
-            <ul>
-                <li>
-                    <i data-lucide="clock"></i>
-                    <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city.why_speed | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="euro"></i>
-                    <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city.why_price | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="thumbs-up"></i>
-                    <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city.why_no_damage | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="award"></i>
-                    <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city.why_pro | replace: "%city%", page.city_name | replace: "%region%", page.region_name }}</div>
-                </li>
-            </ul>
+            {% include why-choose-us.html type="city" city=page.city_name region=page.region_name %}
         </div>
 
         <div class="commune-section">

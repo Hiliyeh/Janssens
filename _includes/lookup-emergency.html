@@ -1,0 +1,11 @@
+{% comment %}
+Lookup Emergency by ID
+Usage: {% include lookup-emergency.html id=page.emergency_id %}
+Sets: emergency
+{% endcomment %}
+
+{% for e in site.data.emergencies %}
+  {% if e.id == include.id %}
+    {% assign emergency = e %}
+  {% endif %}
+{% endfor %}

@@ -1,17 +1,41 @@
 {% comment %}
 Breadcrumb Navigation
-Usage: {% include breadcrumb.html items="Page Title" middle_text=t.breadcrumb.services middle_link="#services" %}
-- items: final page title (string)
-- middle_text: middle breadcrumb text
-- middle_link: middle breadcrumb link (appended to /lang/)
+Usage (simple):
+  {% include breadcrumb.html items="Page Title" middle_text=t.breadcrumb.services middle_link="#services" %}
+
+Usage (array for multiple levels):
+  {% assign bc = "" | split: "" %}
+  {% assign bc = bc | push: site.data.breadcrumb_item %}
+  {% include breadcrumb.html levels=bc final="Current Page" %}
+
+Each level object: { url: "/fr/path/", label: "Label" }
 {% endcomment %}
 
 <nav class="breadcrumb" aria-label="Fil d'Ariane">
     <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
-    {% if include.middle_text %}
-    <span>/</span>
-    <a href="/{{ lang }}/{{ include.middle_link }}">{{ include.middle_text }}</a>
+
+    {% if include.levels %}
+        {% comment %}New array-based breadcrumb{% endcomment %}
+        {% for level in include.levels %}
+        <span>/</span>
+        {% if level.url %}
+        <a href="{{ level.url }}">{{ level.label }}</a>
+        {% else %}
+        <span>{{ level.label }}</span>
+        {% endif %}
+        {% endfor %}
+        {% if include.final %}
+        <span>/</span>
+        <strong>{{ include.final }}</strong>
+        {% endif %}
+
+    {% else %}
+        {% comment %}Legacy simple breadcrumb{% endcomment %}
+        {% if include.middle_text %}
+        <span>/</span>
+        <a href="/{{ lang }}/{{ include.middle_link }}">{{ include.middle_text }}</a>
+        {% endif %}
+        <span>/</span>
+        <strong>{{ include.items }}</strong>
     {% endif %}
-    <span>/</span>
-    <strong>{{ include.items }}</strong>
 </nav>

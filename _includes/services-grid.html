@@ -1,0 +1,35 @@
+{% comment %}
+Services Grid - Reusable grid of service links
+Usage:
+  {% include services-grid.html type="city" city_slug=page.city_slug exclude=page.service_id %}
+  {% include services-grid.html type="province" province_slug=province_slug exclude=page.service_id %}
+  {% include services-grid.html type="all" city_slug=page.city_slug %}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% include lang-folders.html %}
+{% assign services = site.data.services %}
+
+<div class="services-grid">
+  {% for s in services %}
+    {% if s.id != include.exclude %}
+      {% if include.type == "city" %}
+        <a href="/{{ lang }}/{{ cities_folder }}/{{ include.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+          <i data-lucide="{{ s.icon }}"></i>
+          <span>{{ s[lang].name }}</span>
+        </a>
+      {% elsif include.type == "province" %}
+        <a href="/{{ lang }}/provinces/{{ include.province_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+          <i data-lucide="{{ s.icon }}"></i>
+          <span>{{ s[lang].name }}</span>
+        </a>
+      {% else %}
+        <a href="/{{ lang }}/{{ cities_folder }}/{{ include.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
+          <i data-lucide="{{ s.icon }}"></i>
+          <span>{{ s[lang].name }}</span>
+        </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

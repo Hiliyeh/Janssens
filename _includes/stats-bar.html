@@ -1,0 +1,77 @@
+{% comment %}
+Stats Bar - Reusable stats row for hero sections
+Usage: {% include stats-bar.html stats=stats_array %}
+Or with predefined types:
+  {% include stats-bar.html type="city" city=page.city_name %}
+  {% include stats-bar.html type="province" province=province %}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+
+<div class="commune-stats">
+  {% if include.type == "city" %}
+    <div class="commune-stat">
+      <i data-lucide="clock"></i>
+      <span>{{ t.city.response_time | replace: "%city%", include.city }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="shield-check"></i>
+      <span>{{ t.common.free_quote }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="credit-card"></i>
+      <span>{{ t.common.pay_after }}</span>
+    </div>
+
+  {% elsif include.type == "city-location" %}
+    <div class="commune-stat">
+      <i data-lucide="map-pin"></i>
+      <span>{{ include.postal }} {{ include.city }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="clock"></i>
+      <span>{{ t.city.response_time | replace: "%city%", include.city }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="shield-check"></i>
+      <span>{{ t.common.free_quote }}</span>
+    </div>
+
+  {% elsif include.type == "province" %}
+    <div class="commune-stat">
+      <i data-lucide="map-pin"></i>
+      <span>{{ include.province.communes_count }} {{ t.province.communes | default: "communes" }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="clock"></i>
+      <span>{{ t.province.avg_time | default: "Intervention en" }} {{ include.province.avg_intervention_time }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="shield-check"></i>
+      <span>{{ t.common.free_quote }}</span>
+    </div>
+
+  {% elsif include.type == "brand" %}
+    <div class="commune-stat">
+      <i data-lucide="clock"></i>
+      <span>{{ t.city.response_time | replace: "%city%", include.city }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="award"></i>
+      <span>{{ t.brand_city.certified | replace: "%brand%", include.brand }}</span>
+    </div>
+    <div class="commune-stat">
+      <i data-lucide="shield-check"></i>
+      <span>{{ t.common.free_quote }}</span>
+    </div>
+
+  {% else %}
+    {% for stat in include.stats %}
+    <div class="commune-stat">
+      <i data-lucide="{{ stat.icon }}"></i>
+      <span>{{ stat.text }}</span>
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>

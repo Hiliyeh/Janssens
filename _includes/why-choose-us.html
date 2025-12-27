@@ -1,0 +1,76 @@
+{% comment %}
+Why Choose Us - Reusable advantages section
+Usage:
+  {% include why-choose-us.html type="city" city=page.city_name region=page.region_name %}
+  {% include why-choose-us.html type="city-service" city=page.city_name %}
+  {% include why-choose-us.html type="province" %}
+  {% include why-choose-us.html type="province-service" %}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+
+<ul>
+  {% if include.type == "city" %}
+    <li>
+      <i data-lucide="clock"></i>
+      <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city.why_speed | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="euro"></i>
+      <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city.why_price | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="thumbs-up"></i>
+      <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city.why_no_damage | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="award"></i>
+      <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city.why_pro | replace: "%city%", include.city | replace: "%region%", include.region }}</div>
+    </li>
+
+  {% elsif include.type == "city-service" %}
+    <li>
+      <i data-lucide="clock"></i>
+      <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city_service.why_speed | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="euro"></i>
+      <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city_service.why_price | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="thumbs-up"></i>
+      <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city_service.why_quality | replace: "%city%", include.city }}</div>
+    </li>
+    <li>
+      <i data-lucide="award"></i>
+      <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city_service.why_pro | replace: "%city%", include.city }}</div>
+    </li>
+
+  {% elsif include.type == "province" or include.type == "province-service" %}
+    <li>
+      <i data-lucide="clock"></i>
+      <div><strong>{{ t.pillars.speed.title | default: "Intervention rapide" }}</strong> – {{ t.province.why_speed | default: "Nos équipes sont stratégiquement positionnées pour une intervention en moins d'une heure." }}</div>
+    </li>
+    <li>
+      <i data-lucide="euro"></i>
+      <div><strong>{{ t.province.transparent | default: "Prix transparent" }}</strong> – {{ t.province.why_price | default: "Devis gratuit avant intervention. Pas de frais cachés." }}</div>
+    </li>
+    <li>
+      <i data-lucide="shield-check"></i>
+      <div><strong>{{ t.province.pro | default: "Professionnels agréés" }}</strong> – {{ t.province.why_pro | default: "Serruriers qualifiés et assurés pour toutes interventions." }}</div>
+    </li>
+    <li>
+      <i data-lucide="phone"></i>
+      <div><strong>{{ t.province.available | default: "Disponible 24h/24" }}</strong> – {{ t.province.why_available | default: "Urgences de jour comme de nuit, week-ends et jours fériés inclus." }}</div>
+    </li>
+
+  {% else %}
+    {% for item in include.items %}
+    <li>
+      <i data-lucide="{{ item.icon }}"></i>
+      <div><strong>{{ item.title }}</strong> – {{ item.text }}</div>
+    </li>
+    {% endfor %}
+  {% endif %}
+</ul>

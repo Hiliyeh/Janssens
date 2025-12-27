@@ -3,12 +3,7 @@ layout: default
 ---
 {% include init-vars.html %}
 {% include lang-folders.html %}
-{% assign emergency = nil %}
-{% for e in site.data.emergencies %}
-{% if e.id == page.emergency_id %}
-{% assign emergency = e %}
-{% endif %}
-{% endfor %}
+{% include lookup-emergency.html id=page.emergency_id %}
 
 <!-- Hero -->
 <section class="urgence-hero">
@@ -16,7 +11,7 @@ layout: default
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
             <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
             <span>/</span>
-            <a href="/{{ lang }}/{% if lang == 'fr' %}urgence{% elsif lang == 'nl' %}noodgeval{% else %}emergency{% endif %}/{{ emergency[lang].slug }}/">{{ emergency[lang].name }}</a>
+            <a href="/{{ lang }}/{{ emergency_folder }}/{{ emergency[lang].slug }}/">{{ emergency[lang].name }}</a>
             <span>/</span>
             <strong>{{ page.city_name }}</strong>
         </nav>
@@ -133,13 +128,13 @@ layout: default
     <div class="urgence-container">
         <h3>{{ t.emergency_city.other_emergencies | replace: '%city%', page.city_name }}</h3>
         <div class="links-grid">
-            <a href="/{{ lang }}/{% if lang == 'fr' %}cities{% elsif lang == 'nl' %}cities{% else %}cities{% endif %}/{{ page.city_slug }}/" class="related-link">
+            <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/" class="related-link">
                 <i data-lucide="map-pin"></i>
                 <span>{{ t.emergency_city.locksmith_in }} {{ page.city_name }}</span>
             </a>
             {% for e in site.data.emergencies %}
             {% if e.id != emergency.id %}
-            <a href="/{{ lang }}/{% if lang == 'fr' %}urgence{% elsif lang == 'nl' %}noodgeval{% else %}emergency{% endif %}/{{ page.city_slug }}/{{ e[lang].slug }}/" class="related-link">
+            <a href="/{{ lang }}/{{ emergency_folder }}/{{ page.city_slug }}/{{ e[lang].slug }}/" class="related-link">
                 <i data-lucide="{{ e.icon }}"></i>
                 <span>{{ e[lang].name }} {{ page.city_name }}</span>
             </a>

@@ -1,0 +1,37 @@
+{% comment %}
+Back Link - Reusable back navigation link
+Usage:
+  {% include back-link.html url="/fr/communes/ixelles/" text="Retour à Ixelles" icon="arrow-left" %}
+  {% include back-link.html type="city" city_slug=page.city_slug city_name=page.city_name %}
+  {% include back-link.html type="province" province_slug=province_slug province_name=province_name %}
+  {% include back-link.html type="brand" brand_slug=brand.slug brand_name=brand.name %}
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+{% include lang-folders.html %}
+
+{% if include.type == "city" %}
+  <a href="/{{ lang }}/{{ cities_folder }}/{{ include.city_slug }}/" class="back-link">
+    <i data-lucide="arrow-left"></i>
+    {{ t.city_service.back_to_city | replace: "%city%", include.city_name }}
+  </a>
+
+{% elsif include.type == "province" %}
+  <a href="/{{ lang }}/provinces/{{ include.province_slug }}/" class="back-link">
+    <i data-lucide="arrow-left"></i>
+    {{ t.province_service.back_to_province | default: "Retour à" }} {{ include.province_name }}
+  </a>
+
+{% elsif include.type == "brand" %}
+  <a href="/{{ lang }}/{{ brands_folder }}/{{ include.brand_slug }}/" class="back-link">
+    <i data-lucide="arrow-left"></i>
+    {{ t.brand_city.back_to_brand | replace: "%brand%", include.brand_name }}
+  </a>
+
+{% else %}
+  <a href="{{ include.url }}" class="back-link">
+    <i data-lucide="{{ include.icon | default: 'arrow-left' }}"></i>
+    {{ include.text }}
+  </a>
+{% endif %}

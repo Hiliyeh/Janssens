@@ -3,21 +3,13 @@ layout: default
 ---
 {% include init-vars.html %}
 {% include lang-folders.html %}
-{% assign services = site.data.services %}
+{% include lookup-service.html id=page.service_id %}
 
-{% comment %}Find the service data{% endcomment %}
-{% for s in services %}
-{% if s.id == page.service_id %}{% assign service = s %}{% endif %}
-{% endfor %}
-
-{% assign service_name = service[lang].name %}
-{% assign service_title = service[lang].title %}
-{% assign breadcrumb_city = page.city_name %}
+{% capture city_url %}/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{% endcapture %}
 
 <!-- Hero -->
 <section class="service-hero city-service-hero">
     <div class="service-container">
-        {% capture city_url %}/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{% endcapture %}
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
             <a href="/{{ lang }}/">{{ t.breadcrumb.home }}</a>
             <span>/</span>
@@ -36,20 +28,7 @@ layout: default
             {% include hero-cta.html %}
         </div>
 
-        <div class="commune-stats">
-            <div class="commune-stat">
-                <i data-lucide="clock"></i>
-                <span>{{ t.city.response_time | replace: "%city%", page.city_name }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="shield-check"></i>
-                <span>{{ t.common.free_quote }}</span>
-            </div>
-            <div class="commune-stat">
-                <i data-lucide="credit-card"></i>
-                <span>{{ t.common.pay_after }}</span>
-            </div>
-        </div>
+        {% include stats-bar.html type="city" city=page.city_name %}
     </div>
 </section>
 
@@ -70,24 +49,7 @@ layout: default
         <div class="commune-section">
             <h2><i data-lucide="zap"></i> {{ t.city_service.why_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}</h2>
             <p>{{ t.city_service.why_intro | replace: "%service%", service_name | replace: "%city%", page.city_name }}</p>
-            <ul>
-                <li>
-                    <i data-lucide="clock"></i>
-                    <div><strong>{{ t.pillars.speed.title }}</strong> – {{ t.city_service.why_speed | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="euro"></i>
-                    <div><strong>{{ t.city.transparent_price }}</strong> – {{ t.city_service.why_price | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="thumbs-up"></i>
-                    <div><strong>{{ t.city.no_damage }}</strong> – {{ t.city_service.why_quality | replace: "%city%", page.city_name }}</div>
-                </li>
-                <li>
-                    <i data-lucide="award"></i>
-                    <div><strong>{{ t.city.professionalism }}</strong> – {{ t.city_service.why_pro | replace: "%city%", page.city_name }}</div>
-                </li>
-            </ul>
+            {% include why-choose-us.html type="city-service" city=page.city_name %}
         </div>
 
         <div class="commune-section">
@@ -107,16 +69,7 @@ layout: default
 <section class="related-services">
     <div class="service-container">
         <h3>{{ t.city_service.other_services | replace: "%city%", page.city_name }}</h3>
-        <div class="services-grid">
-            {% for s in services %}
-            {% if s.id != page.service_id %}
-            <a href="/{{ lang }}/{{ cities_folder }}/{{ page.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
-                <i data-lucide="{{ s.icon }}"></i>
-                <span>{{ s[lang].name }}</span>
-            </a>
-            {% endif %}
-            {% endfor %}
-        </div>
+        {% include services-grid.html type="city" city_slug=page.city_slug exclude=page.service_id %}
     </div>
 </section>
 
@@ -142,10 +95,7 @@ layout: default
 <!-- Back to City -->
 <section class="back-section">
     <div class="service-container">
-        <a href="{{ city_url }}" class="back-link">
-            <i data-lucide="arrow-left"></i>
-            {{ t.city_service.back_to_city | replace: "%city%", page.city_name }}
-        </a>
+        {% include back-link.html type="city" city_slug=page.city_slug city_name=page.city_name %}
     </div>
 </section>
 

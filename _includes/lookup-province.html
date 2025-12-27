@@ -1,0 +1,23 @@
+{% comment %}
+Lookup Province by slug and resolve name by language
+Usage: {% include lookup-province.html slug=page.province_slug %}
+Sets: province, province_name, province_slug
+{% endcomment %}
+
+{% assign provinces = site.data.provinces.provinces %}
+{% for p in provinces %}
+  {% if p.slug_fr == include.slug or p.slug_nl == include.slug or p.slug_en == include.slug %}
+    {% assign province = p %}
+  {% endif %}
+{% endfor %}
+
+{% if lang == "fr" %}
+  {% assign province_name = province.name_fr %}
+  {% assign province_slug = province.slug_fr %}
+{% elsif lang == "nl" %}
+  {% assign province_name = province.name_nl %}
+  {% assign province_slug = province.slug_nl %}
+{% else %}
+  {% assign province_name = province.name_en %}
+  {% assign province_slug = province.slug_en %}
+{% endif %}

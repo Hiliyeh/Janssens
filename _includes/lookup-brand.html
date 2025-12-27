@@ -1,0 +1,11 @@
+{% comment %}
+Lookup Brand by ID
+Usage: {% include lookup-brand.html id=page.brand_id %}
+Sets: brand
+{% endcomment %}
+
+{% for b in site.data.brands %}
+  {% if b.id == include.id %}
+    {% assign brand = b %}
+  {% endif %}
+{% endfor %}

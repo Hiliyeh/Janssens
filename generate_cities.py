@@ -195,9 +195,9 @@ breadcrumb:
     url: "/{lang}/#zones"
   - name: "{city["name"]}"
 alternate:
-  fr: "/fr/cities/{slug_fr}/"
+  fr: "/fr/communes/{slug_fr}/"
   en: "/en/cities/{slug_en}/"
-  nl: "/nl/cities/{slug_nl}/"
+  nl: "/nl/gemeenten/{slug_nl}/"
 nearby_cities:
 '''
 
@@ -234,9 +234,16 @@ nearby_cities:
 def main():
     base_path = "/Users/hiliyeh/Desktop/project/Janssens"
 
+    # Language folder configuration
+    lang_folders = {
+        "fr": "communes",
+        "en": "cities",
+        "nl": "gemeenten"
+    }
+
     # Create directories
-    for lang in ["fr", "en", "nl"]:
-        os.makedirs(f"{base_path}/{lang}/cities", exist_ok=True)
+    for lang, folder in lang_folders.items():
+        os.makedirs(f"{base_path}/{lang}/{folder}", exist_ok=True)
 
     # Flatten all cities for reference
     all_cities = cities
@@ -247,14 +254,15 @@ def main():
         for city in city_list:
             for lang in ["fr", "en", "nl"]:
                 slug = get_slug_for_lang(city, lang)
-                filepath = f"{base_path}/{lang}/cities/{slug}.html"
+                folder = lang_folders[lang]
+                filepath = f"{base_path}/{lang}/{folder}/{slug}.html"
                 content = generate_city_page(city, region, lang, all_cities)
 
                 with open(filepath, "w", encoding="utf-8") as f:
                     f.write(content)
 
                 count += 1
-                print(f"Created: {lang}/cities/{slug}.html")
+                print(f"Created: {lang}/{folder}/{slug}.html")
 
     print(f"\n✅ Generated {count} city pages!")
 

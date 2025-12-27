@@ -58,9 +58,9 @@ SERVICES = {
 
 # Language folder configuration
 LANG_CONFIG = {
-    "fr": {"cities_folder": "cities"},
+    "fr": {"cities_folder": "communes"},
     "en": {"cities_folder": "cities"},
-    "nl": {"cities_folder": "cities"}
+    "nl": {"cities_folder": "gemeenten"}
 }
 
 def get_city_slug(city_data, lang):

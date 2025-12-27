@@ -2246,7 +2246,7 @@ section {
 .zone-accordion summary {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
+    justify-content: space-between;
     padding: var(--space-md) var(--space-lg);
     cursor: pointer;
     list-style: none;
@@ -2265,6 +2265,21 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* Remove badge style from province links inside accordion header */
+.zone-accordion-header .zone-province-link {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.zone-accordion-header .zone-province-link:hover {
+    background: transparent;
+    color: var(--color-primary);
 }
 
 .zone-accordion-right {
@@ -2296,6 +2311,8 @@ section {
     padding: 4px 12px;
     border-radius: var(--radius-full);
     white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
 }
 
 .zone-accordion[open] .zone-accordion-count {
@@ -2304,8 +2321,8 @@ section {
 }
 
 .zone-accordion-icon {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     color: var(--color-gray-400);
     transition: transform var(--transition-base);
     flex-shrink: 0;
@@ -3292,6 +3309,7 @@ section {
     .zone-accordion-count {
         font-size: 0.7rem;
         padding: 3px 8px;
+        min-width: 80px;
     }
 
     .zone-accordion summary {

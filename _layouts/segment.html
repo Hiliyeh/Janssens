@@ -1,0 +1,110 @@
+---
+layout: default
+---
+{% include init-vars.html %}
+{% include lang-folders.html %}
+
+<!-- Hero -->
+<section class="service-hero">
+    <div class="service-container">
+        {% include breadcrumb.html items=page.page_title %}
+        <div class="service-hero-icon"><i data-lucide="{{ page.icon }}"></i></div>
+        <h1 class="service-title">{{ page.page_title }}</h1>
+        <p class="service-subtitle">{{ page.page_subtitle }}</p>
+        {% include hero-cta.html %}
+    </div>
+</section>
+
+<!-- Content -->
+<section class="service-content">
+    <div class="service-container">
+
+        <!-- Intro -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="info"></i> {{ page.section1_title }}</h2>
+            <div class="plate-intro">
+                <p>{{ page.section1_text }}</p>
+            </div>
+        </div>
+
+        <!-- Services proposés -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="wrench"></i> {{ page.section2_title }}</h2>
+            <div class="plate-types-grid">
+                {% for item in page.services_list %}
+                <a href="{{ item.url }}" class="plate-type-card segment-service-card">
+                    <div class="plate-type-icon"><i data-lucide="{{ item.icon }}"></i></div>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.desc }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% include cta-box.html title=page.cta_title text=page.cta_text %}
+
+        <!-- Avantages -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="check-circle"></i> {{ page.section3_title }}</h2>
+            <div class="plate-advantages">
+                {% for adv in page.advantages %}
+                <div class="plate-advantage">
+                    <div class="advantage-icon"><i data-lucide="{{ adv.icon }}"></i></div>
+                    <div class="advantage-content">
+                        <strong>{{ adv.title }}</strong>
+                        <span>{{ adv.desc }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Processus -->
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="workflow"></i> {{ page.section4_title }}</h2>
+            <div class="plate-steps">
+                {% for step in page.steps %}
+                <div class="plate-step">
+                    <div class="step-number">{{ forloop.index }}</div>
+                    <div class="step-content">
+                        <h4>{{ step.title }}</h4>
+                        <p>{{ step.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ -->
+{% if page.faqs %}
+<section class="faq" id="faq">
+    <div class="section-container">
+        <header class="section-header">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">{{ page.faq_title }}</h2>
+        </header>
+        <div class="faq-list">
+            {% for faq in page.faqs %}
+            <details class="faq-item">
+                <summary>
+                    <span>{{ faq.q }}</span>
+                    <i data-lucide="plus" class="faq-icon"></i>
+                </summary>
+                <div class="faq-answer">
+                    <p>{{ faq.a }}</p>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Zones d'intervention -->
+{% capture cities_title %}{{ page.page_title }} - {{ t.zones.title | default: "Zones d'intervention" }}{% endcapture %}
+{% include cities-accordion.html title=cities_title %}
+
+{{ content }}

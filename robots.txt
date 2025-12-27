@@ -20,3 +20,57 @@ Allow: /assets/images/
 # Autoriser AdsBot
 User-agent: AdsBot-Google
 Allow: /
+
+# ============================================
+# AI Crawlers - Generative Engine Optimization
+# ============================================
+
+# OpenAI - ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic - Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini, Bard, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Copilot (via Bing)
+User-agent: Bingbot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Common Crawl (used for AI training)
+User-agent: CCBot
+Allow: /
+
+# Apple AI (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# ============================================
+# LLMs.txt - AI-optimized content summary
+# ============================================
+# See: https://janssensserrurier.be/llms.txt

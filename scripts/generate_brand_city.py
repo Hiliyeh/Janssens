@@ -29,25 +29,25 @@ for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
             if city.get('slug') in cities_with_subpages or city.get('has_subpages'):
                 all_cities.append(city)
 
-# Language configurations
+# Language configurations with SEO phone number
 languages = {
     'fr': {
         'folder': 'fr',
         'brands_folder': 'marques',
-        'title_template': 'Expert {brand} à {city} | Janssens Serrurier',
-        'description_template': 'Serrurier expert {brand} à {city}. Intervention 24h/24 en 30 min. Cylindres, serrures, clés {brand}. Devis gratuit.'
+        'title_template': 'Expert {brand} {city} | Serrurier 24h/24 | 0489 24 73 64',
+        'description_template': 'Serrurier expert {brand} à {city}. Intervention 24h/24 en 30 min. Cylindres, serrures, clés {brand}. Devis gratuit. Appelez 0489 24 73 64.'
     },
     'en': {
         'folder': 'en',
         'brands_folder': 'brands',
-        'title_template': '{brand} Expert in {city} | Janssens Locksmith',
-        'description_template': '{brand} expert locksmith in {city}. 24/7 service within 30 min. {brand} cylinders, locks, keys. Free quote.'
+        'title_template': '{brand} Expert {city} | Locksmith 24/7 | 0489 24 73 64',
+        'description_template': '{brand} expert locksmith in {city}. 24/7 service within 30 min. {brand} cylinders, locks, keys. Free quote. Call 0489 24 73 64.'
     },
     'nl': {
         'folder': 'nl',
         'brands_folder': 'merken',
-        'title_template': '{brand} Expert in {city} | Janssens Slotenmaker',
-        'description_template': '{brand} expert slotenmaker in {city}. 24/7 service binnen 30 min. {brand} cilinders, sloten, sleutels. Gratis offerte.'
+        'title_template': '{brand} Expert {city} | Slotenmaker 24/7 | 0489 24 73 64',
+        'description_template': '{brand} expert slotenmaker in {city}. 24/7 service binnen 30 min. {brand} cilinders, sloten, sleutels. Gratis offerte. Bel 0489 24 73 64.'
     }
 }
 

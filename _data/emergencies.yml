@@ -96,8 +96,8 @@
   fr:
     name: "Serrurier dimanche"
     slug: "serrurier-dimanche"
-    title: "Serrurier Dimanche & Jours F\u00e9ri\u00e9s"
-    description: "Besoin d'un serrurier le dimanche ou un jour f\u00e9ri\u00e9 ? On intervient !"
+    title: "Serrurier Dimanche & Jours Fériés"
+    description: "Besoin d'un serrurier le dimanche ou un jour férié ? On intervient !"
   en:
     name: "Sunday Locksmith"
     slug: "sunday-locksmith"
@@ -108,3 +108,155 @@
     slug: "zondag-slotenmaker"
     title: "Zondag & Feestdag Slotenmaker"
     description: "Slotenmaker nodig op zondag of feestdag? Wij komen!"
+
+# ===================
+# NEW EMERGENCY TYPES
+# ===================
+
+# HIGH PRIORITY
+
+- id: jammed-lock
+  icon: lock
+  fr:
+    name: "Serrure bloquée"
+    slug: "serrure-bloquee"
+    title: "Serrure Bloquée"
+    description: "Serrure bloquée, coincée ou grippée ? Déblocage rapide sans casser."
+  en:
+    name: "Jammed Lock"
+    slug: "jammed-lock"
+    title: "Jammed Lock"
+    description: "Jammed, stuck or seized lock? Quick unblocking without damage."
+  nl:
+    name: "Geblokkeerd slot"
+    slug: "geblokkeerd-slot"
+    title: "Geblokkeerd Slot"
+    description: "Geblokkeerd, vastgelopen of vastgeroest slot? Snel deblokkeren zonder schade."
+
+- id: blocked-door
+  icon: door-closed
+  fr:
+    name: "Porte bloquée"
+    slug: "porte-bloquee"
+    title: "Porte Bloquée"
+    description: "Porte bloquée qui ne s'ouvre plus ? Intervention rapide 24h/24."
+  en:
+    name: "Blocked Door"
+    slug: "blocked-door"
+    title: "Blocked Door"
+    description: "Blocked door that won't open? Fast 24/7 intervention."
+  nl:
+    name: "Geblokkeerde deur"
+    slug: "geblokkeerde-deur"
+    title: "Geblokkeerde Deur"
+    description: "Geblokkeerde deur die niet meer opent? Snelle interventie 24/7."
+
+- id: lost-key
+  icon: key-round
+  fr:
+    name: "Clé perdue"
+    slug: "cle-perdue"
+    title: "Clé Perdue"
+    description: "Clé perdue ou volée ? Ouverture et remplacement de serrure sécurisé."
+  en:
+    name: "Lost Key"
+    slug: "lost-key"
+    title: "Lost Key"
+    description: "Lost or stolen key? Door opening and secure lock replacement."
+  nl:
+    name: "Verloren sleutel"
+    slug: "verloren-sleutel"
+    title: "Verloren Sleutel"
+    description: "Sleutel verloren of gestolen? Deuropening en veilige slotvervanging."
+
+- id: weekend-locksmith
+  icon: calendar-days
+  fr:
+    name: "Serrurier week-end"
+    slug: "serrurier-weekend"
+    title: "Serrurier Week-end"
+    description: "Besoin d'un serrurier le samedi ou dimanche ? Disponible tout le week-end."
+  en:
+    name: "Weekend Locksmith"
+    slug: "weekend-locksmith"
+    title: "Weekend Locksmith"
+    description: "Need a locksmith on Saturday or Sunday? Available all weekend."
+  nl:
+    name: "Weekend slotenmaker"
+    slug: "weekend-slotenmaker"
+    title: "Weekend Slotenmaker"
+    description: "Slotenmaker nodig op zaterdag of zondag? Heel het weekend beschikbaar."
+
+# MEDIUM PRIORITY
+
+- id: stuck-key
+  icon: key-square
+  fr:
+    name: "Clé coincée"
+    slug: "cle-coincee"
+    title: "Clé Coincée dans la Serrure"
+    description: "Clé coincée qui ne tourne plus ? Extraction délicate sans endommager."
+  en:
+    name: "Stuck Key"
+    slug: "stuck-key"
+    title: "Stuck Key in Lock"
+    description: "Key stuck that won't turn? Careful extraction without damage."
+  nl:
+    name: "Vastzittende sleutel"
+    slug: "vastzittende-sleutel"
+    title: "Vastzittende Sleutel in Slot"
+    description: "Sleutel zit vast en draait niet meer? Voorzichtige extractie zonder schade."
+
+- id: attempted-break-in
+  icon: shield-off
+  fr:
+    name: "Tentative d'effraction"
+    slug: "tentative-effraction"
+    title: "Tentative d'Effraction"
+    description: "Porte forcée ou traces d'effraction ? Sécurisation urgente de votre domicile."
+  en:
+    name: "Attempted Break-in"
+    slug: "attempted-break-in"
+    title: "Attempted Break-in"
+    description: "Forced door or break-in marks? Urgent home security."
+  nl:
+    name: "Poging tot inbraak"
+    slug: "poging-tot-inbraak"
+    title: "Poging tot Inbraak"
+    description: "Geforceerde deur of inbraaksporen? Dringende beveiliging van uw woning."
+
+- id: blocked-safe
+  icon: box
+  fr:
+    name: "Coffre-fort bloqué"
+    slug: "coffre-fort-bloque"
+    title: "Coffre-fort Bloqué"
+    description: "Coffre-fort bloqué ou code oublié ? Ouverture par spécialiste."
+  en:
+    name: "Blocked Safe"
+    slug: "blocked-safe"
+    title: "Blocked Safe"
+    description: "Blocked safe or forgotten code? Opening by specialist."
+  nl:
+    name: "Geblokkeerde kluis"
+    slug: "geblokkeerde-kluis"
+    title: "Geblokkeerde Kluis"
+    description: "Geblokkeerde kluis of code vergeten? Opening door specialist."
+
+- id: car-lockout
+  icon: car
+  fr:
+    name: "Ouverture voiture"
+    slug: "ouverture-voiture"
+    title: "Ouverture de Voiture"
+    description: "Clé enfermée dans la voiture ? Ouverture sans dégât de votre véhicule."
+  en:
+    name: "Car Lockout"
+    slug: "car-lockout"
+    title: "Car Lockout"
+    description: "Keys locked in car? Damage-free vehicle opening."
+  nl:
+    name: "Auto opening"
+    slug: "auto-opening"
+    title: "Auto Opening"
+    description: "Sleutels in de auto opgesloten? Schadevrije opening van uw voertuig."

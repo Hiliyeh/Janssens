@@ -97,14 +97,19 @@ def generate_page(lang, city_data, service_id, service_data):
         alt_folder = LANG_CONFIG[alt_lang]["cities_folder"]
         alternates[alt_lang] = f"/{alt_lang}/{alt_folder}/{alt_city_slug}/{alt_service['slug']}/"
 
-    # Brand name per language
-    brand = "Janssens Serrurier" if lang == "fr" else ("Janssens Locksmith" if lang == "en" else "Janssens Slotenmaker")
+    # SEO title suffix per language with phone number
+    if lang == "fr":
+        title_suffix = "Serrurier 24h/24 | 0489 24 73 64"
+    elif lang == "en":
+        title_suffix = "Locksmith 24/7 | 0489 24 73 64"
+    else:
+        title_suffix = "Slotenmaker 24/7 | 0489 24 73 64"
 
     # Create page content
     content = f"""---
 layout: city-service
 lang: {lang}
-title: "{service_name} {city_name} | {brand}"
+title: "{service_name} {city_name} | {title_suffix}"
 description: "{service_desc}"
 city_name: "{city_name}"
 city_slug: "{city_slug}"

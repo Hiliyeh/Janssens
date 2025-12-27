@@ -11,30 +11,37 @@ LANG_CONFIG = {
     'nl': {'guides_folder': 'gidsen'},
 }
 
+# SEO suffixes per language
+SEO_SUFFIX = {
+    'fr': 'Serrurier 24h/24 | 0489 24 73 64',
+    'en': 'Locksmith 24/7 | 0489 24 73 64',
+    'nl': 'Slotenmaker 24/7 | 0489 24 73 64',
+}
+
 GUIDES = [
     {
         'id': 'locked-out-what-to-do',
-        'fr': {'slug': 'porte-claquee-que-faire', 'title': 'Porte claquée : que faire ?'},
-        'en': {'slug': 'locked-out-what-to-do', 'title': 'Locked Out: What to Do?'},
-        'nl': {'slug': 'buitengesloten-wat-te-doen', 'title': 'Buitengesloten: Wat te Doen?'},
+        'fr': {'slug': 'porte-claquee-que-faire', 'title': 'Porte Claquée Bruxelles'},
+        'en': {'slug': 'locked-out-what-to-do', 'title': 'Locked Out Brussels'},
+        'nl': {'slug': 'buitengesloten-wat-te-doen', 'title': 'Buitengesloten Brussel'},
     },
     {
         'id': 'avoid-locksmith-scams',
-        'fr': {'slug': 'eviter-arnaques-serrurier', 'title': 'Éviter les arnaques serrurier'},
+        'fr': {'slug': 'eviter-arnaques-serrurier', 'title': 'Éviter Arnaques Serrurier'},
         'en': {'slug': 'avoid-locksmith-scams', 'title': 'Avoid Locksmith Scams'},
         'nl': {'slug': 'slotenmaker-oplichting-vermijden', 'title': 'Slotenmaker Oplichting Vermijden'},
     },
     {
         'id': 'choose-security-lock',
-        'fr': {'slug': 'choisir-serrure-securite', 'title': 'Choisir une serrure de sécurité'},
-        'en': {'slug': 'choose-security-lock', 'title': 'Choosing a Security Lock'},
-        'nl': {'slug': 'veiligheidsslot-kiezen', 'title': 'Een Veiligheidsslot Kiezen'},
+        'fr': {'slug': 'choisir-serrure-securite', 'title': 'Choisir Serrure Sécurité'},
+        'en': {'slug': 'choose-security-lock', 'title': 'Choose Security Lock'},
+        'nl': {'slug': 'veiligheidsslot-kiezen', 'title': 'Veiligheidsslot Kiezen'},
     },
     {
         'id': 'after-burglary',
-        'fr': {'slug': 'cambriolage-que-faire', 'title': 'Cambriolage : que faire ?'},
-        'en': {'slug': 'after-burglary-what-to-do', 'title': 'After a Burglary: What to Do?'},
-        'nl': {'slug': 'na-inbraak-wat-te-doen', 'title': 'Na een Inbraak: Wat te Doen?'},
+        'fr': {'slug': 'cambriolage-que-faire', 'title': 'Après Cambriolage'},
+        'en': {'slug': 'after-burglary-what-to-do', 'title': 'After Burglary'},
+        'nl': {'slug': 'na-inbraak-wat-te-doen', 'title': 'Na Inbraak'},
     },
 ]
 
@@ -59,7 +66,7 @@ def create_guide_page(guide, lang):
     content = f"""---
 layout: guide
 lang: {lang}
-title: "{title} | Janssens"
+title: "{title} | {SEO_SUFFIX[lang]}"
 description: "{title}"
 guide_id: "{guide['id']}"
 alternate:
@@ -101,7 +108,7 @@ def create_guides_index(lang):
     content = f"""---
 layout: guides-index
 lang: {lang}
-title: "{titles[lang]} | Janssens"
+title: "{titles[lang]} | {SEO_SUFFIX[lang]}"
 description: "{descs[lang]}"
 alternate:
   fr: "/fr/guides/"

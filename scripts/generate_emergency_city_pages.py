@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate emergency city pages for all languages.
-43 cities x 6 emergency types x 3 languages = 774 pages
+43 cities x 14 emergency types x 3 languages = 1,806 pages
 """
 
 import os
@@ -61,6 +61,56 @@ EMERGENCIES = [
         "fr": {"slug": "serrurier-dimanche", "title": "Serrurier Dimanche", "desc": "Serrurier dimanche à {city}. Intervention urgente le dimanche et jours fériés. Même tarif, même rapidité. Appelez 0489 24 73 64."},
         "en": {"slug": "sunday-locksmith", "title": "Sunday Locksmith", "desc": "Sunday locksmith in {city}. Emergency service on Sundays and holidays. Same rate, same speed. Call 0489 24 73 64."},
         "nl": {"slug": "zondag-slotenmaker", "title": "Zondag Slotenmaker", "desc": "Zondag slotenmaker in {city}. Dringende interventie op zondag en feestdagen. Zelfde tarief, zelfde snelheid. Bel 0489 24 73 64."}
+    },
+    # NEW EMERGENCY TYPES - HIGH PRIORITY
+    {
+        "id": "jammed-lock",
+        "fr": {"slug": "serrure-bloquee", "title": "Serrure Bloquée", "desc": "Serrure bloquée à {city} ? Serrurier urgence déblocage rapide sans casser. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "jammed-lock", "title": "Jammed Lock", "desc": "Jammed lock in {city}? Emergency locksmith, quick unblocking without damage. 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "geblokkeerd-slot", "title": "Geblokkeerd Slot", "desc": "Geblokkeerd slot in {city}? Nood slotenmaker, snel deblokkeren zonder schade. 24/7. Bel 0489 24 73 64."}
+    },
+    {
+        "id": "blocked-door",
+        "fr": {"slug": "porte-bloquee", "title": "Porte Bloquée", "desc": "Porte bloquée à {city} ? Serrurier urgence intervention rapide 24h/24. Ouverture sans dégât. Appelez 0489 24 73 64."},
+        "en": {"slug": "blocked-door", "title": "Blocked Door", "desc": "Blocked door in {city}? Emergency locksmith, fast 24/7 intervention. Damage-free opening. Call 0489 24 73 64."},
+        "nl": {"slug": "geblokkeerde-deur", "title": "Geblokkeerde Deur", "desc": "Geblokkeerde deur in {city}? Nood slotenmaker, snelle interventie 24/7. Opening zonder schade. Bel 0489 24 73 64."}
+    },
+    {
+        "id": "lost-key",
+        "fr": {"slug": "cle-perdue", "title": "Clé Perdue", "desc": "Clé perdue à {city} ? Serrurier urgence ouverture et remplacement serrure sécurisé. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "lost-key", "title": "Lost Key", "desc": "Lost key in {city}? Emergency locksmith, door opening and secure lock replacement. 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "verloren-sleutel", "title": "Verloren Sleutel", "desc": "Sleutel verloren in {city}? Nood slotenmaker, deuropening en veilige slotvervanging. 24/7. Bel 0489 24 73 64."}
+    },
+    {
+        "id": "weekend-locksmith",
+        "fr": {"slug": "serrurier-weekend", "title": "Serrurier Week-end", "desc": "Serrurier week-end à {city}. Disponible samedi et dimanche. Même tarif, même rapidité. Appelez 0489 24 73 64."},
+        "en": {"slug": "weekend-locksmith", "title": "Weekend Locksmith", "desc": "Weekend locksmith in {city}. Available Saturday and Sunday. Same rate, same speed. Call 0489 24 73 64."},
+        "nl": {"slug": "weekend-slotenmaker", "title": "Weekend Slotenmaker", "desc": "Weekend slotenmaker in {city}. Beschikbaar zaterdag en zondag. Zelfde tarief, zelfde snelheid. Bel 0489 24 73 64."}
+    },
+    # NEW EMERGENCY TYPES - MEDIUM PRIORITY
+    {
+        "id": "stuck-key",
+        "fr": {"slug": "cle-coincee", "title": "Clé Coincée", "desc": "Clé coincée dans la serrure à {city} ? Serrurier urgence extraction délicate sans casser. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "stuck-key", "title": "Stuck Key", "desc": "Stuck key in lock in {city}? Emergency locksmith, careful extraction without damage. 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "vastzittende-sleutel", "title": "Vastzittende Sleutel", "desc": "Sleutel zit vast in slot in {city}? Nood slotenmaker, voorzichtige extractie zonder schade. 24/7. Bel 0489 24 73 64."}
+    },
+    {
+        "id": "attempted-break-in",
+        "fr": {"slug": "tentative-effraction", "title": "Tentative Effraction", "desc": "Tentative d'effraction à {city} ? Serrurier urgence sécurisation de votre domicile. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "attempted-break-in", "title": "Attempted Break-in", "desc": "Attempted break-in in {city}? Emergency locksmith, urgent home security. 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "poging-tot-inbraak", "title": "Poging tot Inbraak", "desc": "Poging tot inbraak in {city}? Nood slotenmaker, dringende beveiliging van uw woning. 24/7. Bel 0489 24 73 64."}
+    },
+    {
+        "id": "blocked-safe",
+        "fr": {"slug": "coffre-fort-bloque", "title": "Coffre-fort Bloqué", "desc": "Coffre-fort bloqué à {city} ? Serrurier spécialiste ouverture sans dommage. Code oublié ? Appelez 0489 24 73 64."},
+        "en": {"slug": "blocked-safe", "title": "Blocked Safe", "desc": "Blocked safe in {city}? Specialist locksmith, damage-free opening. Forgotten code? Call 0489 24 73 64."},
+        "nl": {"slug": "geblokkeerde-kluis", "title": "Geblokkeerde Kluis", "desc": "Geblokkeerde kluis in {city}? Specialist slotenmaker, schadevrije opening. Code vergeten? Bel 0489 24 73 64."}
+    },
+    {
+        "id": "car-lockout",
+        "fr": {"slug": "ouverture-voiture", "title": "Ouverture Voiture", "desc": "Clé enfermée dans la voiture à {city} ? Serrurier auto ouverture sans dégât. 24h/24. Appelez 0489 24 73 64."},
+        "en": {"slug": "car-lockout", "title": "Car Lockout", "desc": "Keys locked in car in {city}? Auto locksmith, damage-free vehicle opening. 24/7. Call 0489 24 73 64."},
+        "nl": {"slug": "auto-opening", "title": "Auto Opening", "desc": "Sleutels in auto in {city}? Auto slotenmaker, schadevrije opening van uw voertuig. 24/7. Bel 0489 24 73 64."}
     }
 ]
 
@@ -108,13 +158,13 @@ def generate_page(city_data, emergency, lang_config):
         l_emergency_slug = emergency[l_code]["slug"]
         alternates[l_code] = f"/{l_code}/{l_folder}/{l_city_slug}/{l_emergency_slug}/"
 
-    # Build title with proper brand name per language
+    # Build title with proper brand name per language + phone number for SEO
     if lang == "fr":
-        title = f"{emergency_title} {city_name} | Serrurier Urgence | Janssens"
+        title = f"{emergency_title} {city_name} | Serrurier 24h/24 | 0489 24 73 64"
     elif lang == "en":
-        title = f"{emergency_title} {city_name} | Emergency Locksmith | Janssens"
+        title = f"{emergency_title} {city_name} | Locksmith 24/7 | 0489 24 73 64"
     else:
-        title = f"{emergency_title} {city_name} | Nood Slotenmaker | Janssens"
+        title = f"{emergency_title} {city_name} | Slotenmaker 24/7 | 0489 24 73 64"
 
     content = f'''---
 layout: emergency-city

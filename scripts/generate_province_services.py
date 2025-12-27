@@ -77,7 +77,7 @@ def generate_province_service_pages():
             content_fr = f"""---
 layout: province-service
 lang: fr
-title: "{service['fr']['name']} {province['name_fr']} | Janssens Serrurier"
+title: "{service['fr']['name']} {province['name_fr']} | Serrurier 24h/24 | 0489 24 73 64"
 description: "{service['fr']['name']} dans la province de {province['name_fr']}. Intervention rapide dans toutes les communes. Devis gratuit 24h/24."
 province_slug: "{province['fr']}"
 province_name: "{province['name_fr']}"
@@ -98,7 +98,7 @@ alternate:
             content_nl = f"""---
 layout: province-service
 lang: nl
-title: "{service['nl']['name']} {province['name_nl']} | Janssens Slotenmaker"
+title: "{service['nl']['name']} {province['name_nl']} | Slotenmaker 24/7 | 0489 24 73 64"
 description: "{service['nl']['name']} in de provincie {province['name_nl']}. Snelle interventie in alle gemeenten. Gratis offerte 24u/24."
 province_slug: "{province['nl']}"
 province_name: "{province['name_nl']}"
@@ -119,7 +119,7 @@ alternate:
             content_en = f"""---
 layout: province-service
 lang: en
-title: "{service['en']['name']} {province['name_en']} | Janssens Locksmith"
+title: "{service['en']['name']} {province['name_en']} | Locksmith 24/7 | 0489 24 73 64"
 description: "{service['en']['name']} in {province['name_en']} province. Fast intervention in all municipalities. Free quote 24/7."
 province_slug: "{province['en']}"
 province_name: "{province['name_en']}"

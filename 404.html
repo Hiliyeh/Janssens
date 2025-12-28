@@ -323,16 +323,60 @@
             const path = window.location.pathname;
             let redirectTo = null;
 
+            // Mapping FR → NL pour les communes bruxelloises (noms differents)
+            const frToNl = {
+                'ixelles': 'elsene',
+                'schaerbeek': 'schaarbeek',
+                'auderghem': 'oudergem',
+                'forest': 'vorst',
+                'uccle': 'ukkel',
+                'saint-gilles': 'sint-gillis',
+                'saint-josse-ten-noode': 'sint-joost-ten-node',
+                'molenbeek-saint-jean': 'sint-jans-molenbeek',
+                'woluwe-saint-lambert': 'sint-lambrechts-woluwe',
+                'woluwe-saint-pierre': 'sint-pieters-woluwe',
+                'watermael-boitsfort': 'watermaal-bosvoorde',
+                'berchem-sainte-agathe': 'sint-agatha-berchem',
+                'bruxelles-ville': 'brussel-stad',
+                'etterbeek': 'etterbeek',
+                'evere': 'evere',
+                'ganshoren': 'ganshoren',
+                'jette': 'jette',
+                'koekelberg': 'koekelberg',
+                'anderlecht': 'anderlecht'
+            };
+
+            // Mapping NL → FR pour les communes bruxelloises
+            const nlToFr = {
+                'elsene': 'ixelles',
+                'schaarbeek': 'schaerbeek',
+                'oudergem': 'auderghem',
+                'vorst': 'forest',
+                'ukkel': 'uccle',
+                'sint-gillis': 'saint-gilles',
+                'sint-joost-ten-node': 'saint-josse-ten-noode',
+                'sint-jans-molenbeek': 'molenbeek-saint-jean',
+                'sint-lambrechts-woluwe': 'woluwe-saint-lambert',
+                'sint-pieters-woluwe': 'woluwe-saint-pierre',
+                'watermaal-bosvoorde': 'watermael-boitsfort',
+                'sint-agatha-berchem': 'berchem-sainte-agathe',
+                'brussel-stad': 'bruxelles-ville'
+            };
+
             // FR: /fr/cities/xxx/ → /fr/communes/xxx/
             if (path.startsWith('/fr/cities/')) {
-                const slug = path.replace('/fr/cities/', '').replace(/\/$/, '');
+                let slug = path.replace('/fr/cities/', '').replace(/\/$/, '');
                 const provinces = ['brabant-wallon', 'brabant-flamand', 'bruxelles'];
+                // Si c'est un nom NL, convertir en FR
+                if (nlToFr[slug]) slug = nlToFr[slug];
                 redirectTo = provinces.includes(slug) ? '/fr/' : '/fr/communes/' + slug + '/';
             }
             // NL: /nl/cities/xxx/ → /nl/gemeenten/xxx/
             else if (path.startsWith('/nl/cities/')) {
-                const slug = path.replace('/nl/cities/', '').replace(/\/$/, '');
-                const provinces = ['waals-brabant', 'vlaams-brabant', 'brussel'];
+                let slug = path.replace('/nl/cities/', '').replace(/\/$/, '');
+                const provinces = ['waals-brabant', 'vlaams-brabant', 'brussel', 'brabant-wallon', 'bruxelles'];
+                // Si c'est un nom FR, convertir en NL
+                if (frToNl[slug]) slug = frToNl[slug];
                 redirectTo = provinces.includes(slug) ? '/nl/' : '/nl/gemeenten/' + slug + '/';
             }
 

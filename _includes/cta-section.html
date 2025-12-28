@@ -14,8 +14,14 @@ Usage: {% include cta-section.html
 <div class="{{ include.class | default: 'service-cta-box' }}">
     <h3>{{ include.title }}</h3>
     <p>{{ include.text }}</p>
-    <a href="tel:{{ biz.phone }}" class="btn btn-primary">
-        <i data-lucide="phone" class="icon"></i>
-        <span>{% if include.btn_text %}{{ include.btn_text }}{% else %}{{ biz.phone_display }}{% endif %}</span>
-    </a>
+    <div class="cta-box-buttons">
+        <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+            <i data-lucide="phone" class="icon"></i>
+            <span>{% if include.btn_text %}{{ include.btn_text }}{% else %}{{ biz.phone_display }}{% endif %}</span>
+        </a>
+        <a href="https://wa.me/{{ biz.phone | remove: '+' }}" class="btn btn-outline-light" rel="noopener noreferrer" target="_blank">
+            <i data-lucide="message-circle" class="icon"></i>
+            <span>{{ t.hero.cta_whatsapp }}</span>
+        </a>
+    </div>
 </div>

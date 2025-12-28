@@ -3,11 +3,20 @@ CTA Box - Reusable call-to-action box
 Usage: {% include cta-box.html title="Title" text="Description" %}
 {% endcomment %}
 
+{% assign lang = page.lang | default: 'fr' %}
+{% assign t = site.data.translations[lang] %}
+
 <div class="service-cta-box">
     {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
     {% if include.text %}<p>{{ include.text }}</p>{% endif %}
-    <a href="tel:{{ biz.phone }}" class="btn btn-primary">
-        <i data-lucide="phone" class="icon"></i>
-        <span>{{ biz.phone_display }}</span>
-    </a>
+    <div class="cta-box-buttons">
+        <a href="tel:{{ biz.phone }}" class="btn btn-primary">
+            <i data-lucide="phone" class="icon"></i>
+            <span>{{ biz.phone_display }}</span>
+        </a>
+        <a href="https://wa.me/{{ biz.phone | remove: '+' }}" class="btn btn-outline-light" rel="noopener noreferrer" target="_blank">
+            <i data-lucide="message-circle" class="icon"></i>
+            <span>{{ t.hero.cta_whatsapp }}</span>
+        </a>
+    </div>
 </div>

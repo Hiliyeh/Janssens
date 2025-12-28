@@ -183,7 +183,9 @@ layout: default
                     </summary>
                     <div class="zone-cities">
                         {% for city in cities[region] %}
-                        <a href="/{{ lang }}/{{ cities_folder }}/{{ city.slug }}/">{{ city.name }}</a>
+                        {% if lang == 'nl' and city.slug_nl %}{% assign city_url_slug = city.slug_nl %}{% elsif lang == 'en' and city.slug_en %}{% assign city_url_slug = city.slug_en %}{% else %}{% assign city_url_slug = city.slug %}{% endif %}
+                        {% if lang == 'nl' and city.name_nl %}{% assign city_display_name = city.name_nl %}{% elsif lang == 'en' and city.name_en %}{% assign city_display_name = city.name_en %}{% else %}{% assign city_display_name = city.name %}{% endif %}
+                        <a href="/{{ lang }}/{{ cities_folder }}/{{ city_url_slug }}/">{{ city_display_name }}</a>
                         {% endfor %}
                     </div>
                 </details>
@@ -234,7 +236,9 @@ layout: default
                         </summary>
                         <div class="zone-cities">
                             {% for city in province_cities %}
-                            <a href="/{{ lang }}/{{ cities_folder }}/{{ city.slug }}/">{{ city.name }}</a>
+                            {% if lang == 'nl' and city.slug_nl %}{% assign city_url_slug = city.slug_nl %}{% elsif lang == 'en' and city.slug_en %}{% assign city_url_slug = city.slug_en %}{% else %}{% assign city_url_slug = city.slug %}{% endif %}
+                            {% if lang == 'nl' and city.name_nl %}{% assign city_display_name = city.name_nl %}{% elsif lang == 'en' and city.name_en %}{% assign city_display_name = city.name_en %}{% else %}{% assign city_display_name = city.name %}{% endif %}
+                            <a href="/{{ lang }}/{{ cities_folder }}/{{ city_url_slug }}/">{{ city_display_name }}</a>
                             {% endfor %}
                             <a href="/{{ lang }}/{{ prov_folder }}/{{ prov_slug }}/" class="zone-province-main-link">
                                 <i data-lucide="arrow-right"></i>

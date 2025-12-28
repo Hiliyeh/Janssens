@@ -27,6 +27,10 @@ layout: default
                     <span class="btn-number">{{ biz.phone_display }}</span>
                 </div>
             </a>
+            <a href="https://wa.me/{{ biz.phone | remove: '+' }}" class="btn btn-outline-light" rel="noopener noreferrer" target="_blank">
+                <i data-lucide="message-circle" class="icon"></i>
+                <span>{{ t.hero.cta_whatsapp }}</span>
+            </a>
         </div>
     </div>
 </section>

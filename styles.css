@@ -5891,6 +5891,23 @@ section {
     margin-bottom: 3rem;
 }
 
+/* Fix: btn-outline-light sur fond clair des pages communes */
+.commune-hero .btn-outline-light {
+    color: var(--color-dark);
+    border-color: var(--color-gray-300);
+    background: transparent;
+}
+
+.commune-hero .btn-outline-light:hover {
+    background: var(--color-gray-100);
+    border-color: var(--color-gray-400);
+}
+
+.commune-hero .btn-outline-light .icon {
+    color: var(--color-dark);
+    stroke: var(--color-dark);
+}
+
 .commune-stats {
     display: flex;
     gap: 2.5rem;
@@ -6459,6 +6476,12 @@ section {
     margin-bottom: 2rem;
     font-size: 1.1rem;
     position: relative;
+}
+
+.cta-box-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .service-faq {
@@ -7216,6 +7239,15 @@ section {
     .marque-cta-box {
         padding: 2.5rem 1.5rem;
         border-radius: var(--radius-xl);
+    }
+
+    .cta-box-buttons {
+        flex-direction: column;
+    }
+
+    .cta-box-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .guide-toc {

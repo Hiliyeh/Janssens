@@ -7,6 +7,107 @@
     <meta name="description" content="Cette page n'existe pas. Redirection vers l'accueil.">
     <meta name="robots" content="noindex, nofollow">
 
+    <!-- INSTANT REDIRECT - Executes BEFORE page renders -->
+    <script>
+    (function() {
+        var path = window.location.pathname;
+        var redirectTo = null;
+
+        // Mapping FR → NL pour les communes bruxelloises
+        var frToNl = {
+            'ixelles': 'elsene', 'schaerbeek': 'schaarbeek', 'auderghem': 'oudergem',
+            'forest': 'vorst', 'uccle': 'ukkel', 'saint-gilles': 'sint-gillis',
+            'saint-josse-ten-noode': 'sint-joost-ten-node', 'molenbeek-saint-jean': 'sint-jans-molenbeek',
+            'woluwe-saint-lambert': 'sint-lambrechts-woluwe', 'woluwe-saint-pierre': 'sint-pieters-woluwe',
+            'watermael-boitsfort': 'watermaal-bosvoorde', 'berchem-sainte-agathe': 'sint-agatha-berchem',
+            'bruxelles-ville': 'brussel-stad', 'etterbeek': 'etterbeek', 'evere': 'evere',
+            'ganshoren': 'ganshoren', 'jette': 'jette', 'koekelberg': 'koekelberg', 'anderlecht': 'anderlecht'
+        };
+        var nlToFr = {
+            'elsene': 'ixelles', 'schaarbeek': 'schaerbeek', 'oudergem': 'auderghem',
+            'vorst': 'forest', 'ukkel': 'uccle', 'sint-gillis': 'saint-gilles',
+            'sint-joost-ten-node': 'saint-josse-ten-noode', 'sint-jans-molenbeek': 'molenbeek-saint-jean',
+            'sint-lambrechts-woluwe': 'woluwe-saint-lambert', 'sint-pieters-woluwe': 'woluwe-saint-pierre',
+            'watermaal-bosvoorde': 'watermael-boitsfort', 'sint-agatha-berchem': 'berchem-sainte-agathe',
+            'brussel-stad': 'bruxelles-ville'
+        };
+        // Mapping FR → EN pour les communes bruxelloises
+        var frToEn = {
+            'bruxelles-ville': 'city-of-brussels', 'ixelles': 'ixelles', 'schaerbeek': 'schaerbeek',
+            'auderghem': 'auderghem', 'forest': 'forest', 'uccle': 'uccle', 'saint-gilles': 'saint-gilles',
+            'saint-josse-ten-noode': 'saint-josse-ten-noode', 'molenbeek-saint-jean': 'molenbeek-saint-jean',
+            'woluwe-saint-lambert': 'woluwe-saint-lambert', 'woluwe-saint-pierre': 'woluwe-saint-pierre',
+            'watermael-boitsfort': 'watermael-boitsfort', 'berchem-sainte-agathe': 'berchem-sainte-agathe'
+        };
+
+        // Helper: extract city slug from path
+        function extractCity(path, prefix) {
+            var rest = path.replace(prefix, '');
+            var parts = rest.split('/').filter(function(p) { return p; });
+            return parts.length > 0 ? parts[0] : null;
+        }
+
+        // 1. /fr/cities/xxx/ → /fr/communes/xxx/
+        if (path.indexOf('/fr/cities/') === 0) {
+            var slug = path.replace('/fr/cities/', '').replace(/\/$/, '');
+            var provinces = ['brabant-wallon', 'brabant-flamand', 'bruxelles'];
+            if (nlToFr[slug]) slug = nlToFr[slug];
+            redirectTo = provinces.indexOf(slug) !== -1 ? '/fr/' : '/fr/communes/' + slug + '/';
+        }
+        // 2. /nl/cities/xxx/ → /nl/gemeenten/xxx/ (avec traduction FR→NL)
+        else if (path.indexOf('/nl/cities/') === 0) {
+            var rest = path.replace('/nl/cities/', '');
+            var parts = rest.split('/').filter(function(p) { return p; });
+            var city = parts[0] || '';
+            var subpage = parts.slice(1).join('/');
+            var provinces = ['waals-brabant', 'vlaams-brabant', 'brussel', 'brabant-wallon', 'bruxelles'];
+            if (frToNl[city]) city = frToNl[city];
+            if (provinces.indexOf(city) !== -1) {
+                redirectTo = '/nl/';
+            } else {
+                redirectTo = '/nl/gemeenten/' + city + '/' + (subpage ? subpage + '/' : '');
+            }
+        }
+        // 3. /nl/gemeenten/french-name/ → /nl/gemeenten/dutch-name/
+        else if (path.indexOf('/nl/gemeenten/') === 0) {
+            var city = extractCity(path, '/nl/gemeenten/');
+            if (city && frToNl[city]) {
+                var rest = path.replace('/nl/gemeenten/' + city, '');
+                redirectTo = '/nl/gemeenten/' + frToNl[city] + rest;
+            }
+        }
+        // 4. /nl/noodgeval/french-name/... → /nl/noodgeval/dutch-name/...
+        else if (path.indexOf('/nl/noodgeval/') === 0) {
+            var city = extractCity(path, '/nl/noodgeval/');
+            if (city && frToNl[city]) {
+                var rest = path.replace('/nl/noodgeval/' + city, '');
+                redirectTo = '/nl/noodgeval/' + frToNl[city] + rest;
+            }
+        }
+        // 5. /en/emergency/bruxelles-ville/... → /en/emergency/city-of-brussels/...
+        else if (path.indexOf('/en/emergency/') === 0) {
+            var city = extractCity(path, '/en/emergency/');
+            if (city && frToEn[city] && frToEn[city] !== city) {
+                var rest = path.replace('/en/emergency/' + city, '');
+                redirectTo = '/en/emergency/' + frToEn[city] + rest;
+            }
+        }
+        // 6. /fr/urgence/dutch-name/... → /fr/urgence/french-name/...
+        else if (path.indexOf('/fr/urgence/') === 0) {
+            var city = extractCity(path, '/fr/urgence/');
+            if (city && nlToFr[city]) {
+                var rest = path.replace('/fr/urgence/' + city, '');
+                redirectTo = '/fr/urgence/' + nlToFr[city] + rest;
+            }
+        }
+
+        if (redirectTo) {
+            window.location.replace(redirectTo);
+            document.write(''); // Stop page rendering
+        }
+    })();
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
     <link rel="alternate icon" type="image/png" href="/assets/images/logo.png">
@@ -318,89 +419,22 @@
     </a>
 
     <script>
-        // Smart INSTANT redirect for old URL structures
+        // Countdown for regular 404s (cities redirects handled in <head>)
         (function() {
-            const path = window.location.pathname;
-            let redirectTo = null;
-
-            // Mapping FR → NL pour les communes bruxelloises (noms differents)
-            const frToNl = {
-                'ixelles': 'elsene',
-                'schaerbeek': 'schaarbeek',
-                'auderghem': 'oudergem',
-                'forest': 'vorst',
-                'uccle': 'ukkel',
-                'saint-gilles': 'sint-gillis',
-                'saint-josse-ten-noode': 'sint-joost-ten-node',
-                'molenbeek-saint-jean': 'sint-jans-molenbeek',
-                'woluwe-saint-lambert': 'sint-lambrechts-woluwe',
-                'woluwe-saint-pierre': 'sint-pieters-woluwe',
-                'watermael-boitsfort': 'watermaal-bosvoorde',
-                'berchem-sainte-agathe': 'sint-agatha-berchem',
-                'bruxelles-ville': 'brussel-stad',
-                'etterbeek': 'etterbeek',
-                'evere': 'evere',
-                'ganshoren': 'ganshoren',
-                'jette': 'jette',
-                'koekelberg': 'koekelberg',
-                'anderlecht': 'anderlecht'
-            };
-
-            // Mapping NL → FR pour les communes bruxelloises
-            const nlToFr = {
-                'elsene': 'ixelles',
-                'schaarbeek': 'schaerbeek',
-                'oudergem': 'auderghem',
-                'vorst': 'forest',
-                'ukkel': 'uccle',
-                'sint-gillis': 'saint-gilles',
-                'sint-joost-ten-node': 'saint-josse-ten-noode',
-                'sint-jans-molenbeek': 'molenbeek-saint-jean',
-                'sint-lambrechts-woluwe': 'woluwe-saint-lambert',
-                'sint-pieters-woluwe': 'woluwe-saint-pierre',
-                'watermaal-bosvoorde': 'watermael-boitsfort',
-                'sint-agatha-berchem': 'berchem-sainte-agathe',
-                'brussel-stad': 'bruxelles-ville'
-            };
-
-            // FR: /fr/cities/xxx/ → /fr/communes/xxx/
-            if (path.startsWith('/fr/cities/')) {
-                let slug = path.replace('/fr/cities/', '').replace(/\/$/, '');
-                const provinces = ['brabant-wallon', 'brabant-flamand', 'bruxelles'];
-                // Si c'est un nom NL, convertir en FR
-                if (nlToFr[slug]) slug = nlToFr[slug];
-                redirectTo = provinces.includes(slug) ? '/fr/' : '/fr/communes/' + slug + '/';
-            }
-            // NL: /nl/cities/xxx/ → /nl/gemeenten/xxx/
-            else if (path.startsWith('/nl/cities/')) {
-                let slug = path.replace('/nl/cities/', '').replace(/\/$/, '');
-                const provinces = ['waals-brabant', 'vlaams-brabant', 'brussel', 'brabant-wallon', 'bruxelles'];
-                // Si c'est un nom FR, convertir en NL
-                if (frToNl[slug]) slug = frToNl[slug];
-                redirectTo = provinces.includes(slug) ? '/nl/' : '/nl/gemeenten/' + slug + '/';
-            }
-
-            // INSTANT redirect if pattern matched
-            if (redirectTo) {
-                window.location.replace(redirectTo);
-                return; // Stop here, don't show 404 page
-            }
-
-            // Default behavior for other 404s: show page with countdown
-            let defaultRedirect = '/';
-            if (path.startsWith('/en/')) defaultRedirect = '/en/';
-            else if (path.startsWith('/nl/')) defaultRedirect = '/nl/';
-            else if (path.startsWith('/fr/')) defaultRedirect = '/fr/';
+            var path = window.location.pathname;
+            var defaultRedirect = '/';
+            if (path.indexOf('/en/') === 0) defaultRedirect = '/en/';
+            else if (path.indexOf('/nl/') === 0) defaultRedirect = '/nl/';
+            else if (path.indexOf('/fr/') === 0) defaultRedirect = '/fr/';
 
             // Update button href
-            const btnHome = document.querySelector('.btn-home');
+            var btnHome = document.querySelector('.btn-home');
             if (btnHome) btnHome.setAttribute('href', defaultRedirect);
 
-            // Countdown for other 404s
-            let seconds = 3;
-            const countdownEl = document.getElementById('countdown');
-
-            const timer = setInterval(() => {
+            // Countdown
+            var seconds = 3;
+            var countdownEl = document.getElementById('countdown');
+            var timer = setInterval(function() {
                 seconds--;
                 if (countdownEl) countdownEl.textContent = seconds;
                 if (seconds <= 0) {

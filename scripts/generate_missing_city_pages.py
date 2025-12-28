@@ -33,21 +33,21 @@ LANG_CONFIG = {
     'fr': {
         'folder': 'fr/communes',
         'service': 'Serrurier',
-        'suffix': 'Serrurier 24h/24 | 0489 24 73 64',
+        'suffix': 'Serrurier 24h/24 | 0495 205 400',
         'desc_template': "Serrurier à {city}: intervention d'urgence en 30 min. Porte claquée, serrure cassée ? Service 24h/24 sans dégât. Devis gratuit.",
         'breadcrumb_zones': "Zones d'intervention"
     },
     'en': {
         'folder': 'en/cities',
         'service': 'Locksmith',
-        'suffix': 'Locksmith 24/7 | 0489 24 73 64',
+        'suffix': 'Locksmith 24/7 | 0495 205 400',
         'desc_template': 'Locksmith in {city}: emergency service in 30 min. Locked out, broken lock? 24/7 service without damage. Free quote.',
         'breadcrumb_zones': 'Service Areas'
     },
     'nl': {
         'folder': 'nl/gemeenten',
         'service': 'Slotenmaker',
-        'suffix': 'Slotenmaker 24/7 | 0489 24 73 64',
+        'suffix': 'Slotenmaker 24/7 | 0495 205 400',
         'desc_template': 'Slotenmaker in {city}: noodinterventie in 30 min. Deur dicht, slot kapot? 24/7 service zonder schade. Gratis offerte.',
         'breadcrumb_zones': 'Werkgebieden'
     }

@@ -25,34 +25,34 @@ for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
 # Services by language with SEO descriptions
 SERVICES = {
     "door-opening": {
-        "fr": {"slug": "ouverture-porte", "name": "Ouverture de porte", "desc": "Ouverture de porte à {city}. Serrurier professionnel, intervention 24h/24. Porte claquée, serrure bloquée ? Devis gratuit. Appelez 0489 24 73 64."},
-        "en": {"slug": "door-opening", "name": "Door Opening", "desc": "Door opening service in {city}. Professional locksmith, 24/7 availability. Locked out, jammed lock? Free quote. Call 0489 24 73 64."},
-        "nl": {"slug": "deuropening", "name": "Deuropening", "desc": "Deuropening in {city}. Professionele slotenmaker, 24/7 beschikbaar. Deur dichtgevallen, slot geblokkeerd? Gratis offerte. Bel 0489 24 73 64."}
+        "fr": {"slug": "ouverture-porte", "name": "Ouverture de porte", "desc": "Ouverture de porte à {city}. Serrurier professionnel, intervention 24h/24. Porte claquée, serrure bloquée ? Devis gratuit. Appelez 0495 205 400."},
+        "en": {"slug": "door-opening", "name": "Door Opening", "desc": "Door opening service in {city}. Professional locksmith, 24/7 availability. Locked out, jammed lock? Free quote. Call 0495 205 400."},
+        "nl": {"slug": "deuropening", "name": "Deuropening", "desc": "Deuropening in {city}. Professionele slotenmaker, 24/7 beschikbaar. Deur dichtgevallen, slot geblokkeerd? Gratis offerte. Bel 0495 205 400."}
     },
     "lock-replacement": {
-        "fr": {"slug": "remplacement-serrure", "name": "Remplacement serrure", "desc": "Remplacement de serrure à {city}. Installation serrures haute sécurité, cylindres européens. Devis gratuit. Appelez 0489 24 73 64."},
-        "en": {"slug": "lock-replacement", "name": "Lock Replacement", "desc": "Lock replacement in {city}. High-security lock installation, European cylinders. Free quote. Call 0489 24 73 64."},
-        "nl": {"slug": "slotvervanging", "name": "Slotvervanging", "desc": "Slotvervanging in {city}. Installatie beveiligde sloten, Europese cilinders. Gratis offerte. Bel 0489 24 73 64."}
+        "fr": {"slug": "remplacement-serrure", "name": "Remplacement serrure", "desc": "Remplacement de serrure à {city}. Installation serrures haute sécurité, cylindres européens. Devis gratuit. Appelez 0495 205 400."},
+        "en": {"slug": "lock-replacement", "name": "Lock Replacement", "desc": "Lock replacement in {city}. High-security lock installation, European cylinders. Free quote. Call 0495 205 400."},
+        "nl": {"slug": "slotvervanging", "name": "Slotvervanging", "desc": "Slotvervanging in {city}. Installatie beveiligde sloten, Europese cilinders. Gratis offerte. Bel 0495 205 400."}
     },
     "key-duplication": {
-        "fr": {"slug": "double-cles", "name": "Double de clés", "desc": "Double de clés à {city}. Reproduction clés maison, immeuble, boîte aux lettres. Service rapide. Appelez 0489 24 73 64."},
-        "en": {"slug": "key-duplication", "name": "Key Duplication", "desc": "Key duplication in {city}. Copy house keys, building keys, mailbox keys. Fast service. Call 0489 24 73 64."},
-        "nl": {"slug": "sleutel-kopie", "name": "Sleutel kopie", "desc": "Sleutel kopie in {city}. Duplicaat huissleutels, gebouwsleutels, brievenbussleutels. Snelle service. Bel 0489 24 73 64."}
+        "fr": {"slug": "double-cles", "name": "Double de clés", "desc": "Double de clés à {city}. Reproduction clés maison, immeuble, boîte aux lettres. Service rapide. Appelez 0495 205 400."},
+        "en": {"slug": "key-duplication", "name": "Key Duplication", "desc": "Key duplication in {city}. Copy house keys, building keys, mailbox keys. Fast service. Call 0495 205 400."},
+        "nl": {"slug": "sleutel-kopie", "name": "Sleutel kopie", "desc": "Sleutel kopie in {city}. Duplicaat huissleutels, gebouwsleutels, brievenbussleutels. Snelle service. Bel 0495 205 400."}
     },
     "door-reinforcement": {
-        "fr": {"slug": "blindage-porte", "name": "Blindage de porte", "desc": "Blindage de porte à {city}. Renforcement porte existante, installation porte blindée. Protection anti-effraction. Appelez 0489 24 73 64."},
-        "en": {"slug": "door-reinforcement", "name": "Door Reinforcement", "desc": "Door reinforcement in {city}. Strengthen existing door, armored door installation. Anti-burglary protection. Call 0489 24 73 64."},
-        "nl": {"slug": "deurbepantsering", "name": "Deurbepantsering", "desc": "Deurbepantsering in {city}. Versterking bestaande deur, gepantserde deur installatie. Anti-inbraak bescherming. Bel 0489 24 73 64."}
+        "fr": {"slug": "blindage-porte", "name": "Blindage de porte", "desc": "Blindage de porte à {city}. Renforcement porte existante, installation porte blindée. Protection anti-effraction. Appelez 0495 205 400."},
+        "en": {"slug": "door-reinforcement", "name": "Door Reinforcement", "desc": "Door reinforcement in {city}. Strengthen existing door, armored door installation. Anti-burglary protection. Call 0495 205 400."},
+        "nl": {"slug": "deurbepantsering", "name": "Deurbepantsering", "desc": "Deurbepantsering in {city}. Versterking bestaande deur, gepantserde deur installatie. Anti-inbraak bescherming. Bel 0495 205 400."}
     },
     "safe": {
-        "fr": {"slug": "coffre-fort", "name": "Coffre-fort", "desc": "Service coffre-fort à {city}. Ouverture, installation, dépannage coffres-forts. Toutes marques. Appelez 0489 24 73 64."},
-        "en": {"slug": "safe", "name": "Safe Services", "desc": "Safe services in {city}. Safe opening, installation, repair. All brands. Call 0489 24 73 64."},
-        "nl": {"slug": "kluis", "name": "Kluisdiensten", "desc": "Kluisdiensten in {city}. Kluis opening, installatie, reparatie. Alle merken. Bel 0489 24 73 64."}
+        "fr": {"slug": "coffre-fort", "name": "Coffre-fort", "desc": "Service coffre-fort à {city}. Ouverture, installation, dépannage coffres-forts. Toutes marques. Appelez 0495 205 400."},
+        "en": {"slug": "safe", "name": "Safe Services", "desc": "Safe services in {city}. Safe opening, installation, repair. All brands. Call 0495 205 400."},
+        "nl": {"slug": "kluis", "name": "Kluisdiensten", "desc": "Kluisdiensten in {city}. Kluis opening, installatie, reparatie. Alle merken. Bel 0495 205 400."}
     },
     "automotive": {
-        "fr": {"slug": "serrurerie-automobile", "name": "Serrurerie automobile", "desc": "Serrurerie automobile à {city}. Ouverture voiture, remplacement clé, réparation serrure auto. 24h/24. Appelez 0489 24 73 64."},
-        "en": {"slug": "automotive-locksmith", "name": "Automotive Locksmith", "desc": "Automotive locksmith in {city}. Car door opening, key replacement, auto lock repair. 24/7. Call 0489 24 73 64."},
-        "nl": {"slug": "auto-slotenmaker", "name": "Auto slotenmaker", "desc": "Auto slotenmaker in {city}. Auto deur opening, sleutel vervanging, auto slot reparatie. 24/7. Bel 0489 24 73 64."}
+        "fr": {"slug": "serrurerie-automobile", "name": "Serrurerie automobile", "desc": "Serrurerie automobile à {city}. Ouverture voiture, remplacement clé, réparation serrure auto. 24h/24. Appelez 0495 205 400."},
+        "en": {"slug": "automotive-locksmith", "name": "Automotive Locksmith", "desc": "Automotive locksmith in {city}. Car door opening, key replacement, auto lock repair. 24/7. Call 0495 205 400."},
+        "nl": {"slug": "auto-slotenmaker", "name": "Auto slotenmaker", "desc": "Auto slotenmaker in {city}. Auto deur opening, sleutel vervanging, auto slot reparatie. 24/7. Bel 0495 205 400."}
     }
 }
 
@@ -99,11 +99,11 @@ def generate_page(lang, city_data, service_id, service_data):
 
     # SEO title suffix per language with phone number
     if lang == "fr":
-        title_suffix = "Serrurier 24h/24 | 0489 24 73 64"
+        title_suffix = "Serrurier 24h/24 | 0495 205 400"
     elif lang == "en":
-        title_suffix = "Locksmith 24/7 | 0489 24 73 64"
+        title_suffix = "Locksmith 24/7 | 0495 205 400"
     else:
-        title_suffix = "Slotenmaker 24/7 | 0489 24 73 64"
+        title_suffix = "Slotenmaker 24/7 | 0495 205 400"
 
     # Create page content
     content = f"""---

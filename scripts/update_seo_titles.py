@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
 Script to update SEO titles across all city pages with phone number
-Format: "{Service} {City} | {Type} 24h/24 | 0489 24 73 64"
+Format: "{Service} {City} | {Type} 24h/24 | 0495 205 400"
 """
 import os
 import re
 import yaml
 
-PHONE = "0489 24 73 64"
+PHONE = "0495 205 400"
 
 # Language-specific settings
 LANG_CONFIG = {
@@ -57,7 +57,7 @@ def update_city_title(filepath, lang):
 
     config = LANG_CONFIG[lang]
 
-    # Build new title: "Serrurier CityName | Serrurier 24h/24 | 0489 24 73 64"
+    # Build new title: "Serrurier CityName | Serrurier 24h/24 | 0495 205 400"
     new_title = f"{config['service']} {city_name} | {config['suffix']}"
 
     # Only update if different

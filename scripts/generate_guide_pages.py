@@ -13,9 +13,9 @@ LANG_CONFIG = {
 
 # SEO suffixes per language
 SEO_SUFFIX = {
-    'fr': 'Serrurier 24h/24 | 0489 24 73 64',
-    'en': 'Locksmith 24/7 | 0489 24 73 64',
-    'nl': 'Slotenmaker 24/7 | 0489 24 73 64',
+    'fr': 'Serrurier 24h/24 | 0495 205 400',
+    'en': 'Locksmith 24/7 | 0495 205 400',
+    'nl': 'Slotenmaker 24/7 | 0495 205 400',
 }
 
 GUIDES = [

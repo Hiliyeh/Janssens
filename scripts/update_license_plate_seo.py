@@ -5,7 +5,7 @@ import os
 import re
 
 BASE_DIR = "/Users/hiliyeh/Desktop/project/Janssens"
-PHONE = "0489 24 73 64"
+PHONE = "0495 205 400"
 
 # Language configurations
 LANG_CONFIG = {

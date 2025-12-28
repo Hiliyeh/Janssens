@@ -34,20 +34,20 @@ languages = {
     'fr': {
         'folder': 'fr',
         'brands_folder': 'marques',
-        'title_template': 'Expert {brand} {city} | Serrurier 24h/24 | 0489 24 73 64',
-        'description_template': 'Serrurier expert {brand} à {city}. Intervention 24h/24 en 30 min. Cylindres, serrures, clés {brand}. Devis gratuit. Appelez 0489 24 73 64.'
+        'title_template': 'Expert {brand} {city} | Serrurier 24h/24 | 0495 205 400',
+        'description_template': 'Serrurier expert {brand} à {city}. Intervention 24h/24 en 30 min. Cylindres, serrures, clés {brand}. Devis gratuit. Appelez 0495 205 400.'
     },
     'en': {
         'folder': 'en',
         'brands_folder': 'brands',
-        'title_template': '{brand} Expert {city} | Locksmith 24/7 | 0489 24 73 64',
-        'description_template': '{brand} expert locksmith in {city}. 24/7 service within 30 min. {brand} cylinders, locks, keys. Free quote. Call 0489 24 73 64.'
+        'title_template': '{brand} Expert {city} | Locksmith 24/7 | 0495 205 400',
+        'description_template': '{brand} expert locksmith in {city}. 24/7 service within 30 min. {brand} cylinders, locks, keys. Free quote. Call 0495 205 400.'
     },
     'nl': {
         'folder': 'nl',
         'brands_folder': 'merken',
-        'title_template': '{brand} Expert {city} | Slotenmaker 24/7 | 0489 24 73 64',
-        'description_template': '{brand} expert slotenmaker in {city}. 24/7 service binnen 30 min. {brand} cilinders, sloten, sleutels. Gratis offerte. Bel 0489 24 73 64.'
+        'title_template': '{brand} Expert {city} | Slotenmaker 24/7 | 0495 205 400',
+        'description_template': '{brand} expert slotenmaker in {city}. 24/7 service binnen 30 min. {brand} cilinders, sloten, sleutels. Gratis offerte. Bel 0495 205 400.'
     }
 }
 

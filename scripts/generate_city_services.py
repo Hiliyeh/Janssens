@@ -15,6 +15,14 @@ with open(os.path.join(DATA_DIR, 'cities.yml'), 'r', encoding='utf-8') as f:
 # Get list of cities with subpages
 CITIES_WITH_SUBPAGES = cities_data.get('cities_with_subpages', [])
 
+# Brussels communes (19) - key-duplication only available here (in-store service)
+BRUSSELS_CITIES = [
+    'anderlecht', 'auderghem', 'berchem-sainte-agathe', 'bruxelles-ville',
+    'etterbeek', 'evere', 'forest', 'ganshoren', 'ixelles', 'jette',
+    'koekelberg', 'molenbeek-saint-jean', 'saint-gilles', 'saint-josse-ten-noode',
+    'schaerbeek', 'uccle', 'watermael-boitsfort', 'woluwe-saint-lambert', 'woluwe-saint-pierre'
+]
+
 # Build city info from all regions
 ALL_CITIES = {}
 for region in ['brussels', 'walloon_brabant', 'flemish_brabant']:
@@ -147,6 +155,10 @@ def main():
                 continue
 
             for service_id, service_langs in SERVICES.items():
+                # Skip key-duplication for cities outside Brussels (in-store service only)
+                if service_id == "key-duplication" and city_slug_fr not in BRUSSELS_CITIES:
+                    continue
+
                 service_data = service_langs[lang]
 
                 path = generate_page(lang, city_data, service_id, service_data)

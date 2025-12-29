@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Generate province service pages for all 8 provinces.
-Creates 168 pages (8 provinces × 7 services × 3 languages)
+Creates 144 pages (8 provinces × 6 services × 3 languages)
+Note: key-duplication excluded - in-store service only available in Brussels
 """
 
 import os
@@ -21,6 +22,7 @@ PROVINCES = [
 ]
 
 # Service data with slugs and IDs per language
+# NOTE: key-duplication removed - in-store service only available in Brussels
 SERVICES = [
     {
         "id": "door-opening",
@@ -33,12 +35,6 @@ SERVICES = [
         "fr": {"slug": "remplacement-serrure", "name": "Remplacement serrure"},
         "nl": {"slug": "slotvervanging", "name": "Slotvervanging"},
         "en": {"slug": "lock-replacement", "name": "Lock Replacement"},
-    },
-    {
-        "id": "key-duplication",
-        "fr": {"slug": "double-cles", "name": "Double de cles"},
-        "nl": {"slug": "sleutel-kopie", "name": "Sleutel kopie"},
-        "en": {"slug": "key-duplication", "name": "Key Duplication"},
     },
     {
         "id": "door-reinforcement",
@@ -145,7 +141,7 @@ def main():
     page_count = generate_province_service_pages()
     print(f"Generated: {page_count} province service pages")
 
-    print(f"\nTotal: 8 provinces x 7 services x 3 languages = {page_count} pages")
+    print(f"\nTotal: 8 provinces x 6 services x 3 languages = {page_count} pages")
 
 
 if __name__ == "__main__":

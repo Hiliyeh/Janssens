@@ -3129,6 +3129,12 @@ section {
         height: 10px;
     }
 
+    /* Assistant link mobile - centered */
+    .nav-assistant-link {
+        justify-content: center;
+        width: 100%;
+    }
+
     /* Animation cascade des liens */
     .nav.open a:nth-child(2) { transition-delay: 0.1s; }
     .nav.open a:nth-child(3) { transition-delay: 0.15s; }

@@ -103,8 +103,35 @@ layout: default
 </section>
 {% endif %}
 
+<!-- Pages liées -->
+{% if page.related_pages %}
+<section class="service-content">
+    <div class="service-container">
+        <div class="service-section">
+            <h2 class="service-section-title"><i data-lucide="link"></i> Voir aussi</h2>
+            <div class="plate-types-grid">
+                {% for related in page.related_pages %}
+                <a href="{{ related.url }}" class="plate-type-card segment-service-card">
+                    <h3>{{ related.title }}</h3>
+                    <p>{{ related.desc }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Zones d'intervention -->
 {% capture cities_title %}{{ page.page_title }} - {{ t.zones.title | default: "Zones d'intervention" }}{% endcapture %}
-{% include cities-accordion.html title=cities_title %}
+{% case lang %}
+{% when 'nl' %}
+    {% assign cities_url_prefix = "/nl/gemeenten/" %}
+{% when 'en' %}
+    {% assign cities_url_prefix = "/en/cities/" %}
+{% else %}
+    {% assign cities_url_prefix = "/fr/communes/" %}
+{% endcase %}
+{% include cities-accordion.html title=cities_title url_prefix=cities_url_prefix url_suffix="/" %}
 
 {{ content }}

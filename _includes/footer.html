@@ -3,6 +3,7 @@
 {% assign biz = site.data.business %}
 {% assign services = site.data.services %}
 {% assign guides = site.data.guides %}
+{% include lang-folders.html %}
 
 <footer class="footer">
     <div class="footer-container">
@@ -26,7 +27,7 @@
                     <h4>{{ t.footer.services }}</h4>
                     <ul>
                         {% for service in services limit:5 %}
-                        <li><a href="/{{ lang }}/services/{{ service[lang].slug }}/">{{ service[lang].name }}</a></li>
+                        <li><a href="/{{ lang }}/{{ services_folder }}/{{ service[lang].slug }}/">{{ service[lang].name }}</a></li>
                         {% endfor %}
                         {% case lang %}
                         {% when 'nl' %}
@@ -44,10 +45,13 @@
                         {% case lang %}
                         {% when 'nl' %}
                         <li><a href="/nl/over-ons/">{{ t.footer.about }}</a></li>
+                        <li><a href="/nl/professioneel/commercieel/">{{ t.footer.professionals }}</a></li>
                         {% when 'en' %}
                         <li><a href="/en/about/">{{ t.footer.about }}</a></li>
+                        <li><a href="/en/professional/commercial/">{{ t.footer.professionals }}</a></li>
                         {% else %}
                         <li><a href="/fr/a-propos/">{{ t.footer.about }}</a></li>
+                        <li><a href="/commercial/">{{ t.footer.professionals }}</a></li>
                         {% endcase %}
                         <li><a href="/{{ lang }}/#confiance">{{ t.footer.partners }}</a></li>
                         <li><a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a></li>
@@ -67,7 +71,7 @@
                     <h4>{{ t.footer.guides }}</h4>
                     <ul>
                         {% for guide in guides limit:4 %}
-                        <li><a href="/{{ lang }}/guides/{{ guide[lang].slug }}/">{{ guide[lang].title }}</a></li>
+                        <li><a href="/{{ lang }}/{{ guides_folder }}/{{ guide[lang].slug }}/">{{ guide[lang].title }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

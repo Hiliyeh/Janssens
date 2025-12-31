@@ -10,6 +10,8 @@ nav:
   contact: "Contact"
   call: "Bellen"
   whatsapp: "WhatsApp"
+  assistant: "Live hulp"
+  assistant_online: "online"
 
 # Hero Section
 hero:
@@ -152,6 +154,7 @@ footer:
   company: "Bedrijf"
   guides: "Gidsen & Tips"
   about: "Over ons"
+  professionals: "Zakelijk"
   partners: "Partners"
   other_provinces: "Andere provincies"
   terms: "Gebruiksvoorwaarden"

@@ -10,6 +10,8 @@ nav:
   contact: "Contact"
   call: "Call"
   whatsapp: "WhatsApp"
+  assistant: "Live help"
+  assistant_online: "online"
 
 # Hero Section
 hero:
@@ -152,6 +154,7 @@ footer:
   company: "Company"
   guides: "Guides & Tips"
   about: "About"
+  professionals: "Professionals"
   partners: "Partners"
   other_provinces: "Other provinces"
   terms: "Terms of use"

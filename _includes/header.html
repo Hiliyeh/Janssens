@@ -19,7 +19,13 @@
             <a href="/{{ lang }}/#services">{{ t.nav.services }}</a>
             <a href="/{{ lang }}/#zones">{{ t.nav.areas }}</a>
             <a href="/{{ lang }}/#confiance" class="nav-live">{{ t.nav.trust }}<span class="nav-live-dot"></span></a>
-            <a href="https://suppia.be/janssens" target="_blank">{{ t.nav.assistant }}</a>
+            <a href="https://suppia.be/janssens" class="nav-assistant-link" target="_blank">
+                <i data-lucide="user" class="nav-assistant-icon"></i>
+                <span class="nav-assistant-text">
+                    <span class="nav-assistant-title">{{ t.nav.assistant }}</span>
+                    <span class="nav-assistant-status"><span class="live-dot-small"></span>5 {{ t.nav.assistant_online }}</span>
+                </span>
+            </a>
             <a href="/{{ lang }}/#contact">{{ t.nav.contact }}</a>
             <div class="nav-cta">
                 <a href="tel:{{ biz.phone }}" class="nav-cta-item">

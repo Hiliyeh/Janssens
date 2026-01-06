@@ -51,6 +51,7 @@
 
 - id: key-duplication
   icon: key
+  brussels_only: true
   fr:
     name: "Double de clés"
     slug: "double-cles"
@@ -148,6 +149,7 @@
 - id: license-plate
   icon: rectangle-horizontal
   special_link: true
+  brussels_only: true
   fr:
     name: "Plaque d'immatriculation"
     slug: "plaque-immatriculation"

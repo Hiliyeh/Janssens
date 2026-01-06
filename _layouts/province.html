@@ -60,10 +60,12 @@ layout: default
                     {% assign prov_folder = "provinces" %}
                 {% endif %}
                 {% for service in site.data.services %}
+                {% unless service.brussels_only %}
                 <a href="/{{ lang }}/{{ prov_folder }}/{{ page.province_slug }}/{{ service[lang].slug }}/" class="service-card-mini">
                     <i data-lucide="{{ service.icon }}"></i>
                     <span>{{ service[lang].name }}</span>
                 </a>
+                {% endunless %}
                 {% endfor %}
             </div>
         </div>

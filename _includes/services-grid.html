@@ -11,9 +11,21 @@ Usage:
 {% include lang-folders.html %}
 {% assign services = site.data.services %}
 
+{% comment %}Check if city is in Brussels (19 communes){% endcomment %}
+{% assign brussels_cities = "anderlecht,auderghem,berchem-sainte-agathe,bruxelles-ville,etterbeek,evere,forest,ganshoren,ixelles,jette,koekelberg,molenbeek-saint-jean,saint-gilles,saint-josse-ten-noode,schaerbeek,uccle,watermael-boitsfort,woluwe-saint-lambert,woluwe-saint-pierre,elsene,ukkel,vorst,sint-gillis,sint-joost-ten-node,schaarbeek,oudergem,sint-agatha-berchem,brussel-stad,sint-jans-molenbeek,watermaal-bosvoorde,sint-lambrechts-woluwe,sint-pieters-woluwe" | split: "," %}
+{% assign current_city_slug = include.city_slug | default: page.city_slug %}
+{% assign is_brussels_city = false %}
+{% for bc in brussels_cities %}
+  {% if bc == current_city_slug %}
+    {% assign is_brussels_city = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <div class="services-grid">
   {% for s in services %}
     {% if s.id != include.exclude %}
+      {% unless s.brussels_only and is_brussels_city == false %}
       {% if include.type == "city" %}
         <a href="/{{ lang }}/{{ cities_folder }}/{{ include.city_slug }}/{{ s[lang].slug }}/" class="service-card-mini">
           <i data-lucide="{{ s.icon }}"></i>
@@ -30,6 +42,7 @@ Usage:
           <span>{{ s[lang].name }}</span>
         </a>
       {% endif %}
+      {% endunless %}
     {% endif %}
   {% endfor %}
 </div>

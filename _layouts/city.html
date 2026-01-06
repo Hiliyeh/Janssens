@@ -34,12 +34,15 @@ layout: default
         <div class="commune-section">
             <h2><i data-lucide="wrench"></i> {{ t.city.services_title | replace: "%city%", page.city_name }}</h2>
             <p>{{ t.city.services_intro | replace: "%city%", page.city_name }}</p>
+            {% assign is_brussels = page.region_name | downcase | slice: 0, 3 %}
             <ul>
                 {% for service in services %}
+                {% unless service.brussels_only and is_brussels != "bru" %}
                 <li>
                     <i data-lucide="{{ service.icon }}"></i>
                     <div><strong>{{ service[lang].name }} {{ t.city.at }} {{ page.city_name }}</strong> – {{ service[lang].city_desc | replace: "%city%", page.city_name }}</div>
                 </li>
+                {% endunless %}
                 {% endfor %}
             </ul>
         </div>

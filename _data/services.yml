@@ -24,6 +24,13 @@
     description: "Deur dichtgevallen, sleutel verloren of slot geblokkeerd? Onze slotenmaker is er binnen 30 minuten."
     city_desc: "Deur dichtgevallen, sleutel verloren of gebroken, onze slotenmaker opent uw deur zonder schade in 95% van de gevallen."
     tag: "Noodgeval 24/7"
+  de:
+    name: "Türöffnung"
+    slug: "tueroeffnung"
+    title: "Türöffnung"
+    description: "Tür zugefallen, Schlüssel verloren oder Schloss blockiert? Unser Schlüsseldienst ist in 30 Minuten da."
+    city_desc: "Tür zugefallen, Schlüssel verloren oder gebrochen, unser Schlüsseldienst öffnet Ihre Tür in 95% der Fälle ohne Beschädigung."
+    tag: "Notfall 24/7"
 
 - id: lock-replacement
   icon: lock
@@ -48,6 +55,13 @@
     description: "Installatie en vervanging van hoogbeveiligde sloten. Alle merken."
     city_desc: "Installatie van hoogbeveiligde sloten, Europese cilinders, meerpuntssloten voor inwoners van %city%."
     tag: "Hoge veiligheid"
+  de:
+    name: "Schlossaustausch"
+    slug: "schlossaustausch"
+    title: "Schlossaustausch"
+    description: "Installation und Austausch von Hochsicherheitsschlössern. Alle Marken."
+    city_desc: "Installation von Hochsicherheitsschlössern, europäischen Zylindern, Mehrpunktschlössern für Einwohner von %city%."
+    tag: "Hohe Sicherheit"
 
 - id: key-duplication
   icon: key
@@ -97,6 +111,13 @@
     description: "Versterking van bestaande deuren. Anti-inbraakbeveiliging."
     city_desc: "Versterk de beveiliging van uw woning in %city% met onze versterkingsoplossingen."
     tag: "Verhoogde beveiliging"
+  de:
+    name: "Türpanzerung"
+    slug: "tuerpanzerung"
+    title: "Türpanzerung"
+    description: "Verstärkung bestehender Türen. Einbruchschutz."
+    city_desc: "Verstärken Sie die Sicherheit Ihres Hauses in %city% mit unseren Verstärkungslösungen."
+    tag: "Erhöhte Sicherheit"
 
 - id: safe
   icon: box
@@ -121,6 +142,13 @@
     description: "Opening, installatie en reparatie van kluizen."
     city_desc: "Opening, installatie en reparatie van kluizen voor particulieren en bedrijven in %city%."
     tag: "Ter plaatse"
+  de:
+    name: "Tresor"
+    slug: "tresor"
+    title: "Tresor-Service"
+    description: "Öffnung, Installation und Reparatur von Tresoren."
+    city_desc: "Öffnung, Installation und Reparatur von Tresoren für Privatpersonen und Unternehmen in %city%."
+    tag: "Vor Ort"
 
 - id: automotive
   icon: car
@@ -144,6 +172,13 @@
     title: "Auto Slotenmaker"
     description: "Voertuigopening, verloren autosleutels, programmering."
     city_desc: "Auto openen, autosleutel vervangen voor automobilisten in %city%."
+    tag: "Express"
+  de:
+    name: "Kfz-Schlüsseldienst"
+    slug: "kfz-schluesseldienst"
+    title: "Kfz-Schlüsseldienst"
+    description: "Fahrzeugöffnung, verlorene Autoschlüssel, Programmierung."
+    city_desc: "Auto öffnen, Autoschlüssel ersetzen für Autofahrer in %city%."
     tag: "Express"
 
 - id: license-plate
@@ -171,3 +206,65 @@
     description: "Belgische nummerplaten ter plaatse gemaakt. Snelle service."
     city_desc: "Goedgekeurde Belgische nummerplaten ter plaatse gemaakt voor inwoners van %city%."
     tag: "In winkel"
+
+- id: smart-lock
+  icon: smartphone
+  fr:
+    name: "Serrure connectée"
+    slug: "serrure-connectee"
+    title: "Serrure Connectée"
+    description: "Installation de serrures connectées et intelligentes. Nuki, Yale, Samsung. Domotique et contrôle à distance."
+    city_desc: "Installation et configuration de serrures connectées pour les habitants de %city%. Compatible HomeKit, Alexa, Google Home."
+    tag: "Domotique"
+  en:
+    name: "Smart Lock"
+    slug: "smart-lock"
+    title: "Smart Lock"
+    description: "Smart lock installation and setup. Nuki, Yale, Samsung. Home automation and remote control."
+    city_desc: "Smart lock installation and configuration for %city% residents. Compatible with HomeKit, Alexa, Google Home."
+    tag: "Smart Home"
+  nl:
+    name: "Slim slot"
+    slug: "slim-slot"
+    title: "Slim Slot"
+    description: "Installatie van slimme sloten. Nuki, Yale, Samsung. Domotica en afstandsbediening."
+    city_desc: "Installatie en configuratie van slimme sloten voor inwoners van %city%. Compatibel met HomeKit, Alexa, Google Home."
+    tag: "Domotica"
+  de:
+    name: "Smart Lock"
+    slug: "smart-lock"
+    title: "Smart Lock"
+    description: "Installation von Smart Locks. Nuki, Yale, Samsung. Hausautomation und Fernsteuerung."
+    city_desc: "Installation und Konfiguration von Smart Locks für Einwohner von %city%. Kompatibel mit HomeKit, Alexa, Google Home."
+    tag: "Smart Home"
+
+- id: access-control
+  icon: keyboard
+  fr:
+    name: "Digicode"
+    slug: "digicode"
+    title: "Digicode & Contrôle d'accès"
+    description: "Installation de digicodes, claviers à code, interphones. Sécurisation des accès résidentiels et professionnels."
+    city_desc: "Installation et dépannage de digicodes et systèmes de contrôle d'accès pour immeubles et entreprises à %city%."
+    tag: "Accès sécurisé"
+  en:
+    name: "Access Control"
+    slug: "access-control"
+    title: "Access Control & Keypad"
+    description: "Keypad locks, access control systems, intercoms installation. Secure access for residential and commercial buildings."
+    city_desc: "Access control and keypad installation and repair for buildings and businesses in %city%."
+    tag: "Secure Access"
+  nl:
+    name: "Codeslot"
+    slug: "codeslot"
+    title: "Codeslot & Toegangscontrole"
+    description: "Installatie van codesloten, toetsenbordsloten, intercom. Beveiligde toegang voor residentiële en commerciële gebouwen."
+    city_desc: "Installatie en reparatie van codesloten en toegangscontrolesystemen voor gebouwen en bedrijven in %city%."
+    tag: "Veilige toegang"
+  de:
+    name: "Zugangskontrolle"
+    slug: "zugangskontrolle"
+    title: "Zugangskontrolle & Codetastatur"
+    description: "Installation von Codetastaturen, Zugangskontrollsystemen, Gegensprechanlagen. Sichere Zugänge für Wohn- und Geschäftsgebäude."
+    city_desc: "Installation und Reparatur von Codetastaturen und Zugangskontrollsystemen für Gebäude und Unternehmen in %city%."
+    tag: "Sicherer Zugang"

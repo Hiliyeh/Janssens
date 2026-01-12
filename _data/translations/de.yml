@@ -1,0 +1,479 @@
+# German Translations
+# ===================
+
+# Navigation
+nav:
+  services: "Dienstleistungen"
+  why_us: "Vorteile"
+  trust: "Direkt"
+  areas: "Wo?"
+  contact: "Kontakt"
+  call: "Anrufen"
+  whatsapp: "WhatsApp"
+  assistant: "Hilfe"
+  assistant_online: "online"
+
+# Hero Section
+hero:
+  title_1: "Ihr Schlüsseldienst"
+  title_2: "Deutschsprachige Gemeinschaft Belgiens"
+  text: "Tür zugefallen? Schlüssel verloren? Wir sind in <strong>30 Minuten</strong> da, ohne Ihre Tür zu beschädigen. Über <strong>10 Jahre</strong> Erfahrung, registriertes Unternehmen, Preis vor dem Einsatz genannt."
+  cta_call: "Jetzt anrufen"
+  cta_whatsapp: "WhatsApp"
+  trust_1: "Ohne Beschädigung"
+  trust_2: "Festpreis angekündigt"
+  trust_3: "Zahlung nach dem Service"
+
+# Stats
+stats:
+  delay: "Durchschnittliche Zeit"
+  experience: "Jahre Erfahrung"
+  cities: "Abgedeckte Gemeinden"
+  delay_value: "30 Min"
+  experience_value: "10+"
+  cities_value: "9"
+
+# Emergency Banner
+emergency:
+  title: "Tür zugefallen? Schlüssel verloren oder gebrochen?"
+  text: "Ein qualifizierter Schlüsseldienst ist in weniger als 30 Minuten bei Ihnen."
+  btn: "Notruf"
+  badge: "Notfall 24/7"
+
+# Services Section
+services:
+  tag: "Unsere Dienstleistungen"
+  title: "Professionelle Schlüsseldienstlösungen"
+  desc: "Schnelle und sorgfältige Einsätze für alle Ihre Sicherheitsbedürfnisse"
+  learn_more: "Mehr erfahren"
+
+# Why Section
+why:
+  tag: "Warum Janssens?"
+  title: "Vertrauen wird aufgebaut"
+  intro: "Seit über 10 Jahren betreuen wir Privatpersonen, Unternehmen und Institutionen. Unser Ruf basiert auf drei Verpflichtungen."
+
+# Pillars
+pillars:
+  speed:
+    title: "Schnelligkeit"
+    text: "Garantierter Einsatz in weniger als 30 Minuten, 24/7, auch an Feiertagen."
+  expertise:
+    title: "Fachkompetenz"
+    text: "Zertifizierte Techniker, professionelle Ausrüstung, sorgfältige und beschädigungsfreie Arbeit."
+  transparency:
+    title: "Transparenz"
+    text: "Preis vor dem Einsatz genannt. Keine Überraschungen. Zahlung erst nach dem Service."
+
+# Trust
+trust:
+  available:
+    title: "24/7 verfügbar"
+    text: "Feiertage und Wochenenden inbegriffen"
+  registered:
+    title: "Registriertes Unternehmen"
+    text: "MwSt. BE0712.625.742 · LAMRO GROUP"
+  certified:
+    title: "Zertifizierte Techniker"
+    text: "Kontinuierliche Schulung zu allen Marken"
+
+# Live Feed
+live:
+  tag: "Unsere Abdeckung"
+  title: "Live-Einsätze"
+  today: "Heute:"
+  badge: "Registriertes Unternehmen"
+  status:
+    enroute: "Unterwegs"
+    ongoing: "In Bearbeitung"
+    completed: "Abgeschlossen"
+
+# Zones Section
+zones:
+  tag: "Einsatzgebiete"
+  title: "Sind Sie in unserem Gebiet?"
+  desc: "Überprüfen Sie in 1 Sekunde, ob wir zu Ihnen kommen"
+  placeholder: "Postleitzahl oder Gemeinde (z.B. 4700, Eupen...)"
+  initial: "Geben Sie Ihre Postleitzahl oder den Namen Ihrer Gemeinde ein"
+  success:
+    title: "Gute Nachricht!"
+    text: "Wir kommen zu"
+    delay: "Einsatz in <strong>~30 Min</strong>"
+    available: "Verfügbar <strong>24/7</strong>"
+    cta: "Jetzt anrufen"
+  outside:
+    title: "Wir kommen!"
+    text: "Wir decken ganz Belgien ab. Rufen Sie uns für einen schnellen Einsatz an."
+    cta: "Jetzt anrufen"
+  not_found:
+    title: "Gebiet nicht gefunden"
+    text: "Wir haben diese Gemeinde nicht gefunden. Überprüfen Sie die Schreibweise oder kontaktieren Sie uns."
+    cta: "Kontaktieren"
+  municipalities: "Gemeinden"
+  view_province: "Alle Gemeinden von"
+  regions:
+    title: "Unsere Hauptgebiete:"
+    brussels: "Brüssel-Hauptstadt"
+    walloon: "Wallonisch-Brabant"
+    flemish: "Flämisch-Brabant"
+    german: "Deutschsprachige Gemeinschaft"
+  other_provinces: "Andere abgedeckte Provinzen"
+
+# Home Page
+home:
+  emergency_label: "Notfall?"
+  hero_image_alt: "Professioneller Schlüsseldienst Janssens öffnet eine Tür - schnelle Hilfe 24/7"
+  map_image_alt: "Karte der 9 Gemeinden der Deutschsprachigen Gemeinschaft Belgiens"
+
+# Guides Section
+guides:
+  tag: "Praktische Anleitungen"
+  title: "Expertentipps für Schlösser"
+  desc: "Finden Sie unsere praktischen Anleitungen zu allen Fragen der Schlosserei"
+  view_all: "Alle Anleitungen ansehen"
+
+# FAQ Section
+faq:
+  tag: "FAQ"
+  title: "Häufig gestellte Fragen"
+
+# Contact Section
+contact:
+  tag: "Kontakt"
+  title: "Brauchen Sie einen Schlüsseldienst?"
+  text: "Rufen Sie uns direkt an oder senden Sie uns eine Nachricht. Wir antworten in wenigen Minuten."
+  phone: "Telefon"
+  whatsapp: "WhatsApp"
+  whatsapp_text: "Schnelle Antwort"
+  email: "E-Mail"
+  address: "Adresse"
+
+# Footer
+footer:
+  desc: "Ihr Schlossexperte seit über 10 Jahren. Verfügbar 24/7 für alle Ihre Notfälle."
+  services: "Dienstleistungen"
+  company: "Unternehmen"
+  guides: "Anleitungen & Tipps"
+  about: "Über uns"
+  professionals: "Fachleute"
+  partners: "Partner"
+  other_provinces: "Andere Provinzen"
+  terms: "Nutzungsbedingungen"
+  privacy: "Datenschutzrichtlinie"
+  credit: "Entworfen von"
+
+# Breadcrumb
+breadcrumb:
+  home: "Startseite"
+  services: "Dienstleistungen"
+  cities: "Einsatzgebiete"
+  emergency: "Notfälle"
+  brands: "Marken"
+  guides: "Anleitungen"
+
+# Common
+common:
+  call_now: "Anrufen"
+  learn_more: "Mehr erfahren"
+  back: "Zurück"
+  all_services: "Alle Dienstleistungen"
+  free_quote: "Kostenloser Kostenvoranschlag per Telefon"
+  response_time: "Ankunft in 30 Min"
+  no_damage: "Ohne Beschädigung 95%"
+  available_247: "Verfügbar 24/7"
+  fixed_price: "Festpreis angekündigt"
+  pay_after: "Zahlung nach dem Einsatz"
+
+# City Pages
+city:
+  title_prefix: "Schlüsseldienst in"
+  at: "in"
+  subtitle: "Brauchen Sie einen <strong>Schlüsseldienst in %city%</strong>? Janssens Schlüsseldienst kommt schnell in der gesamten Gemeinde <strong>%city%</strong> und Umgebung. Verfügbar <strong>24/7</strong>, unser Team ist in maximal <strong>30 Minuten</strong> bei Ihnen."
+  services_title: "Unsere Schlüsseldienstleistungen in %city%"
+  services_intro: "Als <strong>professioneller Schlüsseldienst in %city%</strong> bieten wir ein komplettes Angebot an Dienstleistungen für alle Ihre Notfälle und Schlüsseldienstbedürfnisse. Ob im Zentrum von %city% oder in den Randgebieten, unser Techniker kommt schnell."
+  response_time: "Einsatz in 30 Min in %city%"
+  emergency_title: "Schlossnotfall in %city%?"
+  emergency_text: "Unser Schlüsseldienst ist 24/7 verfügbar für Einsätze in %city%"
+  why_title: "Warum Janssens Schlüsseldienst in %city% wählen?"
+  why_intro: "Die Einwohner von <strong>%city%</strong> vertrauen uns seit über 10 Jahren für alle ihre Schlüsseldienstbedürfnisse. Hier ist, warum sich unser <strong>Schlüsseldienst in %city%</strong> auszeichnet:"
+  why_speed: "Wir sind in maximal 30 Minuten in %city%, ob Tag, Nacht, Wochenende oder Feiertag."
+  transparent_price: "Transparente Preise"
+  why_price: "Kostenloser Kostenvoranschlag per Telefon. Keine bösen Überraschungen, der genannte Preis ist der Endpreis."
+  no_damage: "Öffnung ohne Beschädigung"
+  why_no_damage: "Unser Techniker in %city% verwendet bei 95% der Einsätze zerstörungsfreie Techniken."
+  professionalism: "Professionalität"
+  why_pro: "Qualifizierter und erfahrener Schlüsseldienst, regelmäßig tätig in %city% und in der %region%."
+  zone_title: "Einsatzgebiet rund um %city%"
+  zone_text_1: "Mit Sitz in Brüssel, kommen wir schnell nach <strong>%city%</strong> sowie in alle Gemeinden der <strong>%region%</strong>. Wenn Sie in %city% oder Umgebung wohnen, kann unser Schlüsseldienst in weniger als 30 Minuten bei Ihnen sein."
+  zone_text_2: "Unsere Kenntnis von %city% und seinen Vierteln ermöglicht es uns, unsere Wege zu optimieren und so schnell wie möglich zu kommen. Ob Sie nachts vor Ihrer Tür in %city% ausgesperrt sind oder Ihr Zuhause sichern müssen, rufen Sie uns an."
+  brands_title: "Experten für alle Schlossmarken"
+  faq_title: "Häufige Fragen zu unserem Service in %city%"
+  faq_1_q: "Wie lange dauert der Einsatz in %city%?"
+  faq_1_a: "Unser Schlüsseldienst kommt in maximal <strong>30 Minuten</strong> nach %city%. Wir sind 24/7 verfügbar, auch an Wochenenden und Feiertagen."
+  faq_2_q: "Was kostet ein Schlüsseldienst in %city%?"
+  faq_2_a: "Unsere Preise in %city% sind transparent und werden vor dem Einsatz genannt. Der Kostenvoranschlag ist kostenlos und wird vor jedem Einsatz telefonisch erstellt. Keine versteckten Kosten."
+  faq_3_q: "Kommen Sie auch nachts nach %city%?"
+  faq_3_a: "Ja, unser <strong>Schlüsseldienst in %city%</strong> ist Tag und Nacht verfügbar. Ein Nachtzuschlag kann zwischen 21 und 7 Uhr anfallen."
+  faq_4_q: "Öffnen Sie Türen ohne das Schloss zu beschädigen?"
+  faq_4_a: "In <strong>95% der Fälle</strong> öffnen wir Türen in %city% ohne jede Beschädigung dank unserer zerstörungsfreien Techniken. Falls ein Austausch nötig ist, erstellen wir vorher einen Kostenvoranschlag."
+  faq_5_q: "Welche Schlosstypen installieren Sie in %city%?"
+  faq_5_a: "Wir installieren alle Schlosstypen in %city%: <strong>europäische Zylinder, Mehrpunktschlösser, A2P-Schlösser</strong> und Smart Locks. Wir arbeiten mit großen Marken wie Vachette, Bricard, Fichet."
+  nearby_title: "Nachbargemeinden"
+  nearby_intro: "Wir kommen auch in die Nachbargemeinden von %city%"
+  see_all: "Alle 9 Gemeinden ansehen"
+
+# Emergency Pages
+emergency_page:
+  hero_text: "Unser Schlüsseldienst kommt in <strong>30 Minuten</strong> und löst Ihr Problem <strong>ohne Beschädigung</strong>."
+  speed_title: "Garantiert schneller Einsatz"
+  speed_1_title: "Ankunft in 30 Minuten"
+  speed_1_text: "Unser nächster Schlüsseldienst wird sofort geschickt. Durchschnittliche Ankunftszeit: 30 Minuten."
+  speed_2_title: "Ohne Beschädigung in 95% der Fälle"
+  speed_2_text: "Zerstörungsfreie Öffnungstechniken. Ihr Schloss bleibt intakt und funktionsfähig."
+  speed_3_title: "Verfügbar 24/7"
+  speed_3_text: "Tag, Nacht, Wochenende, Feiertage... Wir kommen, wenn Sie uns brauchen."
+  speed_4_title: "Kostenloser Kostenvoranschlag per Telefon"
+  speed_4_text: "Preis vor dem Einsatz genannt. Keine Überraschungen auf der Endrechnung."
+  cta_now: "jetzt?"
+  cta_text: "Bleiben Sie nicht ausgesperrt! Rufen Sie uns an, wir sind in 30 Minuten da."
+  process_title: "Wie läuft es ab?"
+  process_1_title: "1. Sie rufen uns an"
+  process_1_text: "Beschreiben Sie kurz Ihre Situation. Wir geben Ihnen eine genaue Ankunftszeit."
+  process_2_title: "2. Wir kommen schnell"
+  process_2_text: "Unser Schlüsseldienst kommt mit der gesamten notwendigen Ausrüstung."
+  process_3_title: "3. Kostenvoranschlag vor dem Einsatz"
+  process_3_text: "Wir nennen Ihnen den genauen Preis, bevor wir anfangen. Sie bestätigen, dann arbeiten wir."
+  process_4_title: "4. Problem gelöst"
+  process_4_text: "Schneller und sauberer Einsatz. Sie erhalten wieder Zugang zu Ihrem Zuhause."
+  guarantees_title: "Unsere Garantien"
+  invoice_provided: "Rechnung geliefert"
+  faq_1_q: "Was kostet der Einsatz?"
+  faq_1_a: "Der Preis hängt von der Art des Schlosses und der Einsatzzeit ab. Wir geben Ihnen einen kostenlosen Kostenvoranschlag per Telefon vor jedem Einsatz. Der genannte Preis ist der Endpreis, ohne Überraschungen."
+  faq_2_q: "Wird die Öffnung mein Schloss beschädigen?"
+  faq_2_a: "In 95% der Fälle arbeiten wir ohne jede Beschädigung. Ihr Schloss bleibt perfekt funktionsfähig. Falls ausnahmsweise ein Schaden nötig ist, warnen wir Sie vorher."
+  faq_3_q: "Wie lange bis zur Ankunft?"
+  faq_3_a: "Unsere durchschnittliche Ankunftszeit beträgt 30 Minuten in der Region. Wir geben Ihnen am Telefon eine genaue Zeit."
+  faq_4_q: "Kommen Sie nachts und am Wochenende?"
+  faq_4_a: "Ja, wir sind 24 Stunden am Tag, 7 Tage die Woche verfügbar, auch an Feiertagen. Ein Zuschlag kann für Nachteinsätze anfallen."
+  other_emergencies: "Andere Notfallsituationen"
+
+# Service Pages
+service_page:
+  hero_suffix: "Unser Schlüsseldienst kommt in <strong>30 Minuten</strong> und arbeitet <strong>in 95% der Fälle ohne Beschädigung</strong>."
+  when_title: "Wann diesen Service nutzen?"
+  situation_1_title: "Notfall"
+  situation_1_text: "Sofortiger Bedarf? Wir kommen 24/7."
+  situation_2_title: "Sicherheit"
+  situation_2_text: "Verstärken Sie die Sicherheit Ihres Hauses oder Unternehmens."
+  situation_3_title: "Reparatur"
+  situation_3_text: "Schloss blockiert, Schlüssel gebrochen? Wir reparieren vor Ort."
+  situation_4_title: "Installation"
+  situation_4_text: "Neues Schloss, neuer Zylinder? Saubere Installation."
+  cta_title: "Brauchen Sie diesen Service?"
+  cta_text: "Unser Schlüsseldienst kommt in 30 Minuten, 24/7"
+  why_title: "Warum Janssens wählen?"
+  non_destructive: "Zerstörungsfreie Techniken"
+  process_title: "Wie läuft es ab?"
+  step_1_title: "1. Sie rufen an"
+  step_1_text: "Beschreiben Sie Ihre Situation, wir geben Ihnen eine genaue Zeit."
+  step_2_title: "2. Wir kommen"
+  step_2_text: "Unser Schlüsseldienst kommt mit der gesamten notwendigen Ausrüstung."
+  step_3_title: "3. Kostenloser Kostenvoranschlag"
+  step_3_text: "Preis vor dem Einsatz genannt. Sie bestätigen."
+  step_4_title: "4. Einsatz"
+  step_4_text: "Sorgfältige und schnelle Arbeit. Zahlung danach."
+  faq_1_q: "Was kostet dieser Service?"
+  faq_1_a: "Der Preis hängt von der Situation ab. Kostenloser Kostenvoranschlag per Telefon, Preis vor dem Einsatz genannt."
+  faq_2_q: "Kommen Sie am Wochenende?"
+  faq_2_a: "Ja, wir sind 24/7 verfügbar, auch an Feiertagen."
+  faq_3_q: "Arbeiten Sie mit allen Marken?"
+  faq_3_a: "Ja, unsere Techniker sind auf alle großen Marken geschult: Fichet, Bricard, Vachette, Mul-T-Lock, Picard."
+  other_services: "Unsere anderen Dienstleistungen"
+
+# Brand Pages
+brand_page:
+  title_prefix: "Experte"
+  models_title: "%brand% Modelle, die wir beherrschen"
+  model_expertise: "Installation, Reparatur, Wartung, Schlüsselkopie."
+  cta_title: "Brauchen Sie einen %brand% Experten?"
+  cta_text: "Unser zertifizierter Schlüsseldienst kommt in 30 Minuten"
+  why_title: "Warum einen %brand% Experten wählen?"
+  adv_1: "Zertifizierte Techniker"
+  adv_2: "Originalteile"
+  adv_3: "Garantie auf Einsätze"
+  adv_4: "Kontinuierliche Schulung"
+  other_brands: "Andere Expertenmarken"
+
+# Guide Index Page
+guide_index:
+  title: "Anleitungen & Tipps Schlosserei"
+  subtitle: "Finden Sie unsere praktischen Anleitungen zu allen Fragen der Schlosserei: Notfälle, Schlosswahl, Sicherheitstipps und Preise."
+  read_guide: "Anleitung lesen"
+
+# Guide Pages
+guide_page:
+  breadcrumb_guides: "Anleitungen"
+  need_help: "Brauchen Sie Hilfe?"
+  cta_title: "Brauchen Sie jetzt einen Schlüsseldienst?"
+  cta_text: "Einsatz in 30 Minuten in der Region"
+  related_title: "Verwandte Anleitungen"
+
+# About Page
+about:
+  cta_title: "Brauchen Sie einen Schlüsseldienst?"
+  cta_text: "Verfügbar 24/7 in der Deutschsprachigen Gemeinschaft"
+
+# Emergency City Pages
+emergency_city:
+  in: "in"
+  arrival_text: "Unser Schlüsseldienst kommt nach %city% in 30 Minuten, 24/7."
+  tips_title: "Tipps bei %emergency% in %city%"
+  tip_1: "Bleiben Sie ruhig, erzwingen Sie nichts"
+  tip_2: "Überprüfen Sie die Fenster"
+  tip_3: "Rufen Sie einen zugelassenen Schlüsseldienst"
+  tip_4: "Fragen Sie vorher nach einem Kostenvoranschlag"
+  cta_text: "Unser Schlüsseldienst kommt in 30 Minuten, 24/7"
+  why_us_title: "Warum uns in %city% wählen?"
+  adv_1_title: "Ankunft in 30 Min"
+  adv_1_text: "Unser Schlüsseldienst ist in der Nähe von %city%"
+  adv_2_title: "Transparenter Preis"
+  adv_2_text: "Kostenloser Kostenvoranschlag vor dem Einsatz"
+  adv_3_title: "Ohne Beschädigung"
+  adv_3_text: "Professionelle Techniken"
+  adv_4_title: "MwSt.-registriert"
+  faq_1_q: "Wie lange dauert die Lösung eines Falls von %emergency%?"
+  faq_1_a: "Ankunft in 30 Min, Einsatz in 5-15 Min je nach Situation."
+  faq_2_q: "Wird es Beschädigungen geben?"
+  faq_2_a: "Nein, in 95% der Fälle arbeiten wir ohne jede Beschädigung."
+  other_emergencies: "Andere Notfälle in %city%"
+  locksmith_in: "Schlüsseldienst in"
+
+# City Service Pages
+city_service:
+  subtitle: "Service %service% verfügbar in %city%. Schneller Einsatz 24/7, kostenloser Kostenvoranschlag per Telefon."
+  what_title: "%service% in %city%"
+  what_intro: "Brauchen Sie einen Service %service% in %city%? Unser professioneller Schlüsseldienst kommt schnell in der gesamten Gemeinde."
+  cta_title: "Brauchen Sie %service% in %city%?"
+  cta_text: "Unser Schlüsseldienst kommt in 30 Minuten, 24/7"
+  why_title: "Warum unseren Service in %city% wählen?"
+  why_intro: "Die Einwohner von %city% vertrauen uns für ihren Service %service%."
+  why_speed: "Garantierter Einsatz in maximal 30 Minuten in %city%."
+  why_price: "Kostenloser Kostenvoranschlag per Telefon. Preis vor dem Einsatz genannt."
+  why_quality: "Sorgfältige und professionelle Arbeit, ohne Beschädigung in 95% der Fälle."
+  why_pro: "Zertifizierte Techniker, regelmäßig tätig in %city%."
+  process_title: "Wie läuft der Einsatz ab?"
+  step_1_title: "Anruf"
+  step_1_text: "Beschreiben Sie Ihren Bedarf, wir geben Ihnen eine genaue Zeit."
+  step_2_title: "Ankunft"
+  step_2_text: "Unser Schlüsseldienst kommt nach %city% mit der gesamten Ausrüstung."
+  step_3_title: "Kostenvoranschlag"
+  step_3_text: "Preis per Telefon vor jedem Einsatz genannt."
+  step_4_title: "Einsatz"
+  step_4_text: "Sorgfältige und schnelle Arbeit. Zahlung nach dem Service."
+  other_services: "Andere Dienstleistungen in %city%"
+  faq_title: "Fragen zu %service% in %city%"
+  faq_door_opening_1_q: "Was kostet eine Türöffnung in %city%?"
+  faq_door_opening_1_a: "Der Preis hängt von der Art des Schlosses ab. Kostenloser Kostenvoranschlag per Telefon vor dem Einsatz."
+  faq_door_opening_2_q: "Werden Sie meine Tür beschädigen?"
+  faq_door_opening_2_a: "Nein, in 95% der Fälle öffnen wir ohne jede Beschädigung."
+  faq_door_opening_3_q: "Kommen Sie nachts nach %city%?"
+  faq_door_opening_3_a: "Ja, Service verfügbar 24/7."
+  faq_lock_replacement_1_q: "Welche Schlosstypen installieren Sie?"
+  faq_lock_replacement_1_a: "Europäische Zylinder, Mehrpunktschlösser, A2P. Alle Marken."
+  faq_lock_replacement_2_q: "Wie lange dauert ein Schlossaustausch?"
+  faq_lock_replacement_2_a: "In der Regel 30-60 Minuten je nach Schlosstyp."
+  faq_lock_replacement_3_q: "Bieten Sie Hochsicherheitsschlösser an?"
+  faq_lock_replacement_3_a: "Ja, wir installieren A2P-zertifizierte Schlösser."
+  faq_door_reinforcement_1_q: "Was ist Türpanzerung?"
+  faq_door_reinforcement_1_a: "Es ist die Verstärkung Ihrer bestehenden Tür mit Stahlplatten."
+  faq_door_reinforcement_2_q: "Ist die Panzerung wirksam gegen Einbrüche?"
+  faq_door_reinforcement_2_a: "Ja, sie erhöht die Widerstandsfähigkeit Ihrer Tür erheblich."
+  faq_door_reinforcement_3_q: "Was kostet eine Türpanzerung?"
+  faq_door_reinforcement_3_a: "Der Preis hängt von der Art der Tür ab. Kostenloser Kostenvoranschlag per Telefon."
+  faq_safe_1_q: "Können Sie einen blockierten Tresor öffnen?"
+  faq_safe_1_a: "Ja, wir arbeiten an allen Tresortypen."
+  faq_safe_2_q: "Installieren Sie Tresore?"
+  faq_safe_2_a: "Ja, Verkauf und Installation von Tresoren in %city%."
+  faq_safe_3_q: "Code vergessen, was tun?"
+  faq_safe_3_a: "Rufen Sie uns an, wir können Ihren Tresor öffnen und umprogrammieren."
+  faq_automotive_1_q: "Können Sie mein Auto öffnen?"
+  faq_automotive_1_a: "Ja, Fahrzeugöffnung ohne Beschädigung."
+  faq_automotive_2_q: "Kopieren Sie Autoschlüssel?"
+  faq_automotive_2_a: "Ja, Kopie und Programmierung von Autoschlüsseln."
+  faq_automotive_3_q: "Arbeiten Sie an allen Fahrzeugen?"
+  faq_automotive_3_a: "Ja, alle Marken und Modelle von Fahrzeugen."
+  back_to_city: "Zurück zu %city%"
+
+# Brand City Pages
+brand_city:
+  title: "Experte %brand% in %city%"
+  subtitle: "Zertifizierter Schlüsseldienst %brand% in %city%. Einsatz 24/7 in 30 Minuten."
+  certified: "Zertifiziert %brand%"
+  expertise_title: "Experte %brand% in %city%"
+  expertise_intro: "Sie haben ein %brand% Schloss in %city%? Unser zertifizierter Schlüsseldienst beherrscht diese Hochsicherheitsmarke perfekt."
+  models_title: "%brand% Modelle, die wir beherrschen"
+  models_intro: "Unser Techniker arbeitet an allen %brand% Modellen in %city%:"
+  services_title: "%brand% Dienstleistungen in %city%"
+  service_1_title: "Türöffnung"
+  service_1_text: "Öffnung ohne Beschädigung Ihres %brand% Schlosses"
+  service_2_title: "Zylinderwechsel"
+  service_2_text: "Installation von Original-%brand%-Zylindern"
+  service_3_title: "Schlüsselkopie"
+  service_3_text: "Kopie von %brand%-Schlüsseln mit Eigentumskarte"
+  service_4_title: "Wartung & Reparatur"
+  service_4_text: "Reparatur aller %brand%-Störungen"
+  cta_title: "Brauchen Sie einen %brand% Experten in %city%?"
+  cta_text: "Unser zertifizierter Schlüsseldienst kommt in 30 Minuten"
+  faq_title: "Häufige Fragen - %brand% in %city%"
+  faq_1_q: "Sind Sie %brand%-zertifiziert?"
+  faq_1_a: "Ja, unsere Techniker sind auf %brand%-Produkte geschult und zertifiziert. Wir verwenden nur Originalteile."
+  faq_2_q: "Was kostet ein %brand%-Einsatz in %city%?"
+  faq_2_a: "Der Preis hängt von der Art des Einsatzes ab. Wir geben Ihnen einen kostenlosen Kostenvoranschlag per Telefon, bevor wir kommen."
+  faq_3_q: "Kommen Sie im Notfall zu %brand%-Schlössern?"
+  faq_3_a: "Ja, wir kommen 24/7 nach %city%. Ankunft in maximal 30 Minuten."
+  other_brands: "Andere Marken in %city%"
+  back_to_brand: "Zurück zu %brand%"
+
+# Legal Pages
+legal:
+  updated: "Zuletzt aktualisiert"
+
+# Province Hub Pages
+province:
+  breadcrumb: "Provinzen"
+  title_prefix: "Schlüsseldienst"
+  subtitle: "Schneller Einsatz in der gesamten Provinz. Zugelassener Schlüsseldienst, verfügbar 24/7."
+  communes: "Gemeinden"
+  avg_time: "Einsatz in"
+  coverage_title: "Einsatzgebiet"
+  coverage_text: "Unsere professionellen Schlüsseldienste arbeiten in der gesamten Provinz"
+  coverage_text_2: ". Ob in einer großen Stadt oder einer kleinen Gemeinde, wir sind in weniger als einer Stunde da."
+  major_cities: "Große abgedeckte Städte"
+  and_more: "Und"
+  other_communes: "weitere Gemeinden in der Provinz."
+  cta_title: "Schlossnotfall"
+  cta_text: "Tür zugefallen, Schlüssel gebrochen, Einbruch? Rufen Sie jetzt für einen schnellen Einsatz an."
+  services_title: "Verfügbare Dienstleistungen"
+  services_intro: "Alle unsere Schlüsseldienstleistungen sind in der Provinz verfügbar"
+  why_title: "Warum uns wählen"
+  why_speed: "Unsere Teams sind strategisch positioniert für einen Einsatz in weniger als einer Stunde."
+  transparent: "Transparenter Preis"
+  why_price: "Kostenloser Kostenvoranschlag vor dem Einsatz. Keine versteckten Kosten."
+  pro: "Zugelassene Fachleute"
+  why_pro: "Qualifizierte und versicherte Schlüsseldienste für alle Einsätze."
+  available: "Verfügbar 24/7"
+  why_available: "Notfälle Tag und Nacht, Wochenenden und Feiertage inbegriffen."
+  faq_title: "Häufige Fragen"
+  faq_1_q: "Kommen Sie in alle Gemeinden der Provinz?"
+  faq_1_a: "Ja, wir kommen in die"
+  faq_1_a2: "Gemeinden der Provinz. Unsere Teams sind strategisch verteilt, um überall einen schnellen Einsatz zu garantieren."
+  faq_2_q: "Wie lange dauert der Einsatz?"
+  faq_2_a: "Im Durchschnitt kommen unsere Schlüsseldienste in"
+  faq_2_a2: ". Diese Zeit kann je nach genauem Standort und Verfügbarkeit unserer Teams variieren."
+  faq_3_q: "Arbeiten Sie an Wochenenden und Feiertagen?"
+  faq_3_a: "Ja, unser Notdienst ist 24/7 verfügbar, auch an Wochenenden und Feiertagen."
+  faq_4_q: "Wie erhalte ich einen Kostenvoranschlag?"
+  faq_4_a: "Rufen Sie uns an unter 0495 205 400. Wir geben Ihnen einen kostenlosen Kostenvoranschlag per Telefon vor jedem Einsatz."
+  zones_title: "Unsere Hauptgebiete"
+  zones_text: "Entdecken Sie unsere Haupteinsatzgebiete mit dedizierten Seiten pro Gemeinde."
+  zones_cta: "Alle Gebiete ansehen"

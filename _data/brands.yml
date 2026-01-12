@@ -9,6 +9,7 @@
     fr: "Expert certifi\u00e9 Fichet. Cylindres haute s\u00e9curit\u00e9, serrures multipoints."
     en: "Certified Fichet expert. High-security cylinders, multipoint locks."
     nl: "Gecertificeerde Fichet expert. Hoogbeveiligde cilinders, meerpuntssloten."
+    de: "Zertifizierter Fichet-Experte. Hochsicherheitszylinder, Mehrpunktschlösser."
   models:
     - "Fichet 484"
     - "Fichet 787"
@@ -25,6 +26,7 @@
     fr: "Sp\u00e9cialiste Bricard. S\u00e9ries Chifral, Serial, Dual XP."
     en: "Bricard specialist. Chifral, Serial, Dual XP series."
     nl: "Bricard specialist. Chifral, Serial, Dual XP series."
+    de: "Bricard-Spezialist. Chifral, Serial, Dual XP Serien."
   models:
     - "Bricard Chifral S2"
     - "Bricard Serial S"
@@ -42,6 +44,7 @@
     fr: "Expert Vachette. Cylindres Radial NT, serrures A2P."
     en: "Vachette expert. Radial NT cylinders, A2P locks."
     nl: "Vachette expert. Radial NT cilinders, A2P sloten."
+    de: "Vachette-Experte. Radial NT Zylinder, A2P Schlösser."
   models:
     - "Vachette Radial NT"
     - "Vachette Radial NT+"
@@ -57,6 +60,7 @@
     fr: "Sp\u00e9cialiste Mul-T-Lock. Technologie brevet\u00e9e haute s\u00e9curit\u00e9."
     en: "Mul-T-Lock specialist. Patented high-security technology."
     nl: "Mul-T-Lock specialist. Gepatenteerde hoogbeveiligde technologie."
+    de: "Mul-T-Lock-Spezialist. Patentierte Hochsicherheitstechnologie."
   models:
     - "Mul-T-Lock Interactive+"
     - "Mul-T-Lock MT5+"
@@ -71,9 +75,45 @@
     fr: "Expert Picard. Serrures Vigie, Presence, Diamant."
     en: "Picard expert. Vigie, Presence, Diamant locks."
     nl: "Picard expert. Vigie, Presence, Diamant sloten."
+    de: "Picard-Experte. Vigie, Presence, Diamant Schlösser."
   models:
     - "Picard Vigie"
     - "Picard Presence"
     - "Picard Diamant"
     - "Picard Kl\u00e9o"
     - "Picard VAK"
+
+- id: wilka
+  name: "Wilka"
+  slug: "wilka"
+  logo_text: "WILKA"
+  description:
+    fr: "Expert Wilka. Serrures allemandes haute qualité, cylindres certifiés DIN."
+    en: "Wilka expert. High-quality German locks, DIN certified cylinders."
+    nl: "Wilka expert. Hoogwaardige Duitse sloten, DIN-gecertificeerde cilinders."
+    de: "Wilka-Experte. Hochwertige deutsche Schlösser, DIN-zertifizierte Zylinder."
+  models:
+    - "Wilka 1433"
+    - "Wilka 1435"
+    - "Wilka 1436"
+    - "Wilka 1438"
+    - "Wilka 1472"
+    - "Wilka 5490"
+    - "Wilka 5495"
+
+- id: nuki
+  name: "Nuki"
+  slug: "nuki"
+  logo_text: "NUKI"
+  description:
+    fr: "Installateur Nuki certifié. Serrures connectées, Auto Unlock, compatible HomeKit, Alexa, Google Home. Chiffrement AES 256-bit."
+    en: "Certified Nuki installer. Smart locks, Auto Unlock, HomeKit, Alexa, Google Home compatible. AES 256-bit encryption."
+    nl: "Gecertificeerde Nuki installateur. Slimme sloten, Auto Unlock, compatibel met HomeKit, Alexa, Google Home. AES 256-bit encryptie."
+    de: "Zertifizierter Nuki-Installateur. Smart Locks, Auto Unlock, kompatibel mit HomeKit, Alexa, Google Home. AES 256-Bit Verschlüsselung."
+  models:
+    - "Nuki Smart Lock Go"
+    - "Nuki Smart Lock Pro"
+    - "Nuki Smart Lock Ultra"
+    - "Nuki Keypad 2"
+    - "Nuki Door Sensor"
+    - "Nuki Bridge"

@@ -40,6 +40,9 @@ collections:
   cities_nl:
     output: true
     permalink: /nl/cities/:name/
+  cities_de:
+    output: true
+    permalink: /de/gemeinden/:name/
 
 # Default values
 defaults:
@@ -61,6 +64,12 @@ defaults:
     values:
       lang: "nl"
       lang_name: "Nederlands"
+  # German pages
+  - scope:
+      path: "de"
+    values:
+      lang: "de"
+      lang_name: "Deutsch"
   # City collections
   - scope:
       type: "cities_fr"
@@ -77,7 +86,12 @@ defaults:
     values:
       layout: "city"
       lang: "nl"
+  - scope:
+      type: "cities_de"
+    values:
+      layout: "city"
+      lang: "de"
 
 # Localization
-languages: ["fr", "en", "nl"]
+languages: ["fr", "en", "nl", "de"]
 default_lang: "fr"

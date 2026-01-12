@@ -104,6 +104,16 @@ cities_with_subpages:
   - zaventem
   - zemst
   - zoutleeuw
+  # Deutschsprachige Gemeinschaft (9)
+  - eupen
+  - kelmis
+  - lontzen
+  - raeren
+  - sankt-vith
+  - buellingen
+  - burg-reuland
+  - amel
+  - buetgenbach
 
 # Bruxelles-Capitale (19 communes)
 brussels:
@@ -5963,3 +5973,95 @@ luxembourg:
       lng: 5.7333
     province: "luxembourg"
 
+
+# Deutschsprachige Gemeinschaft Belgiens (9 Gemeinden)
+german_speaking:
+  - name: "Eupen"
+    slug: "eupen"
+    postal: "4700"
+    has_subpages: true
+    geo:
+      lat: 50.6278
+      lng: 6.0389
+    region: "eupen"
+    province: "liege"
+
+  - name: "Kelmis"
+    slug: "kelmis"
+    postal: "4720"
+    has_subpages: true
+    geo:
+      lat: 50.7000
+      lng: 6.0167
+    region: "eupen"
+    province: "liege"
+
+  - name: "Lontzen"
+    slug: "lontzen"
+    postal: "4710"
+    has_subpages: true
+    geo:
+      lat: 50.6833
+      lng: 6.0000
+    region: "eupen"
+    province: "liege"
+
+  - name: "Raeren"
+    slug: "raeren"
+    postal: "4730"
+    has_subpages: true
+    geo:
+      lat: 50.6667
+      lng: 6.1167
+    region: "eupen"
+    province: "liege"
+
+  - name: "Sankt Vith"
+    slug: "sankt-vith"
+    postal: "4780"
+    has_subpages: true
+    geo:
+      lat: 50.2833
+      lng: 6.1333
+    region: "st-vith"
+    province: "liege"
+
+  - name: "Büllingen"
+    slug: "buellingen"
+    postal: "4760"
+    has_subpages: true
+    geo:
+      lat: 50.4167
+      lng: 6.2667
+    region: "st-vith"
+    province: "liege"
+
+  - name: "Burg-Reuland"
+    slug: "burg-reuland"
+    postal: "4790"
+    has_subpages: true
+    geo:
+      lat: 50.1833
+      lng: 6.1333
+    region: "st-vith"
+    province: "liege"
+
+  - name: "Amel"
+    slug: "amel"
+    postal: "4770"
+    has_subpages: true
+    geo:
+      lat: 50.3500
+      lng: 6.1833
+    region: "st-vith"
+    province: "liege"
+
+  - name: "Bütgenbach"
+    slug: "buetgenbach"
+    postal: "4750"
+    has_subpages: true
+    geo:
+      lat: 50.4167
+      lng: 6.2000
+    region: "st-vith"
+    province: "liege"

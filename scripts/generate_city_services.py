@@ -61,6 +61,16 @@ SERVICES = {
         "fr": {"slug": "serrurerie-automobile", "name": "Serrurerie automobile", "desc": "Serrurerie automobile à {city}. Ouverture voiture, remplacement clé, réparation serrure auto. 24h/24. Appelez 0495 205 400."},
         "en": {"slug": "automotive-locksmith", "name": "Automotive Locksmith", "desc": "Automotive locksmith in {city}. Car door opening, key replacement, auto lock repair. 24/7. Call 0495 205 400."},
         "nl": {"slug": "auto-slotenmaker", "name": "Auto slotenmaker", "desc": "Auto slotenmaker in {city}. Auto deur opening, sleutel vervanging, auto slot reparatie. 24/7. Bel 0495 205 400."}
+    },
+    "smart-lock": {
+        "fr": {"slug": "serrure-connectee", "name": "Serrure connectée", "desc": "Installation serrure connectée à {city}. Nuki, Yale, Samsung. Domotique, contrôle smartphone. Devis gratuit. Appelez 0495 205 400."},
+        "en": {"slug": "smart-lock", "name": "Smart Lock", "desc": "Smart lock installation in {city}. Nuki, Yale, Samsung. Home automation, smartphone control. Free quote. Call 0495 205 400."},
+        "nl": {"slug": "slim-slot", "name": "Slim slot", "desc": "Slim slot installatie in {city}. Nuki, Yale, Samsung. Domotica, smartphone bediening. Gratis offerte. Bel 0495 205 400."}
+    },
+    "access-control": {
+        "fr": {"slug": "digicode", "name": "Digicode", "desc": "Installation digicode à {city}. Clavier à code, contrôle d'accès, interphone. Immeubles et entreprises. Appelez 0495 205 400."},
+        "en": {"slug": "access-control", "name": "Access Control", "desc": "Access control installation in {city}. Keypad locks, entry systems, intercoms. Buildings and businesses. Call 0495 205 400."},
+        "nl": {"slug": "codeslot", "name": "Codeslot", "desc": "Codeslot installatie in {city}. Toetsenbordslot, toegangscontrole, intercom. Gebouwen en bedrijven. Bel 0495 205 400."}
     }
 }
 

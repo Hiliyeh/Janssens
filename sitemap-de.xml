@@ -1,0 +1,43 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% comment %}
+=== SITEMAP DE - Auto-generated ===
+Includes: /de/*, gemeinden/*, and cities_de collection
+{% endcomment %}
+
+{% comment %}=== All pages with lang: de ==={% endcomment %}
+{% for page in site.pages %}
+{% assign dominated_lang = page.lang | default: "" %}
+{% if dominated_lang == "de" %}
+{% unless page.sitemap == false or page.url contains '.xml' or page.url contains '.css' or page.url contains '.js' or page.url == "/404.html" %}
+  <url>
+    <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}" />
+{% if page.alternate.fr %}    <xhtml:link rel="alternate" hreflang="fr-BE" href="{{ site.url }}{{ page.alternate.fr }}" />{% endif %}
+{% if page.alternate.en %}    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.alternate.en }}" />{% endif %}
+{% if page.alternate.nl %}    <xhtml:link rel="alternate" hreflang="nl-BE" href="{{ site.url }}{{ page.alternate.nl }}" />{% endif %}
+    <lastmod>{{ today }}</lastmod>
+  </url>
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+{% comment %}=== German city collection ==={% endcomment %}
+{% for city in site.cities_de %}
+{% unless city.sitemap == false %}
+  <url>
+    <loc>{{ site.url }}{{ city.url }}</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ city.url }}" />
+{% if city.alternate.fr %}    <xhtml:link rel="alternate" hreflang="fr-BE" href="{{ site.url }}{{ city.alternate.fr }}" />{% endif %}
+{% if city.alternate.en %}    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ city.alternate.en }}" />{% endif %}
+{% if city.alternate.nl %}    <xhtml:link rel="alternate" hreflang="nl-BE" href="{{ site.url }}{{ city.alternate.nl }}" />{% endif %}
+    <lastmod>{{ today }}</lastmod>
+  </url>
+{% endunless %}
+{% endfor %}
+</urlset>

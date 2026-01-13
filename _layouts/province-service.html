@@ -43,6 +43,10 @@ layout: default
             <p>{{ service[lang].province_desc | default: service[lang].desc }}</p>
         </div>
 
+        {% if page.service_id == "safe" %}
+        {% include safes-grid.html %}
+        {% endif %}
+
         {% capture cta_title %}{{ service_name }} {{ province_name }} ?{% endcapture %}
         {% capture cta_text %}{{ t.province_service.cta_text | default: "Appelez maintenant pour une intervention rapide dans toute la province." }}{% endcapture %}
         {% include cta-box.html title=cta_title text=cta_text %}

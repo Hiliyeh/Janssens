@@ -40,6 +40,10 @@ layout: default
             <h2 class="service-section-title"><i data-lucide="workflow"></i> {{ t.service_page.process_title }}</h2>
             {% include content-grid.html count=4 prefix="step" source=t.service_page %}
         </div>
+
+        {% if page.service_id == "safe" %}
+        {% include safes-grid.html %}
+        {% endif %}
     </div>
 </section>
 

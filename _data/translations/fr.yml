@@ -482,3 +482,11 @@ province:
   zones_title: "Nos zones principales"
   zones_text: "Decouvrez nos zones d'intervention principales avec des pages dediees par commune."
   zones_cta: "Voir toutes les zones"
+
+# Safes Catalog
+safes:
+  title: "Nos coffres-forts"
+  subtitle: "Installation et ouverture par nos experts"
+  all: "Tous"
+  cta_title: "Besoin d'un coffre-fort ?"
+  cta_text: "Installation, ouverture, dépannage - Intervention rapide 24h/24"

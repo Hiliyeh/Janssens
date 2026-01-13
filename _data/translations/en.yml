@@ -482,3 +482,11 @@ province:
   zones_title: "Our main areas"
   zones_text: "Discover our main service areas with dedicated pages per municipality."
   zones_cta: "View all areas"
+
+# Safes Catalog
+safes:
+  title: "Our Safes"
+  subtitle: "Installation and opening by our experts"
+  all: "All"
+  cta_title: "Need a safe?"
+  cta_text: "Installation, opening, repair - Fast 24/7 intervention"

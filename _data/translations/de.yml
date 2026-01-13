@@ -477,3 +477,11 @@ province:
   zones_title: "Unsere Hauptgebiete"
   zones_text: "Entdecken Sie unsere Haupteinsatzgebiete mit dedizierten Seiten pro Gemeinde."
   zones_cta: "Alle Gebiete ansehen"
+
+# Safes Catalog
+safes:
+  title: "Unsere Tresore"
+  subtitle: "Installation und Öffnung durch unsere Experten"
+  all: "Alle"
+  cta_title: "Tresor benötigt?"
+  cta_text: "Installation, Öffnung, Reparatur - Schneller 24/7 Einsatz"

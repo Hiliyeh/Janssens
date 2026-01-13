@@ -5998,6 +5998,15 @@ section {
     margin-top: 1.5rem;
 }
 
+/* Fix: Texte et icône blancs pour commune-stat dans hero sombre */
+.service-hero .commune-stat {
+    color: white;
+}
+
+.service-hero .commune-stat i {
+    color: white;
+}
+
 .commune-stat {
     display: flex;
     align-items: center;

@@ -1,0 +1,244 @@
+# Catalogue coffres-forts BURG-WÄCHTER
+# 32 coffres avec images
+
+categories:
+  - id: high-security
+    fr: "Haute sécurité"
+    en: "High Security"
+    nl: "Hoge beveiliging"
+    de: "Hochsicherheit"
+    icon: "shield-check"
+
+  - id: premium
+    fr: "Premium"
+    en: "Premium"
+    nl: "Premium"
+    de: "Premium"
+    icon: "gem"
+
+  - id: office
+    fr: "Bureau"
+    en: "Office"
+    nl: "Kantoor"
+    de: "Büro"
+    icon: "briefcase"
+
+  - id: home
+    fr: "Maison"
+    en: "Home"
+    nl: "Thuis"
+    de: "Zuhause"
+    icon: "home"
+
+  - id: compact
+    fr: "Compact"
+    en: "Compact"
+    nl: "Compact"
+    de: "Kompakt"
+    icon: "box"
+
+  - id: wall
+    fr: "Mural"
+    en: "Wall"
+    nl: "Muur"
+    de: "Wand"
+    icon: "square"
+
+  - id: fireproof
+    fr: "Ignifuge"
+    en: "Fireproof"
+    nl: "Brandwerend"
+    de: "Feuerfest"
+    icon: "flame"
+
+  - id: gun
+    fr: "Armoire à armes"
+    en: "Gun Cabinet"
+    nl: "Wapenkluis"
+    de: "Waffenschrank"
+    icon: "target"
+
+  - id: hotel
+    fr: "Hôtel"
+    en: "Hotel"
+    nl: "Hotel"
+    de: "Hotel"
+    icon: "building"
+
+  - id: commercial
+    fr: "Commercial"
+    en: "Commercial"
+    nl: "Commercieel"
+    de: "Gewerbe"
+    icon: "store"
+
+safes:
+  # Haute sécurité
+  - name: "MTD 780 E FP"
+    image: "mtd-780-e-fp.jpg"
+    category: "high-security"
+    brand: "BURG-WÄCHTER"
+
+  - name: "MT 660 K"
+    image: "mt-660-k.jpg"
+    category: "high-security"
+    brand: "BURG-WÄCHTER"
+
+  # Premium
+  - name: "Royal 546 KK"
+    image: "royal-546-kk.jpg"
+    category: "premium"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Royal 536 K"
+    image: "royal-536-k.jpg"
+    category: "premium"
+    brand: "BURG-WÄCHTER"
+
+  # Bureau
+  - name: "Office-Line 811 E FP"
+    image: "office-line-811-e-fp.jpg"
+    category: "office"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Office-Line 801 E FP"
+    image: "office-line-801-e-fp.jpg"
+    category: "office"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Office-Doku 821 E FP"
+    image: "office-doku-821-e-fp.jpg"
+    category: "office"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Office 824 K"
+    image: "office-824-k.jpg"
+    category: "office"
+    brand: "BURG-WÄCHTER"
+
+  # Maison
+  - name: "Home-Safe H 240 S"
+    image: "home-safe-h-240-s.jpg"
+    category: "home"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Dual-Safe DS 425 K"
+    image: "dual-safe-ds-425-k.jpg"
+    category: "home"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Magno-Safe M 540 S"
+    image: "magno-safe-m-540-s.jpg"
+    category: "home"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Combi-Line CL 420 E"
+    image: "combi-line-cl-420-e.jpg"
+    category: "home"
+    brand: "BURG-WÄCHTER"
+
+  - name: "CityLine C 310 K"
+    image: "cityline-c-310-k.jpg"
+    category: "home"
+    brand: "BURG-WÄCHTER"
+
+  # Ignifuge
+  - name: "FP 44 E"
+    image: "fp-44-e.jpg"
+    category: "fireproof"
+    brand: "BURG-WÄCHTER"
+
+  # Compact
+  - name: "PS 110 K"
+    image: "ps-110-k.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  - name: "PS 120 K EWS"
+    image: "ps-120-k-ews.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  - name: "PS 130 E FP LAP"
+    image: "ps-130-e-fp-lap.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Point-Safe P 2 E"
+    image: "point-safe-p-2-e.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Point-Safe P 2 S EWS"
+    image: "point-safe-p-2-s-ews.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Point-Safe P 3 E FS LAP"
+    image: "point-safe-p-3-e-fs-lap.jpg"
+    category: "compact"
+    brand: "BURG-WÄCHTER"
+
+  # Hôtel
+  - name: "PS 130 E KA 4"
+    image: "ps-130-e-ka4.jpg"
+    category: "hotel"
+    brand: "BURG-WÄCHTER"
+
+  - name: "PS 130 E LAP KA 4"
+    image: "ps-130-e-lap-ka4.jpg"
+    category: "hotel"
+    brand: "BURG-WÄCHTER"
+
+  # Mural
+  - name: "PSW 130 K"
+    image: "psw-130-k.jpg"
+    category: "wall"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Point-Safe PW 1 S"
+    image: "point-safe-pw-1-s.jpg"
+    category: "wall"
+    brand: "BURG-WÄCHTER"
+
+  - name: "WT 613 E"
+    image: "wt-613-e.jpg"
+    category: "wall"
+    brand: "BURG-WÄCHTER"
+
+  - name: "WT 614 K"
+    image: "wt-614-k.jpg"
+    category: "wall"
+    brand: "BURG-WÄCHTER"
+
+  # Armes
+  - name: "Ranger N 5 S"
+    image: "ranger-n-5-s.jpg"
+    category: "gun"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Ranger N 7 S"
+    image: "ranger-n-7-s.jpg"
+    category: "gun"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Ranger 800/8 K"
+    image: "ranger-800-8-k.jpg"
+    category: "gun"
+    brand: "BURG-WÄCHTER"
+
+  - name: "Ranger 816/8 Premium"
+    image: "ranger-816-8-premium.jpg"
+    category: "gun"
+    brand: "BURG-WÄCHTER"
+
+  # Commercial
+  - name: "EXS 320 E"
+    image: "exs-320-e.jpg"
+    category: "commercial"
+    brand: "BURG-WÄCHTER"
+
+  - name: "PRS 520 E"
+    image: "prs-520-e.jpg"
+    category: "commercial"
+    brand: "BURG-WÄCHTER"

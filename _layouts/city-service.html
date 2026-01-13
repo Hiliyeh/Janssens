@@ -42,6 +42,10 @@ layout: default
             <p>{{ service[lang].city_desc | replace: "%city%", page.city_name }}</p>
         </div>
 
+        {% if page.service_id == "safe" %}
+        {% include safes-grid.html %}
+        {% endif %}
+
         {% capture cta_title %}{{ t.city_service.cta_title | replace: "%service%", service_name | replace: "%city%", page.city_name }}{% endcapture %}
         {% capture cta_text %}{{ t.city_service.cta_text | replace: "%service%", service_name | replace: "%city%", page.city_name }}{% endcapture %}
         {% include cta-box.html title=cta_title text=cta_text %}

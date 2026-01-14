@@ -3030,6 +3030,58 @@ section {
     width: 10px;
     height: 10px;
   }
+  /* Assistant link mobile - styled as special button */
+  .nav-assistant-link {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #1a1a2e !important;
+    padding: 16px 24px !important;
+    border-radius: 12px;
+    margin: 10px auto;
+    width: auto !important;
+    max-width: 280px;
+    font-size: 1rem !important;
+    font-family: var(--font-body) !important;
+  }
+  .nav-assistant-link::after {
+    display: none !important;
+  }
+  .nav-assistant-icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+  .nav-assistant-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .nav-assistant-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .nav-assistant-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .live-dot-small {
+    width: 6px;
+    height: 6px;
+    background: #22c55e;
+    border-radius: 50%;
+    animation: pulse-green 2s infinite;
+  }
+  @keyframes pulse-green {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
   /* Animation cascade des liens */
   .nav.open a:nth-child(2) {
     transition-delay: 0.1s;

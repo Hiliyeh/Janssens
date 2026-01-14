@@ -25,7 +25,11 @@ Usage: {% include related-links.html
                     {% assign item_name = item[include.name_key] | default: item.name %}
                     {% assign item_slug = item[include.slug_key] | default: item.slug %}
                 {% endif %}
+                {% if item.special_link %}
+                <a href="/{{ include.lang }}/{{ item_slug }}/" class="neighbor-link">{{ item_name }}</a>
+                {% else %}
                 <a href="{{ include.url_prefix }}{{ item_slug }}/" class="neighbor-link">{{ item_name }}</a>
+                {% endif %}
             {% endif %}
             {% endfor %}
             {% if include.extra_link %}

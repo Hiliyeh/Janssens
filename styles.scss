@@ -4524,6 +4524,20 @@ section {
 
 .urgence-hero .urgence-container {
     display: block;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    gap: unset;
+    flex-wrap: unset;
+    text-align: center;
+}
+
+.urgence-hero .urgence-hero-icon {
+    margin: 0 auto 1.5rem auto;
+}
+
+.urgence-hero .urgence-cta-buttons {
+    justify-content: center;
 }
 
 .urgence-hero .breadcrumb {
@@ -4644,6 +4658,12 @@ section.urgence-content {
 section.urgence-content .urgence-container {
     max-width: 750px;
     margin: 0 auto;
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    gap: unset;
+    flex-wrap: unset;
 }
 
 .urgence-section {
@@ -4746,19 +4766,29 @@ section.urgence-content .urgence-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    max-width: 900px;
 }
 
 .urgence-faq .urgence-section-title {
     justify-content: center;
+    width: 100%;
+    max-width: 800px;
 }
 
 .urgence-faq .faq-list {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .urgence-content .advantages-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -5278,10 +5308,17 @@ section.urgence-content .urgence-container {
     border-top: 1px solid var(--color-gray-200);
 }
 
-.related-links .service-container {
+.related-links .service-container,
+.related-links .urgence-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
+    display: block;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    gap: unset;
+    flex-wrap: unset;
 }
 
 .related-links h3 {
